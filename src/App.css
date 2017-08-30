@@ -1,0 +1,69 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.App-header {
+  background-color: #222;
+  height: 60px;
+  padding: 15px;
+  color: white;
+}
+
+.App-title {
+  font-size: 44px;
+  margin: auto;
+  text-align: center
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.App-images {
+  width: 217px;
+  height: 290px;
+}
+
+
+.App-content .content-name{
+    font-family: fantasy;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+
+.App-content .content-title {
+  margin: 0px;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.ReactFlipCard {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .ReactFlipCard,
+  .ReactFlipCard__Front,
+  .ReactFlipCard__Back {
+    box-sizing: border-box;
+    width: 217px;
+    height: 290px;
+  }
+  .ReactFlipCard__Front,
+  .ReactFlipCard__Back {
+    border-radius: 5px;
+  }
+  .ReactFlipCard__Front {
+    background-color: #eee;
+  }
+  .ReactFlipCard__Back {
+    background-color: #cef;
+  }
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
