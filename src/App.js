@@ -20,7 +20,7 @@ class App extends Component {
               <p>Mexico</p>
             </div>
           </FlipCard>
-          <p className="content-name">Daniel Diaz</p>
+          <p className="content-name">J. Daniel Diaz</p>
           <p className="content-title">Software Engineer</p>
         </div>
       </div>
