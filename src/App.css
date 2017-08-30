@@ -50,11 +50,16 @@
 .App-content .content-title {
   margin: 0px;
   font-family: 'OpenSans';
+  letter-spacing: 0.15em;
 }
 
 .ReactFlipCard {
     margin-top: 20px;
     text-align: center;
+  }
+
+  .ReactFlipCard__Flipper {
+    transition-duration: 13s;
   }
   .ReactFlipCard,
   .ReactFlipCard__Front,
