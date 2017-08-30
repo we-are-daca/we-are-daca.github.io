@@ -1,3 +1,13 @@
+@font-face {
+  font-family: Muli-Italic;
+  src: url('fonts/Muli-ExtraLightItalic.ttf')
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-SemiBold.ttf')
+}
+
 .App {
   text-align: center;
 }
@@ -31,14 +41,15 @@
 
 
 .App-content .content-name{
-    font-family: fantasy;
-    margin-top: 5px;
-    margin-bottom: 0px;
+  font-size: 22px;
+  font-family: 'Muli-Italic', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0px;
 }
 
 .App-content .content-title {
   margin: 0px;
-  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-family: 'OpenSans';
 }
 
 .ReactFlipCard {
