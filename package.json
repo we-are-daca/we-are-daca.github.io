@@ -2,7 +2,7 @@
   "name": "we-are-daca",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://we-are-daca.github.io/home",
+  "homepage": "https://we-are-daca.github.io",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
@@ -46,7 +46,7 @@
   },
   "scripts": {
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
+    "deploy": "gh-pages -d build --branch master",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom"
