@@ -2,7 +2,7 @@
   "name": "we-are-daca",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dcarrot2.github.io/we-are-daca",
+  "homepage": "https://we-are-daca.github.io",
   "dependencies": {
     "autoprefixer": "7.1.2",
     "babel-core": "6.25.0",
