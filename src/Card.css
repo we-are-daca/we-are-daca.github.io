@@ -1,0 +1,56 @@
+
+.Card-images {
+  width: 217px;
+  height: 290px;
+}
+
+.Card-name{
+  font-size: 22px;
+  font-family: 'Muli-Italic', sans-serif;
+  margin-top: 5px;
+  margin-bottom: 0px;
+}
+
+.Card-content{
+  display: inline-block;
+  margin: 1rem;
+}
+
+.Card-title {
+  margin: 0px;
+  font-family: 'OpenSans';
+  letter-spacing: 0.15em;
+}
+
+.ReactFlipCard {
+    text-align: center;
+  }
+
+  .ReactFlipCard__Flipper {
+    transition-duration: 13s;
+  }
+  .ReactFlipCard,
+  .ReactFlipCard__Front,
+  .ReactFlipCard__Back {
+    box-sizing: border-box;
+    width: 217px;
+    height: 290px;
+  }
+  .ReactFlipCard__Front,
+  .ReactFlipCard__Back {
+    /*border-radius: 5px;*/
+  }
+  .ReactFlipCard__Front {
+    background-color: #eee;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+  }
+  .ReactFlipCard__Back {
+    background-color: #222;
+    color: #ffffff;
+  }
+
+@keyframes Card-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
