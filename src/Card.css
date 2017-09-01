@@ -1,29 +1,30 @@
 
 .Card-images {
-  width: 217px;
-  height: 290px;
+  height: 250px;
+  max-width: 230px;
 }
 
 .Card-name{
-  font-size: 22px;
+  font-size: 18px;
   font-family: 'Muli-Italic', sans-serif;
   margin-top: 5px;
   margin-bottom: 0px;
 }
 
 .Card-content{
-  display: inline-block;
+  box-sizing: border-box;
   margin: 1rem;
 }
 
 .Card-title {
-  margin: 0px;
+  font-size: 14px;
   font-family: 'OpenSans';
-  letter-spacing: 0.15em;
+  letter-spacing: 0.05em;
+  text-align: center;
 }
 
 .ReactFlipCard {
-  margin: 25px;
+  margin: 5px;
   text-align: center;
 }
 
@@ -31,18 +32,14 @@
 .ReactFlipCard__Front,
 .ReactFlipCard__Back {
   box-sizing: border-box;
-  width: 217px;
-  height: 290px;
+  width: 230px;
+  height: 250px;
 }
 
-.ReactFlipCard__Front,
 .ReactFlipCard__Back {
   border: 1px solid #ccc;
 }
 
-.ReactFlipCard__Front {
-  background-color: #eee;
-}
 .ReactFlipCard__Back {
   background-color: black;
   color: white;

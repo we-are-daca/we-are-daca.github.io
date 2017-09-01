@@ -8,58 +8,71 @@ class App extends Component {
     this.state = {
       cards: [
         {
-          name: 'Brian',
+          name: 'Daniel',
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
-          country: 'Mexico'
+          country: 'Mexico',
+          image: '1.jpg'
         },
         {
-          name: 'J. Daniel Diaz',
+          name: 'Lesly',
+          occupation: 'Software Engineer',
+          timeSinceArrival: '10',
+          country: 'Mexico',
+          image: '3.jpg'
+        },
+        {
+          name: 'Daniel',
+          occupation: 'Student / Aspiring Software Engineer',
+          timeSinceArrival: '18',
+          country: 'Mexico',
+          image: '2.jpg'
+        },
+        {
+          name: 'Miriam',
           occupation: 'Software Engineer',
           timeSinceArrival: '11',
-          country: 'Mexico'
+          country: 'Mexico',
+          image: '4.png'
         },
         {
-          name: 'Edgar Sandoval',
-          occupation: 'Software Engineer',
-          timeSinceArrival: '25',
-          country: 'Mexico'
-        },
-        {
-          name: 'Random 1',
-          occupation: 'student',
-          timeSinceArrival: '100',
-          country: 'Parts  Unknown'
-        },
-        {
-          name: 'Random 2',
-          occupation: 'student',
-          timeSinceArrival: '100',
-          country: 'Parts  Unknown'
-        },
-        {
-          name: 'Random 2',
-          occupation: 'student',
-          timeSinceArrival: '100',
-          country: 'Parts  Unknown'
+          name: 'Miguel',
+          occupation: 'DevOps/Embedded Vision Engineer',
+          timeSinceArrival: '11',
+          country: 'Mexico',
+          image: '5.jpg'
         }
       ]
     };
   }
 
+  photoRow = ({ cardQuad }) => (
+    <div className="row">
+      {cardQuad.map((card, index) => (
+        <Card name={card.name} occupation={card.occupation}
+          timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image} />
+      ))
+      }
+    </div>
+  )
+
   render() {
+    const currentIndex = 0;
     return (
       <div className="App">
         <div className="App-header">
           <h1 className="App-title">WE ARE DACA</h1>
         </div>
-        <div style={{paddingLeft:'10%', paddingRight:'10%'}}>
+        <div className="container" style={{paddingLeft:'10%', paddingRight:'10%'}}>
           {
-            this.state.cards.map((card) => {
-              return (
-                <Card name={card.name} occupation={card.occupation}
-                      timeSinceArrival={card.timeSinceArrival} country={card.country} />
-              );
+            this.state.cards.reduce((acc, card, i) => {
+              if (i % 5 === 0) {
+                acc.push([]);
+              }
+              acc[acc.length - 1].push(card)
+              return acc;
+            }, []).map((quad, i) => {
+              return this.photoRow({ cardQuad: quad})
             })
           }
         </div>

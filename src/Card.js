@@ -6,20 +6,14 @@ import one from './img/1.jpg'
 class Card extends Component {
   constructor(){
       super();
-      this.state = {
-          name: '',
-          occupation: '',
-          timeSinceArrival: '',
-          country: ''
-      };
   }
 
   render() {
     return (
-      <div className="Card-content">
+      <div className="Card-content col">
         <FlipCard>
           <div>
-            <img className='Card-images' src={one} alt={this.props.name}/>
+            <img className='Card-images' src={require(`./img/${this.props.image}`)} alt={this.props.name}/>
           </div>
           <div>
             <p style={{ display: 'center', lineHeight: '100px', fontSize: 26 }}>{this.props.timeSinceArrival}</p>
