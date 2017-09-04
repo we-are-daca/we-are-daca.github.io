@@ -88,20 +88,6 @@ class App extends Component {
     };
   }
 
-  chunkForWindowSize() {
-    let chunkSize;
-    const windowSize = window.innerWidth;
-    if (windowSize >= 992) {
-      chunkSize = 4;
-    } else if (windowSize < 992 && windowSize >= 768) {
-      chunkSize = 2;
-    } else {
-      chunkSize = 1;
-    }
-    
-    return chunkSize;
-  }
-
   photoRow = ({ cardQuad }) => (
     <div className="row">
       {cardQuad.map((card, index) => (
@@ -122,10 +108,10 @@ class App extends Component {
               <a>WE ARE DACA</a>
             </li>
             <li className="col-6 col-sm-3 pull-sm-6 about-daca">
-              <a>About DACA</a>
+              <a className="text-xs-center">About DACA</a>
             </li>
             <li className="col-6 col-sm-3 about-site">
-              <a>About Site</a>
+              <a className="text-xs-center">About Site</a>
             </li>
            </ul> 
            <div className="row dacas">
