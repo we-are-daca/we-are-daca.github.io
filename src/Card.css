@@ -1,3 +1,12 @@
+@font-face {
+  font-family: Muli-Italic;
+  src: url('fonts/Muli-ExtraLightItalic.ttf')
+}
+
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-SemiBold.ttf')
+}
 
 .Card-images {
   height: 250px;
@@ -13,13 +22,13 @@
 
 .Card-content{
   box-sizing: border-box;
-  margin: 1rem;
+  padding-top: 20px;
 }
 
 .Card-title {
   font-size: 14px;
   font-family: 'OpenSans';
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   text-align: center;
 }
 
@@ -43,6 +52,7 @@
 .ReactFlipCard__Back {
   background-color: black;
   color: white;
+  font-family: 'OpenSans';
 }
 
 @keyframes Card-logo-spin {

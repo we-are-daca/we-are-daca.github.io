@@ -1,16 +1,12 @@
 import React, { Component } from 'react';
 import FlipCard from 'react-flipcard';
 import './Card.css';
-import one from './img/1.jpg'
 
 class Card extends Component {
-  constructor(){
-      super();
-  }
 
   render() {
     return (
-      <div className="Card-content col">
+      <div className="Card-content col-xs-6 col-sm-3 col-md-3">
         <FlipCard>
           <div>
             <img className='Card-images' src={require(`./img/${this.props.image}`)} alt={this.props.name}/>

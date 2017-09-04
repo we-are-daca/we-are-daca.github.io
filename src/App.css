@@ -10,7 +10,13 @@
 
 .App {
   text-align: center;
+  background-color: #FFFDF5;
 }
+
+.main {
+  padding: 50px 0;
+}
+
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;
@@ -18,10 +24,68 @@
 }
 
 .App-header {
-  background-color: #222;
   height: 60px;
   padding: 15px;
-  color: white;
+  padding-bottom: 60px;
+}
+
+.App-header a {
+  color: #203367;
+  text-transform: uppercase;
+}
+
+.App-header a:hover {
+  text-decoration: none;
+}
+
+.site-navigation {
+  margin: 0 0 20px 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.site-navigation li {
+  list-style: none;
+}
+
+.site-navigation li a {
+  display: inline-block;
+}
+
+.logo {
+  font-size: 36px;
+}
+
+.about-daca {
+  margin: 15px 0;
+  text-align: left;
+  font-family: 'OpenSans';
+  text-transform: uppercase;
+}
+
+.about-site {
+  margin: 15px 0;
+  text-align: right;
+  font-family: 'OpenSans';
+  text-transform: uppercase;
+}
+
+@media (max-width: 768px) {
+  .about-daca {
+    text-align: right;
+    margin: 25px 0 0 0;
+  }
+
+  .about-site {
+    text-align: left;
+    margin: 25px 0 0 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding: 25px 15px;
+  }
 }
 
 .App-title {
