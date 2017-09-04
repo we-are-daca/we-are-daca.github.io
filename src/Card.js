@@ -6,7 +6,7 @@ class Card extends Component {
 
   render() {
     return (
-      <div className="Card-content col-xs-6 col-sm-3 col-md-3">
+      <div className="Card-content col-6 col-sm-3 col-md-3">
         <FlipCard>
           <div>
             <img className='Card-images' src={require(`./img/${this.props.image}`)} alt={this.props.name}/>

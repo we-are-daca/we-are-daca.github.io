@@ -10,7 +10,8 @@
 
 .Card-images {
   height: 250px;
-  max-width: 230px;
+  max-width: 190px;
+  width: 100%;
 }
 
 .Card-name{
@@ -41,7 +42,8 @@
 .ReactFlipCard__Front,
 .ReactFlipCard__Back {
   box-sizing: border-box;
-  width: 230px;
+  max-width: 100%;
+  width: 100%;
   height: 250px;
 }
 

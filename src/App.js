@@ -113,6 +113,7 @@ class App extends Component {
   )
 
   render() {
+    let cards;
     return (
       <div className="App">
         <div className="container main" style={{paddingLeft:'5%', paddingRight:'5%', overflowY: 'scroll'}}>
@@ -127,17 +128,12 @@ class App extends Component {
               <a>About Site</a>
             </li>
            </ul> 
-           <div className="dacas">
+           <div className="row dacas">
           {
-            this.state.cards.reduce((acc, card, i) => {
-              if (i % 4 === 0) {
-                acc.push([]);
-              }
-              acc[acc.length - 1].push(card)
-              return acc;
-            }, []).map((quad, i) => {
-              return this.photoRow({ cardQuad: quad})
-            })
+            this.state.cards.map((card, i) => (
+              <Card name={card.name} occupation={card.occupation} key={i}
+              timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image} /> 
+            ))
           }
           </div>
         </div>
