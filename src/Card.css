@@ -3,9 +3,19 @@
   src: url('fonts/Muli-ExtraLightItalic.ttf')
 }
 
+@font-face{
+  font-family: OpenSansRegular;
+  src: url('fonts/OpenSans-Regular.ttf');
+}
+
 @font-face {
   font-family: OpenSans;
-  src: url('fonts/OpenSans-SemiBold.ttf')
+  src: url('fonts/OpenSans-SemiBold.ttf');
+}
+
+@font-face{
+  font-family: EncodeSans;
+  src: url('fonts/EncodeSansSemiCondensed-SemiBold.ttf');
 }
 
 .Card-images {
@@ -16,8 +26,7 @@
 
 .Card-name{
   font-size: 18px;
-  font-family: 'Muli-Italic', sans-serif;
-  margin-top: 5px;
+  font-family: 'OpenSansRegular';
   margin-bottom: 0px;
 }
 
@@ -28,9 +37,24 @@
 
 .Card-title {
   font-size: 14px;
-  font-family: 'OpenSans';
+  font-family: 'EncodeSans';
   letter-spacing: 0.03em;
   text-align: center;
+}
+
+.timearrival {
+  font-size: 26px;
+}
+
+@media (max-width: 768px) {
+  .timearrival {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  .Card-title {
+    display: none;
+  }
 }
 
 .ReactFlipCard {

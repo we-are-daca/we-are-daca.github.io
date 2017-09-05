@@ -12,8 +12,10 @@ class Card extends Component {
             <img className='Card-images' src={require(`./img/${this.props.image}`)} alt={this.props.name}/>
           </div>
           <div>
-            <p style={{ display: 'center', lineHeight: '100px', fontSize: 26 }}>{this.props.timeSinceArrival}</p>
-            <p>{this.props.country}</p>
+            <p className="timearrival" style={{ display: 'center', lineHeight: '100px'}}>
+              {`${this.props.timeSinceArrival} years in U.S.`}
+              </p>
+            <p>{`Born in ${this.props.country}`}</p>
           </div>
         </FlipCard>
         <div className="Card-name">{this.props.name}</div>

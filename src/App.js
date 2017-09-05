@@ -99,7 +99,6 @@ class App extends Component {
   )
 
   render() {
-    let cards;
     return (
       <div className="App">
         <div className="container main" style={{paddingLeft:'5%', paddingRight:'5%', overflowY: 'scroll'}}>
