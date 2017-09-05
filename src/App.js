@@ -83,6 +83,13 @@ class App extends Component {
           timeSinceArrival: '15',
           country: 'Mexico',
           image:'11.png'
+        },
+        {
+          name: 'Yarely',
+          occupation: 'Software Developer',
+          timeSinceArrival: '18',
+          country: 'Mexico',
+          image: '12.png'
         }
       ]
     };
