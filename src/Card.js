@@ -9,7 +9,7 @@ class Card extends Component {
       <div className="Card-content col-6 col-sm-3 col-md-3">
         <FlipCard>
           <div>
-            <img className='Card-images' src={require(`./img/${this.props.image}`)} alt={this.props.name}/>
+            <img className='Card-images' src={`https://dwistynbcri9g.cloudfront.net/${this.props.image}`} alt={this.props.name}/>
           </div>
           <div>
             <p className="timearrival" style={{ display: 'center', lineHeight: '100px'}}>
