@@ -11,7 +11,7 @@ class Card extends Component {
           <img className='Card-images' src={`https://dwistynbcri9g.cloudfront.net/${this.props.image}`} alt={this.props.name}/> 
           <div className="overlay">
             <p className="timearrival" >
-              {`Read My Journey`}
+              {`My Journey`}
             </p>
           </div>
         </div>
