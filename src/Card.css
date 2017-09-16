@@ -67,6 +67,7 @@ overflow:hidden;
 position:relative;
 text-align:center;
 cursor:default;
+margin-bottom: 10px;
 }
 
 .hovereffect .overlay {
