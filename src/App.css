@@ -117,18 +117,16 @@
 @media (max-width: 768px) {
   .about-daca {
     text-align: right;
-    margin: 25px 0 0 0;
   }
 
   .about-site {
     text-align: left;
-    margin: 25px 0 0 0;
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 576px) {
   .main {
-    padding: 25px 15px;
+    padding: 25px 0 0 0;
   }
 }
 

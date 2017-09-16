@@ -115,9 +115,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <div className="container main" style={{paddingLeft:'5%', paddingRight:'5%'}}>
+        <div className="container main">
            <ul className="row site-navigation">
-            <li className="col-12 col-sm-6 push-sm-3 logo">
+            <li className="col-12 col-sm-12 push-sm-3 logo">
               <a>WE ARE DACA</a>
             </li>
             <li className="col-6 col-sm-3 pull-sm-6 about-daca">
