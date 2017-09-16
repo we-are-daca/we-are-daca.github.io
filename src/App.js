@@ -12,28 +12,28 @@ class App extends Component {
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
           country: 'Mexico',
-          image: '1.jpg'
+          image: 'daniel_one.jpg'
         },
         {
           name: 'Lesly',
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
           country: 'Mexico',
-          image: '3.jpg'
+          image: 'lesly.jpg'
         },
         {
           name: 'Daniel',
           occupation: 'Student / Aspiring Software Engineer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: '2.jpg'
+          image: 'daniel_two.jpg'
         },
         {
           name: 'Miriam',
           occupation: 'Software Engineer',
           timeSinceArrival: '11',
           country: 'Mexico',
-          image: '4.png'
+          image: 'miriam.png'
         },
         {
           name: 'Miguel',
@@ -47,21 +47,21 @@ class App extends Component {
           occupation: 'Investor, Entrepreneur, Warehouse Worker',
           timeSinceArrival: '15',
           country: 'Mexico',
-          image: '6.png'
+          image: 'test.jpg'
         },
         {
           name: 'Nayeli',
           occupation: 'Lab Technician',
           timeSinceArrival: '20',
           country: 'Mexico',
-          image: '7.png'
+          image: 'nayeli.png'
         },
         {
           name: 'Cecilia',
           occupation: 'HRA Analyst',
           timeSinceArrival: '19',
           country: 'Mexico',
-          image: '8.jpg'
+          image: 'cecilia.png'
         },
         {
           name: 'Xochitl',
@@ -75,7 +75,7 @@ class App extends Component {
           occupation: 'Computer Science Student',
           timeSinceArrival: '13',
           country: 'Mexico',
-          image: '10.jpg'
+          image: 'miguel.png'
         },
         {
           name: 'Irais',
@@ -89,7 +89,14 @@ class App extends Component {
           occupation: 'Software Developer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: '12.png'
+          image: 'yareli.png'
+        },
+        {
+          name: 'Aylin',
+          occupation: 'Student / Kinesiology Major',
+          timeSinceArrival: '21',
+          country: 'Mexico',
+          image: 'aylin.png'
         }
       ]
     };
