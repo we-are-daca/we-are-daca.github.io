@@ -25,6 +25,7 @@
 }
 
 .Card-name{
+  max-width: 200px;
   font-size: 18px;
   font-family: 'OpenSansRegular';
   margin-bottom: 0px;
@@ -36,6 +37,7 @@
 }
 
 .Card-title {
+  max-width: 200px;
   font-size: 14px;
   font-family: 'EncodeSans';
   letter-spacing: 0.03em;
