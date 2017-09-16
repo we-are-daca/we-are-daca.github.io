@@ -124,9 +124,10 @@ class App extends Component {
               <a className="text-xs-center">About DACA</a>
             </li>
             <li className="col-6 col-sm-3 about-site">
-              <a className="text-xs-center">About Site</a>
+              <a className="text-xs-center">How to help</a>
             </li>
            </ul> 
+
            <div className="row dacas">
           {
             this.state.cards.map((card, i) => (
