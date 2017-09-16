@@ -18,6 +18,11 @@
   src: url('fonts/EncodeSansSemiCondensed-SemiBold.ttf');
 }
 
+.innercardcontent{
+  display: table;
+  margin: auto;
+}
+
 .Card-images {
   height: 200px;
   max-width: 200px;
@@ -34,6 +39,7 @@
 .Card-content{
   box-sizing: border-box;
   padding-top: 20px;
+  padding-top: 5px;
 }
 
 .Card-title {
@@ -46,6 +52,12 @@
 
 .timearrival {
   font-size: 22px;
+}
+
+@media (max-width: 576px) {
+  .innercardcontent {
+    margin-bottom: 20px
+  }
 }
 
 @media (max-width: 768px) {
