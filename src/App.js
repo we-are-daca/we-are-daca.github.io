@@ -117,14 +117,14 @@ class App extends Component {
       <div className="App">
         <div className="container main">
            <ul className="row site-navigation">
-            <li className="col-12 col-sm-12 push-sm-3 logo">
-              <a>WE ARE DACA</a>
+            <li className="col-12 col-sm-6 push-sm-3 logo">
+              <a>DACAMENTED</a>
             </li>
-            <li className="col-6 col-sm-3 pull-sm-6 about-daca">
-              <a className="text-xs-center">About DACA</a>
+            <li className="col-6 col-sm-3 pull-sm-3 about-daca">
+              <a className="">About DACA</a>
             </li>
-            <li className="col-6 col-sm-3 about-site">
-              <a className="text-xs-center">How to help</a>
+            <li className="col-6 col-sm-3 pull-sm-3 about-site">
+              <a className="">How to help</a>
             </li>
            </ul> 
 

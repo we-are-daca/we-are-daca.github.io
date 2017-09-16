@@ -14,7 +14,7 @@
 }
 
 .main {
-  padding: 25px 0;
+  padding: 1px 0;
 }
 
 
@@ -39,7 +39,7 @@
 }
 
 .site-navigation {
-  margin: 0 0 20px 0;
+  margin: 28px 0 50px 0;
   padding: 0;
   overflow: hidden;
 
@@ -89,7 +89,7 @@
 }
 
 .logo {
-  font-size: 50px;
+  font-size: 36px;
 }
 
 .about-daca {
@@ -100,7 +100,8 @@
 }
 
 .about-daca a {
-  font-size: 14px
+  font-size: 14px;
+  padding-right: 18px;
 }
 
 .about-site {
@@ -111,23 +112,27 @@
 }
 
 .about-site a {
-  font-size: 14px
+  font-size: 14px;
+  padding-left: 18px;
 }
 
 @media (max-width: 768px) {
   .about-daca {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
     text-align: right;
   }
 
   .about-site {
+    padding-left: 2px !important;
+    padding-right: 2px !important;
     text-align: left;
   }
-}
 
-@media (max-width: 576px) {
-  .main {
-    padding: 25px 0 0 0;
+  .site-navigation {
+    margin: 24px 0 28px 0
   }
+
 }
 
 .App-title {

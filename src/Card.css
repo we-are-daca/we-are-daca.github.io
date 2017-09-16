@@ -62,6 +62,11 @@
   .timearrival {
     font-size: 20px;
   }
+  
+  .Card-content {
+    padding-left: 0px !important;
+    padding-right: 2px !important;
+  }
 }
 @media (max-width: 500px) {
   .Card-title {
@@ -70,6 +75,7 @@
 }
 
 .hovereffect {
+  background-color: black;
 width: 200px;
 height: 200px;
 float:left;
