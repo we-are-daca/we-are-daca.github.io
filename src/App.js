@@ -129,19 +129,23 @@ class App extends Component {
       numLoaded: oneMore
     };
 
-    if (oneMore + 1 === this.state.cards.length) {
+    console.log(oneMore);
+    console.log('length: ' + this.state.cards.length);
+    if (oneMore === this.state.cards.length) {
+      console.log('here');
       params.show = false;
     }
+    console.log(params);  
     this.setState(params);
-    console.log(oneMore);
   }
 
   render() {
     return (
       <div className="App" style={{ overflowX: 'hidden' }}>
         <Loading
-          color={'black'}
+          color={'blue'}
           show={this.state.show}
+          showSpinner={false}
         />
         <div className="container main">
            <ul className="row site-navigation">
