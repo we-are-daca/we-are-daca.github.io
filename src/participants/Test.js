@@ -1,8 +1,14 @@
 import React from 'react';
+import Info from '../common/Info';
 
 const Test = () => (
     <div>
-        <p>hewfwe</p>
+        <Info
+            years={10}
+            occupation={'Engineer'}
+            country={'Mexico'}
+            date={'March 15, 2018'}
+        />
     </div>
 );
 
