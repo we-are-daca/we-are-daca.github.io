@@ -138,7 +138,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="App" style={{ overflowX: 'hidden' }}>
         <Loading
           color={'black'}
           show={this.state.show}

@@ -13,6 +13,11 @@
   src: url('fonts/OpenSans-SemiBold.ttf')
 }
 
+.html {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 .App {
   text-align: center;
   background-color: #FFFDF5;
@@ -47,7 +52,7 @@
   margin: 28px 0 50px 0;
   padding: 0;
   overflow: hidden;
-
+  max-width: 100%;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
        -moz-animation: fadein 5s; /* Firefox < 16 */
         -ms-animation: fadein 5s; /* Internet Explorer */
@@ -120,6 +125,20 @@
 .about-site a {
   font-size: 18px;
   padding-left: 10px;
+}
+
+@media (max-width: 640px) {
+  .logo {
+    font-size: 28px;
+  }
+
+  .about-daca a {
+    font-size: 14px;
+  }
+
+  .about-site a {
+    font-size: 14px;
+  }
 }
 
 @media (max-width: 768px) {
