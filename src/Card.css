@@ -3,6 +3,11 @@
   src: url('fonts/Muli-ExtraLightItalic.ttf')
 }
 
+@font-face {
+  font-family: BreeSerif;
+  src: url('fonts/BreeSerif-Regular.ttf')
+}
+
 @font-face{
   font-family: OpenSansRegular;
   src: url('fonts/OpenSans-Regular.ttf');
@@ -32,7 +37,7 @@
 .Card-name{
   max-width: 200px;
   font-size: 18px;
-  font-family: 'OpenSansRegular';
+  font-family: BreeSerif;
   margin-bottom: 0px;
 }
 
@@ -43,13 +48,14 @@
 .Card-title {
   max-width: 200px;
   font-size: 14px;
-  font-family: 'EncodeSans';
+  font-family: OpenSans;
   letter-spacing: 0.03em;
   text-align: center;
 }
 
 .timearrival {
   font-size: 22px;
+  font-family: BreeSerif;
 }
 
 @media (max-width: 576px) {
@@ -65,7 +71,6 @@
   
   .Card-content {
     padding-left: 0px !important;
-    padding-right: 2px !important;
   }
 }
 @media (max-width: 500px) {

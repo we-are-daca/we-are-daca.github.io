@@ -4,6 +4,11 @@
 }
 
 @font-face {
+  font-family: BreeSerif;
+  src: url('fonts/BreeSerif-Regular.ttf')
+}
+
+@font-face {
   font-family: OpenSans;
   src: url('fonts/OpenSans-SemiBold.ttf')
 }
@@ -90,6 +95,7 @@
 
 .logo {
   font-size: 36px;
+  font-family: BreeSerif;
 }
 
 .about-daca {
@@ -100,8 +106,8 @@
 }
 
 .about-daca a {
-  font-size: 14px;
-  padding-right: 18px;
+  font-size: 18px;
+  padding-right: 10px;
 }
 
 .about-site {
@@ -112,8 +118,8 @@
 }
 
 .about-site a {
-  font-size: 14px;
-  padding-left: 18px;
+  font-size: 18px;
+  padding-left: 10px;
 }
 
 @media (max-width: 768px) {
@@ -123,14 +129,26 @@
     text-align: right;
   }
 
+  .about-daca a {
+    padding-right: 20px;
+  }
+
   .about-site {
     padding-left: 2px !important;
     padding-right: 2px !important;
     text-align: left;
   }
 
+  .about-site a {
+    padding-left: 0px;
+  }
+
   .site-navigation {
     margin: 24px 0 28px 0
+  }
+
+  .logo {
+    padding-left: 0px !important;
   }
 
 }
