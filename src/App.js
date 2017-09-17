@@ -51,7 +51,7 @@ class App extends Component {
           occupation: 'Investor, Entrepreneur, Warehouse Worker',
           timeSinceArrival: '15',
           country: 'Mexico',
-          image: 'test.jpg'
+          image: 'elvin.png'
         },
         {
           name: 'Nayeli',
