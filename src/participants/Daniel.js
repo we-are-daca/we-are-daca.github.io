@@ -12,7 +12,7 @@ class Daniel1 extends React.Component {
           show: false,
           name: 'Daniel',
           occupation: 'Software Engineer',
-          timeSinceArrival: '10',
+          timeSinceArrival: '13',
           country: 'Mexico',
           image: '1-1-journey.png'
         }
