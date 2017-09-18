@@ -16,91 +16,104 @@ class App extends Component {
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
           country: 'Mexico',
-          image: 'daniel_one.jpg'
+          image: 'daniel_one.jpg',
+          link: '/a1db8f2ca088/daniel-journey'
         },
         {
           name: 'Lesly',
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
           country: 'Mexico',
-          image: 'lesly.jpg'
+          image: 'lesly.jpg',
+          link: ''
         },
         {
           name: 'Daniel',
           occupation: 'Student / Aspiring Software Engineer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'daniel_two.jpg'
+          image: 'daniel_two.jpg',
+          link: ''
         },
         {
           name: 'Miriam',
           occupation: 'Software Engineer',
           timeSinceArrival: '11',
           country: 'Mexico',
-          image: 'miriam.png'
+          image: 'miriam.png',
+          link: ''
         },
         {
           name: 'Miguel',
           occupation: 'DevOps/Embedded Vision Engineer',
           timeSinceArrival: '11',
           country: 'Mexico',
-          image: '5.jpg'
+          image: '5.jpg',
+          link: ''
         },
         {
           name: 'Elvin',
           occupation: 'Investor, Entrepreneur, Warehouse Worker',
           timeSinceArrival: '15',
           country: 'Mexico',
-          image: 'elvin.png'
+          image: 'elvin.png',
+          link: ''
         },
         {
           name: 'Nayeli',
           occupation: 'Lab Technician',
           timeSinceArrival: '20',
           country: 'Mexico',
-          image: 'nayeli.png'
+          image: 'nayeli.png',
+          link: ''
         },
         {
           name: 'Cecilia',
           occupation: 'HRA Analyst',
           timeSinceArrival: '19',
           country: 'Mexico',
-          image: 'cecilia.png'
+          image: 'cecilia.png',
+          link: ''
         },
         {
           name: 'Xochitl',
           occupation: 'Behavioral Specialist',
           timeSinceArrival: '19',
           country: 'Mexico',
-          image: '9.png'
+          image: '9.png',
+          link: ''
         },
         {
           name: 'Miguel',
           occupation: 'Computer Science Student',
           timeSinceArrival: '13',
           country: 'Mexico',
-          image: 'miguel.png'
+          image: 'miguel.png',
+          link: ''
         },
         {
           name: 'Irais',
           occupation: 'Student',
           timeSinceArrival: '15',
           country: 'Mexico',
-          image:'11.png'
+          image:'11.png',
+          link: ''
         },
         {
           name: 'Yarely',
           occupation: 'Software Developer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'yareli.png'
+          image: 'yareli.png',
+          link: ''
         },
         {
           name: 'Aylin',
           occupation: 'Student / Kinesiology Major',
           timeSinceArrival: '21',
           country: 'Mexico',
-          image: 'aylin.png'
+          image: 'aylin.png',
+          link: ''
         }
       ]
     };
@@ -164,7 +177,9 @@ class App extends Component {
           {
             this.state.cards.map((card, i) => (
               <Card name={card.name} occupation={card.occupation} key={i} imageLoaded={this.imageLoaded}
-              timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image} /> 
+              timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image}
+              link={card.link} 
+              /> 
             ))
           }
           </div>

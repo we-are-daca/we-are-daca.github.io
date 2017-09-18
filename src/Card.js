@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import './Card.css';
 
 class Card extends Component {
@@ -13,7 +14,9 @@ class Card extends Component {
           /> 
           <div className="overlay">
             <p className="timearrival" >
-              {`My Journey`}
+              <Link to={this.props.link}>
+                {'My Journey'}
+              </Link>
             </p>
           </div>
         </div>

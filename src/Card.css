@@ -58,6 +58,10 @@
   font-family: BreeSerif;
 }
 
+.timearrival a {
+  color: white;
+}
+
 @media (max-width: 576px) {
   .innercardcontent {
     margin-bottom: 20px
