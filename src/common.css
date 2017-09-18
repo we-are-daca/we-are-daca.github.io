@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: OpenSans;
-  src: url('fonts/OpenSans-SemiBold.ttf')
+  src: url('fonts/OpenSans-Regular.ttf')
 }
 
 body {
@@ -28,6 +28,28 @@ body {
 
 .dacamentor-border {
     border-bottom: 3px solid #123350;
+}
+
+.dacamentor-endborder-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.dacamentor-endborder {
+    border-bottom: 1px solid #123350;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.dacamentor-interview p b {
+    font-family: BreeSerif;
+    letter-spacing: 0.05em;
+    text-align: left;
+}
+
+.dacamentor-response {
+    font-family: OpenSans;
 }
 
 .info li {

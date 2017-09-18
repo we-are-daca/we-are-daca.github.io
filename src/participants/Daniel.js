@@ -58,6 +58,25 @@ class Daniel1 extends React.Component {
                         />
                     </div>
                 </div>
+                <div className="row">
+                    <div className="col-md-12 dacamentor-endborder-container">
+                        <div className="dacamentor-endborder"></div>
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12 dacamentor-interview">
+                    <p>
+                        <b>
+                            {'Tell me a bit about your early years and where you come from.'}
+                        </b>
+                    </p>
+                    <p>
+                      <span className="dacamentor-response">
+                        {'eofinwoinfowaenf;ow weofnawe;ofn;iowefn;owe ;oefnoawenfo;iwen'}
+                      </span>
+                    </p>
+                    </div>
+                </div>
             </div>
             </div>
         )
