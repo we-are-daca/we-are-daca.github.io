@@ -9,7 +9,7 @@ const Info = (props) => (
     <div className="col-md-12">
         <li className="info-years">
             <p>
-                {'years in us'}
+                {'years in united states'}
                 <span className="icon">
                     <ClockO />
                 </span>

@@ -38,6 +38,16 @@ class Daniel1 extends React.Component {
                         /> 
                     </div>
                 </div>
+                <div className="row">
+                    <div className="dacamentor-name col-md-12">
+                        {'Daniel\'s Journey'}
+                    </div>
+                </div>
+                <div className="row">
+                    <div className="col-md-12 dacamentor-border-container">
+                        <div className="dacamentor-border"></div>
+                    </div>
+                </div>
                 <div className="row info">
                     <div className="info-container">
                         <Info

@@ -3,8 +3,31 @@
   src: url('fonts/BreeSerif-Regular.ttf')
 }
 
+@font-face {
+  font-family: OpenSans;
+  src: url('fonts/OpenSans-SemiBold.ttf')
+}
+
 body {
     background-color: #FFFDF5;
+}
+
+.dacamentor-name {
+    font-size: 50px;
+    letter-spacing: 0.10em;
+    font-family: BreeSerif;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.dacamentor-border-container {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 600px;
+}
+
+.dacamentor-border {
+    border-bottom: 3px solid #123350;
 }
 
 .info li {
@@ -33,7 +56,7 @@ body {
     font-size: 16px;
     opacity: 0.5;
     text-transform: uppercase;
-    font-family: BreeSerif;
+    font-family: OpenSans;
 }
 
 .info-text {
