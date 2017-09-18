@@ -1,4 +1,5 @@
 import React from 'react';
+import Info from '../common/Info';
 import '../App.css';
 
 class Daniel1 extends React.Component {
@@ -35,6 +36,16 @@ class Daniel1 extends React.Component {
                         <img src={`https://dwistynbcri9g.cloudfront.net/${this.state.image}`} alt={this.state.name}
                             onLoad={this.props.imageLoaded} 
                         /> 
+                    </div>
+                </div>
+                <div className="row info">
+                    <div className="info-container">
+                        <Info
+                            years={this.state.timeSinceArrival}
+                            date={'Aug 15, 2017'}
+                            occupation={this.state.occupation}
+                            country={this.state.country}
+                        />
                     </div>
                 </div>
             </div>

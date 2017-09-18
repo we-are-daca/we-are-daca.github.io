@@ -185,6 +185,12 @@
   margin: 0 auto;
 }
 
+.info-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 600px;
+}
+
 .App-title {
   font-size: 44px;
   margin: auto;

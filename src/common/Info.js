@@ -3,6 +3,7 @@ import Calendar from 'react-icons/lib/fa/calendar-o';
 import Flag from 'react-icons/lib/fa/flag-o';
 import ClockO from 'react-icons/lib/fa/clock-o';
 import Suitcase from 'react-icons/lib/fa/suitcase';
+import '../common.css';
 
 const Info = (props) => (
     <div className="col-md-12">
@@ -13,7 +14,7 @@ const Info = (props) => (
                     <ClockO />
                 </span>
             </p>
-            <p className="text">{props.years}</p>
+            <p className="info-text">{props.years}</p>
         </li>
         <li className="info-occupation">
             <p>
@@ -22,7 +23,7 @@ const Info = (props) => (
                     <Suitcase />
                 </span>
             </p>
-            <p className="text">{props.occupation}</p>
+            <p className="info-text">{props.occupation}</p>
         </li>
         <li className="info-country">
             <p>
@@ -31,7 +32,7 @@ const Info = (props) => (
                     <Flag />
                 </span>
             </p>
-            <p className="text">{props.country}</p>
+            <p className="info-text">{props.country}</p>
         </li>
         <li className="info-data">
             <p>
@@ -40,7 +41,7 @@ const Info = (props) => (
                     <Calendar />
                 </span>
             </p>
-            <p className="text">{props.date}</p>
+            <p className="info-text">{props.date}</p>
         </li>
     </div>
 );

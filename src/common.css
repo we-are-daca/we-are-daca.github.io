@@ -9,11 +9,19 @@ body {
 
 .info li {
     list-style: none;
+    display: block;
 }
 
 .info-years, .info-occupation, .info-country {
-    border-bottom: 1px solid #123350;
-    padding-bottom: 10px;
+    text-align: left;
+}
+
+.info-data {
+    text-align: left;
+}
+
+.info-years {
+    padding-top: 10px;
 }
 
 .icon {
@@ -22,12 +30,12 @@ body {
 
 .info li p {
     display: inline-block;
-    font-size: 12px;
+    font-size: 16px;
     opacity: 0.5;
     text-transform: uppercase;
     font-family: BreeSerif;
 }
 
-.info .text {
+.info-text {
     float: right;
 }
