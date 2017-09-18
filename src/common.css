@@ -1,0 +1,33 @@
+@font-face {
+  font-family: BreeSerif;
+  src: url('fonts/BreeSerif-Regular.ttf')
+}
+
+body {
+    background-color: #FFFDF5;
+}
+
+.info li {
+    list-style: none;
+}
+
+.info-years, .info-occupation, .info-country {
+    border-bottom: 1px solid #123350;
+    padding-bottom: 10px;
+}
+
+.icon {
+    padding-left: 10px;
+}
+
+.info li p {
+    display: inline-block;
+    font-size: 12px;
+    opacity: 0.5;
+    text-transform: uppercase;
+    font-family: BreeSerif;
+}
+
+.info .text {
+    float: right;
+}

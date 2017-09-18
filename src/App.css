@@ -172,6 +172,16 @@
 
 }
 
+.participant {
+  text-align: center;
+}
+
+.portrait img{
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
 .App-title {
   font-size: 44px;
   margin: auto;

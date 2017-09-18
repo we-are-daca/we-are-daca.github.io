@@ -6,33 +6,41 @@ import Suitcase from 'react-icons/lib/fa/suitcase';
 
 const Info = (props) => (
     <div className="col-md-6">
-        <li>
+        <li className="info-years">
             <p>
-                {'YEARS IN US '}
-                <ClockO />
+                {'years in us'}
+                <span className="icon">
+                    <ClockO />
+                </span>
             </p>
-            <p>{props.years}</p>
+            <p className="text">{props.years}</p>
         </li>
-        <li>
+        <li className="info-occupation">
             <p>
-                {'OCCUPATION'}
-                <Suitcase />
+                {'occupation'}
+                <span className="icon">
+                    <Suitcase />
+                </span>
             </p>
-            <p>{props.occupation}</p>
+            <p className="text">{props.occupation}</p>
         </li>
-        <li>
+        <li className="info-country">
             <p>
                 {'Country of Origin'}
-                <Flag />
+                <span className="icon">
+                    <Flag />
+                </span>
             </p>
-            <p>{props.country}</p>
+            <p className="text">{props.country}</p>
         </li>
-        <li>
+        <li className="info-data">
             <p>
                 {'Interview Date'}
-                <Calendar />
+                <span className="icon">
+                    <Calendar />
+                </span>
             </p>
-            <p>{props.date}</p>
+            <p className="text">{props.date}</p>
         </li>
     </div>
 );
