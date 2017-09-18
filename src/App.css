@@ -170,6 +170,10 @@
     padding-left: 0px !important;
   }
 
+  .portrait img{
+    width: 100%;
+  }
+
 }
 
 .participant {
@@ -178,7 +182,6 @@
 
 .portrait img{
   display: block;
-  width: 100%;
   margin: 0 auto;
 }
 

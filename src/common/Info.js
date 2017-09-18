@@ -5,7 +5,7 @@ import ClockO from 'react-icons/lib/fa/clock-o';
 import Suitcase from 'react-icons/lib/fa/suitcase';
 
 const Info = (props) => (
-    <div className="col-md-6">
+    <div className="col-md-12">
         <li className="info-years">
             <p>
                 {'years in us'}
