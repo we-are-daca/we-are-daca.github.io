@@ -142,13 +142,10 @@ class App extends Component {
       numLoaded: oneMore
     };
 
-    console.log(oneMore);
-    console.log('length: ' + this.state.cards.length);
     if (oneMore === this.state.cards.length) {
       console.log('here');
       params.show = false;
     }
-    console.log(params);  
     this.setState(params);
   }
 
