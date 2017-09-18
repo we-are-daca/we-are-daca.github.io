@@ -233,18 +233,6 @@ class Lesly extends React.Component {
                     <div className="col-md-12 dacamentor-interview">
                         <p>
                             <b>
-                                {'It’s nice to have family here. There’s some dreamers out there that only have themselves or their immediate family here. And for a lot of us, this has become home. Our roots are here.'}
-                            </b>
-                        </p>
-                        <p>
-                        <span className="dacamentor-response">
-                            {'Yeah. '}
-                        </span>
-                        </p>
-                    </div>
-                    <div className="col-md-12 dacamentor-interview">
-                        <p>
-                            <b>
                                 {'You mentioned you honed in on computer science for your undergrad. How was your college experience?'}
                             </b>
                         </p>
