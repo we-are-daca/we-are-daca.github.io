@@ -9,37 +9,37 @@ const Info = (props) => (
     <div className="col-md-12">
         <li className="info-years">
             <p>
-                {'years in united states'}
                 <span className="icon">
                     <ClockO />
                 </span>
+                {'years in united states'}
             </p>
             <p className="info-text">{props.years}</p>
         </li>
         <li className="info-occupation">
             <p>
-                {'occupation'}
                 <span className="icon">
                     <Suitcase />
                 </span>
+                {'occupation'}
             </p>
             <p className="info-text">{props.occupation}</p>
         </li>
         <li className="info-country">
             <p>
-                {'Country of Origin'}
                 <span className="icon">
                     <Flag />
                 </span>
+                {'Country of Origin'}
             </p>
             <p className="info-text">{props.country}</p>
         </li>
         <li className="info-data">
             <p>
-                {'Interview Date'}
                 <span className="icon">
                     <Calendar />
                 </span>
+                {'Interview Date'}
             </p>
             <p className="info-text">{props.date}</p>
         </li>
