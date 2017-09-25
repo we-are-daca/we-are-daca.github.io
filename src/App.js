@@ -60,6 +60,14 @@ class App extends Component {
           link: ''
         },
         {
+          name: 'Xochitl',
+          occupation: 'Behavioral Specialist',
+          timeSinceArrival: '19',
+          country: 'Mexico',
+          image: 'xochitl_d.png',
+          link: ''
+        },
+        {
           name: 'Nayeli',
           occupation: 'Lab Technician',
           timeSinceArrival: '20',
@@ -73,14 +81,6 @@ class App extends Component {
           timeSinceArrival: '19',
           country: 'Mexico',
           image: 'cecilia.png',
-          link: ''
-        },
-        {
-          name: 'Xochitl',
-          occupation: 'Behavioral Specialist',
-          timeSinceArrival: '19',
-          country: 'Mexico',
-          image: '9.png',
           link: ''
         },
         {
