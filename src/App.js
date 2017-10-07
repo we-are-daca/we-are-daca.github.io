@@ -35,11 +35,19 @@ class App extends Component {
           link: '/a1db8f2ca088/daniel-journey'
         },
         {
+          name: 'Xochitl',
+          occupation: 'Behavioral Specialist',
+          timeSinceArrival: '19',
+          country: 'Mexico',
+          image: 'xochitl_d.png',
+          link: ''
+        },
+        {
           name: 'Lesly',
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
           country: 'Mexico',
-          image: 'lesly.jpg',
+          image: 'lesly_10.jpg',
           link: '/aa9574739f97/lesly-journey'
         },
         {
@@ -63,7 +71,7 @@ class App extends Component {
           occupation: 'Software Engineer',
           timeSinceArrival: '11',
           country: 'Mexico',
-          image: 'miriam.png',
+          image: 'miriam_1.png',
           link: ''
         },
         {
@@ -71,7 +79,15 @@ class App extends Component {
           occupation: 'DevOps/Embedded Vision Engineer',
           timeSinceArrival: '11',
           country: 'Mexico',
-          image: '5.jpg',
+          image: 'miguel_1.png',
+          link: ''
+        },
+        {
+          name: 'Araceli',
+          occupation: 'Software Engineer',
+          timeSinceArrival: '15',
+          country: 'Mexico',
+          image: 'araceli.png',
           link: ''
         },
         {
@@ -83,19 +99,11 @@ class App extends Component {
           link: ''
         },
         {
-          name: 'Xochitl',
-          occupation: 'Behavioral Specialist',
-          timeSinceArrival: '19',
-          country: 'Mexico',
-          image: 'xochitl_d.png',
-          link: ''
-        },
-        {
           name: 'Nayeli',
           occupation: 'Lab Technician',
           timeSinceArrival: '20',
           country: 'Mexico',
-          image: 'nayeli.png',
+          image: 'nayeli_1.png',
           link: ''
         },
         {
@@ -127,7 +135,7 @@ class App extends Component {
           occupation: 'Software Developer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'yareli.png',
+          image: 'yareli_5.png',
           link: ''
         },
         {
