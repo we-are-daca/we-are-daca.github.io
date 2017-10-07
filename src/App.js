@@ -12,11 +12,26 @@ class App extends Component {
       numLoaded: 0,
       cards: [
         {
+              name: 'Luis',
+              occupation: 'Software Engineer',
+              country: 'Mexico',
+              image: 'luis_1.png',
+              link: ''
+        },
+        {
           name: 'Daniel',
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
           country: 'Mexico',
           image: 'daniel_one.jpg',
+          link: '/a1db8f2ca088/daniel-journey'
+        },
+        {
+          name: 'Edgar',
+          occupation: 'Software Engineer',
+          timeSinceArrival: '10',
+          country: 'Mexico',
+          image: 'edgar_1.png',
           link: '/a1db8f2ca088/daniel-journey'
         },
         {
@@ -28,11 +43,19 @@ class App extends Component {
           link: '/aa9574739f97/lesly-journey'
         },
         {
+          name: 'Yazmin',
+          occupation: 'Student',
+          timeSinceArrival: '18',
+          country: 'Mexico',
+          image: 'yazmin_1.png',
+          link: ''
+        },
+        {
           name: 'Daniel',
           occupation: 'Student / Aspiring Software Engineer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'daniel_two.jpg',
+          image: 'daniel_three.png',
           link: ''
         },
         {
@@ -160,7 +183,7 @@ class App extends Component {
         <div className="container main">
            <ul className="row site-navigation">
             <li className="col-12 col-sm-6 push-sm-3 logo">
-              <a>DACAMENTED</a>
+              <a>FACES OF DACA</a>
             </li>
             <li className="col-6 col-sm-3 pull-sm-3 about-daca">
               <a className="">About DACA</a>
@@ -168,15 +191,15 @@ class App extends Component {
             <li className="col-6 col-sm-3 pull-sm-3 about-site">
               <a className="">How to help</a>
             </li>
-           </ul> 
+           </ul>
 
            <div className="row dacas">
           {
             this.state.cards.map((card, i) => (
               <Card name={card.name} occupation={card.occupation} key={i} imageLoaded={this.imageLoaded}
               timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image}
-              link={card.link} 
-              /> 
+              link={card.link}
+              />
             ))
           }
           </div>
