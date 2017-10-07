@@ -19,12 +19,12 @@ class App extends Component {
               link: ''
         },
         {
-          name: 'Daniel',
-          occupation: 'Software Engineer',
-          timeSinceArrival: '10',
+          name: 'Xochitl',
+          occupation: 'Behavioral Specialist',
+          timeSinceArrival: '19',
           country: 'Mexico',
-          image: 'daniel_one.jpg',
-          link: '/a1db8f2ca088/daniel-journey'
+          image: 'xochitl_d.png',
+          link: ''
         },
         {
           name: 'Edgar',
@@ -35,11 +35,11 @@ class App extends Component {
           link: '/a1db8f2ca088/daniel-journey'
         },
         {
-          name: 'Xochitl',
-          occupation: 'Behavioral Specialist',
-          timeSinceArrival: '19',
+          name: 'Yarely',
+          occupation: 'Software Developer',
+          timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'xochitl_d.png',
+          image: 'yareli_5.png',
           link: ''
         },
         {
@@ -73,6 +73,14 @@ class App extends Component {
           country: 'Mexico',
           image: 'miriam_1.png',
           link: ''
+        },
+        {
+          name: 'Daniel',
+          occupation: 'Software Engineer',
+          timeSinceArrival: '10',
+          country: 'Mexico',
+          image: 'daniel_one.jpg',
+          link: '/a1db8f2ca088/daniel-journey'
         },
         {
           name: 'Miguel',
@@ -128,14 +136,6 @@ class App extends Component {
           timeSinceArrival: '15',
           country: 'Mexico',
           image:'11.png',
-          link: ''
-        },
-        {
-          name: 'Yarely',
-          occupation: 'Software Developer',
-          timeSinceArrival: '18',
-          country: 'Mexico',
-          image: 'yareli_5.png',
           link: ''
         },
         {
