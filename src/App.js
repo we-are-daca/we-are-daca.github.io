@@ -24,7 +24,7 @@ class App extends Component {
           timeSinceArrival: '19',
           country: 'Mexico',
           image: 'xochitl_d.png',
-          link: ''
+          link: '/5be2766a/xochitl-journey'
         },
         {
           name: 'Edgar',
@@ -32,7 +32,7 @@ class App extends Component {
           timeSinceArrival: '10',
           country: 'Mexico',
           image: 'edgar_1.png',
-          link: '/a1db8f2ca088/daniel-journey'
+          link: '/00c13752/edgar-journey'
         },
         {
           name: 'Yarely',
