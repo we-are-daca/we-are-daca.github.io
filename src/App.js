@@ -12,11 +12,11 @@ class App extends Component {
       numLoaded: 0,
       cards: [
         {
-              name: 'Luis',
-              occupation: 'Software Engineer',
-              country: 'Mexico',
-              image: 'luis_1.png',
-              link: ''
+          name: 'Luis',
+          occupation: 'Software Engineer',
+          country: 'Mexico',
+          image: 'luis_1.png',
+          link: '/36432e39/luis-journey'
         },
         {
           name: 'Xochitl',
