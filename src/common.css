@@ -58,11 +58,13 @@ body {
     font-size: 16px;
     text-align: left;
     color: #A8B9FF;
+    line-height: 1.75;
 }
 
 .dacamentor-response {
     font-family: OpenSans;
     font-size: 16px;
+    line-height: 1.75;
 }
 
 .dacamentor-quote {
