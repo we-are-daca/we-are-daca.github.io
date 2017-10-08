@@ -15,7 +15,7 @@ class App extends Component {
           name: 'Luis',
           occupation: 'Software Engineer',
           country: 'Mexico',
-          image: 'luis_1.png',
+          image: 'luis_portrait.jpg',
           link: '/36432e39/luis-journey'
         },
         {
@@ -23,7 +23,7 @@ class App extends Component {
           occupation: 'Behavioral Specialist',
           timeSinceArrival: '19',
           country: 'Mexico',
-          image: 'xochitl_d.png',
+          image: 'xochitl_portrait_1.jpg',
           link: '/5be2766a/xochitl-journey'
         },
         {
@@ -31,7 +31,7 @@ class App extends Component {
           occupation: 'Software Engineer',
           timeSinceArrival: '10',
           country: 'Mexico',
-          image: 'edgar_1.png',
+          image: 'edgar_portrait.jpg',
           link: '/00c13752/edgar-journey'
         },
         {
@@ -39,7 +39,7 @@ class App extends Component {
           occupation: 'Software Developer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'yareli_5.png',
+          image: 'yareli_portrait.jpg',
           link: ''
         },
         {
@@ -55,7 +55,7 @@ class App extends Component {
           occupation: 'Student',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'yazmin_1.png',
+          image: 'yazmin_portrait_1.jpg',
           link: ''
         },
         {
@@ -63,7 +63,7 @@ class App extends Component {
           occupation: 'Student / Aspiring Software Engineer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'daniel_three.png',
+          image: 'daniel_1_portrait.jpg',
           link: ''
         },
         {
@@ -71,7 +71,7 @@ class App extends Component {
           occupation: 'Software Engineer',
           timeSinceArrival: '11',
           country: 'Mexico',
-          image: 'miriam_1.png',
+          image: 'miriam_portrait.jpg',
           link: ''
         },
         {
