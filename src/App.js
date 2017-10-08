@@ -111,7 +111,7 @@ class App extends Component {
           occupation: 'Lab Technician',
           timeSinceArrival: '20',
           country: 'Mexico',
-          image: 'nayeli_1.png',
+          image: 'nayeli_portrait.jpg',
           link: ''
         },
         {

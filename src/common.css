@@ -55,11 +55,19 @@ body {
 .dacamentor-interview p b {
     font-family: BreeSerif;
     letter-spacing: 0.05em;
+    font-size: 16px;
     text-align: left;
+    color: #A8B9FF;
 }
 
 .dacamentor-response {
     font-family: OpenSans;
+    font-size: 16px;
+}
+
+.dacamentor-quote {
+    font-size: 32px;
+    text-align: center;
 }
 
 .info li {
