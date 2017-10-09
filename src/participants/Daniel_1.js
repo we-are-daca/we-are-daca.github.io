@@ -5,17 +5,17 @@ import 'react-loading-bar/dist/index.css';
 import Info from '../common/Info';
 import '../App.css';
 
-class Yazmin extends React.Component {
+class Daniel1 extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
           show: false,
-          name: 'Yazmin',
-          occupation: 'Student',
+          name: 'Daniel',
+          occupation: 'Student + Aspiring Software Engineer',
           timeSinceArrival: '18',
           country: 'Mexico',
-          image: 'yazmin_hero.jpg'
+          image: 'daniel_1_hero.jpg'
         }
 
         setTimeout(() => {
@@ -79,7 +79,7 @@ class Yazmin extends React.Component {
                     <div className="info-container">
                         <Info
                             years={this.state.timeSinceArrival}
-                            date={'September 27, 2017'}
+                            date={'Oct 7, 2017'}
                             occupation={this.state.occupation}
                             country={this.state.country}
                         />
@@ -110,4 +110,4 @@ class Yazmin extends React.Component {
     }
 }
 
-export default Yazmin;
+export default Daniel1;

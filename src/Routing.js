@@ -1,7 +1,8 @@
 import React from 'react';
 import App from './App.js';
 import Aylin from './participants/Aylin';
-import DanielOne from './participants/Daniel';
+import Daniel from './participants/Daniel';
+import Daniel1 from './participants/Daniel_1';
 import Edgar from './participants/Edgar';
 import Lesly from './participants/Lesly';
 import Luis from './participants/Luis'
@@ -14,7 +15,8 @@ import { Switch, Route } from 'react-router-dom';
 const Routing = () => (
     <Switch>
         <Route exact path="/" component={App} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
-        <Route exact path="/a1db8f2ca088/daniel-journey" component={DanielOne} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path="/a1db8f2ca088/daniel-journey" component={Daniel} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/a65e9bc1/daniel-journey' component={Daniel1} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/aa9574739f97/lesly-journey' component={Lesly} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/36432e39/luis-journey' component={Luis} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/5be2766a/xochitl-journey' component={Xochitl} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />

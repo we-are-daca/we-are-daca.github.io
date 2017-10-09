@@ -73,7 +73,7 @@ class App extends Component {
           timeSinceArrival: '18',
           country: 'Mexico',
           image: 'daniel_1_portrait.jpg',
-          link: ''
+          link: '/a65e9bc1/daniel-journey'
         },
         {
           name: 'Miriam',

@@ -5,7 +5,7 @@ import 'react-loading-bar/dist/index.css';
 import Info from '../common/Info';
 import '../App.css';
 
-class Daniel1 extends React.Component {
+class Aylin extends React.Component {
 
     constructor(props) {
         super(props);
@@ -110,4 +110,4 @@ class Daniel1 extends React.Component {
     }
 }
 
-export default Daniel1;
+export default Aylin;
