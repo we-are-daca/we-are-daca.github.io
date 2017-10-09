@@ -106,13 +106,6 @@ class Lesly extends React.Component {
                             {'All I knew was that I was going to be able to see my dad again. And so, we got here in January of 2002. It wasn’t too bad since we got put into bilingual and Spanish classes, and I guess it wasn’t too much of a culture shock because of those accommodations.'}
                         </span>
                         </p>
-                        <blockquote>
-                            <p className="dacamentor-quote">
-                                <span>
-                                    {'"My parents really wanted us to go to college--it was one of the biggest things they encouraged us on. They wanted us to have the higher education that they couldn’t get because they didn’t get a chance to study. They had to work to support our family."'}
-                                </span>
-                            </p>
-                        </blockquote>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
                         <p className="dacamentor-question">
@@ -147,6 +140,13 @@ class Lesly extends React.Component {
                             {'After reflecting for a bit, however, I decided that computer science was going to be a good option for me because you can really do anything with it. That’s when I started the program and was lucky enough to get a scholarship to afford my undergrad.'}
                         </span>
                         </p>
+                        <blockquote>
+                            <p className="dacamentor-quote">
+                                <span>
+                                    {'"My parents really wanted us to go to college--it was one of the biggest things they encouraged us on. They wanted us to have the higher education that they couldn’t get because they didn’t get a chance to study. They had to work to support our family."'}
+                                </span>
+                            </p>
+                        </blockquote>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
                         <p className="dacamentor-question">
@@ -171,6 +171,13 @@ class Lesly extends React.Component {
                             {'No, I haven’t. At some point I want to. I’m not sure if I want to live there though, just because my roots are now grounded here. But I do really want to visit. I still have family there. Maybe I’ll live there for a couple of months just to see what it’s like. But I definitely  consider this country to be my home and where I want to live for the rest of my life.'}
                         </span>
                         </p>
+                        <blockquote>
+                            <p className="dacamentor-quote">
+                                <span>
+                                    {'"When I became more proficient and felt more comfortable with the language and the people, this place definitely felt like home. I started to get that sense of security and belonging. At some point when I was younger, it still felt very much like I wasn’t part of what America represented. I was here for half of my life and half over there, but now, I’ve been here for 15 years. It does feel like the United States is my home. I don’t remember what it’s like to not be here."'}
+                                </span>
+                            </p>
+                        </blockquote>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
                         <p className="dacamentor-question">
@@ -180,9 +187,16 @@ class Lesly extends React.Component {
                         </p>
                         <p>
                         <span className="dacamentor-response">
-                            {'I really wanted to go to SF or LA but because they didn’t offer enough financial  aid I wasn’t able to. At that point it felt like I really didn’t have too many choices. I had to go to community college to continue my education. They had a lot of support and it wasn’t as expensive. I studied there for a year - I wanted to study environmental study. Most of the courses I took were chem classes, geology -  things like that. Then, my brother joined CS-in-3 after we graduated. I thought about applying but since I didn’t want to follow that path:  I wanted to explore the things I wanted to study.'}
+                            {'I think my experience was great. I have met some wonderful people. I actually moved up to Seattle with a classmate where we both work and live together! In fact, I keep in contact with everybody. The people I met have been great and extremely supportive. In fact, they became a big part of my college experience. The past years were also a learning curve since I had no prior knowledge about CS before starting the program. The program definitely had its challenges, but the great sense of accomplishment where I was able to say that I got through these obstacles is the reason I am able to exercise my career today.'}
                         </span>
                         </p>
+                        <blockquote>
+                            <p className="dacamentor-quote">
+                                <span>
+                                    {'When you’re young, you don’t have to apply for a driver’s license and, for the most part, your parents took care of you. It wasn’t until my senior year when I did college applications that I became aware of the impact of my status. I got accepted into a handful of colleges, but I couldn’t apply for financial aid, so I wasn’t able to go to the schools I wanted.'}
+                                </span>
+                            </p>
+                        </blockquote> 
                     </div>
                     <div className="col-md-12 dacamentor-interview">
                         <p className="dacamentor-question">
@@ -267,6 +281,13 @@ class Lesly extends React.Component {
                             {'As people, we are great contributors to the U.S, a place where we’ve rooted in, a place where we’ve gotten our education, and a place where we work at. I think we’re able to provide for not only the economy, but also our communities that we live in. I feel I’ve made some impact during my time in California -- I was even able to go to middle schools, hoping to inspire students to consider the possibility of getting a higher education because it’s so important. I believe we’re invaluable in that sense.'}
                         </span>
                         </p>
+                        <blockquote>
+                            <p className="dacamentor-quote">
+                                <span>
+                                    {'"As people, we are great contributors to the U.S, a place where we’ve rooted in, a place where we’ve gotten our education, and a place where we work at."'}
+                                </span>
+                            </p>
+                        </blockquote>
                     </div>
                 </div>
             </div>
