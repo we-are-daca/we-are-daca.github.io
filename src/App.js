@@ -65,7 +65,7 @@ class App extends Component {
           timeSinceArrival: '18',
           country: 'Mexico',
           image: 'yazmin_portrait_1.jpg',
-          link: ''
+          link: '/b9961768/yazmin-journey'
         },
         {
           name: 'Daniel',

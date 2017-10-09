@@ -7,6 +7,7 @@ import Lesly from './participants/Lesly';
 import Luis from './participants/Luis'
 import Xochitl from './participants/Xochitl';
 import Yareli from './participants/Yareli';
+import Yazmin from './participants/Yazmin';
 import Test from './participants/Test';
 import { Switch, Route } from 'react-router-dom';
 
@@ -20,6 +21,7 @@ const Routing = () => (
         <Route exact path='/00c13752/edgar-journey' component={Edgar} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/0ec6370e/aylin-journey' component={Aylin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/c5b03d37/yareli-journey' component={Yareli} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
+        <Route exact path='/b9961768/yazmin-journey' component={Yazmin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route path="/example" component={Test} />
         <Route component={App} />
       </Switch>
