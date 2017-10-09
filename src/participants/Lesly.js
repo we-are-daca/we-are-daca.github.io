@@ -100,8 +100,8 @@ class Lesly extends React.Component {
                         </span>
                         </p>
                         <blockquote>
-                            <p>
-                                <span className="dacamentor-quote">
+                            <p className="dacamentor-quote">
+                                <span>
                                     {'"My parents really wanted us to go to college--it was one of the biggest things they encouraged us on. They wanted us to have the higher education that they couldn’t get because they didn’t get a chance to study. They had to work to support our family."'}
                                 </span>
                             </p>
