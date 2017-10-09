@@ -84,7 +84,7 @@ class Lesly extends React.Component {
                 </div>
                 <div className="row">
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Tell me a bit about your early years and where you come from.'}
                             </b>
@@ -108,7 +108,7 @@ class Lesly extends React.Component {
                         </blockquote>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Did your family know any English when you arrived to the United States?'}
                             </b>
@@ -142,7 +142,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Backtracking a bit, you mentioned when you first got here about feeling like you didn’t belong. Has that changed now? Would you consider yourself an American?'}
                             </b>
@@ -154,7 +154,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Have you gone back to visit Mexico since you came?'}
                             </b>
@@ -166,7 +166,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'You mentioned you honed in on computer science for your undergrad. How was your college experience?'}
                             </b>
@@ -178,7 +178,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Overcoming obstacles definitely make one feel proud. So you moved out to Seattle and work at Liberty Mutual as a software engineer. What will you be working on?'}
                             </b>
@@ -190,7 +190,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Although you’re working full time now, do you plan on pursuing any higher education later on?'}
                             </b>
@@ -202,7 +202,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Long term, where do you see yourself in a few years?'}
                             </b>
@@ -214,7 +214,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'For those that don’t know about herScript, can you expand a bit?'}
                             </b>
@@ -226,7 +226,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'Coming back full circle, do you plan on becoming a US citizen?'}
                             </b>
@@ -238,7 +238,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'As you know, On Sept 5th, the Trump administration decided to rescind DACA thus leaving it up to Congress to find a solution. What was your initial reaction?'}
                             </b>
@@ -250,7 +250,7 @@ class Lesly extends React.Component {
                         </p>
                     </div>
                     <div className="col-md-12 dacamentor-interview">
-                        <p>
+                        <p className="dacamentor-question">
                             <b>
                                 {'As Congress works on passing a resolution, is there anything you’d like to say to them?'}
                             </b>

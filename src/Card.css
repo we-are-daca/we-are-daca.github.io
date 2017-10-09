@@ -4,8 +4,13 @@
 }
 
 @font-face {
-  font-family: BreeSerif;
-  src: url('fonts/BreeSerif-Regular.ttf')
+  font-family: ArsenalBold;
+  src: url('fonts/Arsenal-Bold.ttf')
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url('fonts/Lato-Regular.ttf')
 }
 
 @font-face{
@@ -37,25 +42,27 @@
 .Card-name{
   max-width: 200px;
   font-size: 18px;
-  font-family: BreeSerif;
+  font-family: 'ArsenalBold';
+  font-weight: 400;
   margin-bottom: 0px;
 }
 
 .Card-content{
   box-sizing: border-box;
+  margin-bottom: 20px;
 }
 
 .Card-title {
   max-width: 200px;
   font-size: 14px;
-  font-family: OpenSans;
+  font-family: "LatoRegular";
   letter-spacing: 0.03em;
   text-align: center;
 }
 
 .timearrival {
   font-size: 22px;
-  font-family: BreeSerif;
+  font-family: 'AnticSlav';
 }
 
 .timearrival a {

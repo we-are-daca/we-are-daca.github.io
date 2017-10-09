@@ -4,8 +4,13 @@
 }
 
 @font-face {
-  font-family: BreeSerif;
-  src: url('fonts/BreeSerif-Regular.ttf')
+  font-family: ArsenalBold;
+  src: url('fonts/Arsenal-Bold.ttf')
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url('fonts/Lato-Regular.ttf')
 }
 
 @font-face {
@@ -100,13 +105,13 @@
 
 .logo {
   font-size: 36px;
-  font-family: BreeSerif;
+  font-family: 'ArsenalBold';
 }
 
 .about-daca {
   margin: 15px 0;
   text-align: left;
-  font-family: 'OpenSans';
+  font-family: 'LatoRegular';
   text-transform: uppercase;
 }
 
@@ -118,7 +123,7 @@
 .about-site {
   margin: 15px 0;
   text-align: right;
-  font-family: 'OpenSans';
+  font-family: 'LatoRegular';
   text-transform: uppercase;
 }
 

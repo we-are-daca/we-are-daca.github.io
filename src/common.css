@@ -8,6 +8,16 @@
   src: url('fonts/OpenSans-Regular.ttf')
 }
 
+@font-face {
+  font-family: ArsenalBold;
+  src: url('fonts/Arsenal-Bold.ttf')
+}
+
+@font-face {
+  font-family: LatoRegular;
+  src: url('fonts/Lato-Regular.ttf')
+}
+
 body {
     background-color: #FFFDF5;
 }
@@ -15,7 +25,7 @@ body {
 .dacamentor-name {
     font-size: 50px;
     letter-spacing: 0.05em;
-    font-family: BreeSerif;
+    font-family: "Arsenal";
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -53,22 +63,26 @@ body {
 }
 
 .dacamentor-interview p b {
-    font-family: BreeSerif;
+    font-family: "Arsenal";
     letter-spacing: 0.05em;
     font-size: 16px;
     text-align: left;
-    color: #A8B9FF;
+    color: #ed8910;
     line-height: 1.75;
 }
 
+.dacamentor-question {
+    margin: 10px 0 25px 0;
+}
+
 .dacamentor-response {
-    font-family: OpenSans;
+    font-family: "LatoRegular";
     font-size: 16px;
     line-height: 1.75;
 }
 
 .dacamentor-quote {
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
 }
 
@@ -98,7 +112,7 @@ body {
     font-size: 14px;
     opacity: 0.5;
     text-transform: uppercase;
-    font-family: OpenSans;
+    font-family: "LatoRegular";
 }
 
 .info-text {
