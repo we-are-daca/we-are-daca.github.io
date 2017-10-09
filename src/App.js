@@ -36,6 +36,14 @@ class App extends Component {
           link: '/00c13752/edgar-journey'
         },
         {
+          name: 'Aylin',
+          occupation: 'Student / Kinesiology Major',
+          timeSinceArrival: '21',
+          country: 'Mexico',
+          image: 'aylin_portrait.jpg',
+          link: ''
+        },
+        {
           name: 'Yarely',
           occupation: 'Software Developer',
           timeSinceArrival: '18',
@@ -137,14 +145,6 @@ class App extends Component {
           timeSinceArrival: '15',
           country: 'Mexico',
           image:'11.png',
-          link: ''
-        },
-        {
-          name: 'Aylin',
-          occupation: 'Student / Kinesiology Major',
-          timeSinceArrival: '21',
-          country: 'Mexico',
-          image: 'aylin.png',
           link: ''
         }
       ]
