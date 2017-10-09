@@ -82,6 +82,7 @@ body {
 }
 
 .dacamentor-quote {
+    font-family: "LatoRegular";
     font-size: 28px;
     text-align: center !important;
 }
