@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Loading from 'react-loading-bar';
 import 'react-loading-bar/dist/index.css';
 import './App.css';
@@ -190,13 +191,16 @@ class App extends Component {
         />
         <div className="container main">
            <ul className="row site-navigation">
-            <li className="col-12 col-sm-6 push-sm-3 logo">
-              <a>FACES OF DACA</a>
+            
+            <li className="col-12 col-sm-4 push-sm-4 logo">
+              <Link to={'/'}>
+                {'Faces of Daca'}
+              </Link>
             </li>
-            <li className="col-6 col-sm-3 pull-sm-3 about-daca">
+            <li className="col-6 col-sm-2 pull-sm-2 about-daca">
               <a className="">About DACA</a>
             </li>
-            <li className="col-6 col-sm-3 pull-sm-3 about-site">
+            <li className="col-6 col-sm-2 push-sm-2 about-site">
               <a className="">How to help</a>
             </li>
            </ul>

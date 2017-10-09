@@ -1,5 +1,6 @@
 import React from 'react';
 import Loading from 'react-loading-bar';
+import { Link } from 'react-router-dom';
 import 'react-loading-bar/dist/index.css';
 import Info from '../common/Info';
 import '../App.css';
@@ -28,7 +29,6 @@ class Lesly extends React.Component {
         }, 500);
     }
 
-
     render() {
         console.log(this.state);    
         return (
@@ -39,17 +39,20 @@ class Lesly extends React.Component {
                 showSpinner={false}
             />
             <div className="container">
-                <ul className="row site-navigation">
-                    <li className="col-12 col-sm-6 push-sm-3 logo">
-                        <a>Faces Of Daca</a>
+               <ul className="row site-navigation">
+            
+                    <li className="col-12 col-sm-4 push-sm-4 logo">
+                    <Link to={'/'}>
+                        {'Faces of Daca'}
+                    </Link>
                     </li>
-                    <li className="col-6 col-sm-3 pull-sm-3 about-daca">
-                        <a className="">About DACA</a>
+                    <li className="col-6 col-sm-2 pull-sm-2 about-daca">
+                    <a className="">About DACA</a>
                     </li>
-                    <li className="col-6 col-sm-3 pull-sm-3 about-site">
-                        <a className="">How to help</a>
+                    <li className="col-6 col-sm-2 push-sm-2 about-site">
+                    <a className="">How to help</a>
                     </li>
-                </ul>
+              </ul> 
                 <div className="row">
                     <div className="portrait col-md-12">
                         <img src={`https://dwistynbcri9g.cloudfront.net/${this.state.image}`} alt={this.state.name}

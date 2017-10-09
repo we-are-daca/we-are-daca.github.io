@@ -99,13 +99,21 @@
   list-style: none;
 }
 
-.site-navigation li a {
-  display: inline-block;
-}
-
-.logo {
+.logo a {
   font-size: 36px;
   font-family: 'ArsenalBold';
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+.logo :hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.logo :visited {
+  color: black;
 }
 
 .about-daca {
