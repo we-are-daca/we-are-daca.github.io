@@ -7,7 +7,7 @@ import Routing from './Routing';
 import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
-    <BrowserRouter>
+    <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
         <Routing />
     </BrowserRouter>, 
 document.getElementById('root'));
