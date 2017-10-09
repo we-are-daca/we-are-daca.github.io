@@ -23,6 +23,10 @@ class Lesly extends React.Component {
         }, 1);
     }
 
+    componentWillMount = () => {
+        window.scrollTo(0, 0);
+    }
+
     imageLoaded = () => {
         setTimeout(() => {
             this.setState({ show: false })

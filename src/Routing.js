@@ -10,12 +10,12 @@ import { Switch, Route } from 'react-router-dom';
 
 const Routing = () => (
     <Switch>
-        <Route exact path="/" component={App} />
-        <Route exact path="/a1db8f2ca088/daniel-journey" component={DanielOne} />
-        <Route exact path='/aa9574739f97/lesly-journey' component={Lesly} />
-        <Route exact path='/36432e39/luis-journey' component={Luis} />
-        <Route exact path='/5be2766a/xochitl-journey' component={Xochitl} />
-        <Route exact path='/00c13752/edgar-journey' component={Edgar} />
+        <Route exact path="/" component={App} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path="/a1db8f2ca088/daniel-journey" component={DanielOne} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/aa9574739f97/lesly-journey' component={Lesly} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/36432e39/luis-journey' component={Luis} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/5be2766a/xochitl-journey' component={Xochitl} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/00c13752/edgar-journey' component={Edgar} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route path="/example" component={Test} />
         <Route component={App} />
       </Switch>

@@ -29,6 +29,10 @@ class Luis extends React.Component {
         }, 500);
     }
 
+    componentWillMount = () => {
+        window.scrollTo(0, 0);
+    }
+
 
     render() {
         console.log(this.state);    
