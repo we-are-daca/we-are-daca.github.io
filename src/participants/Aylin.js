@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import Loading from 'react-loading-bar';
 import 'react-loading-bar/dist/index.css';
 import Info from '../common/Info';

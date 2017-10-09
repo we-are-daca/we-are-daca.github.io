@@ -1,5 +1,6 @@
 import React from 'react';
 import Loading from 'react-loading-bar';
+import { Link } from 'react-router-dom';
 import 'react-loading-bar/dist/index.css';
 import Info from '../common/Info';
 import '../App.css';
