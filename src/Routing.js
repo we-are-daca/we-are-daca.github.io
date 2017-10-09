@@ -1,5 +1,6 @@
 import React from 'react';
 import App from './App.js';
+import Aylin from './participants/Aylin';
 import DanielOne from './participants/Daniel';
 import Edgar from './participants/Edgar';
 import Lesly from './participants/Lesly';
@@ -16,6 +17,7 @@ const Routing = () => (
         <Route exact path='/36432e39/luis-journey' component={Luis} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/5be2766a/xochitl-journey' component={Xochitl} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/00c13752/edgar-journey' component={Edgar} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/0ec6370e/aylin-journey' component={Aylin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route path="/example" component={Test} />
         <Route component={App} />
       </Switch>
