@@ -83,7 +83,7 @@ body {
 
 .dacamentor-quote {
     font-size: 28px;
-    text-align: center;
+    text-align: center !important;
 }
 
 .info li {
