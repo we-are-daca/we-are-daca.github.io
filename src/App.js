@@ -45,11 +45,11 @@ class App extends Component {
         },
         {
           name: 'Yarely',
-          occupation: 'Software Developer',
+          occupation: 'Software Engineer',
           timeSinceArrival: '18',
           country: 'Mexico',
           image: 'yareli_portrait.jpg',
-          link: ''
+          link: '/c5b03d37/yareli-journey'
         },
         {
           name: 'Lesly',
