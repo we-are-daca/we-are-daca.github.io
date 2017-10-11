@@ -69,27 +69,6 @@
   color: white;
 }
 
-@media (max-width: 576px) {
-  .innercardcontent {
-    margin-bottom: 20px
-  }
-}
-
-@media (max-width: 768px) {
-  .timearrival {
-    font-size: 20px;
-  }
-  
-  .Card-content {
-    padding-left: 0px !important;
-  }
-}
-@media (max-width: 500px) {
-  .Card-title {
-    display: none;
-  }
-}
-
 .hovereffect {
   background-color: black;
 width: 200px;
@@ -163,3 +142,66 @@ transform:translatey(0);
 -webkit-transition-delay:.2s;
 transition-delay:.2s;
 }
+
+
+@media (max-width: 576px) {
+  .dacas {
+    padding-left: 13px
+  }
+  .innercardcontent {
+    margin-bottom: 20px
+  }
+
+  .Card-images {
+    height: 175px;
+    max-width: 175px;
+    width: 200px;
+  }
+
+  .Card-name{
+    max-width: 175px;
+    font-size: 18px;
+    font-family: 'ArsenalBold';
+    font-weight: 400;
+    margin-bottom: 0px;
+}
+
+.Card-content{
+  box-sizing: border-box;
+  margin-bottom: 20px;
+}
+
+.Card-title {
+  max-width: 200px;
+  font-size: 14px;
+  font-family: "LatoRegular";
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.hovereffect {
+  width: 175px;
+  height: 175px;
+}
+
+.hovereffect .overlay {
+  width: 200px;
+  height: 200px;
+}
+}
+
+@media (max-width: 768px) {
+  .timearrival {
+    font-size: 20px;
+  }
+  
+  .Card-content {
+    padding-left: 0px !important;
+  }
+}
+@media (max-width: 500px) {
+  .Card-title {
+    display: none;
+  }
+}
+
