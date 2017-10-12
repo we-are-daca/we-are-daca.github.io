@@ -76,6 +76,14 @@ class App extends Component {
           link: '/a65e9bc1/daniel-journey'
         },
         {
+          name: 'Leo',
+          occupation: 'Student Ambassador',
+          timeSinceArrival: '17',
+          country: 'Mexico',
+          image: 'leo_portrait_1.jpg',
+          link: '/c05de409/leo-journey'
+        },
+        {
           name: 'Miriam',
           occupation: 'Software Engineer',
           timeSinceArrival: '11',
