@@ -6,6 +6,7 @@ import Daniel1 from './participants/Daniel_1';
 import Edgar from './participants/Edgar';
 import Lesly from './participants/Lesly';
 import Luis from './participants/Luis'
+import Miguel from './participants/Miguel';
 import Xochitl from './participants/Xochitl';
 import Yareli from './participants/Yareli';
 import Yazmin from './participants/Yazmin';
@@ -24,6 +25,7 @@ const Routing = () => (
         <Route exact path='/0ec6370e/aylin-journey' component={Aylin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/c5b03d37/yareli-journey' component={Yareli} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/b9961768/yazmin-journey' component={Yazmin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
+        <Route exact path='/82b67ab1/miguel-journey' component={Miguel} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route path="/example" component={Test} />
         <Route component={App} />
       </Switch>
