@@ -68,6 +68,14 @@ class App extends Component {
           link: '/b9961768/yazmin-journey'
         },
         {
+          name: 'Miguel',
+          occupation: 'DevOps/Embedded Vision Engineer',
+          timeSinceArrival: '11',
+          country: 'Mexico',
+          image: 'miguel_portrait.jpg',
+          link: '/82b67ab1/miguel-journey'
+        },
+        {
           name: 'Daniel',
           occupation: 'Student / Aspiring Software Engineer',
           timeSinceArrival: '18',
@@ -98,14 +106,6 @@ class App extends Component {
           country: 'Mexico',
           image: 'daniel_one.jpg',
           link: '/a1db8f2ca088/daniel-journey'
-        },
-        {
-          name: 'Miguel',
-          occupation: 'DevOps/Embedded Vision Engineer',
-          timeSinceArrival: '11',
-          country: 'Mexico',
-          image: 'miguel_1.png',
-          link: '/82b67ab1/miguel-journey'
         },
         {
           name: 'Araceli',
