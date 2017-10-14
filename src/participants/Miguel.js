@@ -15,7 +15,7 @@ class Miguel extends React.Component {
           occupation: 'DevOps / Embedded Vision Enginer',
           timeSinceArrival: '11',
           country: 'Mexico',
-          image: 'luis_portrait_2.jpg',
+          image: 'miguel_hero.jpg',
           interviewDate: 'September 22, 2017'
         }
 
