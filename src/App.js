@@ -44,12 +44,12 @@ class App extends Component {
           link: '/0ec6370e/aylin-journey'
         },
         {
-          name: 'Yarely',
-          occupation: 'Software Engineer',
-          timeSinceArrival: '18',
+          name: 'Jonathan',
+          occupation: 'Field Representative',
+          timeSinceArrival: '21',
           country: 'Mexico',
-          image: 'yareli_portrait.jpg',
-          link: '/c5b03d37/yareli-journey'
+          image: 'jonathan_portrait.jpg',
+          link: ''
         },
         {
           name: 'Lesly',
@@ -61,7 +61,7 @@ class App extends Component {
         },
         {
           name: 'Yazmin',
-          occupation: 'Student',
+          occupation: 'English Major',
           timeSinceArrival: '18',
           country: 'Mexico',
           image: 'yazmin_portrait_1.jpg',
@@ -114,6 +114,14 @@ class App extends Component {
           country: 'Mexico',
           image: 'araceli.png',
           link: ''
+        },
+        {
+          name: 'Yarely',
+          occupation: 'Software Engineer',
+          timeSinceArrival: '18',
+          country: 'Mexico',
+          image: 'yareli_portrait.jpg',
+          link: '/c5b03d37/yareli-journey'
         },
         {
           name: 'Elvin',
