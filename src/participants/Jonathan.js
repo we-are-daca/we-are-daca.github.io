@@ -15,7 +15,7 @@ class Jonathan extends React.Component {
           occupation: 'Field Representative for Assemblywoman Caballero',
           timeSinceArrival: '21',
           country: 'Mexico',
-          image: 'jonathan_portrait.jpg'
+          image: 'jonathan_hero.jpg'
         }
 
         setTimeout(() => {
