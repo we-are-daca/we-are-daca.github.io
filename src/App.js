@@ -49,7 +49,23 @@ class App extends Component {
           timeSinceArrival: '21',
           country: 'Mexico',
           image: 'jonathan_portrait_1.jpg',
+          link: '/5e286af3/jonathan-journey'
+        },
+        {
+          name: 'Rosie',
+          occupation: 'Grower/Pest Control Adviser (PCA)',
+          timeSinceArrival: '26',
+          country: 'Mexico',
+          image:'rosie_portrait_1.jpg',
           link: ''
+        },
+        {
+          name: 'Miguel',
+          occupation: 'DevOps/Embedded Vision Engineer',
+          timeSinceArrival: '11',
+          country: 'Mexico',
+          image: 'miguel_portrait.jpg',
+          link: '/82b67ab1/miguel-journey'
         },
         {
           name: 'Lesly',
@@ -67,14 +83,7 @@ class App extends Component {
           image: 'yazmin_portrait_1.jpg',
           link: '/b9961768/yazmin-journey'
         },
-        {
-          name: 'Miguel',
-          occupation: 'DevOps/Embedded Vision Engineer',
-          timeSinceArrival: '11',
-          country: 'Mexico',
-          image: 'miguel_portrait.jpg',
-          link: '/82b67ab1/miguel-journey'
-        },
+        
         {
           name: 'Daniel',
           occupation: 'Student / Aspiring Software Engineer',
