@@ -9,6 +9,7 @@ import Leo from './participants/Leo';
 import Lesly from './participants/Lesly';
 import Luis from './participants/Luis'
 import Miguel from './participants/Miguel';
+import Rosie from './participants/Rosie';
 import Xochitl from './participants/Xochitl';
 import Yareli from './participants/Yareli';
 import Yazmin from './participants/Yazmin';
@@ -30,6 +31,7 @@ const Routing = () => (
         <Route exact path='/82b67ab1/miguel-journey' component={Miguel} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/c05de409/leo-journey' component={Leo} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/5e286af3/jonathan-journey' component={Jonathan} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/168ed629/rosie-journey' component={Rosie} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route component={App} />
       </Switch>
 );

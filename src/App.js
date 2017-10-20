@@ -53,11 +53,11 @@ class App extends Component {
         },
         {
           name: 'Rosie',
-          occupation: 'Grower/Pest Control Adviser (PCA)',
+          occupation: 'Grower/Pest Control Advisor',
           timeSinceArrival: '26',
           country: 'Mexico',
           image:'rosie_portrait_1.jpg',
-          link: ''
+          link: '/168ed629/rosie-journey'
         },
         {
           name: 'Miguel',
