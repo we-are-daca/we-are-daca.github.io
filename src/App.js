@@ -48,7 +48,7 @@ class App extends Component {
           occupation: 'Field Representative',
           timeSinceArrival: '21',
           country: 'Mexico',
-          image: 'jonathan_portrait.jpg',
+          image: 'jonathan_portrait_1.jpg',
           link: ''
         },
         {
