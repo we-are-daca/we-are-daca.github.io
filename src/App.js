@@ -163,6 +163,14 @@ class App extends Component {
           country: 'Mexico',
           image: 'miguel.png',
           link: ''
+        },
+        {
+          name: 'Octavio',
+          occupation: 'Pest Control Advisor & Business Owner',
+          timeSinceArrival: '13',
+          country: 'Mexico',
+          image: 'octavio_portrait.jpg',
+          link: '/0e9be67f/octavio-journey'
         }
       ]
     };
