@@ -101,6 +101,14 @@ class App extends Component {
           link: '/c05de409/leo-journey'
         },
         {
+          name: 'Irais',
+          occupation: 'Student',
+          timeSinceArrival: '15',
+          country: 'Mexico',
+          image:'irais_portrait.jpg',
+          link: '/7d56bb43/irais-journey'
+        },
+        {
           name: 'Miriam',
           occupation: 'Software Engineer',
           timeSinceArrival: '11',
@@ -149,27 +157,11 @@ class App extends Component {
           link: ''
         },
         {
-          name: 'Cecilia',
-          occupation: 'HRA Analyst',
-          timeSinceArrival: '19',
-          country: 'Mexico',
-          image: 'cecilia.png',
-          link: ''
-        },
-        {
           name: 'Miguel',
           occupation: 'Computer Science Student',
           timeSinceArrival: '13',
           country: 'Mexico',
           image: 'miguel.png',
-          link: ''
-        },
-        {
-          name: 'Irais',
-          occupation: 'Student',
-          timeSinceArrival: '15',
-          country: 'Mexico',
-          image:'11.png',
           link: ''
         }
       ]
