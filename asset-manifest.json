@@ -1,13 +1,21 @@
 {
-  "main.css": "static/css/main.657d2ac5.css",
-  "main.css.map": "static/css/main.657d2ac5.css.map",
-  "main.js": "static/js/main.85f30b1e.js",
-  "main.js.map": "static/js/main.85f30b1e.js.map",
+  "main.css": "static/css/main.0bc8bc7b.css",
+  "main.css.map": "static/css/main.0bc8bc7b.css.map",
+  "main.js": "static/js/main.5f3bcd9f.js",
+  "main.js.map": "static/js/main.5f3bcd9f.js.map",
   "static/media/Arsenal-Bold.ttf": "static/media/Arsenal-Bold.d85a68ea.ttf",
   "static/media/BreeSerif-Regular.ttf": "static/media/BreeSerif-Regular.79784f21.ttf",
   "static/media/EncodeSansSemiCondensed-SemiBold.ttf": "static/media/EncodeSansSemiCondensed-SemiBold.b7727ed6.ttf",
   "static/media/Lato-Regular.ttf": "static/media/Lato-Regular.7f690e50.ttf",
   "static/media/Muli-ExtraLightItalic.ttf": "static/media/Muli-ExtraLightItalic.03a196db.ttf",
   "static/media/OpenSans-Regular.ttf": "static/media/OpenSans-Regular.d7d5d458.ttf",
-  "static/media/OpenSans-SemiBold.ttf": "static/media/OpenSans-SemiBold.e1c83f94.ttf"
+  "static/media/OpenSans-SemiBold.ttf": "static/media/OpenSans-SemiBold.e1c83f94.ttf",
+  "static/media/Proxima-Nova-Semibold.ttf": "static/media/Proxima-Nova-Semibold.b8481003.ttf",
+  "static/media/ProximaNova-Regular.otf": "static/media/ProximaNova-Regular.410504d4.otf",
+  "static/media/facebook-lite.svg": "static/media/facebook-lite.3f93e179.svg",
+  "static/media/facebook.svg": "static/media/facebook.1a46e906.svg",
+  "static/media/instagram-lite.svg": "static/media/instagram-lite.13e5b057.svg",
+  "static/media/instagram.svg": "static/media/instagram.6521013f.svg",
+  "static/media/twitter-lite.svg": "static/media/twitter-lite.8700d95d.svg",
+  "static/media/twitter.svg": "static/media/twitter.bdcd1bec.svg"
 }
