@@ -4,6 +4,16 @@
 }
 
 @font-face {
+  font-family: ProximaNova;
+  src: url('fonts/Proxima-Nova-Semibold.ttf')
+}
+
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url('fonts/ProximaNova-Regular.otf')
+}
+
+@font-face {
   font-family: ArsenalBold;
   src: url('fonts/Arsenal-Bold.ttf')
 }
@@ -25,7 +35,106 @@
 
 .App {
   text-align: center;
-  background-color: #FFFDF5;
+  background-color: #ececec;
+}
+
+.sidenav {
+    height: 100%;
+    width: 24%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #ececec;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 40px;
+}
+
+.title {
+	height: 33px;
+  padding-left: 31px;
+	text-align: left;
+  text-transform: uppercase;
+}
+
+.title > span {
+ color: #333333;
+ font-weight: 200;
+ font-size: 28px;
+ letter-spacing: 1.8px;
+ font-family: ProximaNova;
+}
+
+.navigation > ul {
+  padding-top: 28px;
+  padding-left: 0px;
+}
+
+.links {
+  text-decoration: none !important;
+  color: #e67e00;
+}
+
+.links:hover {
+  color: #000;
+}
+
+.navigation > ul > li:hover {
+  color: #000;
+  cursor: pointer;
+}
+
+.navigation > ul > li {
+  list-style: none;
+  text-align: left;
+  padding-left: 31px;
+  padding-bottom: 11px;
+  font-family: ProximaNovaRegular;
+  font-size: 24px;
+  color: #727272
+}
+
+.social {
+  text-align: left;
+  padding-top: 12px;
+  padding-left: 33px;
+}
+
+.social > div {
+  display: block;
+}
+
+.social > div > div{
+  display: inline-block;
+}
+
+.social > div > div:first-child > img:hover {
+  content: url('./img/facebook-lite.svg');
+  -webkit-transition: content 1s ease-in-out;
+  -moz-transition: content 1s ease-in-out;
+  -o-transition: content 1s ease-in-out;
+  transition: content 1s ease-in-out;
+}
+
+.social > div > div:nth-child(2) > img:hover {
+  content: url('./img/instagram-lite.svg');
+}
+
+.social > div > div:nth-child(3) > img:hover {
+  content: url('./img/twitter-lite.svg');
+}
+
+
+.social > div > div >img {
+  cursor: pointer;
+  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
+  box-sizing: border-box;         /* Opera/IE 8+ */ 
+}
+
+.social > div > div:nth-child(2), .social > div > div:nth-child(3){
+  padding-left: 15px;
 }
 
 .main {
