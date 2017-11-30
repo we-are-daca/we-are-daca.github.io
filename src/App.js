@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import Facebook from './img/facebook.svg';
+import Instagram from './img/instagram.svg';
+import Twitter from './img/twitter.svg';
+import { NavLink } from 'react-router-dom';
 import Loading from 'react-loading-bar';
 import 'react-loading-bar/dist/index.css';
 import './App.css';
@@ -207,6 +210,7 @@ class App extends Component {
   }
 
   render() {
+    const inner = '<use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-mask"></use>';
     return (
       <div className="App" style={{ overflowX: 'hidden' }}>
         <Loading
@@ -214,22 +218,33 @@ class App extends Component {
           show={this.state.show}
           showSpinner={false}
         />
+        <div className="sidenav">
+          <div className="title">
+            <span>{'Faces Of Daca'}</span>
+          </div>
+          <div className="navigation">
+            <ul>
+              <li><NavLink to="/" activeClassName="links">Stories</NavLink></li>
+              <li><NavLink to="/statistics" activeClassName="links"></NavLink>Statistics</li>
+              <li>How To Help</li>
+              <li>About</li>
+              <div className="social">
+                <div>
+                <div>
+                  <img id="facebook" src={Facebook} />
+                </div>
+                <div>
+                  <img src={Instagram} />
+                </div>
+                <div>
+                  <img src={Twitter} />
+                </div>
+                </div>
+              </div>
+            </ul>
+          </div>
+        </div>
         <div className="container main">
-           <ul className="row site-navigation">
-            
-            <li className="col-12 col-sm-4 push-sm-4 logo">
-              <Link to={'/'}>
-                {'Faces of Daca'}
-              </Link>
-            </li>
-            <li className="col-6 col-sm-2 pull-sm-2 about-daca">
-              <a className="">About DACA</a>
-            </li>
-            <li className="col-6 col-sm-2 push-sm-2 about-site">
-              <a className="">How to help</a>
-            </li>
-           </ul>
-
            <div className="row dacas">
           {
             this.state.cards.map((card, i) => (
