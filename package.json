@@ -39,6 +39,7 @@
     "react-icons": "^2.2.5",
     "react-loading-bar": "^0.0.4",
     "react-router-dom": "^4.2.2",
+    "react-stickynode": "^1.4.0",
     "react-transition-group": "^2.2.0",
     "style-loader": "0.18.2",
     "sw-precache-webpack-plugin": "0.11.4",

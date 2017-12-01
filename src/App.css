@@ -14,6 +14,11 @@
 }
 
 @font-face {
+  font-family: ProximaNovaBold;
+  src: url('fonts/ProximaNova-Bold.otf');
+}
+
+@font-face {
   font-family: ArsenalBold;
   src: url('fonts/Arsenal-Bold.ttf')
 }
@@ -36,13 +41,36 @@
 .App {
   text-align: center;
   background-color: #ececec;
+  display: flex;
+}
+
+#billboard {
+  max-width: 100%;
+  filter: brightness(40%)
+    contrast(70%);
+}
+
+.billboard-container {
+}
+
+.billboard-container > p {
+  font-size: 68px;
+  width: 75%;
+  text-align: center;
+  color: white;
+  font-family: ProximaNovaBold;
+  position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.sticky-outer-wrapper {
+  width: 28%;
 }
 
 .sidenav {
     height: 100%;
-    width: 24%;
-    position: fixed;
-    z-index: 1;
     top: 0;
     left: 0;
     background-color: #ececec;
@@ -56,6 +84,7 @@
   padding-left: 31px;
 	text-align: left;
   text-transform: uppercase;
+  background: url('./img/facebook-lite.svg') no-repeat -9999px -9999px;
 }
 
 .title > span {
@@ -64,11 +93,13 @@
  font-size: 28px;
  letter-spacing: 1.8px;
  font-family: ProximaNova;
+ background: url('./img/instagram-lite.svg') no-repeat -9999px -9999px;
 }
 
 .navigation > ul {
   padding-top: 28px;
   padding-left: 0px;
+  background: url('./img/twitter-lite.svg') no-repeat -9999px -9999px;
 }
 
 .links {

@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+import Sticky from 'react-stickynode';
 import Facebook from './img/facebook.svg';
 import Instagram from './img/instagram.svg';
 import Twitter from './img/twitter.svg';
+import Billboard from './img/billboard.jpg';
 import { NavLink } from 'react-router-dom';
 import Loading from 'react-loading-bar';
 import 'react-loading-bar/dist/index.css';
@@ -212,12 +214,18 @@ class App extends Component {
   render() {
     const inner = '<use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-mask"></use>';
     return (
+      <div>
+        <div className="billboard-container">
+          <img id='billboard' src={Billboard} />
+          <p>FACES OF DACA</p>
+        </div>
       <div className="App" style={{ overflowX: 'hidden' }}>
         <Loading
           color={'blue'}
           show={this.state.show}
           showSpinner={false}
         />
+        <Sticky enabled={true}>
         <div className="sidenav">
           <div className="title">
             <span>{'Faces Of Daca'}</span>
@@ -244,6 +252,7 @@ class App extends Component {
             </ul>
           </div>
         </div>
+        </Sticky>
         <div className="container main">
            <div className="row dacas">
           {
@@ -256,6 +265,7 @@ class App extends Component {
           }
           </div>
         </div>
+      </div>
       </div>
     );
   }
