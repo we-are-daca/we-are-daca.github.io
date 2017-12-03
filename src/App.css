@@ -33,11 +33,19 @@
   src: url('fonts/OpenSans-SemiBold.ttf')
 }
 
-.html {
+.html, body{
+  height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
 }
 
+#root {
+  height: 100%;
+}
+
+#root > div {
+  height: 100%;
+}
 .App {
   text-align: center;
   background-color: #ececec;
@@ -45,24 +53,68 @@
 }
 
 #billboard {
-  max-width: 100%;
+  width: 100%;
+  display: block;
   filter: brightness(40%)
     contrast(70%);
 }
 
 .billboard-container {
+  background-image: url('./img/billboard.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-attachment: fixed;
+  height: 100%;
+  filter: brightness(40%)
+     contrast(70%);
 }
 
-.billboard-container > p {
-  font-size: 68px;
-  width: 75%;
-  text-align: center;
-  color: white;
-  font-family: ProximaNovaBold;
+#billboard-title {
   position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  top: 35%;
+  left: 0;
+  width: 100%;
+}
+
+#billboard-title > p:first-child {
+  text-align: center;
+  font-family: ProximaNovaBold;
+  font-size: 100px;
+  color: white;
+}
+
+#billboard-title > p:nth-child(2) {
+  padding-top: 30px;
+  text-align: center;
+  font-family: ProximaNova;
+  font-size: 25px;
+  color: white;
+}
+
+body { background: #2d2d37;}
+a { color: white; text-decoration: none; }
+
+.arrow {
+  text-align: center;
+  margin: 8% 0;
+}
+.bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .sticky-outer-wrapper {

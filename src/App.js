@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Arrow from 'react-icons/lib/fa/angle-down';
 import Sticky from 'react-stickynode';
 import Facebook from './img/facebook.svg';
 import Instagram from './img/instagram.svg';
@@ -216,8 +217,13 @@ class App extends Component {
     return (
       <div>
         <div className="billboard-container">
-          <img id='billboard' src={Billboard} />
-          <p>FACES OF DACA</p>
+        </div>
+        <div id="billboard-title">
+          <p>{'FACES OF DACA'}</p>
+          <p>{'Unheard stories from America\'s undocumented youth'}</p>
+          <div className='arrow bounce'>
+            <Arrow size={42} color={'white'}/>
+          </div>
         </div>
       <div className="App" style={{ overflowX: 'hidden' }}>
         <Loading
