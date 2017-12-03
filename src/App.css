@@ -71,6 +71,20 @@
      contrast(70%);
 }
 
+/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+  .billboard-container {
+  background-image: url('./img/billboard-mobile.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: none;
+  height: 100%;
+  filter: brightness(40%)
+     contrast(70%);
+  }
+}*/
+
+
 #billboard-title {
   position: absolute;
   top: 35%;
@@ -91,6 +105,31 @@
   font-family: ProximaNova;
   font-size: 25px;
   color: white;
+}
+
+@media only screen and (max-device-width: 480px) {
+  #billboard-title {
+    position: absolute;
+    top: 30%;
+    left: 0;
+    width: 100%;
+  }
+  
+  #billboard-title > p:first-child {
+  text-align: center;
+  font-family: ProximaNovaBold;
+  font-size: 60px;
+  color: white;
+}
+
+#billboard-title > p:nth-child(2) {
+  padding-top: 30px;
+  text-align: center;
+  font-family: ProximaNova;
+  font-size: 20px;
+  color: white;
+  padding-bottom: 25px;
+}
 }
 
 body { background: #2d2d37;}
