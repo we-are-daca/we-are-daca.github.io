@@ -71,7 +71,7 @@
      contrast(70%);
 }
 
-/*@media only screen and (min-device-width : 320px) and (max-device-width : 480px){
+@media only screen and (max-device-width : 575px){
   .billboard-container {
   background-image: url('./img/billboard-mobile.jpg');
   background-position: center center;
@@ -82,7 +82,7 @@
   filter: brightness(40%)
      contrast(70%);
   }
-}*/
+}
 
 
 #billboard-title {
@@ -107,7 +107,7 @@
   color: white;
 }
 
-@media only screen and (max-device-width: 480px) {
+@media only screen and (max-device-width: 575px) {
   #billboard-title {
     position: absolute;
     top: 30%;
