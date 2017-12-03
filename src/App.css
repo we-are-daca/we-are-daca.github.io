@@ -84,6 +84,19 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1024px) {
+  .billboard-container {
+  background-image: url('./img/billboard-tablet.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: none;
+  height: 100%;
+  filter: brightness(40%)
+     contrast(70%);
+  }
+}
+
 
 #billboard-title {
   position: absolute;
