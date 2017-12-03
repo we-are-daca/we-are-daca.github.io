@@ -53,6 +53,7 @@
 }
 
 #billboard {
+  height: 100%;
   width: 100%;
   display: block;
   filter: brightness(40%)
@@ -63,8 +64,8 @@
   background-image: url('./img/billboard.jpg');
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
+  background-size: cover;
+  background-attachment: none;
   height: 100%;
   filter: brightness(40%)
      contrast(70%);
