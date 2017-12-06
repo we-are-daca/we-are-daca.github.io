@@ -128,14 +128,14 @@
     width: 100%;
   }
   
-  #billboard-title > p:first-child {
+  #billboard-title > div > p:first-child {
   text-align: center;
   font-family: ProximaNovaBold;
   font-size: 60px;
   color: white;
 }
 
-#billboard-title > p:nth-child(2) {
+#billboard-title > div:nth-child(2) > p {
   padding-top: 30px;
   text-align: center;
   font-family: ProximaNova;
