@@ -293,7 +293,7 @@ class App extends Component {
            <div className="row dacas">
           {
             this.state.cards.map((card, i) => (
-              <ScrollAnimation animateIn={'fadeIn'} animateOnce={true} offset={0}>
+              <ScrollAnimation animateIn={'fadeIn'} animateOnce={true} offset={-25}>
                 <Card name={card.name} occupation={card.occupation} key={i} imageLoaded={this.imageLoaded}
                 timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image}
                 link={card.link} />
