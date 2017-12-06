@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import MdMenu from 'react-icons/lib/md/menu';
 import Arrow from 'react-icons/lib/fa/angle-down';
 import Sticky from 'react-stickynode';
 import Facebook from './img/facebook.svg';
@@ -213,6 +214,16 @@ class App extends Component {
     this.setState(params);
   }
 
+  determinePath() {
+    let path = '';
+    switch (window.location.pathname) {
+      case '/': 'Stories'
+      path = 'Stories';
+      break;
+    }
+    return path;
+  }
+
   render() {
     const inner = '<use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-mask"></use>';
     return (
@@ -239,14 +250,24 @@ class App extends Component {
         <Sticky enabled={true}>
         <div className="sidenav">
           <div className="title">
-            <span>{'Faces Of Daca'}</span>
+            <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
+              <span>{'Faces Of Daca'}</span>
+            </ScrollAnimation>
           </div>
           <div className="navigation">
             <ul>
-              <li><NavLink to="/" activeClassName="links">Stories</NavLink></li>
-              <li><NavLink to="/statistics" activeClassName="links"></NavLink>Statistics</li>
-              <li>How To Help</li>
-              <li>About</li>
+              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
+                <li><NavLink to="/" activeClassName="links">Stories</NavLink></li>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'} >
+                <li><NavLink to="/statistics" activeClassName="links"></NavLink>Statistics</li>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
+              <li><NavLink to="/help" activeClassName="links"></NavLink>How To Help</li>
+              </ScrollAnimation>
+              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'} offset={50}>
+                <li><NavLink to="/help" activeClassName="links"></NavLink>About</li>
+              </ScrollAnimation>
               <div className="social">
                 <div>
                 <div>
@@ -265,13 +286,18 @@ class App extends Component {
         </div>
         </Sticky>
         <div className="container main">
+           <div className="mobile-nav">
+              <span>{this.determinePath()}</span>
+              <MdMenu size={28}/>
+           </div>
            <div className="row dacas">
           {
             this.state.cards.map((card, i) => (
-              <Card name={card.name} occupation={card.occupation} key={i} imageLoaded={this.imageLoaded}
-              timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image}
-              link={card.link}
-              />
+              <ScrollAnimation animateIn={'fadeIn'} animateOnce={true} offset={200} >
+                <Card name={card.name} occupation={card.occupation} key={i} imageLoaded={this.imageLoaded}
+                timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image}
+                link={card.link} />
+              </ScrollAnimation>
             ))
           }
           </div>

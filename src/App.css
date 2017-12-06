@@ -71,6 +71,17 @@
      contrast(70%);
 }
 
+.sticky-outer-wrapper {
+  width: 28%;
+}
+
+@media (min-width: 576px) {
+  .mobile-nav {
+    display: none;
+  }
+}
+
+
 @media only screen and (max-device-width : 575px){
   .billboard-container {
   background-image: url('./img/billboard-mobile.jpg');
@@ -81,6 +92,28 @@
   height: 100%;
   filter: brightness(40%)
      contrast(70%);
+  }
+
+  .sticky-outer-wrapper {
+    display: none;
+  }
+
+  .mobile-nav > span {
+    color: #333333;
+    font-weight: 200;
+    font-size: 28px;
+    letter-spacing: 1.8px;
+    font-family: ProximaNova;
+    padding-right: 10px;
+  }
+
+  .mobile-nav > svg {
+    margin-bottom: 5px;
+  }
+
+  .mobile-nav {
+    margin-top: 10px;
+    margin-bottom: 20px;
   }
 }
 
@@ -170,10 +203,6 @@ a { color: white; text-decoration: none; }
   }
 }
 
-.sticky-outer-wrapper {
-  width: 28%;
-}
-
 .sidenav {
     height: 100%;
     top: 0;
@@ -192,7 +221,7 @@ a { color: white; text-decoration: none; }
   background: url('./img/facebook-lite.svg') no-repeat -9999px -9999px;
 }
 
-.title > span {
+.title > div > span {
  color: #333333;
  font-weight: 200;
  font-size: 28px;
@@ -221,7 +250,7 @@ a { color: white; text-decoration: none; }
   cursor: pointer;
 }
 
-.navigation > ul > li {
+.navigation > ul > div > li {
   list-style: none;
   text-align: left;
   padding-left: 31px;
