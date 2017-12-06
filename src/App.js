@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import Arrow from 'react-icons/lib/fa/angle-down';
 import Sticky from 'react-stickynode';
 import Facebook from './img/facebook.svg';
@@ -219,8 +220,12 @@ class App extends Component {
         <div className="billboard-container">
         </div>
         <div id="billboard-title">
-          <p>{'FACES OF DACA'}</p>
-          <p>{'Unheard stories from America\'s undocumented youth'}</p>
+          <ScrollAnimation animateIn={'fadeIn'} animateOnce={true}>
+            <p>{'FACES OF DACA'}</p>
+          </ScrollAnimation>
+          <ScrollAnimation animateIn={'fadeIn'} animateOnce={true} delay={1000}>
+            <p>{'Unheard stories from America\'s undocumented youth'}</p>
+          </ScrollAnimation>
           <div className='arrow bounce'>
             <Arrow size={42} color={'white'}/>
           </div>
