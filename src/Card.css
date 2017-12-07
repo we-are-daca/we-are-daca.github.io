@@ -1,32 +1,18 @@
 @font-face {
-  font-family: Muli-Italic;
-  src: url('fonts/Muli-ExtraLightItalic.ttf')
+  font-family: ProximaNova;
+  src: url('fonts/Proxima-Nova-Semibold.ttf')
 }
 
 @font-face {
-  font-family: ArsenalBold;
-  src: url('fonts/Arsenal-Bold.ttf')
+  font-family: ProximaNovaRegular;
+  src: url('fonts/ProximaNova-Regular.otf')
 }
 
 @font-face {
-  font-family: LatoRegular;
-  src: url('fonts/Lato-Regular.ttf')
+  font-family: ProximaNovaBold;
+  src: url('fonts/ProximaNova-Bold.otf');
 }
 
-@font-face{
-  font-family: OpenSansRegular;
-  src: url('fonts/OpenSans-Regular.ttf');
-}
-
-@font-face {
-  font-family: OpenSans;
-  src: url('fonts/OpenSans-SemiBold.ttf');
-}
-
-@font-face{
-  font-family: EncodeSans;
-  src: url('fonts/EncodeSansSemiCondensed-SemiBold.ttf');
-}
 
 .innercardcontent{
   display: table;
@@ -42,8 +28,7 @@
 .Card-name{
   max-width: 200px;
   font-size: 18px;
-  font-family: 'ArsenalBold';
-  font-weight: 400;
+  font-family: 'ProximaNovaRegular';
   margin-bottom: 0px;
 }
 
@@ -55,18 +40,20 @@
 .Card-title {
   max-width: 200px;
   font-size: 14px;
-  font-family: "LatoRegular";
+  font-family: "ProximaNova";
   letter-spacing: 0.03em;
   text-align: center;
+  color: #727272;
 }
 
 .timearrival {
   font-size: 22px;
-  font-family: 'ArsenalBold';
+  font-family: 'ProximaNovaBold';
 }
 
 .timearrival a {
   color: white;
+  text-decoration: none;
 }
 
 .hovereffect {
@@ -161,7 +148,7 @@ transition-delay:.2s;
   .Card-name{
     max-width: 175px;
     font-size: 18px;
-    font-family: 'ArsenalBold';
+    font-family: 'ProximaNova';
     font-weight: 400;
     margin-bottom: 0px;
 }

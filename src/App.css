@@ -245,7 +245,7 @@ a { color: white; text-decoration: none; }
   color: #000;
 }
 
-.navigation > ul > li:hover {
+.navigation > ul > div > li:hover {
   color: #000;
   cursor: pointer;
 }
@@ -303,7 +303,7 @@ a { color: white; text-decoration: none; }
 }
 
 .main {
-  padding: 1px 0;
+  padding-top: 47px;
 }
 
 
