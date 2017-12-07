@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import ScrollAnimation from 'react-animate-on-scroll';
+import ScrollLock from 'react-scrolllock';
+import MdClose from 'react-icons/lib/md/close';
 import MdMenu from 'react-icons/lib/md/menu';
 import Arrow from 'react-icons/lib/fa/angle-down';
 import Sticky from 'react-stickynode';
@@ -19,6 +21,16 @@ class App extends Component {
     this.state = {
       show: false,
       numLoaded: 0,
+      isMenuOpen: false,
+      menuStyle: {
+        height: '100%',
+        left: 0,
+        width: 0,
+        top: 0,
+        background: '#ececec',
+        zIndex: 1,
+        position: 'fixed'
+      },
       cards: [
         {
           name: 'Luis',
@@ -224,6 +236,28 @@ class App extends Component {
     return path;
   }
 
+  handleMenu = () => {
+    this.setState({
+      isMenuOpen: true,
+      menuStyle: {
+        ...this.state.menuStyle,
+        width: '100%',
+        opacity: 0.5
+      }
+    })
+  };
+
+  closeMenu = () => {
+    this.setState({
+      isMenuOpen: false,
+      menuStyle: {
+        ...this.state.menuStyle,
+        width: '0%',
+        opacity: 0
+      }
+    });
+  }
+
   render() {
     const inner = '<use class="sqs-use--icon" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-icon"></use><use class="sqs-use--mask" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#facebook-mask"></use>';
     return (
@@ -238,16 +272,17 @@ class App extends Component {
             <p>{'Unheard stories from America\'s undocumented youth'}</p>
           </ScrollAnimation>
           <div className='arrow bounce'>
-            <Arrow size={42} color={'white'}/>
+             <Arrow size={42} color={'white'}/>
           </div>
         </div>
+      {this.state.isMenuOpen && <ScrollLock />}
+      <div className="mobile-menu" style={this.state.menuStyle}></div>
       <div className="App" style={{ overflowX: 'hidden' }}>
         <Loading
           color={'blue'}
           show={this.state.show}
           showSpinner={false}
         />
-
         <div className="flex-container">
           <Sticky enabled={true}>
             <div className="sidenav">
@@ -289,8 +324,18 @@ class App extends Component {
           </Sticky>
           <div className="main">
             <div className="mobile-nav">
+                { 
+                this.state.isMenuOpen ? 
+                  (
+                    <MdClose size={28} onClick={this.closeMenu} className="menu-close"/>
+                  ) :
+                  (
+                    <MdMenu size={28} onClick={this.handleMenu} className="menu-icon"/>
+                  )
+                }
+
                 <span>{this.determinePath()}</span>
-                <MdMenu size={28}/>
+                
             </div>
             <div className="row dacas">
             {
