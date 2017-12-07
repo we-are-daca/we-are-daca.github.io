@@ -71,10 +71,6 @@
      contrast(70%);
 }
 
-.sticky-outer-wrapper {
-  width: 28%;
-}
-
 @media (min-width: 576px) {
   .mobile-nav {
     display: none;
@@ -128,6 +124,10 @@
   filter: brightness(40%)
      contrast(70%);
   }
+}
+
+.main {
+  flex: 1;
 }
 
 @media (min-width: 768px) {
@@ -340,6 +340,11 @@ a { color: white; text-decoration: none; }
             animation: fadein 1s;
 }
 
+.flex-container {
+  display: flex;
+  width: 100%;
+}
+
 /* Firefox < 16 */
 @-moz-keyframes fadein {
     from { opacity: 0; }
@@ -391,78 +396,6 @@ a { color: white; text-decoration: none; }
   color: black;
 }
 
-.about-daca {
-  margin: 15px 0;
-  text-align: left;
-  font-family: 'LatoRegular';
-  text-transform: uppercase;
-}
-
-.about-daca a {
-  font-size: 18px;
-  padding-right: 10px;
-}
-
-.about-site {
-  margin: 15px 0;
-  text-align: right;
-  font-family: 'LatoRegular';
-  text-transform: uppercase;
-}
-
-.about-site a {
-  font-size: 18px;
-  padding-left: 10px;
-}
-
-@media (max-width: 640px) {
-  .logo {
-    font-size: 28px;
-  }
-
-  .about-daca a {
-    font-size: 14px;
-  }
-
-  .about-site a {
-    font-size: 14px;
-  }
-}
-
-@media (max-width: 768px) {
-  .about-daca {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-    text-align: right;
-  }
-
-  .about-daca a {
-    padding-right: 20px;
-  }
-
-  .about-site {
-    padding-left: 2px !important;
-    padding-right: 2px !important;
-    text-align: left;
-  }
-
-  .about-site a {
-    padding-left: 0px;
-  }
-
-  .site-navigation {
-    margin: 24px 0 28px 0
-  }
-
-  .logo {
-    padding-left: 0px !important;
-  }
-
-  .portrait img{
-    width: 100%;
-  }
-
-}
 
 .participant {
   text-align: center;

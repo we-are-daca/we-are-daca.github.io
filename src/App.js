@@ -247,59 +247,62 @@ class App extends Component {
           show={this.state.show}
           showSpinner={false}
         />
-        <Sticky enabled={true}>
-        <div className="sidenav">
-          <div className="title">
-            <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
-              <span>{'Faces Of Daca'}</span>
-            </ScrollAnimation>
-          </div>
-          <div className="navigation">
-            <ul>
-              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
-                <li><NavLink to="/" activeClassName="links">Stories</NavLink></li>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'} >
-                <li><NavLink to="/statistics" activeClassName="links"></NavLink>Statistics</li>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
-              <li><NavLink to="/help" activeClassName="links"></NavLink>How To Help</li>
-              </ScrollAnimation>
-              <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'} offset={50}>
-                <li><NavLink to="/help" activeClassName="links"></NavLink>About</li>
-              </ScrollAnimation>
-              <div className="social">
-                <div>
-                <div>
-                  <img id="facebook" src={Facebook} />
-                </div>
-                <div>
-                  <img src={Instagram} />
-                </div>
-                <div>
-                  <img src={Twitter} />
-                </div>
-                </div>
+
+        <div className="flex-container">
+          <Sticky enabled={true}>
+            <div className="sidenav">
+              <div className="title">
+                <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
+                  <span>{'Faces Of Daca'}</span>
+                </ScrollAnimation>
               </div>
-            </ul>
-          </div>
-        </div>
-        </Sticky>
-        <div className="container main">
-           <div className="mobile-nav">
-              <span>{this.determinePath()}</span>
-              <MdMenu size={28}/>
-           </div>
-           <div className="row dacas">
-          {
-            this.state.cards.map((card, i) => (
-              <ScrollAnimation animateIn={'fadeIn'} animateOnce={true} offset={-100}>
-                <Card name={card.name} occupation={card.occupation} key={i} imageLoaded={this.imageLoaded}
-                timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image}
-                link={card.link} />
-              </ScrollAnimation>
-            ))
-          }
+              <div className="navigation">
+                <ul>
+                  <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
+                    <li><NavLink to="/" activeClassName="links">Stories</NavLink></li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'} >
+                    <li><NavLink to="/statistics" activeClassName="links"></NavLink>Statistics</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'}>
+                  <li><NavLink to="/help" activeClassName="links"></NavLink>How To Help</li>
+                  </ScrollAnimation>
+                  <ScrollAnimation animateIn={'fadeIn'} animateOnce={'true'} offset={50}>
+                    <li><NavLink to="/help" activeClassName="links"></NavLink>About</li>
+                  </ScrollAnimation>
+                  <div className="social">
+                    <div>
+                    <div>
+                      <img id="facebook" src={Facebook} />
+                    </div>
+                    <div>
+                      <img src={Instagram} />
+                    </div>
+                    <div>
+                      <img src={Twitter} />
+                    </div>
+                    </div>
+                  </div>
+                </ul>
+              </div>
+            </div>  
+          </Sticky>
+          <div className="main">
+            <div className="mobile-nav">
+                <span>{this.determinePath()}</span>
+                <MdMenu size={28}/>
+            </div>
+            <div className="row dacas">
+            {
+              this.state.cards.map((card, i) => (
+                <ScrollAnimation animateIn={'fadeIn'} animateOnce={true} offset={-100}>
+                  <Card name={card.name} occupation={card.occupation} key={i} imageLoaded={this.imageLoaded}
+                  timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image}
+                  link={card.link} />
+                </ScrollAnimation>
+              ))
+            }
+            </div>
           </div>
         </div>
       </div>
