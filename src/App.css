@@ -81,6 +81,12 @@
   width: 28%;
 }
 
+@media only screen and (min-width: 1440px) {
+  .sticky-outer-wrapper {
+    width: 18%;
+  }
+}
+
 @media only screen and (max-device-width : 575px){
   .billboard-container {
   background-image: url('./img/billboard-mobile.jpg');
