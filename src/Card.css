@@ -137,6 +137,9 @@ transition-delay:.2s;
   align-items: center;
 }
 
+.dacas > div {
+  margin: 10px;
+}
 @media (max-width: 576px) {
 
   .innercardcontent {

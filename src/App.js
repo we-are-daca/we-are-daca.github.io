@@ -69,7 +69,7 @@ class App extends Component {
         },
         {
           name: 'Miguel',
-          occupation: 'DevOps/Embedded Vision Engineer',
+          occupation: 'Embedded Vision Engineer',
           timeSinceArrival: '11',
           country: 'Mexico',
           image: 'miguel_portrait.jpg',
@@ -94,7 +94,7 @@ class App extends Component {
         
         {
           name: 'Daniel',
-          occupation: 'Student / Aspiring Software Engineer',
+          occupation: 'Aspiring Software Engineer',
           timeSinceArrival: '18',
           country: 'Mexico',
           image: 'daniel_1_portrait.jpg',
@@ -150,7 +150,7 @@ class App extends Component {
         },
         {
           name: 'Elvin',
-          occupation: 'Investor, Entrepreneur, Warehouse Worker',
+          occupation: 'Investor & Entrepreneur',
           timeSinceArrival: '15',
           country: 'Mexico',
           image: 'elvin.png',
@@ -174,7 +174,7 @@ class App extends Component {
         },
         {
           name: 'Octavio',
-          occupation: 'Pest Control Advisor & Business Owner',
+          occupation: 'Business Owner',
           timeSinceArrival: '13',
           country: 'Mexico',
           image: 'octavio_portrait.jpg',
