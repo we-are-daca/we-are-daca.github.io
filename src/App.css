@@ -130,6 +130,12 @@
   }
 }
 
+@media (min-width: 768px) {
+  .main {
+    padding-top: 47px;
+  }
+}
+
 
 #billboard-title {
   position: absolute;
@@ -301,11 +307,6 @@ a { color: white; text-decoration: none; }
 .social > div > div:nth-child(2), .social > div > div:nth-child(3){
   padding-left: 15px;
 }
-
-.main {
-  padding-top: 47px;
-}
-
 
 .App-logo {
   animation: App-logo-spin infinite 20s linear;

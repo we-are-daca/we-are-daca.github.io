@@ -130,11 +130,15 @@ transform:translatey(0);
 transition-delay:.2s;
 }
 
+.dacas {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
 
 @media (max-width: 576px) {
-  .dacas {
-    padding-left: 13px
-  }
+
   .innercardcontent {
     margin-bottom: 20px
   }
