@@ -27,9 +27,18 @@ class App extends Component {
         left: 0,
         width: 0,
         top: 0,
-        background: '#ececec',
+        backgroundColor: 'rgba(255, 255, 255, 0.95)',
         zIndex: 1,
         position: 'fixed'
+      },
+      menuContent: {
+        display: 'none',
+        position: 'relative',
+        top: '10%', /* 25% from the top */
+        width: '100%', /* 100% width */
+        textAlign: 'center', /* Centered text/links */
+        marginTop: '30px', /* 30px top margin to avoid conflict with the close button on smaller screens */
+        zIndex: 2
       },
       cards: [
         {
@@ -202,16 +211,6 @@ class App extends Component {
     }, 10);
   }
 
-  photoRow = ({ cardQuad }) => (
-    <div className="row">
-      {cardQuad.map((card, index) => (
-        <Card name={card.name} occupation={card.occupation} key={index}
-          timeSinceArrival={card.timeSinceArrival} country={card.country} image={card.image} />
-      ))
-      }
-    </div>
-  )
-
   imageLoaded = () => {
     const oneMore = this.state.numLoaded + 1
     const params = {
@@ -243,7 +242,11 @@ class App extends Component {
       menuStyle: {
         ...this.state.menuStyle,
         width: '100%',
-        opacity: 0.5
+        opacity: 1
+      },
+      menuContent: {
+        ...this.state.menuContent,
+        display: 'block'
       }
     })
   };
@@ -255,6 +258,9 @@ class App extends Component {
         ...this.state.menuStyle,
         width: '0%',
         opacity: 0
+      },
+      menuListStyle: {
+        display: 'none'
       }
     });
   }
@@ -270,7 +276,7 @@ class App extends Component {
                 { 
                 this.state.isMenuOpen ? 
                   (
-                    <MdClose size={36} onClick={this.closeMenu} className="menu-close" color={'white'} />
+                    <MdClose size={36} onClick={this.closeMenu} className="menu-close" color={'black'} />
                   ) :
                   (
                     <MdMenu size={36} onClick={this.handleMenu} className="menu-icon" color={'white'} />
@@ -284,7 +290,14 @@ class App extends Component {
           </div>
         </div>
       {this.state.isMenuOpen && <ScrollLock />}
-      <div className="mobile-menu" style={this.state.menuStyle}></div>
+      <div className="mobile-menu" style={this.state.menuStyle}>
+        <div className="overlay-content" style={this.state.menuContent}>
+          <NavLink to="/" activeClassName="">Stories</NavLink> 
+          <NavLink to="/statistics" activeClassName="">Statistics</NavLink>
+          <NavLink to="/help" activeClassName="">How To Help</NavLink>
+          <NavLink to="/help" activeClassName="">About</NavLink>
+        </div>
+      </div>
       <div className="App" style={{ overflowX: 'hidden' }}>
         <Loading
           color={'blue'}

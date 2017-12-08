@@ -92,6 +92,15 @@
             animation: fadein 1s;
 }
 
+.overlay-content a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: black;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
 @media (min-width: 576px) {
   .mobile-nav {
     display: none;
