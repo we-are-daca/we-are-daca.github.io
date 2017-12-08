@@ -174,43 +174,76 @@
   width: 100%;
 }
 
-#billboard-title > div > p:first-child {
+#billboard-title > p:nth-child(2) {
   text-align: center;
   font-family: ProximaNovaBold;
   font-size: 100px;
   color: white;
+  -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s; /* Firefox < 16 */
+        -ms-animation: fadein 3s; /* Internet Explorer */
+         -o-animation: fadein 3s; /* Opera < 12.1 */
+            animation: fadein 3s;
 }
 
-#billboard-title > div:nth-child(2) > p {
+#billboard-title > p:nth-child(3) {
   padding-top: 30px;
   text-align: center;
   font-family: ProximaNova;
   font-size: 25px;
   color: white;
+  opacity: 0;
+  -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s 1s; /* Firefox < 16 */
+        -ms-animation: fadein 3s 1s; /* Internet Explorer */
+         -o-animation: fadein 3s 1s; /* Opera < 12.1 */
+            animation: fadein 3s 1s;
+
+  animation-fill-mode: forwards;
 }
 
 @media only screen and (max-device-width: 575px) {
   #billboard-title {
     position: absolute;
-    top: 30%;
+    top: 5%;
     left: 0;
     width: 100%;
   }
+
+  #billboard-title > div:nth-child(1) {
+    padding-left: 10px;
+  }
   
-  #billboard-title > div > p:first-child {
+  #billboard-title > p:nth-child(2) {
   text-align: center;
   font-family: ProximaNovaBold;
   font-size: 60px;
   color: white;
+  opacity: 0;
+  -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s 1s; /* Firefox < 16 */
+        -ms-animation: fadein 3s 1s; /* Internet Explorer */
+         -o-animation: fadein 3s 1s; /* Opera < 12.1 */
+            animation: fadein 3s 1s;
+
+  animation-fill-mode: forwards;
 }
 
-#billboard-title > div:nth-child(2) > p {
+#billboard-title > p:nth-child(3) {
   padding-top: 30px;
   text-align: center;
   font-family: ProximaNova;
   font-size: 20px;
   color: white;
   padding-bottom: 25px;
+  opacity: 0;
+  -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 3s 1s; /* Firefox < 16 */
+        -ms-animation: fadein 3s 1s; /* Internet Explorer */
+         -o-animation: fadein 3s 1s; /* Opera < 12.1 */
+            animation: fadein 3s 1s;
+
+  animation-fill-mode: forwards;
 }
 }
 
@@ -364,9 +397,9 @@ a { color: white; text-decoration: none; }
   overflow: hidden;
   max-width: 100%;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 5s; /* Firefox < 16 */
-        -ms-animation: fadein 5s; /* Internet Explorer */
-         -o-animation: fadein 5s; /* Opera < 12.1 */
+       -moz-animation: fadein 1s; /* Firefox < 16 */
+        -ms-animation: fadein 1s; /* Internet Explorer */
+         -o-animation: fadein 1s; /* Opera < 12.1 */
             animation: fadein 1s;
 }
 

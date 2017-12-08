@@ -237,6 +237,7 @@ class App extends Component {
   }
 
   handleMenu = () => {
+    console.log(this.mobileNav.getBoundingClientRect());
     this.setState({
       isMenuOpen: true,
       menuStyle: {
@@ -265,12 +266,19 @@ class App extends Component {
         <div className="billboard-container">
         </div>
         <div id="billboard-title">
-          <ScrollAnimation animateIn={'fadeIn'} animateOnce={true}>
+          <div className="mobile-nav" ref={(input) => { this.mobileNav = input }}>
+                { 
+                this.state.isMenuOpen ? 
+                  (
+                    <MdClose size={36} onClick={this.closeMenu} className="menu-close" color={'white'} />
+                  ) :
+                  (
+                    <MdMenu size={36} onClick={this.handleMenu} className="menu-icon" color={'white'} />
+                  )
+                }
+            </div>
             <p>{'FACES OF DACA'}</p>
-          </ScrollAnimation>
-          <ScrollAnimation animateIn={'fadeIn'} animateOnce={true} delay={1000}>
             <p>{'Unheard stories from America\'s undocumented youth'}</p>
-          </ScrollAnimation>
           <div className='arrow bounce'>
              <Arrow size={42} color={'white'}/>
           </div>
@@ -324,18 +332,7 @@ class App extends Component {
           </Sticky>
           <div className="main">
             <div className="mobile-nav">
-                { 
-                this.state.isMenuOpen ? 
-                  (
-                    <MdClose size={28} onClick={this.closeMenu} className="menu-close"/>
-                  ) :
-                  (
-                    <MdMenu size={28} onClick={this.handleMenu} className="menu-icon"/>
-                  )
-                }
-
-                <span>{this.determinePath()}</span>
-                
+             <span>{this.determinePath()}</span>
             </div>
             <div className="row dacas">
             {
