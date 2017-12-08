@@ -99,6 +99,7 @@
     color: black;
     display: block; /* Display block instead of inline */
     transition: 0.3s; /* Transition effects on hover (color) */
+    font-family: 'ProximaNovaBold';
 }
 
 @media (min-width: 576px) {
