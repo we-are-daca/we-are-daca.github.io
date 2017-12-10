@@ -6,7 +6,7 @@ import Suitcase from 'react-icons/lib/fa/suitcase';
 import '../common.css';
 
 const Info = (props) => (
-    <div className="col-md-12">
+    <div className="info">
         <li className="info-years">
             <p>
                 <span className="icon">

@@ -1,31 +1,26 @@
 @font-face {
-  font-family: BreeSerif;
-  src: url('fonts/BreeSerif-Regular.ttf')
+  font-family: ProximaNova;
+  src: url('fonts/Proxima-Nova-Semibold.ttf')
 }
 
 @font-face {
-  font-family: OpenSans;
-  src: url('fonts/OpenSans-Regular.ttf')
+  font-family: ProximaNovaRegular;
+  src: url('fonts/ProximaNova-Regular.otf')
 }
 
 @font-face {
-  font-family: ArsenalBold;
-  src: url('fonts/Arsenal-Bold.ttf')
-}
-
-@font-face {
-  font-family: LatoRegular;
-  src: url('fonts/Lato-Regular.ttf')
+  font-family: ProximaNovaBold;
+  src: url('fonts/ProximaNova-Bold.otf');
 }
 
 body {
-    background-color: #FFFDF5;
+    background-color: #ececec;
 }
 
 .dacamentor-name {
     font-size: 50px;
     letter-spacing: 0.05em;
-    font-family: "Arsenal";
+    font-family: "ProximaNova";
     margin-top: 30px;
     margin-bottom: 20px;
 }
@@ -113,7 +108,7 @@ body {
     font-size: 14px;
     opacity: 0.5;
     text-transform: uppercase;
-    font-family: "LatoRegular";
+    font-family: "ProximaNova";
 }
 
 .info-text {
