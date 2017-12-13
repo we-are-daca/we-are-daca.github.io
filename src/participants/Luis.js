@@ -55,7 +55,7 @@ class Luis extends React.Component {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "none",
         backgroundSize: "cover",
-        height: 400
+        height: 300
       }
     };
 
@@ -210,19 +210,19 @@ class Luis extends React.Component {
                     <div className="mobile-nav" style={this.mobileNavStyle}>
                       {this.state.isMenuOpen ? (
                         <MdClose
-                          size={36}
+                          size={40}
                           onClick={this.closeMenu}
                           className="menu-close"
                           color={"black"}
-                          style={{ margin: 5 }}
+                          style={{ margin: 10 }}
                         />
                       ) : (
                         <MdMenu
-                          size={36}
+                          size={40}
                           onClick={this.handleMenu}
                           className="menu-icon"
                           color={"white"}
-                          style={{ margin: 5 }}
+                          style={{ margin: 10 }}
                         />
                       )}
                     </div>
