@@ -1,6 +1,7 @@
 import React from "react";
 import Loading from "react-loading-bar";
 import { Link } from "react-router-dom";
+import MediaQuery from "react-responsive";
 import "react-loading-bar/dist/index.css";
 import Info from "../common/Info";
 import "../App.css";
@@ -27,7 +28,42 @@ class Luis extends React.Component {
       timeSinceArrival: "15",
       country: "Mexico",
       image: "luis_portrait_2.jpg",
-      interviewDate: "September 30, 2017"
+      interviewDate: "September 30, 2017",
+      isMenuOpen: false,
+      menuStyle: {
+        height: "100%",
+        left: 0,
+        width: 0,
+        top: 0,
+        backgroundColor: "rgba(255, 255, 255, 0.95)",
+        zIndex: 1,
+        position: "fixed"
+      },
+      menuContent: {
+        display: "none",
+        position: "relative",
+        top: "10%" /* 25% from the top */,
+        width: "100%" /* 100% width */,
+        textAlign: "center" /* Centered text/links */,
+        marginTop:
+          "30px" /* 30px top margin to avoid conflict with the close button on smaller screens */,
+        zIndex: 2
+      },
+      portraitStyle: {
+        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/luis_portrait_2.jpg)`,
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
+        backgroundAttachment: "none",
+        backgroundSize: "cover",
+        height: 400
+      }
+    };
+
+    this.mobileNavStyle = {
+      display: "flex",
+      justifyContent: "left",
+      alignItems: "left",
+      marginTop: 0
     };
 
     setTimeout(() => {
@@ -56,16 +92,48 @@ class Luis extends React.Component {
     return path;
   }
 
+  handleMenu = () => {
+    this.setState({
+      isMenuOpen: true,
+      menuStyle: {
+        ...this.state.menuStyle,
+        width: "100%",
+        opacity: 1
+      },
+      menuContent: {
+        ...this.state.menuContent,
+        display: "block"
+      }
+    });
+  };
+
+  closeMenu = () => {
+    this.setState({
+      isMenuOpen: false,
+      menuStyle: {
+        ...this.state.menuStyle,
+        width: "0%",
+        opacity: 0
+      },
+      menuListStyle: {
+        display: "none"
+      }
+    });
+  };
+
   render() {
     console.log(this.state);
     return (
       <div className="participant">
-        <Loading color={"blue"} show={this.state.show} showSpinner={false} />
         <div className="flex-container">
           <Sticky enabled={true}>
             <div className="sidenav">
               <div className="title">
-                <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"} offset={-10}>
+                <ScrollAnimation
+                  animateIn={"fadeIn"}
+                  animateOnce={"true"}
+                  offset={-10}
+                >
                   <span>{"Faces Of Daca"}</span>
                 </ScrollAnimation>
               </div>
@@ -118,18 +186,47 @@ class Luis extends React.Component {
             </div>
           </Sticky>
           <div className="main">
-            <div className="mobile-nav">
-              <span>{this.determinePath()}</span>
+            <div className="mobile-menu" style={this.state.menuStyle}>
+              <div className="overlay-content" style={this.state.menuContent}>
+                <NavLink to="/" activeClassName="">
+                  Stories
+                </NavLink>
+                <NavLink to="/statistics" activeClassName="">
+                  Statistics
+                </NavLink>
+                <NavLink to="/help" activeClassName="">
+                  How To Help
+                </NavLink>
+                <NavLink to="/help" activeClassName="">
+                  About
+                </NavLink>
+              </div>
             </div>
+            {this.state.isMenuOpen && <ScrollLock />}
             <div className="profile">
               <div className="">
-                <div className="portrait">
-                  <img
-                    src={`https://dwistynbcri9g.cloudfront.net/${this.state
-                      .image}`}
-                    alt={this.state.name}
-                    onLoad={this.imageLoaded}
-                  />
+                <div className="portrait" style={this.state.portraitStyle}>
+                  <MediaQuery query="(max-width: 1224px)">
+                    <div className="mobile-nav" style={this.mobileNavStyle}>
+                      {this.state.isMenuOpen ? (
+                        <MdClose
+                          size={36}
+                          onClick={this.closeMenu}
+                          className="menu-close"
+                          color={"black"}
+                          style={{ margin: 5 }}
+                        />
+                      ) : (
+                        <MdMenu
+                          size={36}
+                          onClick={this.handleMenu}
+                          className="menu-icon"
+                          color={"white"}
+                          style={{ margin: 5 }}
+                        />
+                      )}
+                    </div>
+                  </MediaQuery>
                 </div>
               </div>
               <div className="">
@@ -142,14 +239,14 @@ class Luis extends React.Component {
                   <div className="dacamentor-border" />
                 </div>
               </div>
-                <div className="info-container">
-                    <Info
-                    years={this.state.timeSinceArrival}
-                    date={this.state.interviewDate}
-                    occupation={this.state.occupation}
-                    country={this.state.country}
-                    />
-                </div>
+              <div className="info-container">
+                <Info
+                  years={this.state.timeSinceArrival}
+                  date={this.state.interviewDate}
+                  occupation={this.state.occupation}
+                  country={this.state.country}
+                />
+              </div>
               <div className="">
                 <div className="dacamentor-endborder-container">
                   <div className="dacamentor-endborder" />

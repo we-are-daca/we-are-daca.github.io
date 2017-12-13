@@ -1,39 +1,40 @@
 @font-face {
   font-family: Muli-Italic;
-  src: url('fonts/Muli-ExtraLightItalic.ttf')
+  src: url("fonts/Muli-ExtraLightItalic.ttf");
 }
 
 @font-face {
   font-family: ProximaNova;
-  src: url('fonts/Proxima-Nova-Semibold.ttf')
+  src: url("fonts/Proxima-Nova-Semibold.ttf");
 }
 
 @font-face {
   font-family: ProximaNovaRegular;
-  src: url('fonts/ProximaNova-Regular.otf')
+  src: url("fonts/ProximaNova-Regular.otf");
 }
 
 @font-face {
   font-family: ProximaNovaBold;
-  src: url('fonts/ProximaNova-Bold.otf');
+  src: url("fonts/ProximaNova-Bold.otf");
 }
 
 @font-face {
   font-family: ArsenalBold;
-  src: url('fonts/Arsenal-Bold.ttf')
+  src: url("fonts/Arsenal-Bold.ttf");
 }
 
 @font-face {
   font-family: LatoRegular;
-  src: url('fonts/Lato-Regular.ttf')
+  src: url("fonts/Lato-Regular.ttf");
 }
 
 @font-face {
   font-family: OpenSans;
-  src: url('fonts/OpenSans-SemiBold.ttf')
+  src: url("fonts/OpenSans-SemiBold.ttf");
 }
 
-.html, body{
+.html,
+body {
   height: 100vh;
   max-width: 100%;
   overflow-x: hidden;
@@ -56,19 +57,17 @@
   height: 100%;
   width: 100%;
   display: block;
-  filter: brightness(40%)
-    contrast(70%);
+  filter: brightness(40%) contrast(70%);
 }
 
 .billboard-container {
-  background-image: url('./img/billboard.jpg');
+  background-image: url("./img/billboard.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: none;
   height: 100%;
-  filter: brightness(40%)
-     contrast(70%);
+  filter: brightness(40%) contrast(70%);
 }
 
 .mobile-nav {
@@ -77,29 +76,29 @@
 }
 
 .menu-icon {
-      -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 .menu-close {
-      -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 .overlay-content a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 36px;
-    color: black;
-    display: block; /* Display block instead of inline */
-    transition: 0.3s; /* Transition effects on hover (color) */
-    font-family: 'ProximaNovaBold';
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: black;
+  display: block; /* Display block instead of inline */
+  transition: 0.3s; /* Transition effects on hover (color) */
+  font-family: "ProximaNovaBold";
 }
 
 @media (min-width: 576px) {
@@ -118,16 +117,15 @@
   }
 }
 
-@media only screen and (max-device-width : 575px){
+@media only screen and (max-device-width: 575px) {
   .billboard-container {
-  background-image: url('./img/billboard-mobile.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: none;
-  height: 100%;
-  filter: brightness(40%)
-     contrast(70%);
+    background-image: url("./img/billboard-mobile.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: none;
+    height: 100%;
+    filter: brightness(40%) contrast(70%);
   }
 
   .sticky-outer-wrapper {
@@ -155,14 +153,13 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .billboard-container {
-  background-image: url('./img/billboard-tablet.jpg');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: none;
-  height: 100%;
-  filter: brightness(40%)
-     contrast(70%);
+    background-image: url("./img/billboard-tablet.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: none;
+    height: 100%;
+    filter: brightness(40%) contrast(70%);
   }
 }
 
@@ -175,7 +172,6 @@
     padding-top: 47px;
   }
 }
-
 
 #billboard-title {
   position: absolute;
@@ -190,10 +186,10 @@
   font-size: 100px;
   color: white;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s; /* Firefox < 16 */
-        -ms-animation: fadein 3s; /* Internet Explorer */
-         -o-animation: fadein 3s; /* Opera < 12.1 */
-            animation: fadein 3s;
+  -moz-animation: fadein 3s; /* Firefox < 16 */
+  -ms-animation: fadein 3s; /* Internet Explorer */
+  -o-animation: fadein 3s; /* Opera < 12.1 */
+  animation: fadein 3s;
 }
 
 #billboard-title > p:nth-child(3) {
@@ -204,10 +200,10 @@
   color: white;
   opacity: 0;
   -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s 1s; /* Firefox < 16 */
-        -ms-animation: fadein 3s 1s; /* Internet Explorer */
-         -o-animation: fadein 3s 1s; /* Opera < 12.1 */
-            animation: fadein 3s 1s;
+  -moz-animation: fadein 3s 1s; /* Firefox < 16 */
+  -ms-animation: fadein 3s 1s; /* Internet Explorer */
+  -o-animation: fadein 3s 1s; /* Opera < 12.1 */
+  animation: fadein 3s 1s;
 
   animation-fill-mode: forwards;
 }
@@ -223,42 +219,47 @@
   #billboard-title > div:nth-child(1) {
     padding-left: 10px;
   }
-  
+
   #billboard-title > p:nth-child(2) {
-  text-align: center;
-  font-family: ProximaNovaBold;
-  font-size: 60px;
+    text-align: center;
+    font-family: ProximaNovaBold;
+    font-size: 60px;
+    color: white;
+    opacity: 0;
+    -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s 1s; /* Firefox < 16 */
+    -ms-animation: fadein 3s 1s; /* Internet Explorer */
+    -o-animation: fadein 3s 1s; /* Opera < 12.1 */
+    animation: fadein 3s 1s;
+
+    animation-fill-mode: forwards;
+  }
+
+  #billboard-title > p:nth-child(3) {
+    padding-top: 30px;
+    text-align: center;
+    font-family: ProximaNova;
+    font-size: 20px;
+    color: white;
+    padding-bottom: 25px;
+    opacity: 0;
+    -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 3s 1s; /* Firefox < 16 */
+    -ms-animation: fadein 3s 1s; /* Internet Explorer */
+    -o-animation: fadein 3s 1s; /* Opera < 12.1 */
+    animation: fadein 3s 1s;
+
+    animation-fill-mode: forwards;
+  }
+}
+
+body {
+  background: #2d2d37;
+}
+a {
   color: white;
-  opacity: 0;
-  -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s 1s; /* Firefox < 16 */
-        -ms-animation: fadein 3s 1s; /* Internet Explorer */
-         -o-animation: fadein 3s 1s; /* Opera < 12.1 */
-            animation: fadein 3s 1s;
-
-  animation-fill-mode: forwards;
+  text-decoration: none;
 }
-
-#billboard-title > p:nth-child(3) {
-  padding-top: 30px;
-  text-align: center;
-  font-family: ProximaNova;
-  font-size: 20px;
-  color: white;
-  padding-bottom: 25px;
-  opacity: 0;
-  -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 3s 1s; /* Firefox < 16 */
-        -ms-animation: fadein 3s 1s; /* Internet Explorer */
-         -o-animation: fadein 3s 1s; /* Opera < 12.1 */
-            animation: fadein 3s 1s;
-
-  animation-fill-mode: forwards;
-}
-}
-
-body { background: #2d2d37;}
-a { color: white; text-decoration: none; }
 
 .arrow {
   text-align: center;
@@ -271,7 +272,11 @@ a { color: white; text-decoration: none; }
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: translateY(0);
   }
   40% {
@@ -283,36 +288,36 @@ a { color: white; text-decoration: none; }
 }
 
 .sidenav {
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-color: #ececec;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 40px;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ececec;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 40px;
 }
 
 .title {
-	height: 33px;
+  height: 33px;
   padding-left: 31px;
-	text-align: left;
+  text-align: left;
   text-transform: uppercase;
-  background: url('./img/facebook-lite.svg') no-repeat -9999px -9999px;
+  background: url("./img/facebook-lite.svg") no-repeat -9999px -9999px;
 }
 
 .title > div > span {
- color: #333333;
- font-weight: 200;
- font-size: 28px;
- letter-spacing: 1.8px;
- font-family: ProximaNova;
- background: url('./img/instagram-lite.svg') no-repeat -9999px -9999px;
+  color: #333333;
+  font-weight: 200;
+  font-size: 28px;
+  letter-spacing: 1.8px;
+  font-family: ProximaNova;
+  background: url("./img/instagram-lite.svg") no-repeat -9999px -9999px;
 }
 
 .navigation > ul {
   padding-top: 28px;
   padding-left: 0px;
-  background: url('./img/twitter-lite.svg') no-repeat -9999px -9999px;
+  background: url("./img/twitter-lite.svg") no-repeat -9999px -9999px;
 }
 
 .links {
@@ -336,7 +341,7 @@ a { color: white; text-decoration: none; }
   padding-bottom: 11px;
   font-family: ProximaNovaRegular;
   font-size: 24px;
-  color: #727272
+  color: #727272;
 }
 
 .social {
@@ -349,12 +354,12 @@ a { color: white; text-decoration: none; }
   display: block;
 }
 
-.social > div > div{
+.social > div > div {
   display: inline-block;
 }
 
 .social > div > div:first-child > img:hover {
-  content: url('./img/facebook-lite.svg');
+  content: url("./img/facebook-lite.svg");
   -webkit-transition: content 1s ease-in-out;
   -moz-transition: content 1s ease-in-out;
   -o-transition: content 1s ease-in-out;
@@ -362,22 +367,22 @@ a { color: white; text-decoration: none; }
 }
 
 .social > div > div:nth-child(2) > img:hover {
-  content: url('./img/instagram-lite.svg');
+  content: url("./img/instagram-lite.svg");
 }
 
 .social > div > div:nth-child(3) > img:hover {
-  content: url('./img/twitter-lite.svg');
+  content: url("./img/twitter-lite.svg");
 }
 
-
-.social > div > div >img {
+.social > div > div > img {
   cursor: pointer;
   -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */ 
+  -moz-box-sizing: border-box; /* Firefox, other Gecko */
+  box-sizing: border-box; /* Opera/IE 8+ */
 }
 
-.social > div > div:nth-child(2), .social > div > div:nth-child(3){
+.social > div > div:nth-child(2),
+.social > div > div:nth-child(3) {
   padding-left: 15px;
 }
 
@@ -407,10 +412,10 @@ a { color: white; text-decoration: none; }
   overflow: hidden;
   max-width: 100%;
   -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
-       -moz-animation: fadein 1s; /* Firefox < 16 */
-        -ms-animation: fadein 1s; /* Internet Explorer */
-         -o-animation: fadein 1s; /* Opera < 12.1 */
-            animation: fadein 1s;
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
 }
 
 .flex-container {
@@ -420,32 +425,44 @@ a { color: white; text-decoration: none; }
 
 /* Firefox < 16 */
 @-moz-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
-   0% {
-               opacity: 0;
-               transform: translateY(-20px);
-            }
-            100% {
-               opacity: 1;
-               transform: translateY(0);
-            } 
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Internet Explorer */
 @-ms-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Opera < 12.1 */
 @-o-keyframes fadein {
-    from { opacity: 0; }
-    to   { opacity: 1; }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 .site-navigation li {
@@ -454,7 +471,7 @@ a { color: white; text-decoration: none; }
 
 .logo a {
   font-size: 36px;
-  font-family: 'ArsenalBold';
+  font-family: "ArsenalBold";
   text-transform: uppercase;
   text-decoration: none;
   color: black;
@@ -469,29 +486,43 @@ a { color: white; text-decoration: none; }
   color: black;
 }
 
-
 .participant {
   text-align: center;
 }
 
-.portrait img{
+.portrait img {
   max-width: 100%;
   max-height: 400px;
   display: block;
   margin: 0 auto;
 }
 
-.info-container {
-  padding-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 600px;
+@media (min-width: 1024px) {
+  .info-container {
+    padding-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+  }
+
+  .portrait {
+    background-size: contain !important;
+  }
+}
+
+@media (min-width: 324px) and (max-width: 1024px) {
+  .info-container {
+    padding-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    max-width: 100% !important;
+  }
 }
 
 .App-title {
   font-size: 44px;
   margin: auto;
-  text-align: center
+  text-align: center;
 }
 
 .App-intro {
