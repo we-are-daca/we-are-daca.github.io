@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link, Element } from "react-scroll";
+import ScrollUp from 'react-scroll-up';
 import ScrollLock from "react-scrolllock";
 import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";

@@ -1885,6 +1885,10 @@ detect-node@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/detect-node/-/detect-node-2.0.3.tgz#a2033c09cc8e158d37748fbde7507832bd6ce127"
 
+detect-passive-events@^1.0.0:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/detect-passive-events/-/detect-passive-events-1.0.4.tgz#6ed477e6e5bceb79079735dcd357789d37f9a91a"
+
 detect-port-alt@1.1.3:
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/detect-port-alt/-/detect-port-alt-1.1.3.tgz#a4d2f061d757a034ecf37c514260a98750f2b131"
@@ -5243,6 +5247,19 @@ react-router@^4.2.0:
     prop-types "^15.5.4"
     warning "^3.0.0"
 
+react-scroll-top@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/react-scroll-top/-/react-scroll-top-1.0.4.tgz#035009555504b4b2c1bfa94b11b67f1f51562e35"
+
+react-scroll-up@^1.3.3:
+  version "1.3.3"
+  resolved "https://registry.yarnpkg.com/react-scroll-up/-/react-scroll-up-1.3.3.tgz#c02dcf57feb9b33e1491e864ccad220e7f7e50d3"
+  dependencies:
+    detect-passive-events "^1.0.0"
+    object-assign "^4.0.1"
+    prop-types "^15.5.8"
+    tween-functions "^1.1.0"
+
 react-scroll@^1.7.3:
   version "1.7.3"
   resolved "https://registry.yarnpkg.com/react-scroll/-/react-scroll-1.7.3.tgz#174dc716eacb8b14bbf82019d4f900dc2ef8c1e2"
@@ -6170,6 +6187,10 @@ tunnel-agent@^0.6.0:
   resolved "https://registry.yarnpkg.com/tunnel-agent/-/tunnel-agent-0.6.0.tgz#27a5dea06b36b04a0a9966774b290868f0fc40fd"
   dependencies:
     safe-buffer "^5.0.1"
+
+tween-functions@^1.1.0:
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/tween-functions/-/tween-functions-1.2.0.tgz#1ae3a50e7c60bb3def774eac707acbca73bbc3ff"
 
 tweetnacl@^0.14.3, tweetnacl@~0.14.0:
   version "0.14.5"

@@ -226,6 +226,7 @@ body {
     font-family: ProximaNovaBold;
     font-size: 60px;
     color: white;
+    padding-top: 60px;
     opacity: 0;
     -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3s 1s; /* Firefox < 16 */
@@ -322,6 +323,12 @@ a {
   padding-top: 28px;
   padding-left: 0px;
   background: url("./img/twitter-lite.svg") no-repeat -9999px -9999px;
+}
+
+@media (min-width: 575px) {
+  .navigation {
+    padding-top: 30px;
+  }
 }
 
 .links {
