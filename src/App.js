@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import ScrollAnimation from "react-animate-on-scroll";
+import { Link, Element } from "react-scroll";
 import ScrollLock from "react-scrolllock";
 import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
@@ -10,8 +10,6 @@ import Instagram from "./img/instagram.svg";
 import Twitter from "./img/twitter.svg";
 import Billboard from "./img/billboard.jpg";
 import { NavLink } from "react-router-dom";
-import Loading from "react-loading-bar";
-import "react-loading-bar/dist/index.css";
 import "./App.css";
 import Card from "./Card";
 
@@ -299,7 +297,9 @@ class App extends Component {
           <p>{"FACES OF DACA"}</p>
           <p>{"Unheard stories from America's undocumented youth"}</p>
           <div className="arrow bounce">
-            <Arrow size={42} color={"white"} />
+            <Link to="stories" spy={true} smooth={true} duration={500}>
+              <Arrow size={42} color={"white"} />
+            </Link>
           </div>
         </div>
         {this.state.isMenuOpen && <ScrollLock />}
@@ -319,76 +319,57 @@ class App extends Component {
             </NavLink>
           </div>
         </div>
-        <div className="App" style={{ overflowX: "hidden" }}>
-          <Loading color={"blue"} show={this.state.show} showSpinner={false} />
-          <div className="flex-container">
-            <Sticky enabled={true}>
-              <div className="sidenav">
-                <div className="title">
-                  <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"}>
+        <Element name="stories">
+          <div className="App" style={{ overflowX: "hidden" }}>
+            <div className="flex-container">
+              <Sticky enabled={true}>
+                <div className="sidenav">
+                  <div className="title">
                     <span>{"Faces Of Daca"}</span>
-                  </ScrollAnimation>
-                </div>
-                <div className="navigation">
-                  <ul>
-                    <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"}>
+                  </div>
+                  <div className="navigation">
+                    <ul>
                       <li>
                         <NavLink to="/" activeClassName="links">
                           Stories
                         </NavLink>
                       </li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"}>
                       <li>
                         <NavLink
                           to="/statistics"
                           activeClassName="links"
                         />Statistics
                       </li>
-                    </ScrollAnimation>
-                    <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"}>
                       <li>
                         <NavLink to="/help" activeClassName="links" />How To
                         Help
                       </li>
-                    </ScrollAnimation>
-                    <ScrollAnimation
-                      animateIn={"fadeIn"}
-                      animateOnce={"true"}
-                      offset={50}
-                    >
                       <li>
                         <NavLink to="/help" activeClassName="links" />About
                       </li>
-                    </ScrollAnimation>
-                    <div className="social">
-                      <div>
+                      <div className="social">
                         <div>
-                          <img id="facebook" src={Facebook} />
-                        </div>
-                        <div>
-                          <img src={Instagram} />
-                        </div>
-                        <div>
-                          <img src={Twitter} />
+                          <div>
+                            <img id="facebook" src={Facebook} />
+                          </div>
+                          <div>
+                            <img src={Instagram} />
+                          </div>
+                          <div>
+                            <img src={Twitter} />
+                          </div>
                         </div>
                       </div>
-                    </div>
-                  </ul>
+                    </ul>
+                  </div>
                 </div>
-              </div>
-            </Sticky>
-            <div className="main">
-              <div className="mobile-nav">
-                <span>{this.determinePath()}</span>
-              </div>
-              <div className="row dacas">
-                {this.state.cards.map((card, i) => (
-                  <ScrollAnimation
-                    animateIn={"fadeIn"}
-                    animateOnce={true}
-                    offset={-100}
-                  >
+              </Sticky>
+              <div className="main">
+                <div className="mobile-nav">
+                  <span>{this.determinePath()}</span>
+                </div>
+                <div className="row dacas">
+                  {this.state.cards.map((card, i) => (
                     <Card
                       name={card.name}
                       occupation={card.occupation}
@@ -399,12 +380,12 @@ class App extends Component {
                       image={card.image}
                       link={card.link}
                     />
-                  </ScrollAnimation>
-                ))}
+                  ))}
+                </div>
               </div>
             </div>
           </div>
-        </div>
+        </Element>
       </div>
     );
   }

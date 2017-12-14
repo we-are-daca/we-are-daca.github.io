@@ -1,12 +1,9 @@
 import React from "react";
-import Loading from "react-loading-bar";
 import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
-import "react-loading-bar/dist/index.css";
 import Info from "../common/Info";
 import "../App.css";
 
-import ScrollAnimation from "react-animate-on-scroll";
 import ScrollLock from "react-scrolllock";
 import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
@@ -129,45 +126,27 @@ class Luis extends React.Component {
           <Sticky enabled={true}>
             <div className="sidenav">
               <div className="title">
-                <ScrollAnimation
-                  animateIn={"fadeIn"}
-                  animateOnce={"true"}
-                  offset={-10}
-                >
                   <span>{"Faces Of Daca"}</span>
-                </ScrollAnimation>
               </div>
               <div className="navigation">
                 <ul>
-                  <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"}>
                     <li>
                       <NavLink to="/" activeClassName="links">
                         Stories
                       </NavLink>
                     </li>
-                  </ScrollAnimation>
-                  <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"}>
                     <li>
                       <NavLink
                         to="/statistics"
                         activeClassName="links"
                       />Statistics
                     </li>
-                  </ScrollAnimation>
-                  <ScrollAnimation animateIn={"fadeIn"} animateOnce={"true"}>
                     <li>
                       <NavLink to="/help" activeClassName="links" />How To Help
                     </li>
-                  </ScrollAnimation>
-                  <ScrollAnimation
-                    animateIn={"fadeIn"}
-                    animateOnce={"true"}
-                    offset={50}
-                  >
                     <li>
                       <NavLink to="/help" activeClassName="links" />About
                     </li>
-                  </ScrollAnimation>
                   <div className="social">
                     <div>
                       <div>
