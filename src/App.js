@@ -197,7 +197,7 @@ class App extends Component {
           occupation: "Grower/Pest Control Advisor",
           timeSinceArrival: "26",
           country: "Mexico",
-          image: "rosie_portrait_1.jpg",
+          image: "rosie_journey.jpg",
           link: "/168ed629/rosie-journey"
         },
       ]
