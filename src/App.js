@@ -57,20 +57,36 @@ class App extends Component {
           link: "/5be2766a/xochitl-journey"
         },
         {
+          name: "Jorge",
+          occupation: "Socielogy Major / Farmer Assistant",
+          timeSinceArrival: "11",
+          country: "Mexico",
+          image: "jorge_journey.jpg",
+          link: "/00c13752/edgar-journey"
+        },
+        {
+          name: "Katherine",
+          occupation: "Socielogy Major / Retail Worker",
+          timeSinceArrival: "11",
+          country: "Mexico",
+          image: "katherine_portrait.jpg",
+          link: "/00c13752/edgar-journey"
+        },
+        {
           name: "Edgar",
           occupation: "Software Engineer",
           timeSinceArrival: "10",
           country: "Mexico",
-          image: "edgar_portrait.jpg",
+          image: "edgar_journey.jpg",
           link: "/00c13752/edgar-journey"
         },
         {
-          name: "Aylin",
-          occupation: "Student / Kinesiology Major",
-          timeSinceArrival: "21",
+          name: "Miriam",
+          occupation: "Software Engineer",
+          timeSinceArrival: "11",
           country: "Mexico",
-          image: "aylin_portrait.jpg",
-          link: "/0ec6370e/aylin-journey"
+          image: "miriam_journey.jpg",
+          link: ""
         },
         {
           name: "Jonathan",
@@ -80,6 +96,15 @@ class App extends Component {
           image: "jonathan_portrait_1.jpg",
           link: "/5e286af3/jonathan-journey"
         },
+        {
+          name: "Aylin",
+          occupation: "Student / Kinesiology Major",
+          timeSinceArrival: "21",
+          country: "Mexico",
+          image: "aylin_portrait.jpg",
+          link: "/0ec6370e/aylin-journey"
+        },
+        
         {
           name: "Rosie",
           occupation: "Grower/Pest Control Advisor",
@@ -136,14 +161,6 @@ class App extends Component {
           country: "Mexico",
           image: "irais_portrait.jpg",
           link: "/7d56bb43/irais-journey"
-        },
-        {
-          name: "Miriam",
-          occupation: "Software Engineer",
-          timeSinceArrival: "11",
-          country: "Mexico",
-          image: "miriam_portrait.jpg",
-          link: ""
         },
         {
           name: "Daniel",
