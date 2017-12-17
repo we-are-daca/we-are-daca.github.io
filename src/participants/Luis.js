@@ -52,7 +52,9 @@ class Luis extends React.Component {
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "none",
         backgroundSize: "cover",
-        height: 300
+        height: 550,
+        width: '90%',
+        margin: '0 auto'
       }
     };
 
