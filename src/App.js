@@ -146,7 +146,7 @@ class App extends Component {
         },
         {
           name: "Irais",
-          occupation: "Student",
+          occupation: "Computer Science Major",
           timeSinceArrival: "15",
           country: "Mexico",
           image: "irais_portrait.jpg",
@@ -161,28 +161,36 @@ class App extends Component {
           link: ""
         },
         {
-          name: "Yazmin",
-          occupation: "English Major",
-          timeSinceArrival: "18",
+          name: "Sandra",
+          occupation: "Computer Science Major",
+          timeSinceArrival: "15",
           country: "Mexico",
-          image: "yazmin_portrait_1.jpg",
-          link: "/b9961768/yazmin-journey"
+          image: "sandra_journey.jpg",
+          link: "/7d56bb43/irais-journey"
         },
         {
           name: "Leo",
           occupation: "Student Ambassador",
           timeSinceArrival: "17",
           country: "Mexico",
-          image: "leo_portrait_1.jpg",
+          image: "leo_journey.jpg",
           link: "/c05de409/leo-journey"
         },
         {
-          name: "Daniel",
-          occupation: "Software Engineer",
-          timeSinceArrival: "10",
+          name: "Liz",
+          occupation: "Animal Science Major",
+          timeSinceArrival: "15",
           country: "Mexico",
-          image: "daniel_one.jpg",
-          link: "/a1db8f2ca088/daniel-journey"
+          image: "liz_journey.jpg",
+          link: ""
+        },
+        {
+          name: "Octavio",
+          occupation: "Business Owner",
+          timeSinceArrival: "13",
+          country: "Mexico",
+          image: "octavio_journey.jpg",
+          link: "/0e9be67f/octavio-journey"
         },
           {
           name: "Rosie",
@@ -192,30 +200,6 @@ class App extends Component {
           image: "rosie_portrait_1.jpg",
           link: "/168ed629/rosie-journey"
         },
-        {
-          name: "Araceli",
-          occupation: "Software Engineer",
-          timeSinceArrival: "15",
-          country: "Mexico",
-          image: "araceli.png",
-          link: ""
-        },
-        {
-          name: "Nayeli",
-          occupation: "Lab Technician",
-          timeSinceArrival: "20",
-          country: "Mexico",
-          image: "nayeli_portrait.jpg",
-          link: ""
-        },
-        {
-          name: "Octavio",
-          occupation: "Business Owner",
-          timeSinceArrival: "13",
-          country: "Mexico",
-          image: "octavio_portrait.jpg",
-          link: "/0e9be67f/octavio-journey"
-        }
       ]
     };
 
