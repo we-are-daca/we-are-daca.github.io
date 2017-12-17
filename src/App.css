@@ -524,6 +524,7 @@ a {
 @media (max-width: 1024px) {
   .portrait {
       width: 100% !important;
+      height: 400px !important;
   }
 }
 
