@@ -521,6 +521,12 @@ a {
   }
 }
 
+@media (max-width: 1024px) {
+  .portrait {
+      width: 100% !important;
+  }
+}
+
 @media (min-width: 324px) and (max-width: 1024px) {
   .info-container {
     padding-top: 15px;
