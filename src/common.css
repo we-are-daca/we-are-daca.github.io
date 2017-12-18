@@ -78,9 +78,11 @@ body {
 }
 
 .dacamentor-quote {
-    font-family: "LatoRegular";
-    font-size: 28px;
+    font-family: "ProximaNovaRegular";
+    font-size: 26px;
     text-align: center !important;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .info li {

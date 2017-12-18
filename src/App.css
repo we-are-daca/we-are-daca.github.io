@@ -325,7 +325,7 @@ a {
   background: url("./img/twitter-lite.svg") no-repeat -9999px -9999px;
 }
 
-@media (min-width: 575px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .navigation {
     padding-top: 30px;
   }
