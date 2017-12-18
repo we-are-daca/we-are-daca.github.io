@@ -58,19 +58,19 @@ class App extends Component {
         },
         {
           name: "Jorge",
-          occupation: "Socielogy Major / Farmer Assistant",
+          occupation: "Crop Management Major",
           timeSinceArrival: "11",
           country: "Mexico",
           image: "jorge_journey.jpg",
-          link: "/00c13752/edgar-journey"
+          link: "/08504f4c/jorge-journey"
         },
         {
           name: "Katherine",
-          occupation: "Socielogy Major / Retail Associate",
+          occupation: "Socielogy Major",
           timeSinceArrival: "11",
           country: "El Salvador",
           image: "katherine_portrait.jpg",
-          link: "/00c13752/edgar-journey"
+          link: "/eb241513/katherine-journey"
         },
         {
           name: "Edgar",
@@ -98,7 +98,7 @@ class App extends Component {
         },
         {
           name: "Estefania",
-          occupation: "Kinesiology Major / Retail Associate",
+          occupation: "Kinesiology Major",
           timeSinceArrival: "14",
           country: "Mexico",
           image: "steph_journey.jpg",
