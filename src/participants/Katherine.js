@@ -47,7 +47,7 @@ class Xochitl extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/xochitl_hero.jpg)`,
+        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/katherine_hero.jpg)`,
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "none",
