@@ -47,7 +47,7 @@ class Jorge extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/xochitl_hero.jpg)`,
+        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/jorge_hero_test.jpg)`,
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "none",
