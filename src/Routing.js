@@ -1,6 +1,5 @@
 import React from 'react';
 import App from './App.js';
-import Aylin from './participants/Aylin';
 import Daniel from './participants/Daniel';
 import Daniel1 from './participants/Daniel_1';
 import Edgar from './participants/Edgar';
@@ -8,6 +7,7 @@ import Irais from './participants/Irais';
 import Jonathan from './participants/Jonathan';
 import Jorge from './participants/Jorge';
 import Katherine from './participants/Katherine';
+import Miriam from './participants/Miriam';
 import Leo from './participants/Leo';
 import Lesly from './participants/Lesly';
 import Luis from './participants/Luis'
@@ -29,7 +29,7 @@ const Routing = () => (
         <Route exact path='/36432e39/luis-journey' component={Luis} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/5be2766a/xochitl-journey' component={Xochitl} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/00c13752/edgar-journey' component={Edgar} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
-        <Route exact path='/0ec6370e/aylin-journey' component={Aylin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
+        <Route exact path='/0ec6370e/miriam-journey' component={Miriam} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/c5b03d37/yareli-journey' component={Yareli} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/b9961768/yazmin-journey' component={Yazmin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
         <Route exact path='/82b67ab1/miguel-journey' component={Miguel} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} /> 
