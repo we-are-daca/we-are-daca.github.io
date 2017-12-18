@@ -265,6 +265,15 @@ class Xochitl extends React.Component {
                       }
                     </span>
                   </p>
+                  <blockquote>
+                    <p className="dacamentor-quote">
+                      <span>
+                        {
+                            '"I didn’t know how different I was from a typical American child until middle school and high school where I felt more alienated because I started to think seriously about what I was going to do after school ended. There were opportunities I couldn’t pursue because of my status--like my French class. They had a program to go experience other cultures and then I realized I couldn’t go."'
+                        }
+                      </span>
+                    </p>
+                  </blockquote>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
@@ -297,6 +306,15 @@ class Xochitl extends React.Component {
                       }
                     </span>
                   </p>
+                  <blockquote>
+                    <p className="dacamentor-quote">
+                      <span>
+                        {
+                            '"I remember being in the car on my way home and my mom attempting to find other ways to reach home that wouldn’t involve us being exposed to the deportation raid. I remember being so scared and hugging my little sister in an attempt to comfort her. "'
+                        }
+                      </span>
+                    </p>
+                  </blockquote>
                   <p>
                     <span className="dacamentor-response">
                       {
@@ -417,6 +435,15 @@ class Xochitl extends React.Component {
                       }
                     </span>
                   </p>
+                  <blockquote>
+                    <p className="dacamentor-quote">
+                      <span>
+                        {
+                            '\"There’s a quote that states: “The pressure on first generation children of immigrants to prove that you are indeed proof of your parents’ sacrifice being worth it is something that many Americans will never understand."\"'
+                        }
+                      </span>
+                    </p>
+                  </blockquote>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
@@ -527,6 +554,15 @@ class Xochitl extends React.Component {
                       }
                     </span>
                   </p>
+                  <blockquote>
+                    <p className="dacamentor-quote">
+                      <span>
+                        {
+                            '"I want to feel like everyone else; to not be afraid that one day, I might be forced to live in a country with a high prevalence of violence--a country that I don’t know. There’s nothing more that I want than to feel like I am accepted where I consider home."'
+                        }
+                      </span>
+                    </p>
+                  </blockquote>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
@@ -559,6 +595,15 @@ class Xochitl extends React.Component {
                       }
                     </span>
                   </p>
+                  <blockquote>
+                    <p className="dacamentor-quote">
+                      <span>
+                        {
+                            '"I hope that when they think of us and our parents, they consider how far they are willing to go for their children. I hope that they question how they would respond if they were put in the same situation my parents endured."'
+                        }
+                      </span>
+                    </p>
+                  </blockquote>
                 </div>
               </div>
             </div>
