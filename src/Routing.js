@@ -14,6 +14,7 @@ import Luis from './participants/Luis'
 import Octavio from './participants/Octavio';
 import Miguel from './participants/Miguel';
 import Rosie from './participants/Rosie';
+import Steph from './participants/Steph';
 import Xochitl from './participants/Xochitl';
 import Yareli from './participants/Yareli';
 import Yazmin from './participants/Yazmin';
@@ -40,6 +41,7 @@ const Routing = () => (
         <Route exact path='/0e9be67f/octavio-journey' component={Octavio} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/08504f4c/jorge-journey' component={Jorge} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/eb241513/katherine-journey' component={Katherine} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/eb241513/estefania-journey' component={Steph} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route component={App} />
       </Switch>
 );

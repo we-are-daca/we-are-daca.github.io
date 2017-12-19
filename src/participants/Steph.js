@@ -15,14 +15,14 @@ import Twitter from "../img/twitter.svg";
 import Billboard from "../img/billboard.jpg";
 import { NavLink } from "react-router-dom";
 
-class Jonathan extends React.Component {
+class Estefania extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       show: false,
-      name: "Jonathan",
-      occupation: "Field Representative",
-      timeSinceArrival: "21",
+      name: "Estefania",
+      occupation: "Kinesiology Major",
+      timeSinceArrival: "14",
       country: "Mexico",
       image: "luis_portrait_2.jpg",
       interviewDate: "October 18, 2017",
@@ -47,7 +47,7 @@ class Jonathan extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/jonathan_hero.jpg)`,
+        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/steph_hero_1.jpg)`,
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "none",
@@ -564,4 +564,4 @@ class Jonathan extends React.Component {
   }
 }
 
-export default Jonathan;
+export default Estefania;
