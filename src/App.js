@@ -194,7 +194,7 @@ class App extends Component {
         },
           {
           name: "Rosie",
-          occupation: "Grower/Pest Control Advisor",
+          occupation: "Pest Control Advisor",
           timeSinceArrival: "26",
           country: "Mexico",
           image: "rosie_journey.jpg",
