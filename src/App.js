@@ -158,7 +158,7 @@ class App extends Component {
           timeSinceArrival: "13",
           country: "Mexico",
           image: "luis_2_journey.jpg",
-          link: ""
+          link: "/20852c70/luis-journey"
         },
         {
           name: "Sandra",
@@ -166,7 +166,7 @@ class App extends Component {
           timeSinceArrival: "15",
           country: "Mexico",
           image: "sandra_journey.jpg",
-          link: "/7d56bb43/irais-journey"
+          link: "/a782b502/sandra-journey"
         },
         {
           name: "Leo",

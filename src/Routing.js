@@ -12,9 +12,11 @@ import Miriam from './participants/Miriam';
 import Leo from './participants/Leo';
 import Lesly from './participants/Lesly';
 import Luis from './participants/Luis'
+import Luis_2 from './participants/Luis_2';
 import Octavio from './participants/Octavio';
 import Miguel from './participants/Miguel';
 import Rosie from './participants/Rosie';
+import Sandra from './participants/Sandra';
 import Steph from './participants/Steph';
 import Xochitl from './participants/Xochitl';
 import Yareli from './participants/Yareli';
@@ -44,6 +46,8 @@ const Routing = () => (
         <Route exact path='/eb241513/katherine-journey' component={Katherine} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/eb241513/estefania-journey' component={Steph} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/4102ff4a/elvin-journey' component={Elvin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/20852c70/luis-journey' component={Luis_2} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/a782b502/sandra-journey' component={Sandra} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route component={App} />
       </Switch>
 );
