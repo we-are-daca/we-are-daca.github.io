@@ -3,6 +3,7 @@ import App from './App.js';
 import Daniel from './participants/Daniel';
 import Daniel1 from './participants/Daniel_1';
 import Edgar from './participants/Edgar';
+import Elvin from './participants/Elvin';
 import Irais from './participants/Irais';
 import Jonathan from './participants/Jonathan';
 import Jorge from './participants/Jorge';
@@ -42,6 +43,7 @@ const Routing = () => (
         <Route exact path='/08504f4c/jorge-journey' component={Jorge} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/eb241513/katherine-journey' component={Katherine} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/eb241513/estefania-journey' component={Steph} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/4102ff4a/elvin-journey' component={Elvin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route component={App} />
       </Switch>
 );
