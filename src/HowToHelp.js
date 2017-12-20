@@ -34,7 +34,7 @@ const data = {
 	}]
 };
 
-class Statistics extends React.Component {
+class HowToHelp extends React.Component {
   constructor(props) {
     super(props);
     console.log(props);
@@ -159,7 +159,9 @@ class Statistics extends React.Component {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/help" activeClassName="links" />How To Help
+                    <NavLink exact to="/how-to-help" activeClassName="links">
+                        How To Help
+                    </NavLink>
                   </li>
                   <li>
                     <NavLink to="/help" activeClassName="links" />About
@@ -302,4 +304,4 @@ class Statistics extends React.Component {
   }
 }
 
-export default Statistics;
+export default HowToHelp;
