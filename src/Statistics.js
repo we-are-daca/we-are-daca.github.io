@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import { Pie } from "react-chartjs-2";
 import "./App.css";
+import "./statistics.css";
 
 import ScrollLock from "react-scrolllock";
 import MdClose from "react-icons/lib/md/close";
@@ -66,14 +67,7 @@ class Leo extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/leo_hero_2.jpg)`,
-        backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
-        backgroundAttachment: "none",
-        backgroundSize: "cover",
-        height: 550,
-        width: "90%",
-        margin: "0 auto"
+        
       }
     };
 
@@ -203,29 +197,32 @@ class Leo extends React.Component {
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
             <div className="profile">
-              <div className="">
+              <div className="header">
                 <div className="portrait">
+                </div>
+                <div className="portrait-title">
                   <MediaQuery query="(max-width: 1224px)">
-                    <div className="mobile-nav" style={this.mobileNavStyle}>
-                      {this.state.isMenuOpen ? (
-                        <MdClose
-                          size={40}
-                          onClick={this.closeMenu}
-                          className="menu-close"
-                          color={"black"}
-                          style={{ margin: 10 }}
-                        />
-                      ) : (
-                        <MdMenu
-                          size={40}
-                          onClick={this.handleMenu}
-                          className="menu-icon"
-                          color={"white"}
-                          style={{ margin: 10 }}
-                        />
-                      )}
-                    </div>
-                  </MediaQuery>
+                      <div className="mobile-nav" style={this.mobileNavStyle}>
+                        {this.state.isMenuOpen ? (
+                          <MdClose
+                            size={40}
+                            onClick={this.closeMenu}
+                            className="menu-close"
+                            color={"black"}
+                            style={{ margin: 10 }}
+                          />
+                        ) : (
+                          <MdMenu
+                            size={40}
+                            onClick={this.handleMenu}
+                            className="menu-icon"
+                            color={"white"}
+                            style={{ margin: 10 }}
+                          />
+                        )}
+                      </div>
+                    </MediaQuery>
+                  <p>By the numbers</p>
                 </div>
               </div>
               <div className="">

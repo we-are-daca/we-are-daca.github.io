@@ -1,0 +1,43 @@
+.portrait {
+  background-image: url("https://dwistynbcri9g.cloudfront.net/statistics_cover.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover !important;
+  background-attachment: none;
+  height: 450px;
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+  filter: brightness(40%) contrast(70%);
+}
+
+.portrait-title {
+  position: absolute;
+  top: 40%;
+  width: 80%;
+}
+
+.portrait-title p {
+  text-align: center;
+  font-family: ProximaNovaBold;
+  text-transform: uppercase;
+  font-size: 100px;
+  color: white !important;
+}
+
+.header {
+  margin-bottom: 20px;
+}
+
+@media (min-width: 324px) and (max-width: 768px) {
+  .portrait-title {
+    top: 2%;
+  }
+  .portrait-title p {
+    font-size: 60px;
+    text-align: left;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+}
+
