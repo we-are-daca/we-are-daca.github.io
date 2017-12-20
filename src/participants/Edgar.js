@@ -138,16 +138,19 @@ class Edgar extends React.Component {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      to="/statistics"
-                      activeClassName="links"
-                    />Statistics
+                    <NavLink to="/statistics" activeClassName="links">
+                      Statistics
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/help" activeClassName="links" />How To Help
+                    <NavLink to="/how-to-help" activeClassName="links">
+                      How To Help
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/help" activeClassName="links" />About
+                    <NavLink to="/about" activeClassName="links">
+                      About
+                    </NavLink>
                   </li>
                   <div className="social">
                     <div>
@@ -175,10 +178,10 @@ class Edgar extends React.Component {
                 <NavLink to="/statistics" activeClassName="">
                   Statistics
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/how-to-help" activeClassName="">
                   How To Help
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
               </div>
@@ -309,7 +312,7 @@ class Edgar extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"I didn’t know how to feel about [my status], but it comes to a point where you just have to accept the fact until it becomes whatever it is—you make the best of it.\""
+                          '"I didn’t know how to feel about [my status], but it comes to a point where you just have to accept the fact until it becomes whatever it is—you make the best of it."'
                         }
                       </span>
                     </p>
@@ -349,7 +352,7 @@ class Edgar extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"When I was going to school, there was a lot of stuff that were still unknown about what was going to happen. I believe it was the year before I graduated when they signed the AB 540. I didn’t even know if I was going to go to college. I honestly didn’t even apply to too many colleges.\""
+                          '"When I was going to school, there was a lot of stuff that were still unknown about what was going to happen. I believe it was the year before I graduated when they signed the AB 540. I didn’t even know if I was going to go to college. I honestly didn’t even apply to too many colleges."'
                         }
                       </span>
                     </p>
@@ -406,7 +409,11 @@ class Edgar extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"How was your experience in the computer science program? "}</b>
+                    <b>
+                      {
+                        "How was your experience in the computer science program? "
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -425,7 +432,11 @@ class Edgar extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"So assuming that nothing too crazy happens to people like us, where do you see yourself in the next couple of years?"}</b>
+                    <b>
+                      {
+                        "So assuming that nothing too crazy happens to people like us, where do you see yourself in the next couple of years?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -438,7 +449,7 @@ class Edgar extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"I remember the first packet that we sent to apply for DACA was over two-hundred pages. You need all the proof from as far back as you can recall being in the United States. So, I had records of everything.\""
+                          '"I remember the first packet that we sent to apply for DACA was over two-hundred pages. You need all the proof from as far back as you can recall being in the United States. So, I had records of everything."'
                         }
                       </span>
                     </p>
@@ -479,7 +490,7 @@ class Edgar extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"If I had the chance to say something to Congress, I would tell them that the kids that the President is trying to have remove from the United States are all Americans. We are not criminals, there is 0 percent of us that is criminal, and about 80 percent of us are currently employed. We are giving back to the community and we all have shown that we love this country.\""
+                          '"If I had the chance to say something to Congress, I would tell them that the kids that the President is trying to have remove from the United States are all Americans. We are not criminals, there is 0 percent of us that is criminal, and about 80 percent of us are currently employed. We are giving back to the community and we all have shown that we love this country."'
                         }
                       </span>
                     </p>

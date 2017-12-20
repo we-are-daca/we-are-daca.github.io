@@ -313,7 +313,7 @@ class App extends Component {
             <NavLink to="/how-to-help" activeClassName="">
               How To Help
             </NavLink>
-            <NavLink to="/help" activeClassName="">
+            <NavLink to="/about" activeClassName="">
               About
             </NavLink>
           </div>
