@@ -15,17 +15,17 @@ import Twitter from "../img/twitter.svg";
 import Billboard from "../img/billboard.jpg";
 import { NavLink } from "react-router-dom";
 
-class Miguel extends React.Component {
+class Luis_2 extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
       show: false,
-      name: "Miguel",
-      occupation: "Embedded Vision Engineer",
-      timeSinceArrival: "11",
+      name: "Luis",
+      occupation: "Computer Science Major",
+      timeSinceArrival: "17",
       country: "Mexico",
       image: "luis_portrait_2.jpg",
-      interviewDate: "September 22, 2017",
+      interviewDate: "October 31, 2017",
       isMenuOpen: false,
       menuStyle: {
         height: "100%",
@@ -47,7 +47,7 @@ class Miguel extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/miguel_hero.jpg)`,
+        backgroundImage: `url(https://dwistynbcri9g.cloudfront.net/luis_2_hero.jpg)`,
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundAttachment: "none",
@@ -564,4 +564,4 @@ class Miguel extends React.Component {
   }
 }
 
-export default Miguel;
+export default Luis_2;

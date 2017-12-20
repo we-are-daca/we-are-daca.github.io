@@ -142,7 +142,7 @@ class App extends Component {
           timeSinceArrival: "15",
           country: "Mexico",
           image: "elvin_journey.jpg",
-          link: ""
+          link: "/4102ff4a/elvin-journey"
         },
         {
           name: "Irais",
@@ -158,7 +158,7 @@ class App extends Component {
           timeSinceArrival: "13",
           country: "Mexico",
           image: "luis_2_journey.jpg",
-          link: ""
+          link: "/20852c70/luis-journey"
         },
         {
           name: "Sandra",
@@ -166,7 +166,7 @@ class App extends Component {
           timeSinceArrival: "15",
           country: "Mexico",
           image: "sandra_journey.jpg",
-          link: "/7d56bb43/irais-journey"
+          link: "/a782b502/sandra-journey"
         },
         {
           name: "Leo",
@@ -182,7 +182,7 @@ class App extends Component {
           timeSinceArrival: "15",
           country: "Mexico",
           image: "liz_journey.jpg",
-          link: ""
+          link: "/d1d1f873/liz-journey"
         },
         {
           name: "Octavio",
@@ -194,7 +194,7 @@ class App extends Component {
         },
           {
           name: "Rosie",
-          occupation: "Grower/Pest Control Advisor",
+          occupation: "Pest Control Advisor",
           timeSinceArrival: "26",
           country: "Mexico",
           image: "rosie_journey.jpg",
@@ -236,7 +236,6 @@ class App extends Component {
   }
 
   handleMenu = () => {
-    console.log(this.mobileNav.getBoundingClientRect());
     this.setState({
       isMenuOpen: true,
       menuStyle: {
@@ -311,10 +310,10 @@ class App extends Component {
             <NavLink to="/statistics" activeClassName="">
               Statistics
             </NavLink>
-            <NavLink to="/help" activeClassName="">
+            <NavLink to="/how-to-help" activeClassName="">
               How To Help
             </NavLink>
-            <NavLink to="/help" activeClassName="">
+            <NavLink to="/about" activeClassName="">
               About
             </NavLink>
           </div>
@@ -335,17 +334,19 @@ class App extends Component {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink
-                          to="/statistics"
-                          activeClassName="links"
-                        />Statistics
+                        <NavLink to="/statistics" activeClassName="links">
+                          Statistics
+                        </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/help" activeClassName="links" />How To
-                        Help
+                        <NavLink to="/how-to-help" activeClassName="links">
+                          How To Help
+                        </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/help" activeClassName="links" />About
+                        <NavLink to="/about" activeClassName="links">
+                          About
+                        </NavLink>
                       </li>
                       <div className="social">
                         <div>
