@@ -258,10 +258,6 @@ body {
 body {
   background: #2d2d37;
 }
-a {
-  color: white;
-  text-decoration: none;
-}
 
 .arrow {
   text-align: center;
@@ -331,9 +327,13 @@ a {
   }
 }
 
+.recharts-surface {
+  margin: 0 auto;
+}
+
 .links {
   text-decoration: none !important;
-  color: #e67e00;
+  color: #e67e00 !important;
 }
 
 .links:hover {
@@ -346,7 +346,7 @@ a {
 }
 
 .navigation > ul > li {
-  list-style: none;
+  list-style: none !important;
   text-align: left;
   padding-left: 31px;
   padding-bottom: 11px;
@@ -354,6 +354,11 @@ a {
   font-size: 24px;
   color: #727272;
 }
+
+.navigation > ul > li > a {
+  color: #727272;
+}
+
 
 .social {
   text-align: left;

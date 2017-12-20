@@ -182,7 +182,7 @@ class App extends Component {
           timeSinceArrival: "15",
           country: "Mexico",
           image: "liz_journey.jpg",
-          link: ""
+          link: "/d1d1f873/liz-journey"
         },
         {
           name: "Octavio",
@@ -236,7 +236,6 @@ class App extends Component {
   }
 
   handleMenu = () => {
-    console.log(this.mobileNav.getBoundingClientRect());
     this.setState({
       isMenuOpen: true,
       menuStyle: {
@@ -335,10 +334,9 @@ class App extends Component {
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink
-                          to="/statistics"
-                          activeClassName="links"
-                        />Statistics
+                        <NavLink to="/statistics" activeClassName="links">
+                          Statistics
+                        </NavLink>
                       </li>
                       <li>
                         <NavLink to="/help" activeClassName="links" />How To
