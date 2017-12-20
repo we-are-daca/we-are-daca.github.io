@@ -67,7 +67,16 @@ class Leo extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        
+        backgroundImage: 'url(https://dwistynbcri9g.cloudfront.net/statistics_cover.jpg)',
+        backgroundPosition: 'center center',
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundAttachment: 'none',
+        height: '450px',
+        width: '90%',
+        margin: '0 auto',
+        position: 'relative',
+        filter: 'brightness(40%) contrast(70%)'
       }
     };
 
@@ -198,7 +207,7 @@ class Leo extends React.Component {
             {this.state.isMenuOpen && <ScrollLock />}
             <div className="profile">
               <div className="header">
-                <div className="portrait">
+                <div className="portrait" style={this.state.portraitStyle}>
                 </div>
                 <div className="portrait-title">
                   <MediaQuery query="(max-width: 1224px)">
@@ -222,7 +231,7 @@ class Leo extends React.Component {
                         )}
                       </div>
                     </MediaQuery>
-                  <p>By the numbers</p>
+                  <p>To Congress</p>
                 </div>
               </div>
               <div className="">
@@ -274,7 +283,7 @@ class Leo extends React.Component {
                       }
                     </b>
                   </p>
-                  <Pie data={data} height={150}  options={{
+                  <Pie data={data} height={200}  options={{
                     layout: { 
                       padding: {
                         top: 20,
