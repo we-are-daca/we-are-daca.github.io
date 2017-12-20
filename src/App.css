@@ -356,7 +356,12 @@ body {
 }
 
 .navigation > ul > li > a {
+  text-decoration: none;
   color: #727272;
+}
+
+.navigation > ul > li > a:hover {
+  color: #000;
 }
 
 
