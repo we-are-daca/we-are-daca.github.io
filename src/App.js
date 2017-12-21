@@ -294,7 +294,9 @@ class App extends Component {
             )}
           </div>
           <p>{"FACES OF DACA"}</p>
-          <p>{"Unheard stories from America's undocumented youth"}</p>
+          <p>{
+            "A storytelling series sharing the diverse lived experiences of DACA recipients within the U.S. According to U.S. Citizenship and Immigration Services, there are currently 690,000 of 800,000 undocumented immigrants who are enrolled in DACA, the Deferred Action for Childhood Arrivals program that was created 5 years ago. As of September 5th, 2017, the Trump administration has rescinded the program, leaving the future of these 690,000 individuals uncertain."
+            }</p>
           <div className="arrow bounce">
             <Link to="stories" spy={true} smooth={true} duration={500}>
               <Arrow size={42} color={"white"} />
