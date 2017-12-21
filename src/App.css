@@ -231,9 +231,8 @@ body {
   #billboard-title > p:nth-child(2) {
     text-align: center;
     font-family: PlaylistScript;
-    font-size: 48px;
+    font-size: 75px;
     color: white;
-    padding-top: 20px;
     opacity: 0;
     -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3s 1s; /* Firefox < 16 */
@@ -251,7 +250,6 @@ body {
     font-family: ProximaNova;
     font-size: 14px;
     color: white;
-    padding-bottom: 25px;
     opacity: 0;
     -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
     -moz-animation: fadein 3s 1s; /* Firefox < 16 */

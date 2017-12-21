@@ -34,6 +34,26 @@ const data = {
 	}]
 };
 
+const laborData = {
+  labels: [
+		'College Graduates',
+		'Students',
+    'Working with High School / GED Diploma'
+	],
+	datasets: [{
+		data: [10, 12, 2],
+		backgroundColor: [
+		'#e67e00',
+		'#F2BF7F',
+		],
+		hoverBackgroundColor: [
+		'#e67e00',
+		'#F2BF7F',
+    '#B86500'
+		]
+	}] 
+}
+
 class Statistics extends React.Component {
   constructor(props) {
     super(props);
@@ -201,7 +221,7 @@ class Statistics extends React.Component {
             {this.state.isMenuOpen && <ScrollLock />}
             <div className="profile">
               <div className="header">
-                <div className="portrait" style={this.state.portraitStyle}>
+                <div className="">
                 </div>
                 <div className="portrait-title">
                   <MediaQuery query="(max-width: 1224px)">
@@ -219,17 +239,17 @@ class Statistics extends React.Component {
                             size={40}
                             onClick={this.handleMenu}
                             className="menu-icon"
-                            color={"white"}
+                            color={"black"}
                             style={{ margin: 10 }}
                           />
                         )}
                       </div>
                     </MediaQuery>
-                  <p>To Congress</p>
+                <p>24* out of 800,000</p>
                 </div>
               </div>
               <div className="">
-                <div className="dacamentor-interview">
+                <div className="dacamentor-interview stats">
                   <p>
                     <b>
                       {
@@ -240,20 +260,13 @@ class Statistics extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        'According to U.S. Citizenship and Immigration Services, there are currently 690,000 of 800,000 undocumented immigrants who are enrolled in DACA, the Deferred Action for Childhood Arrivals program that was created 5 years ago. As of September 5th, 2017, the Trump administration has rescinded the program, leaving the future of these 690,000 individuals uncertain. The administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation.'
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
                         'The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population. '
                       }
                     </span>
                   </p>
                 </div>
               </div>
-               <div className="dacamentor-interview">
+               <div className="dacamentor-interview stats">
                   <p>
                     <b>
                       {
@@ -269,25 +282,40 @@ class Statistics extends React.Component {
                     </span>
                   </p>
                 </div>
-                <div className="dacamentor-interview">
+                <div className="dacamentor-interview stats">
                   <p>
                     <b>
                       {
-                        "Gender of participants"
+                        "Gender of participants and occupations"
                       }
                     </b>
                   </p>
-                  <Pie data={data} height={200}  options={{
-                    layout: { 
-                      padding: {
-                        top: 20,
-                        bottom: 20
+                  <div style={{display: 'inline-block', width: '50%'}}>
+                    <Pie data={data} height={250} options={{
+                      layout: { 
+                        padding: {
+                          top: 20,
+                          right: 40,
+                          bottom: 20
+                        }
                       }
                     }
-                   }
-                  } />
+                    } />
+                  </div>
+                  <div style={{display: 'inline-block', width: '50%'}}>
+                    <Pie data={laborData}  height={260} options={{
+                      layout: { 
+                        padding: {
+                          top: 20,
+                          left: 40,
+                          bottom: 20
+                        }
+                      }
+                    }
+                    } />
+                  </div>
                   <p>
-                    <span className="dacamentor-response">
+                    <span className="dacamentor-response stats">
                       {
                         'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
                       }
