@@ -184,7 +184,7 @@ body {
 #billboard-title > p:nth-child(2) {
   text-align: center;
   font-family: ProximaNovaBold;
-  font-size: 100px;
+  font-size: 125px;
   color: white;
   -webkit-animation: fadein 3s; /* Safari, Chrome and Opera > 12.1 */
   -moz-animation: fadein 3s; /* Firefox < 16 */
@@ -195,11 +195,11 @@ body {
 
 #billboard-title > p:nth-child(3) {
   padding-top: 30px;
-  max-width: 50%;
+  max-width: 60%;
   margin: 0 auto;
   text-align: center;
   font-family: ProximaNova;
-  font-size: 18px;
+  font-size: 20px;
   color: white;
   opacity: 0;
   -webkit-animation: fadein 3s 1s; /* Safari, Chrome and Opera > 12.1 */
