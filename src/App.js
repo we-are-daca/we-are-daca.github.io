@@ -369,7 +369,6 @@ class App extends Component {
               </Sticky>
               <div className="main">
                 <div className="mobile-nav">
-                  <span>{this.determinePath()}</span>
                 </div>
                 <div className="row dacas">
                   {this.state.cards.map((card, i) => (

@@ -45,12 +45,46 @@ body {
   overflow-x: hidden;
 }
 
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape) {
+	.html, body {
+		height: 768px;
+	}
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) and (orientation : portrait) {
+	.html, .body {
+		height: 1024px;
+	}
+}
+/* iphone5 */
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : landscape) and (-webkit-device-pixel-ratio: 2) {
+	.html, .body {
+    -webkit-overflow-scrolling: touch;
+		height: 320px;
+	}
+}
+@media only screen and (min-device-width: 320px) and (max-device-height: 568px) and (orientation : portrait) and (-webkit-device-pixel-ratio: 2) {
+	.html, .body {
+		height: 568px;
+	}
+}
+/* iPhone 4 */
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : landscape) and (-webkit-min-device-pixel-ratio : 2) {
+	.html, .body {
+		height: 320px;
+	}
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) and (orientation : portrait) and (-webkit-min-device-pixel-ratio : 2) {
+	.html, .body {
+		height: 480px;
+	}
+}
+
 #root {
-  height: 100%;
+  height: 100vh;
 }
 
 #root > div {
-  height: 100%;
+  height: 100vh;
 }
 .App {
   text-align: center;
@@ -71,7 +105,6 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: none;
-  background-attachment: fixed;
   height: 100%;
   filter: brightness(40%) contrast(70%);
 }
@@ -123,6 +156,12 @@ body {
   }
 }
 
+@media only screen and (min-width: 1024px) {
+  .billboard-container {
+    background-attachment: fixed;
+  }
+}
+
 @media only screen and (max-device-width: 575px) {
   .billboard-container {
     background-image: url("./img/billboard-mobile.jpg");
@@ -130,7 +169,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: none;
-    height: 100%;
+    height: 100vh;
     filter: brightness(40%) contrast(70%);
   }
 
