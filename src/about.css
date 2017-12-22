@@ -12,10 +12,6 @@
     margin-bottom: 0px;
 }
 
-.project {
-    padding-bottom: 10px;
-}
-
 .about-header {
     padding-left: 20px;
 }
@@ -62,8 +58,8 @@
     border-bottom: 1px solid #e67e00;
     width: 70%;
     margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 90px;
+    margin-bottom: 90px;
 }
 
 @media only screen and (max-device-width: 768px) {
@@ -154,6 +150,7 @@
 @media only screen and (max-device-width: 768px) {
     .profile-pic {
         width: 100% !important;
+        height: 400px;
         max-width: 100%;
         margin-bottom: 20px;
     }
@@ -178,7 +175,7 @@
     .profile-breakdown p {
         max-width: 100%;
         text-align: left;
-        font-size: 22px;
+        font-size: 18px;
     }
 }
 
