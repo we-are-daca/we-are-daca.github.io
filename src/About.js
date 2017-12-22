@@ -185,7 +185,7 @@ class About extends React.Component {
     ];
     return (
       <div className="participant">
-        <div className="flex-container">
+        <div className="flex-container about-container">
           <Sticky enabled={true}>
             <div className="sidenav">
               <div className="title">

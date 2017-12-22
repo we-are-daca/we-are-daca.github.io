@@ -12,6 +12,11 @@
     margin-bottom: 0px;
 }
 
+.about-container {
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 .about-header {
     padding-left: 20px;
 }
