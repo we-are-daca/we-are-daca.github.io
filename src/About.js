@@ -247,11 +247,10 @@ class About extends React.Component {
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
             <div className="profile">
-              <div className="header">
-                <div className="portrait" />
+              <div className="">
                 <div className="portrait-title">
                   <MediaQuery query="(max-width: 1224px)">
-                    <div className="mobile-nav" style={this.mobileNavStyle}>
+                    <div className="mobile-nav about-nav" style={this.mobileNavStyle}>
                       {this.state.isMenuOpen ? (
                         <MdClose
                           size={40}
@@ -265,7 +264,7 @@ class About extends React.Component {
                           size={40}
                           onClick={this.handleMenu}
                           className="menu-icon"
-                          color={"white"}
+                          color={"black"}
                           style={{ margin: 10 }}
                         />
                       )}

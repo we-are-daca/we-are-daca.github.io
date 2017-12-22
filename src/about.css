@@ -8,6 +8,10 @@
   src: url('fonts/Proxima-Nova-Semibold.ttf')
 }
 
+.about-nav {
+    margin-bottom: 0px;
+}
+
 .project {
     padding-bottom: 10px;
 }
