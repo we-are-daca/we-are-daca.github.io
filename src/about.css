@@ -1,0 +1,168 @@
+@font-face {
+  font-family: ProximaNovaRegular;
+  src: url('fonts/ProximaNova-Regular.otf')
+}
+
+@font-face {
+  font-family: ProximaNova;
+  src: url('fonts/Proxima-Nova-Semibold.ttf')
+}
+
+.project {
+    padding-bottom: 10px;
+}
+
+.about-header {
+    padding-left: 20px;
+}
+
+.about-header p {
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 18px;
+    max-width: 90%;
+    font-family: ProximaNovaRegular;
+}
+
+.about-header p b {
+    font-family: ProximaNovaBold;
+    letter-spacing: 0.05em;
+    font-size: 28px;
+    text-align: left;
+    color: #ed8910;
+    line-height: 1.75;
+}
+
+
+.about-team {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-profile {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 40px;
+}
+
+
+@media only screen and (max-device-width: 768px) {
+    .about-header {
+        padding-left: 0px;
+    }
+
+    .about-header p {
+        padding-left: 0px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+     .about-header p:nth-child(2) {
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: left;
+        max-width: 100%;
+    }
+    .about-profile {
+        flex-direction: column;
+    }
+}
+
+.team {
+    margin-top: 80px;
+}
+
+.profile-pic-d {
+    background-image: url('https://dwistynbcri9g.cloudfront.net/daniel_about.jpg');
+    background-size: cover;
+    flex-basis: 33%;
+    width: 250px;
+    height: 300px;
+    max-width: 400px;
+}
+
+.profile-pic-a {
+    background-image: url('https://dwistynbcri9g.cloudfront.net/corina_about.jpg');
+    background-size: cover;
+    flex-basis: 33%;
+    width: 250px;
+    height: 300px;
+    max-width: 400px;
+}
+
+.profile-pic-c {
+    background-image: url('https://dwistynbcri9g.cloudfront.net/chris_about.jpg');
+    background-size: cover;
+    flex-basis: 33%;
+    width: 250px;
+    height: 300px;
+    max-width: 400px;
+}
+
+.profile-pic-b {
+    background-image: url('https://dwistynbcri9g.cloudfront.net/mia_about.jpg');
+    background-size: cover;
+    flex-basis: 33%;
+    width: 250px;
+    height: 300px;
+    max-width: 400px;
+}
+
+.profile-pic-e {
+    background-image: url('https://dwistynbcri9g.cloudfront.net/sammy_about.jpg');
+    background-size: cover;
+    flex-basis: 33%;
+    width: 250px;
+    height: 300px;
+    max-width: 400px;
+}
+
+.profile-breakdown {
+    flex-basis: 66%;
+    max-width: 100%;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.profile-breakdown p {
+    text-align: center;
+    margin: 0 auto;
+    font-family: 'ProximaNovaRegular';
+    color: #727272;
+}
+
+@media only screen and (max-device-width: 768px) {
+    .profile-pic {
+        width: 100% !important;
+        height: 400px;
+        margin-bottom: 20px;
+    }
+
+    .about-profile-mobile {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .about-team-mobile {
+        padding-left: 0 !important;
+        padding-right: 0 !important;
+    }
+
+    .profile-breakdown {
+        padding-left: 0px;
+        max-width: 90%;
+        margin-top: 10px;
+        margin-bottom: 50px;
+    }
+
+    .profile-breakdown p {
+        max-width: 100%;
+        text-align: left;
+        font-size: 22px;
+    }
+}
+

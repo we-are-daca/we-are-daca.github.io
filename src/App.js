@@ -145,46 +145,6 @@ class App extends Component {
           link: "/4102ff4a/elvin-journey"
         },
         {
-          name: "Irais",
-          occupation: "Computer Science Major",
-          timeSinceArrival: "15",
-          country: "Mexico",
-          image: "irais_portrait.jpg",
-          link: "/7d56bb43/irais-journey"
-        },
-         {
-          name: "Luis",
-          occupation: "Computer Science Major",
-          timeSinceArrival: "13",
-          country: "Mexico",
-          image: "luis_2_journey.jpg",
-          link: "/20852c70/luis-journey"
-        },
-        {
-          name: "Sandra",
-          occupation: "Computer Science Major",
-          timeSinceArrival: "15",
-          country: "Mexico",
-          image: "sandra_journey.jpg",
-          link: "/a782b502/sandra-journey"
-        },
-        {
-          name: "Leo",
-          occupation: "Student Ambassador",
-          timeSinceArrival: "17",
-          country: "Mexico",
-          image: "leo_journey.jpg",
-          link: "/c05de409/leo-journey"
-        },
-        {
-          name: "Liz",
-          occupation: "Animal Science Major",
-          timeSinceArrival: "15",
-          country: "Mexico",
-          image: "liz_journey.jpg",
-          link: "/d1d1f873/liz-journey"
-        },
-        {
           name: "Octavio",
           occupation: "Business Owner",
           timeSinceArrival: "13",
