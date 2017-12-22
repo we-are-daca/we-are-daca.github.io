@@ -314,6 +314,7 @@ class About extends React.Component {
                     }
                   </p> 
               </div>
+              <div className="line-separator"></div>
               <div className="about-header team">
                   <p>
                     <b>
@@ -322,6 +323,16 @@ class About extends React.Component {
                       }
                     </b>
                   </p>
+                  <p>
+                    {
+                      "Faces OF DACA was conceived in September 2017 by Daniel Diaz."
+                    }
+                  </p> 
+                  <p>
+                    {
+                      "This project would not have been possible over the course of the course of three months without our many contributors. Special thanks to Cathy Tran and Brian De Anda whose contributions helped us shape what the project is today. Big thank you to all our participants for being so courageous in sharing their story and time over the course of the project."
+                    }
+                  </p> 
               </div>
                 <div className="about-team about-team-mobile">
                   <div className="about-profile about-profile-mobile">

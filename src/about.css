@@ -39,7 +39,10 @@
 }
 
 
+
+
 .about-team {
+    padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -53,6 +56,15 @@
     margin-bottom: 40px;
 }
 
+.line-separator {
+    height: 1px;
+    background: #e67e00;
+    border-bottom: 1px solid #e67e00;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
 
 @media only screen and (max-device-width: 768px) {
     .about-header {
@@ -65,7 +77,7 @@
         max-width: 100%;
     }
 
-     .about-header p:nth-child(2) {
+     .about-header p:nth-child(n) {
         padding-left: 10px;
         padding-right: 10px;
         text-align: left;
@@ -77,7 +89,7 @@
 }
 
 .team {
-    margin-top: 80px;
+    margin-top: 1rem;
 }
 
 .profile-pic-d {
@@ -142,7 +154,7 @@
 @media only screen and (max-device-width: 768px) {
     .profile-pic {
         width: 100% !important;
-        height: 400px;
+        max-width: 100%;
         margin-bottom: 20px;
     }
 
