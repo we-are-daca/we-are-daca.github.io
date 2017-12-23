@@ -24,6 +24,13 @@
   padding-bottom: 50px;
 }
 
+@media (max-width: 768px) {
+  .research-container {
+    padding-left: 0;
+    flex-direction: column;
+  }
+}
+
 .research-description {
   flex-basis: 60%;
   margin: auto;
