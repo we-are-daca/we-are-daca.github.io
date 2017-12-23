@@ -41,13 +41,13 @@
 .research-description p {
   text-align: left;
   font-family: ProximaNovaRegular;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 1.75;
 }
 
 .research-questions li p{
   font-family: ProximaNovaRegular;
-  font-size: 16px; 
+  font-size: 18px; 
 }
 
 .header {
@@ -72,6 +72,15 @@
     }
     .stats p {
         font-size: 22px !important;
+    }
+
+    .research-description p {
+      font-size: 22px;
+    }
+
+    .research-questions li p{
+      font-family: ProximaNovaRegular;
+      font-size: 22px; 
     }
 }
 

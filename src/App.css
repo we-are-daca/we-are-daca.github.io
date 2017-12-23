@@ -240,6 +240,15 @@ body {
   animation-fill-mode: forwards;
 }
 
+@media only screen and (min-device-width: 1920px) {
+  #billboard-title > p:nth-child(2) {
+    font-size: 160px;
+  }
+  #billboard-title > p:nth-child(3) {
+    font-size: 30px;
+  }
+}
+
 @media only screen and (max-device-width: 575px) {
   #billboard-title {
     position: absolute;

@@ -281,46 +281,38 @@ class Statistics extends React.Component {
                 </div>
               </div>
               <div className="">
-                <div className="dacamentor-interview stats">
+                <div className="about-header project">
                   <p>
                     <b>{"Introduction"}</b>
                   </p>
                   <p>
-                    <span className="dacamentor-response">
                       {
                         "The Trump administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation."
                       }
-                    </span>
                   </p>
                   <p>
-                    <span className="dacamentor-response">
                       {
                         "The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population."
                       }
-                    </span>
                   </p>
                   <p>
-                    <span className="dacamentor-response">
                       {
                         "We began our study in the month of October 2017, we currently hold 24 participants. We acknowledge this is a small sample size, although this isn't the end of our research. It’s only the beginning."
                       }
-                    </span>
                   </p>
                 </div>
               </div>
-              <div className="dacamentor-interview stats">
+              <div className="about-header project">
                 <p>
                   <b>{"Methodology"}</b>
                 </p>
                 <p>
-                  <span className="dacamentor-response">
                     {
                       "Employing structured style interviews, we interviewed a total of twenty-four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old, and were mostly recruited through social media outlets. Also, each interviewee were required to inform themselves about our project through our call for participants, which was published in Medium. Our call consisted of what DACA is, the state of DACA, our goal for the project, and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware, and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community."
                     }
-                  </span>
                 </p>
               </div>
-              <div className="dacamentor-interview stats">
+              <div className="about-header project">
                 <p>
                   <b>{"Gender of participants and occupations"}</b>
                 </p>

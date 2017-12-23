@@ -140,6 +140,14 @@ transition-delay:.2s;
 .dacas > div {
   margin: 10px;
 }
+
+@media (min-width: 1920px) {
+  .dacas {
+    max-width: 85%;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 576px) {
 
   .innercardcontent {
