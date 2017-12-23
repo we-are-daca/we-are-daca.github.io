@@ -12,6 +12,36 @@
   color: #e67e00  !important;
 }
 
+.research-graph {
+  flex-basis: 40%;
+  margin: 0 auto;
+}
+
+.research-container {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 50px;
+}
+
+.research-description {
+  flex-basis: 60%;
+  margin: auto;
+  padding: 20px;
+}
+
+.research-description p {
+  text-align: left;
+  font-family: ProximaNovaRegular;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+.research-questions li p{
+  font-family: ProximaNovaRegular;
+  font-size: 16px; 
+}
+
 .header {
   margin-bottom: 20px;
 }

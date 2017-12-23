@@ -146,7 +146,7 @@
 }
 
 .profile-name b {
-     font-family: ProximaNovaBold;
+    font-family: ProximaNovaBold;
     letter-spacing: 0.05em;
     font-size: 28px;
     text-align: left;
@@ -154,11 +154,18 @@
     line-height: 1.75;
 }
 
+.profile-name p {
+    font-family: 'ProximaNovaRegular';
+    color: #727272 !important;
+    display: inline;
+    padding-left: 20px;
+}
+
 .profile-breakdown p {
     text-align: left;
     margin: 0 auto;
     font-family: 'ProximaNovaRegular';
-    color: #727272;
+    color: black;
 }
 
 @media only screen and (max-device-width: 768px) {
