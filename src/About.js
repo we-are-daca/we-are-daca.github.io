@@ -185,7 +185,7 @@ class About extends React.Component {
     ];
     return (
       <div className="participant">
-        <div className="flex-container about-container">
+        <div className="flex-container">
           <Sticky enabled={true}>
             <div className="sidenav">
               <div className="title">
@@ -228,7 +228,7 @@ class About extends React.Component {
               </div>
             </div>
           </Sticky>
-          <div className="main">
+          <div className="main about-container">
             <div className="mobile-menu" style={this.state.menuStyle}>
               <div className="overlay-content" style={this.state.menuContent}>
                 <NavLink to="/" activeClassName="">
@@ -250,7 +250,10 @@ class About extends React.Component {
               <div className="">
                 <div className="portrait-title">
                   <MediaQuery query="(max-width: 1224px)">
-                    <div className="mobile-nav about-nav" style={this.mobileNavStyle}>
+                    <div
+                      className="mobile-nav about-nav"
+                      style={this.mobileNavStyle}
+                    >
                       {this.state.isMenuOpen ? (
                         <MdClose
                           size={40}
@@ -273,118 +276,159 @@ class About extends React.Component {
                 </div>
               </div>
               <div className="about-header project">
-                  <p>
-                    <b>
-                      {
-                        "What is DACA?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    {
-                      "In 2012, the Obama administration created the DACA program. DACA stands for Deferred Action For Childhood Arrivals and it allows hundreds of thousands of young and undocumented people to remain in the country. By submitting biometric data to the government, passing a background check, maintaining a clean criminal record and paying a $495 fee, it allows young and undocumented immigrants to legally work and receive protection from deportation. Recipients can renew DACA on a basis of two-year increments."
-                    }
-                  </p>
+                <p>
+                  <b>{"What is DACA?"}</b>
+                </p>
+                <p>
+                  {
+                    "In 2012, the Obama administration created the DACA program. DACA stands for Deferred Action For Childhood Arrivals and it allows hundreds of thousands of young and undocumented people to remain in the country. By submitting biometric data to the government, passing a background check, maintaining a clean criminal record and paying a $495 fee, it allows young and undocumented immigrants to legally work and receive protection from deportation. Recipients can renew DACA on a basis of two-year increments."
+                  }
+                </p>
               </div>
               <div className="about-header project">
-                  <p>
-                    <b>
-                      {
-                        "What is Faces Of DACA?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    {
-                      "Our project, Faces Of DACA, aims to show the outside world a more comprehensive picture of DACA recipients. We want to bring a bit of attention to recipients whose stories have never been heard, considered nor celebrated. The Trump administration has removed the DACA program, leaving as many as 800 thousand DACA recipients remaining hopeful of Congress delivering a solution." 
-                    }
-                  </p> 
+                <p>
+                  <b>{"What is Faces Of DACA?"}</b>
+                </p>
+                <p>
+                  {
+                    "Our project, Faces Of DACA, aims to show the outside world a more comprehensive picture of DACA recipients. We want to bring a bit of attention to recipients whose stories have never been heard, considered nor celebrated. The Trump administration has removed the DACA program, leaving as many as 800 thousand DACA recipients remaining hopeful of Congress delivering a solution."
+                  }
+                </p>
               </div>
               <div className="about-header project">
-                  <p>
-                    <b>
-                      {
-                        "How can I help?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    {
-                      "Head over to our How To Help section to see how you can join the fight. Your participation matters--Congress failed to agree on a long term solution and has left DACA recipients in the dark for the holidays. Democracy works when we all work together. A phone call to your representative can help them prioritize the DREAM Act. Only when we show in numbers, we can make a difference."
-                    }
-                  </p> 
+                <p>
+                  <b>{"How can I help?"}</b>
+                </p>
+                <p>
+                  {
+                    "Head over to our How To Help section to see how you can join the fight. Your participation matters--Congress failed to agree on a long term solution and has left DACA recipients in the dark for the holidays. Democracy works when we all work together. A phone call to your representative can help them prioritize the DREAM Act. Only when we show in numbers, we can make a difference."
+                  }
+                </p>
               </div>
-              <div className="line-separator"></div>
+              <div className="line-separator" />
               <div className="about-header team">
-                  <p>
-                    <b>
-                      {
-                        "Faces Of DACA Team"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    {
-                      "Faces OF DACA was conceived in September 2017 by Daniel Diaz."
-                    }
-                  </p> 
-                  <p>
-                    {
-                      "This project would not have been possible over the course of the course of three months without our many contributors. Special thanks to Cathy Tran and Brian De Anda whose contributions helped us shape what the project is today. Big thank you to all our participants for being so courageous in sharing their story and time over the course of the project."
-                    }
-                  </p> 
+                <p>
+                  <b>{"Faces Of DACA Team"}</b>
+                </p>
+                <p>
+                  {
+                    "Faces OF DACA was conceived in September 2017 by Daniel Diaz."
+                  }
+                </p>
+                <p>
+                  {
+                    "This project would not have been possible over the course of the course of three months without our many contributors. Special thanks to Cathy Tran and Brian De Anda whose contributions helped us shape what the project is today. Big thank you to all our participants for being so courageous in sharing their story and time over the course of the project."
+                  }
+                </p>
               </div>
-                <div className="about-team about-team-mobile">
-                  <div className="about-profile about-profile-mobile">
-                    <div className="profile-pic-d profile-pic" />
-                    <div className="profile-breakdown">
-                      <p>
-                        Daniel Diaz is a Mexico City native, Cal State Monterey Bay graduate and
-                        a DACA recipient. Upon hearing about the removal of
-                        DACA, Daniel set in motion the storytelling project that
-                        became Faces Of DACA. His professional development as a
-                        software engineer at places like Uber allowed him to
-                        craft this project in which he hopes to share the untold
-                        stories from America's undocumented youth and further
-                        increase the urgency for Congress to enact a long-term
-                        solution in replacement of DACA.
+              <div className="about-team about-team-mobile">
+                <div className="about-profile about-profile-mobile">
+                  <div className="profile-pic-d profile-pic" />
+                  <div className="profile-breakdown">
+                    <div>
+                      <p className="profile-name">
+                        <b>{"Daniel"}</b>
                       </p>
                     </div>
-                  </div>
-                  <div className="about-profile about-profile-mobile">
-                    <div className="profile-pic-a profile-pic" />
-                    <div className="profile-breakdown">
-                      <p>
-                        Corina De La Torre is a Latinx Research Assistant and a recent graduate from the University of California, Santa Cruz where she obtained BAs in Psychology and in Feminist Studies with a concentration in Law, Politics and Social Change. Corina is currently seeking graduate programs to pursue her PHD in Social Psychology and her research interests are on issues of Identity, culture, and economic injustices within the Latinx community. Based on her dedication to serve her community, Corina took partnership in the Faces Of DACA project.
-                      </p>
-                    </div>
-                  </div>
-                  
-                  <div className="about-profile about-profile-mobile">
-                    <div className="profile-pic-c profile-pic" />
-                    <div className="profile-breakdown">
-                      <p>
-                        Christopher Rendon is an aspiring writer from the Central Coast area, who recently graduated from UCLA with his B.A. in English. Offering his knowledge on writing and editing, his willingness to join the project stems from the direct effects Trump’s decision to rescind DACA has had on his community. He strongly believes every Dreamer deserves the same respect and civil liberties as any citizen for they, too, embody the quotidian American experience. Alongside his hard working colleagues, his hope is for Congress to assure the safety of every DACA recipient.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="about-profile about-profile-mobile">
-                    <div className="profile-pic-b profile-pic" />
-                    <div className="profile-breakdown">
-                      <p>
-                        Mia Castillo is a Salinas, California native and a current intensive psychology major at the University of California Santa Cruz. Mia was motivated to join this project because of her passion for research that sheds light on the experiences of historically marginalized communities such as her own. Mia sincerely hopes that this project can urge congress to not only see the importance of DACA but also the great need for an empathetic immigration policy that values human rights. 
-                      </p>
-                    </div>
-                  </div>
-                  <div className="about-profile about-profile-mobile">
-                    <div className="profile-pic-e profile-pic" />
-                    <div className="profile-breakdown">
-                      <p>
-                        Samuel Villavicencio is a California native. He is a graduate from CSUMB headed to the Silicon Valley to work as a software engineer. His awareness of the difficulties surrounding immigration faced by his peers has driven him to join this project. He wants to see congress stand for the people who sacrifice so much to give back to the community.
-                      </p>
-                    </div>
+                    <p>
+                      Daniel Diaz is a Mexico City native, Cal State Monterey
+                      Bay graduate and a DACA recipient. Upon hearing about the
+                      removal of DACA, Daniel set in motion the storytelling
+                      project that became Faces Of DACA. His professional
+                      development as a software engineer at places like Uber
+                      allowed him to craft this project in which he hopes to
+                      share the untold stories from America's undocumented youth
+                      and further increase the urgency for Congress to enact a
+                      long-term solution in replacement of DACA.
+                    </p>
                   </div>
                 </div>
+                <div className="about-profile about-profile-mobile">
+                  <div className="profile-pic-a profile-pic" />
+                  <div className="profile-breakdown">
+                    <div>
+                      <p className="profile-name">
+                        <b>{"Corina"}</b>
+                      </p>
+                    </div>
+                    <p>
+                      Corina De La Torre is a Latinx Research Assistant and a
+                      recent graduate from the University of California, Santa
+                      Cruz where she obtained BAs in Psychology and in Feminist
+                      Studies with a concentration in Law, Politics and Social
+                      Change. Corina is currently seeking graduate programs to
+                      pursue her PHD in Social Psychology and her research
+                      interests are on issues of Identity, culture, and economic
+                      injustices within the Latinx community. Based on her
+                      dedication to serve her community, Corina took partnership
+                      in the Faces Of DACA project.
+                    </p>
+                  </div>
+                </div>
+
+                <div className="about-profile about-profile-mobile">
+                  <div className="profile-pic-c profile-pic" />
+                  <div className="profile-breakdown">
+                    <div>
+                      <p className="profile-name">
+                        <b>{"Chris"}</b>
+                      </p>
+                    </div>
+                    <p>
+                      Christopher Rendon is an aspiring writer from the Central
+                      Coast area, who recently graduated from UCLA with his B.A.
+                      in English. Offering his knowledge on writing and editing,
+                      his willingness to join the project stems from the direct
+                      effects Trump’s decision to rescind DACA has had on his
+                      community. He strongly believes every Dreamer deserves the
+                      same respect and civil liberties as any citizen for they,
+                      too, embody the quotidian American experience. Alongside
+                      his hard working colleagues, his hope is for Congress to
+                      assure the safety of every DACA recipient.
+                    </p>
+                  </div>
+                </div>
+                <div className="about-profile about-profile-mobile">
+                  <div className="profile-pic-b profile-pic" />
+                  <div className="profile-breakdown">
+                    <div>
+                      <p className="profile-name">
+                        <b>{"Mia"}</b>
+                      </p>
+                    </div>
+                    <p>
+                      Mia Castillo is a Salinas, California native and a current
+                      intensive psychology major at the University of California
+                      Santa Cruz. Mia was motivated to join this project because
+                      of her passion for research that sheds light on the
+                      experiences of historically marginalized communities such
+                      as her own. Mia sincerely hopes that this project can urge
+                      congress to not only see the importance of DACA but also
+                      the great need for an empathetic immigration policy that
+                      values human rights.
+                    </p>
+                  </div>
+                </div>
+                <div className="about-profile about-profile-mobile">
+                  <div className="profile-pic-e profile-pic" />
+                  <div className="profile-breakdown">
+                    <div>
+                      <p className="profile-name">
+                        <b>{"Sammy"}</b>
+                      </p>
+                    </div>
+                    <p>
+                      Samuel Villavicencio is a California native. He is a
+                      graduate from CSUMB headed to the Silicon Valley to work
+                      as a software engineer. His awareness of the difficulties
+                      surrounding immigration faced by his peers has driven him
+                      to join this project. He wants to see congress stand for
+                      the people who sacrifice so much to give back to the
+                      community.
+                    </p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
