@@ -355,7 +355,7 @@ class About extends React.Component {
                     <div className="profile-pic-a profile-pic" />
                     <div className="profile-breakdown">
                       <p>
-                        Corina De La Torre is a Latinx Research Assistant and a recent graduate from the University of California, Santa Cruz where she obtained BAs in Psychology and in Feminist Studies with a concentration in Law, Politics and Social Change. Corina is currently seeking graduate programs to pursue her PHD in Social Psychology and her research interests are on issues of Identity, culture, and economic injustices within the Latinx community. Having a privilege of attending higher education, she finds it crucial to improve education quality and access for underrepresented and diverse communities. Based on her dedication to serve her community, Corina took partnership in the Faces Of DACA project.
+                        Corina De La Torre is a Latinx Research Assistant and a recent graduate from the University of California, Santa Cruz where she obtained BAs in Psychology and in Feminist Studies with a concentration in Law, Politics and Social Change. Corina is currently seeking graduate programs to pursue her PHD in Social Psychology and her research interests are on issues of Identity, culture, and economic injustices within the Latinx community. Based on her dedication to serve her community, Corina took partnership in the Faces Of DACA project.
                       </p>
                     </div>
                   </div>
@@ -364,7 +364,7 @@ class About extends React.Component {
                     <div className="profile-pic-c profile-pic" />
                     <div className="profile-breakdown">
                       <p>
-Christopher Rendon is a California native, currently residing in the Central Coast area. He graduated from UCLA in the Summer of 2017 with his B.A. in English, and plans to pursue a career in journalism early 2018. His willingness to join the project stems from the direct effects Trump’s decision to rescind DACA has had on his community, including close friends who are DACA recipients as well. This devastating moment invigorated him to make a stand alongside the Dreamers, who he believes deserves the same respect and civil liberties as any citizen for they, too, embody the quotidian American experience. He hopes that this project, supported by the hard work of his colleagues, can urge Congress to put into legislation a DREAM act that assures the safety of every recipient--recipients who have assembled and built a compelling life story in a country they should call their own.
+                        Christopher Rendon is an aspiring writer from the Central Coast area, who recently graduated from UCLA with his B.A. in English. Offering his knowledge on writing and editing, his willingness to join the project stems from the direct effects Trump’s decision to rescind DACA has had on his community. He strongly believes every Dreamer deserves the same respect and civil liberties as any citizen for they, too, embody the quotidian American experience. Alongside his hard working colleagues, his hope is for Congress to assure the safety of every DACA recipient.
                       </p>
                     </div>
                   </div>
