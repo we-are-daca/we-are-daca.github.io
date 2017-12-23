@@ -93,12 +93,43 @@
     margin-top: 1rem;
 }
 
+.profile-breakdown {
+    flex-basis: 66%;
+    max-width: 100%;
+    margin: auto;
+    padding-left: 20px;
+}
+
+.profile-name b {
+    font-family: ProximaNovaBold;
+    letter-spacing: 0.05em;
+    font-size: 28px;
+    text-align: left;
+    color: #ed8910;
+    line-height: 1.75;
+}
+
+.profile-name p {
+    font-family: 'ProximaNovaRegular';
+    color: #727272 !important;
+    display: inline;
+    padding-left: 20px;
+}
+
+.profile-breakdown p {
+    text-align: left;
+    margin: 0 auto;
+    font-family: 'ProximaNovaRegular';
+    color: black;
+}
+
 .profile-pic-d {
     background-image: url('https://dwistynbcri9g.cloudfront.net/daniel_about.jpg');
     background-size: cover;
     flex-basis: 33%;
     width: 250px;
     height: 300px;
+    max-height: 400px;
     max-width: 400px;
 }
 
@@ -138,34 +169,34 @@
     max-width: 400px;
 }
 
-.profile-breakdown {
-    flex-basis: 66%;
-    max-width: 100%;
-    margin: auto;
-    padding-left: 20px;
-}
-
-.profile-name b {
-    font-family: ProximaNovaBold;
-    letter-spacing: 0.05em;
-    font-size: 28px;
-    text-align: left;
-    color: #ed8910;
-    line-height: 1.75;
-}
-
-.profile-name p {
-    font-family: 'ProximaNovaRegular';
-    color: #727272 !important;
-    display: inline;
-    padding-left: 20px;
-}
-
-.profile-breakdown p {
-    text-align: left;
-    margin: 0 auto;
-    font-family: 'ProximaNovaRegular';
-    color: black;
+@media only screen and (min-width: 1920px) {
+    .about-header p b {
+        font-size: 30px;
+    }
+    .about-header p {
+        font-size: 22px;
+    }
+    .profile-pic-a {
+        height: 400px;
+    }
+    .profile-pic-d {
+        height: 400px;
+    }
+    .profile-pic-c {
+        height: 400px;
+    }
+    .profile-pic-b {
+        height: 400px;
+    }
+    .profile-pic-e {
+        height: 400px;
+    }
+    .profile-name b {
+        font-size: 30px;
+    }
+    .profile-breakdown {
+        font-size: 22px;
+    }
 }
 
 @media only screen and (max-device-width: 768px) {

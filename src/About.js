@@ -281,7 +281,7 @@ class About extends React.Component {
                 </p>
                 <p>
                   {
-                    "In 2012, the Obama administration created the DACA program. DACA stands for Deferred Action For Childhood Arrivals allowing hundreds of thousands of young undocumented people to remain in the country. By submitting biometric data to the government, passing a background check, maintaining a clean criminal record and paying a $495 fee, it allows young and undocumented immigrants to legally work and receive protection from deportation. Recipients can renew DACA on a basis of two-year increments."
+                    "In 2012, the Obama administration created the DACA program. DACA stands for Deferred Action For Childhood Arrivals, allowing hundreds of thousands of young undocumented people to remain in the country. By submitting biometric data to the government, passing a background check, maintaining a clean criminal record and paying a $495 fee, it allows young and undocumented immigrants to legally work and receive protection from deportation. Recipients can renew DACA on a basis of two-year increments."
                   }
                 </p>
               </div>
