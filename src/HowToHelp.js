@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import { Pie } from "react-chartjs-2";
 import "./App.css";
+import "./about.css";
 import "./statistics.css";
 
 import ScrollLock from "react-scrolllock";
@@ -15,29 +16,11 @@ import Instagram from "./img/instagram.svg";
 import Twitter from "./img/twitter.svg";
 import Billboard from "./img/billboard.jpg";
 import { NavLink } from "react-router-dom";
-
-const data = {
-	labels: [
-		'Men',
-		'Women',
-	],
-	datasets: [{
-		data: [14, 11],
-		backgroundColor: [
-		'#e67e00',
-		'#F2BF7F',
-		],
-		hoverBackgroundColor: [
-		'#e67e00',
-		'#F2BF7F',
-		]
-	}]
-};
+import Card from "./Card";
 
 class HowToHelp extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
     this.state = {
       show: false,
       isMenuOpen: false,
@@ -61,16 +44,17 @@ class HowToHelp extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        backgroundImage: 'url(https://dwistynbcri9g.cloudfront.net/statistics_cover.jpg)',
-        backgroundPosition: 'center center',
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        backgroundAttachment: 'none',
-        height: '450px',
-        width: '90%',
-        margin: '0 auto',
-        position: 'relative',
-        filter: 'brightness(40%) contrast(70%)'
+        backgroundImage:
+          "url(https://dwistynbcri9g.cloudfront.net/statistics_cover.jpg)",
+        backgroundPosition: "center center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+        backgroundAttachment: "none",
+        height: "450px",
+        width: "90%",
+        margin: "0 auto",
+        position: "relative",
+        filter: "brightness(40%) contrast(70%)"
       }
     };
 
@@ -137,9 +121,14 @@ class HowToHelp extends React.Component {
   };
 
   render() {
-    const data01 = [{name: 'Group A', value: 400}, {name: 'Group B', value: 300},
-                  {name: 'Group C', value: 300}, {name: 'Group D', value: 200},
-                  {name: 'Group E', value: 278}, {name: 'Group F', value: 189}]
+    const data01 = [
+      { name: "Group A", value: 400 },
+      { name: "Group B", value: 300 },
+      { name: "Group C", value: 300 },
+      { name: "Group D", value: 200 },
+      { name: "Group E", value: 278 },
+      { name: "Group F", value: 189 }
+    ];
     return (
       <div className="participant">
         <div className="flex-container">
@@ -160,7 +149,7 @@ class HowToHelp extends React.Component {
                   </li>
                   <li>
                     <NavLink exact to="/how-to-help" activeClassName="links">
-                        How To Help
+                      How To Help
                     </NavLink>
                   </li>
                   <li>
@@ -185,7 +174,7 @@ class HowToHelp extends React.Component {
               </div>
             </div>
           </Sticky>
-          <div className="main">
+          <div className="main about-container">
             <div className="mobile-menu" style={this.state.menuStyle}>
               <div className="overlay-content" style={this.state.menuContent}>
                 <NavLink to="/" activeClassName="">
@@ -194,110 +183,90 @@ class HowToHelp extends React.Component {
                 <NavLink to="/statistics" activeClassName="">
                   Statistics
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/how-to-help" activeClassName="">
                   How To Help
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
             <div className="profile">
-              <div className="header">
-                <div className="portrait" style={this.state.portraitStyle}>
-                </div>
+              <div className="">
                 <div className="portrait-title">
                   <MediaQuery query="(max-width: 1224px)">
-                      <div className="mobile-nav" style={this.mobileNavStyle}>
-                        {this.state.isMenuOpen ? (
-                          <MdClose
-                            size={40}
-                            onClick={this.closeMenu}
-                            className="menu-close"
-                            color={"black"}
-                            style={{ margin: 10 }}
-                          />
-                        ) : (
-                          <MdMenu
-                            size={40}
-                            onClick={this.handleMenu}
-                            className="menu-icon"
-                            color={"white"}
-                            style={{ margin: 10 }}
-                          />
-                        )}
-                      </div>
-                    </MediaQuery>
-                  <p>To Congress</p>
+                    <div
+                      className="mobile-nav about-nav"
+                      style={this.mobileNavStyle}
+                    >
+                      {this.state.isMenuOpen ? (
+                        <MdClose
+                          size={40}
+                          onClick={this.closeMenu}
+                          className="menu-close"
+                          color={"black"}
+                          style={{ margin: 10 }}
+                        />
+                      ) : (
+                        <MdMenu
+                          size={40}
+                          onClick={this.handleMenu}
+                          className="menu-icon"
+                          color={"black"}
+                          style={{ margin: 10 }}
+                        />
+                      )}
+                    </div>
+                  </MediaQuery>
+                  <p>DREAM ACT NOW.</p>
                 </div>
               </div>
-              <div className="">
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "Introduction"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        'According to U.S. Citizenship and Immigration Services, there are currently 690,000 of 800,000 undocumented immigrants who are enrolled in DACA, the Deferred Action for Childhood Arrivals program that was created 5 years ago. As of September 5th, 2017, the Trump administration has rescinded the program, leaving the future of these 690,000 individuals uncertain. The administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation.'
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        'The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population. '
-                      }
-                    </span>
-                  </p>
+              <div className="about-header project">
+                <p>
+                  <b>{"Call Your Representative"}</b>
+                </p>
+                <p>
+                  {
+                    "Urge Congress to pass a legitimate DREAM Act today by calling your local congressman or the Speaker of the House, Paul Ryan. Find your representative and inform them that you stand with the 800,000 DREAMers, who, without a long-term legislation, are at risk of losing their livelihoods as result of deportation. "
+                  }
+                </p>
+                <div className="help-button-container">
+                  <div className="help-button">
+                    <p>{"Find Your Rep"}</p>
+                  </div>
                 </div>
               </div>
-               <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "Methodology"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        'Using structured style interviews, we interviewed a total of Twenty- four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old and were recruited through social media outlets and required to inform themselves about our project through our call for participants published through Medium. Our call  consisted of what DACA is, the state of DACA, our goal of our project and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community. '
-                      }
-                    </span>
-                  </p>
+              <div className="about-header project">
+                <p>
+                  <b>{"RSVP our Event"}</b>
+                </p>
+                <p>
+                  {
+                    "On January 25, 2017, our team is hosting an event in celebration of the launch of our storytelling project. At this event, we will have panelists sharing their experiences as an extension to the interviews conducted for facesofdaca.us."
+                  }
+                </p>
+                <div className="help-button-container">
+                  <div className="help-button">
+                    <p>{"RSVP Now"}</p>
+                  </div>
                 </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "Gender of participants"
-                      }
-                    </b>
-                  </p>
-                  <Pie data={data} height={200}  options={{
-                    layout: { 
-                      padding: {
-                        top: 20,
-                        bottom: 20
-                      }
-                    }
-                   }
-                  } />
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
-                      }
-                    </span>
-                  </p>
+              </div>
+              <div className="about-header project">
+                <p>
+                  <b>{"Social Media Presence"}</b>
+                </p>
+                <p>
+                  {
+                    "A call for action can be as easy as sending a 280-character tweet. Therefore, by having a social media presence you can support DACA recipients by tweeting your local congressman or supporting our website by using the hashtag, #FACESOFDACA, to spread the urgency of our goal and mission to have Congress pass a long-term immigration policy."
+                  }
+                </p>
+                <div className="help-button-container">
+                  <div className="help-button">
+                    <p>{"Tweet"}</p>
+                  </div>
                 </div>
+              </div>
             </div>
           </div>
         </div>
