@@ -133,21 +133,22 @@ class Jonathan extends React.Component {
               <div className="navigation">
                 <ul>
                   <li>
-                    <NavLink to="/" activeClassName="links">
-                      Stories
+                    <NavLink to="/">Stories</NavLink>
+                  </li>
+                  <li>
+                    <NavLink exact to="/statistics" activeClassName="links">
+                      Statistics
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      to="/statistics"
-                      activeClassName="links"
-                    />Statistics
+                    <NavLink exact to="/how-to-help" activeClassName="links">
+                      How To Help
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/help" activeClassName="links" />How To Help
-                  </li>
-                  <li>
-                    <NavLink to="/help" activeClassName="links" />About
+                    <NavLink exact to="/about" activeClassName="links">
+                      About
+                    </NavLink>
                   </li>
                   <div className="social">
                     <div>
@@ -175,10 +176,10 @@ class Jonathan extends React.Component {
                 <NavLink to="/statistics" activeClassName="">
                   Statistics
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/how-to-help" activeClassName="">
                   How To Help
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
               </div>
