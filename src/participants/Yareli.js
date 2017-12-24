@@ -343,7 +343,7 @@ class Yareli extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Despite how my sister and I felt in Mexico, we didn’t want to come back to the U.S. We knew what we were coming back to in the states: a second place where we weren’t fully comfortable and not able to be ourselves. At that point, I was confused. I didn’t know what home was. "
+                        "Despite how my sister and I felt in Mexico, we didn’t want to come back to the U.S. We knew what we were coming back to in the States: a second place where we weren’t fully comfortable and not able to be ourselves. At that point, I was confused. I didn’t know what home was. "
                       }
                     </span>
                   </p>

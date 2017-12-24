@@ -328,7 +328,7 @@ class Miriam extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "No. I’ve been in the states for 11 years. I’ve never tried to go back. Although I would like to go back, this is my home country. My life is here. I don’t have a reason to go back other than visit my family and old friends."
+                        "No. I’ve been in the States for 11 years. I’ve never tried to go back. Although I would like to go back, this is my home country. My life is here. I don’t have a reason to go back other than visit my family and old friends."
                       }
                     </span>
                   </p>

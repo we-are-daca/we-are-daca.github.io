@@ -245,7 +245,7 @@ class Estefania extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I’m from Mexico City and I came to the United States when I was 9. My parents had been divorced since I was three years old and both of them remarried with different people. When we made the decision to move here, it was only my mom, my youngest brother and I that came here first--my mother has family here so she traveled over to the states for vacations. My sister, step-brothers, and stepfather stayed in Mexico for about a month. Although my parents had been divorced since I was a child, the separation from my dad was one of the hardest things I had to go through."
+                        "I’m from Mexico City and I came to the United States when I was 9. My parents had been divorced since I was three years old and both of them remarried with different people. When we made the decision to move here, it was only my mom, my youngest brother and I that came here first--my mother has family here so she traveled over to the States for vacations. My sister, step-brothers, and stepfather stayed in Mexico for about a month. Although my parents had been divorced since I was a child, the separation from my dad was one of the hardest things I had to go through."
                       }
                     </span>
                   </p>
@@ -406,7 +406,7 @@ class Estefania extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I was working when it happened. I remember my dad was the one that told me. He said, “Did you hear what happened? You can actually come now, they’re going to deport you. I’m happy and you’re welcome here.” I reacted in disbelief and I told him I didn’t want to go back. In a way, I hurt him because of my decision to stay in the states. I called my best friend who is also a DACA recipient and we were crying on the phone for about an hour until I told her we had to stop crying and figure out a way to do something about this."
+                        "I was working when it happened. I remember my dad was the one that told me. He said, “Did you hear what happened? You can actually come now, they’re going to deport you. I’m happy and you’re welcome here.” I reacted in disbelief and I told him I didn’t want to go back. In a way, I hurt him because of my decision to stay in the States. I called my best friend who is also a DACA recipient and we were crying on the phone for about an hour until I told her we had to stop crying and figure out a way to do something about this."
                       }
                     </span>
                   </p>
