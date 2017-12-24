@@ -58,14 +58,15 @@ const initialAffect = {
 
 const endingAffect = {
   labels: [
-    "Positive Ending Affect",
-    "Negative Ending Affect"
+    "Positive Expressing Perseverance",
+    "Negative with Depressive Symptoms",
+    "Negative Affect Motivation"
   ],
   datasets: [
     {
-      data: [15, 9],
-      backgroundColor: ["#e67e00", "#F2BF7F"],
-      hoverBackgroundColor: ["#e67e00", "#F2BF7F"]
+      data: [15, 5, 4],
+      backgroundColor: ["#e67e00", "#F2BF7F", "#FAE5CC"],
+      hoverBackgroundColor: ["#e67e00", "#F2BF7F", "#FAE5CC"]
     }
   ]
 }
@@ -401,7 +402,7 @@ class Statistics extends React.Component {
               <div className="research-container">
                 
                 <div className="research-graph">
-                  <Pie data={endingAffect} height={250} options={{}} />
+                  <Pie data={endingAffect} height={300} options={{}} />
                 </div>
                 <div className="research-description">
                   <p>
