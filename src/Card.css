@@ -141,7 +141,7 @@ transition-delay:.2s;
   margin: 10px;
 }
 
-@media (min-width: 1920px) {
+@media (min-width: 1900px) {
   .dacas {
     max-width: 85%;
     margin: 0 auto;
