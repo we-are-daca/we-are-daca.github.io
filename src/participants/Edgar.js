@@ -253,7 +253,7 @@ class Edgar extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "And, honestly, I don’t have too many memories from over there. There are those few such as being in my mom’s store or riding around with my dad on his motorcycle, including this one time where I got hurt because we fell while riding the bike. laughs). Those moments are like some of the few things I remember from over there. Also, there was a time where I recall hitting my head on something. I still have the scar from the incident actually. Besides that, I don’t remember too much. "
+                        "And, honestly, I don’t have too many memories from over there. There are those few such as being in my mom’s store or riding around with my dad on his motorcycle, including this one time where I got hurt because we fell while riding the bike (laughs). Those moments are like some of the few things I remember from over there. Also, there was a time where I recall hitting my head on something. I still have the scar from the incident actually. Besides that, I don’t remember too much. "
                       }
                     </span>
                   </p>

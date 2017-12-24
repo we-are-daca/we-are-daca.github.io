@@ -44,8 +44,8 @@ const laborData = {
 
 const initialAffect = {
   labels: [
-    "Positive Initial Affect",
-    "Negative Initial Affect"
+    "Negative Initial Affect",
+    "Positive Initial Affect"
   ],
   datasets: [
     {
