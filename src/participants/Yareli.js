@@ -138,16 +138,19 @@ class Yareli extends React.Component {
                     </NavLink>
                   </li>
                   <li>
-                    <NavLink
-                      to="/statistics"
-                      activeClassName="links"
-                    />Statistics
+                    <NavLink to="/statistics" activeClassName="links">
+                      Statistics
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/help" activeClassName="links" />How To Help
+                    <NavLink to="/how-to-help" activeClassName="links">
+                      How To Help
+                    </NavLink>
                   </li>
                   <li>
-                    <NavLink to="/help" activeClassName="links" />About
+                    <NavLink to="/about" activeClassName="links">
+                      About
+                    </NavLink>
                   </li>
                   <div className="social">
                     <div>
@@ -175,10 +178,10 @@ class Yareli extends React.Component {
                 <NavLink to="/statistics" activeClassName="">
                   Statistics
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/how-to-help" activeClassName="">
                   How To Help
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
               </div>
@@ -236,11 +239,7 @@ class Yareli extends React.Component {
               <div className="">
                 <div className="dacamentor-interview">
                   <p>
-                    <b>
-                      {
-                        "Tell me a little bit about your early beginnings."
-                      }
-                    </b>
+                    <b>{"Tell me a little bit about your early beginnings."}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -259,11 +258,7 @@ class Yareli extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>
-                      {
-                        "Why Greenfield?"
-                      }
-                    </b>
+                    <b>{"Why Greenfield?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -287,11 +282,7 @@ class Yareli extends React.Component {
                     </span>
                   </p>
                   <p>
-                    <span className="dacamentor-response">
-                      {
-                        "[Pauses]."
-                      }
-                    </span>
+                    <span className="dacamentor-response">{"[Pauses]."}</span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -311,7 +302,7 @@ class Yareli extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"I realized education was something no one could take from you. At the end of the day, no one could take what you earned: your degree and your career. It will always stay with you.\""
+                          '"I realized education was something no one could take from you. At the end of the day, no one could take what you earned: your degree and your career. It will always stay with you."'
                         }
                       </span>
                     </p>
@@ -319,7 +310,11 @@ class Yareli extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"It’s good you and your sister stuck together for support. When you first came here, did you have trouble fitting in?"}</b>
+                    <b>
+                      {
+                        "It’s good you and your sister stuck together for support. When you first came here, did you have trouble fitting in?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -329,11 +324,7 @@ class Yareli extends React.Component {
                     </span>
                   </p>
                   <p>
-                    <span className="dacamentor-response">
-                      {
-                        "[Pauses]."
-                      }
-                    </span>
+                    <span className="dacamentor-response">{"[Pauses]."}</span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -360,7 +351,7 @@ class Yareli extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"When I was learning English, I felt insecure about pronouncing certain words. I was afraid people would criticize me or make fun of me for not knowing how to say something.\""
+                          '"When I was learning English, I felt insecure about pronouncing certain words. I was afraid people would criticize me or make fun of me for not knowing how to say something."'
                         }
                       </span>
                     </p>
@@ -368,7 +359,11 @@ class Yareli extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Has that changed now? Do you have more family here now?"}</b>
+                    <b>
+                      {
+                        "Has that changed now? Do you have more family here now?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -394,11 +389,7 @@ class Yareli extends React.Component {
                     </span>
                   </p>
                   <p>
-                    <span className="dacamentor-response">
-                      {
-                        "[Pauses]."
-                      }
-                    </span>
+                    <span className="dacamentor-response">{"[Pauses]."}</span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -410,23 +401,21 @@ class Yareli extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>
-                      {
-                        "You would have to start over."
-                      }
-                    </b>
+                    <b>{"You would have to start over."}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
-                      {
-                        "Yes, definitely."
-                      }
+                      {"Yes, definitely."}
                     </span>
                   </p>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"What did you feel when you found out that you couldn't get a license or work?"}</b>
+                    <b>
+                      {
+                        "What did you feel when you found out that you couldn't get a license or work?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -439,7 +428,9 @@ class Yareli extends React.Component {
                 <div className="dacamentor-interview">
                   <p>
                     <b>
-                      {"As your senior year approached, you set your sights on going to a university. What happened there?"}
+                      {
+                        "As your senior year approached, you set your sights on going to a university. What happened there?"
+                      }
                     </b>
                   </p>
                   <p>
@@ -459,7 +450,11 @@ class Yareli extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Did you do any internships while you were in the program?"}</b>
+                    <b>
+                      {
+                        "Did you do any internships while you were in the program?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -548,7 +543,7 @@ class Yareli extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\" I want to help and encourage anyone in any field, especially computer science, to make this nation represent what others outside of it believe it to still be, which is “the land of opportunity.”\""
+                          '" I want to help and encourage anyone in any field, especially computer science, to make this nation represent what others outside of it believe it to still be, which is “the land of opportunity.”"'
                         }
                       </span>
                     </p>
