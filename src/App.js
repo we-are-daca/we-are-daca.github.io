@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import ReactGA from 'react-ga';
 import { Link, Element } from "react-scroll";
 import ScrollUp from 'react-scroll-up';
 import ScrollLock from "react-scrolllock";
@@ -17,6 +18,8 @@ import Card from "./Card";
 class App extends Component {
   constructor() {
     super();
+    ReactGA.initialize('UA-111454076-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
       numLoaded: 0,
