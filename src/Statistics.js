@@ -69,7 +69,7 @@ const endingAffect = {
       hoverBackgroundColor: ["#e67e00", "#F2BF7F", "#FAE5CC"]
     }
   ]
-}
+};
 
 const appeal = {
   labels: [
@@ -81,10 +81,10 @@ const appeal = {
     {
       data: [13, 7, 4],
       backgroundColor: ["#e67e00", "#F2BF7F", "#FAE5CC"],
-      hoverBackgroundColor: ["#e67e00", "#F2BF7F", "#FAE5CC"]  
+      hoverBackgroundColor: ["#e67e00", "#F2BF7F", "#FAE5CC"]
     }
   ]
-}
+};
 
 class Statistics extends React.Component {
   constructor(props) {
@@ -287,34 +287,44 @@ class Statistics extends React.Component {
                     <b>{"Introduction"}</b>
                   </p>
                   <p>
-                      {
-                        "The Trump administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation."
-                      }
+                    {
+                      "The Trump administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation."
+                    }
                   </p>
                   <p>
-                      {
-                        "The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population."
-                      }
+                    {
+                      "The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population."
+                    }
                   </p>
                   <p>
-                      {
-                        "We began our study in the month of October 2017, and we currently hold 24 participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
-                      }
+                    {
+                      "We began our study in the month of October 2017, and we currently hold 24 participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
+                    }
                   </p>
                 </div>
               </div>
-              <div className="about-header project">
+              <div className="dacamentor-interview stats">
                 <p>
                   <b>{"Methodology"}</b>
                 </p>
                 <p>
-                    {
-                      "Employing structured style interviews, we interviewed a total of twenty-four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old, and were mostly recruited through social media outlets. Each interviewee was required to inform themselves about our project through our call for participants published in "
-                    }
-                    <a className="external-link" href="https://medium.com/@dcarrotwo/daca-stories-call-for-participants-3fd19367b2ce" target="_blank">Medium. </a>
-                    {
-                      "Our call consisted of what DACA is, the state of DACA, our goal for the project, and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware, and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community."
-                    }
+                  <span className="dacamentor-response">
+                  {
+                    "Employing structured style interviews, we interviewed a total of twenty-four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old, and were mostly recruited through social media outlets. Each interviewee was required to inform themselves about our project through our call for participants published in "
+                  }
+                  </span>
+                  <a
+                    className="external-link"
+                    href="https://medium.com/@dcarrotwo/daca-stories-call-for-participants-3fd19367b2ce"
+                    target="_blank"
+                  >
+                    <span className="dacamentor-response">Medium.{" "}</span>
+                  </a>
+                  <span className="dacamentor-response">
+                  {
+                    "Our call consisted of what DACA is, the state of DACA, our goal for the project, and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware, and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community."
+                  }
+                  </span>
                 </p>
               </div>
               <div className="about-header project">
@@ -335,7 +345,6 @@ class Statistics extends React.Component {
                 </div>
               </div>
               <div className="research-container">
-                
                 <div className="research-graph">
                   <Pie data={laborData} height={250} options={{}} />
                 </div>
@@ -388,12 +397,13 @@ class Statistics extends React.Component {
                 </p>
                 <p>
                   <span className="dacamentor-response">
-                  {"Question 1 states “On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” was broken down into two parts; (1) the initial affect of a participant's response and (2) the ending affect of their response."}
+                    {
+                      "Question 1 states “On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” was broken down into two parts; (1) the initial affect of a participant's response and (2) the ending affect of their response."
+                    }
                   </span>
                 </p>
               </div>
               <div className="research-container">
-                
                 <div className="research-graph">
                   <Pie data={initialAffect} height={225} options={{}} />
                 </div>
@@ -406,7 +416,6 @@ class Statistics extends React.Component {
                 </div>
               </div>
               <div className="research-container">
-                
                 <div className="research-graph">
                   <Pie data={endingAffect} height={275} options={{}} />
                 </div>
@@ -431,58 +440,71 @@ class Statistics extends React.Component {
                 </p>
                 <ol className="research-questions">
                   <li>
-                    <p>
-                      {
-                        "Appeal to emotion."
-                      }
-                    </p>
+                    <p>{"Appeal to emotion."}</p>
                   </li>
                   <li>
-                    <p>
-                      {
-                        "Appeal to work ethic."
-                      }
-                    </p>
+                    <p>{"Appeal to work ethic."}</p>
                   </li>
                   <li>
-                    <p>
-                      {
-                        "Appeal to patriotism."
-                      }
-                    </p>
+                    <p>{"Appeal to patriotism."}</p>
                   </li>
                 </ol>
               </div>
               <div className="research-container">
-                
                 <div className="research-graph">
                   <Pie data={appeal} height={250} options={{}} />
                 </div>
                 <div className="research-description">
                   <ol className="research-questions">
-                  <li>
-                    <p>
-                      {
-                        "Appeal to emotion is how participants responses were their own emotion driven in order to gain recognition for their cause. Mentioning of family, friends, other emotional ties relevant to their situation. As well as, addressing the negative consequences of an action on their life"
-                      }
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      {
-                        "Appeal to work ethic expressed the theme of hard work, perseverance and how he/she has contributed to society, economy and clean record. "
-                      }
-                    </p>
-                  </li>
-                  <li>
-                    <p>
-                      {
-                        "Appeal to patriotism is the expression of one’s sense of patriotism and loyalty for this country, his/her assimilation and active participation within the mainstream culture."
-                      }
-                    </p>
-                  </li>
-                </ol>
+                    <li>
+                      <p>
+                        {
+                          "Appeal to emotion is how participants responses were their own emotion driven in order to gain recognition for their cause. Mentioning of family, friends, other emotional ties relevant to their situation. As well as, addressing the negative consequences of an action on their life"
+                        }
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        {
+                          "Appeal to work ethic expressed the theme of hard work, perseverance and how he/she has contributed to society, economy and clean record. "
+                        }
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        {
+                          "Appeal to patriotism is the expression of one’s sense of patriotism and loyalty for this country, his/her assimilation and active participation within the mainstream culture."
+                        }
+                      </p>
+                    </li>
+                  </ol>
                 </div>
+              </div>
+              <div className="dacamentor-interview stats">
+                <p>
+                  <b>{"Previous related research"}</b>
+                </p>
+                <p>
+                  <span className="dacamentor-response">
+                    {
+                      "Siemons, Raymond-Flesh, Auerswald, and Brindis (2016) have provided very recent and salient research findings that humanize this issue and bring awareness to the potential mental health crisis that is coming to the surface as we speak. Mental Health and well being  emerged overwhelmingly as their participants’ primary health concern. It is more than likely that the general anxiety over DACA has increased since this study was conducted especially now that it is in such a precarious state. DACA does provide many benefits for its recipients however this does not counteract the anxiety and stress felt by those who are received DACA help. (Siemons, Raymond-Flesch, Auerswald, & Brindis, 2016)."
+                    }
+                  </span>
+                </p>
+                <p>
+                  <span className="dacamentor-response">
+                    {
+                      "There are commonalities of conflicted senses of identity and consequential stress and anxiety amongst DACA recipients and this can be further illustrated through Mallet, Calvo, and Waters (2017) who delve into what it is like for Latino immigrants who are transitioning from somewhat protected status as minors into adults with far less resources accessible to them. Along with the usual perils of adulthood comes the overwhelming uncertainty for undocumented immigrants of whether they might be able to survive without access to social services, financial aid for college, lack of access to jobs that provide a living wage, adequate housing and of course the obvious and daunting fear of deportation (Mallet, Calvo & Waters 2017)."
+                    }
+                  </span>
+                </p>
+                <p>
+                  <span className="dacamentor-response">
+                    {
+                      "In another study, Patler & Laster Pirtle (2017) elaborate on the tumultuous emotional experiences of young adult immigrants of Latino descent, who not only have their own struggles and fears, but also carry the weight of emotional distress due to their parents and other family members’ delicate legal statuses. There is the obvious acknowledgement amongst the young adult immigrants of their parents sacrifices for them to live a better life in the United States. However, with that life changing decision comes the consequences of feeling reduced motivation, shame, self-blame, anxiety and lack of mobility when it comes to academic and work opportunities (Patler & Laster Pirtle 2017). However, despite these consequences, Patler and Laster Pirtle (2017) did find something illuminating, being there was a positive significant effect of legal status on psychological well being. The participants in their study expressed that receiving DACA actually reduced the amount of distress and worry about deportation by 76-87% as compared to individuals who did not receive DACA (Patler & Laster Pirtle 2017). It is more than feasible to conclude that immigrants’ experience under the DACA program improves mental health when they are granted a lawful presence."
+                    }
+                  </span>
+                </p>
               </div>
             </div>
           </div>
