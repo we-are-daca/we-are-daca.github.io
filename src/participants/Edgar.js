@@ -434,7 +434,7 @@ class Edgar extends React.Component {
                   <p>
                     <b>
                       {
-                        "So assuming that nothing too crazy happens to people like us, where do you see yourself in the next couple of years?"
+                        "So, assuming that nothing too crazy happens to people like us, where do you see yourself in the next couple of years?"
                       }
                     </b>
                   </p>
@@ -459,7 +459,7 @@ class Edgar extends React.Component {
                   <p>
                     <b>
                       {
-                        "As we know on September 5th, the Trump administration decided to rescind DACA, giving it up to Congress to find a solution in the next six months. When you first heard about it, what were your initial reactions?"
+                        "As we know, on September 5th, the Trump administration decided to rescind DACA, giving it up to Congress to find a solution in the next six months. When you first heard about it, what were your initial reactions?"
                       }
                     </b>
                   </p>
