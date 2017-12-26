@@ -17,7 +17,7 @@ import Billboard from "./img/billboard.jpg";
 import { NavLink } from "react-router-dom";
 
 const data = {
-  labels: ["Men", "Women"],
+  labels: ["Men (58.3%)", "Women (41.7%)"],
   datasets: [
     {
       data: [14, 11],
@@ -29,9 +29,9 @@ const data = {
 
 const laborData = {
   labels: [
-    "College Graduates",
-    "Students",
-    "Working with High School / GED Diploma"
+    "College Graduates (41.7%)",
+    "Students (50%)",
+    "Working with High School / GED Diploma (8.3%)"
   ],
   datasets: [
     {
@@ -44,8 +44,8 @@ const laborData = {
 
 const initialAffect = {
   labels: [
-    "Negative Initial Affect",
-    "Positive Initial Affect"
+    "Negative Initial Affect (83.3%)",
+    "Positive Initial Affect (16.7%)"
   ],
   datasets: [
     {
@@ -58,9 +58,9 @@ const initialAffect = {
 
 const endingAffect = {
   labels: [
-    "Positive Expressing Perseverance",
-    "Negative with Depressive Symptoms",
-    "Negative Affect Motivation"
+    "Positive Expressing Perseverance (62.5%)",
+    "Negative with Depressive Symptoms (20.8%)",
+    "Negative Affect Motivation (16.7%)"
   ],
   datasets: [
     {
@@ -73,9 +73,9 @@ const endingAffect = {
 
 const appeal = {
   labels: [
-    "Emotion Drive",
-    "Work Ethic Drive",
-    "Patriotism"
+    "Emotion Drive (54.7%)",
+    "Work Ethic Drive (29.2%)",
+    "Patriotism (16.2%)"
   ],
   datasets: [
     {
@@ -298,7 +298,7 @@ class Statistics extends React.Component {
                   </p>
                   <p>
                       {
-                        "We began our study in the month of October 2017, we currently hold 24 participants. We acknowledge this is a small sample size, although this isn't the end of our research. It’s only the beginning."
+                        "We began our study in the month of October 2017, and we currently hold 24 participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
                       }
                   </p>
                 </div>
@@ -309,7 +309,11 @@ class Statistics extends React.Component {
                 </p>
                 <p>
                     {
-                      "Employing structured style interviews, we interviewed a total of twenty-four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old, and were mostly recruited through social media outlets. Also, each interviewee were required to inform themselves about our project through our call for participants, which was published in Medium. Our call consisted of what DACA is, the state of DACA, our goal for the project, and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware, and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community."
+                      "Employing structured style interviews, we interviewed a total of twenty-four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old, and were mostly recruited through social media outlets. Each interviewee was required to inform themselves about our project through our call for participants published in "
+                    }
+                    <a className="external-link" href="https://medium.com/@dcarrotwo/daca-stories-call-for-participants-3fd19367b2ce" target="_blank">Medium. </a>
+                    {
+                      "Our call consisted of what DACA is, the state of DACA, our goal for the project, and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware, and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community."
                     }
                 </p>
               </div>
@@ -320,12 +324,12 @@ class Statistics extends React.Component {
               </div>
               <div className="research-container">
                 <div className="research-graph">
-                  <Pie data={data} height={250} options={{}} />
+                  <Pie data={data} height={225} options={{}} />
                 </div>
                 <div className="research-description">
                   <p>
                     {
-                      "From the 24 Latino/as we have 14 self-identified Woman using the  pronouns She, Her, Hers and 11 self identified Men preferring the  pronouns Him, His, and He."
+                      "From the 24 Latino/as interviewed we have fourteen self-identified as Woman using the pronouns She, Her, Hers and 10 self-identified as Men preferring the pronouns Him, His, and He."
                     }
                   </p>
                 </div>
@@ -333,17 +337,17 @@ class Statistics extends React.Component {
               <div className="research-container">
                 
                 <div className="research-graph">
-                  <Pie data={laborData} height={270} options={{}} />
+                  <Pie data={laborData} height={250} options={{}} />
                 </div>
                 <div className="research-description">
                   <p>
                     {
-                      "We have 10 Graduates who have successfully completed a course of study or training, and have been awarded an academic degree of an Associate of Art/Science and/or an Bachelors of Art/Science and are now working in their studied fields."
+                      "We have 10 graduates who have successfully completed a course of study or training, and have been awarded an academic degree of an Associate's of Art/Science and/or an Bachelor's of Art/Science and are now working in their studied fields."
                     }
                   </p>
                   <p>
                     {
-                      "There are 12 currently enrolled students who attend various educational institutions such as a community college or a 4 year university. Two participants are working and employed for wages or salary and hold High School Diplomas or a General Equivalency Diploma."
+                      "There are 12 currently enrolled students who attend various educational institutions such as community college or a 4 year university. Two participants are working and employed for wages or salary and hold High School Diplomas or a General Equivalency Diploma."
                     }
                   </p>
                 </div>
@@ -383,13 +387,15 @@ class Statistics extends React.Component {
                   <b>{"Initial and Ending Affects"}</b>
                 </p>
                 <p>
+                  <span className="dacamentor-response">
                   {"Question 1 states “On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” was broken down into two parts; (1) the initial affect of a participant's response and (2) the ending affect of their response."}
+                  </span>
                 </p>
               </div>
               <div className="research-container">
                 
                 <div className="research-graph">
-                  <Pie data={initialAffect} height={250} options={{}} />
+                  <Pie data={initialAffect} height={225} options={{}} />
                 </div>
                 <div className="research-description">
                   <p>
@@ -402,7 +408,7 @@ class Statistics extends React.Component {
               <div className="research-container">
                 
                 <div className="research-graph">
-                  <Pie data={endingAffect} height={300} options={{}} />
+                  <Pie data={endingAffect} height={275} options={{}} />
                 </div>
                 <div className="research-description">
                   <p>
@@ -419,15 +425,38 @@ class Statistics extends React.Component {
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "Question 2 states “As Congress continues to work towards a solution, what would you tell them if you had the opportunity to say so?”. We decided to examine the way the participant established his/her response to this specific question; their appeal. Appeal was broken down into three common themes throughout all the interviews. (1) Appeal to emotion, (2) appeal to work ethic and (3) Appeal to patriotism.  "
+                      "Question 2 states “As Congress continues to work towards a solution, what would you tell them if you had the opportunity to say so?”. We decided to examine the way the participant established his/her response to this specific question; their appeal. Appeal was broken down into three common themes throughout all the interviews."
                     }
                   </span>
                 </p>
+                <ol className="research-questions">
+                  <li>
+                    <p>
+                      {
+                        "Appeal to emotion."
+                      }
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      {
+                        "Appeal to work ethic."
+                      }
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      {
+                        "Appeal to patriotism."
+                      }
+                    </p>
+                  </li>
+                </ol>
               </div>
               <div className="research-container">
                 
                 <div className="research-graph">
-                  <Pie data={appeal} height={270} options={{}} />
+                  <Pie data={appeal} height={250} options={{}} />
                 </div>
                 <div className="research-description">
                   <ol className="research-questions">

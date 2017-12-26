@@ -59,6 +59,14 @@ body {
     font-family: ProximaNovaRegular;
 }
 
+.external-link:link {
+    text-decoration: none;
+}
+
+.external-link, .external-link:hover {
+   color: #ed8910;
+}
+
 .dacamentor-interview p b {
     font-family: ProximaNovaBold;
     letter-spacing: 0.05em;
