@@ -371,7 +371,7 @@ class Lesly extends React.Component {
                   <p>
                     <b>
                       {
-                        "Overcoming obstacles definitely make one feel proud. So you moved out to Seattle and work at Liberty Mutual as a software engineer. What will you be working on?"
+                        "Overcoming obstacles definitely makes one feel proud. So you moved out to Seattle and work at Liberty Mutual as a software engineer. What will you be working on?"
                       }
                     </b>
                   </p>
@@ -385,7 +385,7 @@ class Lesly extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Although you’re working full time now, do you plan on pursuing any higher education later on?"}</b>
+                    <b>{"Although you’re working full time now, do you plan on pursuing a higher education later on?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -411,7 +411,7 @@ class Lesly extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"For those that don’t know about herScript, can you expand a bit?"}</b>
+                    <b>{"For those that don’t know about herScript, can you expand on that a bit?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -444,7 +444,7 @@ class Lesly extends React.Component {
                   <p>
                     <b>
                       {
-                        "As you know, On Sept 5th, the Trump administration decided to rescind DACA thus leaving it up to Congress to find a solution. What was your initial reaction?"
+                        "As you know, on Sept 5th, the Trump administration decided to rescind DACA thus leaving it up to Congress to find a solution. What was your initial reaction?"
                       }
                     </b>
                   </p>

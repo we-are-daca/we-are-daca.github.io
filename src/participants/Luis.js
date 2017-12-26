@@ -239,7 +239,7 @@ class Luis extends React.Component {
                   <p>
                     <b>
                       {
-                        "Your early years. Tell me about your early years and where you come from."
+                        "Tell me about your early years and where you come from."
                       }
                     </b>
                   </p>
@@ -501,7 +501,7 @@ class Luis extends React.Component {
                   <p>
                     <b>
                       {
-                        "That was sort of my next question: Assuming nothing crazy happens in the coming months, where do you see yourself in the next few years?"
+                        "That was sort of my next question: assuming nothing crazy happens in the coming months, where do you see yourself in the next few years?"
                       }
                     </b>
                   </p>
