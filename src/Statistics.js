@@ -282,24 +282,32 @@ class Statistics extends React.Component {
                 </div>
               </div>
               <div className="">
-                <div className="about-header project">
+                <div className="dacamentor-interview stats">
                   <p>
                     <b>{"Introduction"}</b>
                   </p>
                   <p>
+                    <span className="dacamentor-response">
                     {
                       "The Trump administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation."
                     }
+                    </span>
                   </p>
+                  
                   <p>
+                    <span className="dacamentor-response">
                     {
                       "The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population."
                     }
+                    </span>
                   </p>
+                  
                   <p>
+                    <span className="dacamentor-response">
                     {
                       "We began our study in the month of October 2017, and we currently hold 24 participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
                     }
+                    </span>
                   </p>
                 </div>
               </div>
@@ -327,7 +335,7 @@ class Statistics extends React.Component {
                   </span>
                 </p>
               </div>
-              <div className="about-header project">
+              <div className="dacamentor-interview stats">
                 <p>
                   <b>{"Gender of participants and occupations"}</b>
                 </p>

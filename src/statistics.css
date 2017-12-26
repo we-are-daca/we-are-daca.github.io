@@ -98,5 +98,8 @@
     font-size: 60px;
     text-align: center;
   }
+  .stats {
+    padding: 0 !important;
+  }
 }
 
