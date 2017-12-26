@@ -239,11 +239,7 @@ class Irais extends React.Component {
               <div className="">
                 <div className="dacamentor-interview">
                   <p>
-                    <b>
-                      {
-                        "Tell me about your early years."
-                      }
-                    </b>
+                    <b>{"Tell me about your early years."}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -253,11 +249,7 @@ class Irais extends React.Component {
                     </span>
                   </p>
                   <p>
-                    <span className="dacamentor-response">
-                      {
-                        "[Pauses]"
-                      }
-                    </span>
+                    <span className="dacamentor-response">{"[Pauses]"}</span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -276,11 +268,7 @@ class Irais extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>
-                      {
-                        "How did that make you feel?"
-                      }
-                    </b>
+                    <b>{"How did that make you feel?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -300,7 +288,7 @@ class Irais extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"When I got to middle school, it's when it hit me the most. I started to learn about college and thought maybe I can’t make a life here.\""
+                          '"When I got to middle school, it\'s when it hit me the most. I started to learn about college and thought maybe I can’t make a life here."'
                         }
                       </span>
                     </p>
@@ -315,7 +303,11 @@ class Irais extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"You’re starting your second year in the CS-in-3. How was your first year?"}</b>
+                    <b>
+                      {
+                        "You’re starting your second year in the CS-in-3. How was your first year?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -327,7 +319,11 @@ class Irais extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"You’ll be doing an internship next summer, which should be exciting; however, is there anywhere you’re aiming to work at?"}</b>
+                    <b>
+                      {
+                        "You’ll be doing an internship next summer, which should be exciting; however, is there anywhere you’re aiming to work at?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -344,48 +340,47 @@ class Irais extends React.Component {
                     </span>
                   </p>
                 </div>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
+              </div>
+              <div className="dacamentor-interview">
+                <p>
+                  <b>
+                    {
+                      "Fastforwarding to current events: On September 5th, the Trump administration decided to rescind DACA, and gave Congress six months to craft a long-term legislative solution. What were your initial reactions?"
+                    }
+                  </b>
+                </p>
+                <p>
+                  <span className="dacamentor-response">
+                    {
+                      "I was mad. I was sad. We worked so hard to get where we're at right now. I get that people are mad, saying that ‘we’re taking away American jobs,’ but it’s all about trying. If they didn’t try their hardest in getting the job as we did, why do they deserve it more than we do?"
+                    }
+                  </span>
+                </p>
+              </div>
+              <div className="dacamentor-interview">
+                <p>
+                  <b>
+                    {
+                      "As Congress works on a long term solution for us--if you had the opportunity to tell them something, what would to say?"
+                    }
+                  </b>
+                </p>
+                <p>
+                  <span className="dacamentor-response">
+                    {
+                      "We didn’t come here to have fun, to steal stuff or ruin other people's lives. We came here to better our lives. I guess...I get people want us to do stuff legally, but the law sometimes isn't our greatest protector. Sometimes the law is a little too harsh, and at least for DACA, we came here to continue our lives with our family--we didn't want to be left behind. Some didn't know what was going on; we didn't know we weren’t supposed to be here. We're trying our best here in the United States. It's hard because there's a lot of competition. We’re not doing anything harmful toward society, therefore, we shouldn't have to be suffering like this."
+                    }
+                  </span>
+                </p>
+                <blockquote>
+                  <p className="dacamentor-quote">
+                    <span>
                       {
-                        "Fastforwarding to current events: On September 5th, the Trump administration decided to rescind DACA, and gave Congress six months to craft a long-term legislative solution. What were your initial reactions?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "I was mad. I was sad. We worked so hard to get where we're at right now. I get that people are mad, saying that ‘we’re taking away American jobs,’ but it’s all about trying. If they didn’t try their hardest in getting the job as we did, why do they deserve it more than we do?"
+                        "\"Some didn't know what was going on; we didn't know we weren’t supposed to be here. We're trying our best here in the United States. It's hard because there's a lot of competition. We’re not doing anything harmful toward society, therefore, we shouldn't have to be suffering like this.\""
                       }
                     </span>
                   </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "As Congress works on a long term solution for us--if you had the opportunity to tell them something, what would to say?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "We didn’t come here to have fun, to steal stuff or ruin other people's lives. We came here to better our lives. I guess...I get people want us to do stuff legally, but the law sometimes isn't our greatest protector. Sometimes the law is a little too harsh, and at least for DACA, we came here to continue our lives with our family--we didn't want to be left behind. Some didn't know what was going on; we didn't know we weren’t supposed to be here. We're trying our best here in the United States. It's hard because there's a lot of competition. We’re not doing anything harmful toward society, therefore, we shouldn't have to be suffering like this."
-                      }
-                    </span>
-                  </p>
-                  <blockquote>
-                    <p className="dacamentor-quote">
-                      <span>
-                        {
-                          "\"Some didn't know what was going on; we didn't know we weren’t supposed to be here. We're trying our best here in the United States. It's hard because there's a lot of competition. We’re not doing anything harmful toward society, therefore, we shouldn't have to be suffering like this.\""
-                        }
-                      </span>
-                    </p>
-                  </blockquote>
-                </div>
+                </blockquote>
               </div>
             </div>
           </div>
