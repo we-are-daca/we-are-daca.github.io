@@ -127,7 +127,7 @@ body {
 
 @media (min-width: 576px) {
   .mobile-nav {
-    display: none;
+    display: none !important;
   }
 }
 

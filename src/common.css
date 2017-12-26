@@ -54,6 +54,11 @@ body {
     max-width: 600px;
 }
 
+.share {
+    display: inline-block;
+    padding-left: 15px;
+}
+
 .dacamentor-interview p{
     text-align: left;
     font-family: ProximaNovaRegular;
