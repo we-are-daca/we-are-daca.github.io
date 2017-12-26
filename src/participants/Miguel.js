@@ -378,7 +378,7 @@ class Miguel extends React.Component {
                   <p>
                     <b>
                       {
-                        "While you were going to Hartnell, you were still working at the restaurant?"
+                        "While you were going to Hartnell, were you still working at the restaurant?"
                       }
                     </b>
                   </p>
