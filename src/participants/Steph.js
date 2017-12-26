@@ -329,7 +329,7 @@ class Estefania extends React.Component {
                   <p>
                     <b>
                       {
-                        "Prior to these realizations and as your senior year approached, did you have an idea of what you wanted to do?"
+                        "Prior to these realizations, and as your senior year approached, did you have an idea of what you wanted to do?"
                       }
                     </b>
                   </p>
@@ -399,7 +399,7 @@ class Estefania extends React.Component {
                   <p>
                     <b>
                       {
-                        "As you know on September 5th, the Trump administration announced the removal of DACA and punted it over to Congress to come up with a solution. When your first heard, what was your initial reaction?"
+                        "As you know, on September 5th, the Trump administration announced the removal of DACA and punted it over to Congress to come up with a solution. When your first heard, what was your initial reaction?"
                       }
                     </b>
                   </p>
