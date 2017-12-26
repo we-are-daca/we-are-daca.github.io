@@ -327,7 +327,7 @@ class Irais extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"You’ll be doing an internship next summer, is there anywhere you’re aiming to work at?"}</b>
+                    <b>{"You’ll be doing an internship next summer, which should be exciting; however, is there anywhere you’re aiming to work at?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -336,22 +336,14 @@ class Irais extends React.Component {
                       }
                     </span>
                   </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "Shifting focus from being a doctor, to computer science, to now wanting to become a teacher. Hoping nothing happens, what do you see yourself doing in the future?"
-                      }
-                    </b>
-                  </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I want to build stuff, which I could see myself doing. I ultimately see myself in three or four years getting my teaching credentials so I can begin teaching."
+                        "I want to build stuff, but I ultimately see myself in three or four years getting my teaching credentials so I can begin teaching."
                       }
                     </span>
                   </p>
+                </div>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
