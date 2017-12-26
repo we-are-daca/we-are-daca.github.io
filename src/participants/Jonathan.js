@@ -292,7 +292,7 @@ class Jonathan extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Let’s talk about school for a bit. Did you parents push you to do well in school?"}</b>
+                    <b>{"Let’s talk about school for a bit. Did your parents push you to do well in school?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -437,7 +437,7 @@ class Jonathan extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"You’ve taken a lot of turns in your journey and that’s sort of my next question: assuming nothing crazy happens with us, where do you see yourself in the next few years?"}</b>
+                    <b>{"You’ve taken a lot of turns in your journey, and that’s sort of my next question: assuming nothing crazy happens with us, where do you see yourself in the next few years?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -466,7 +466,7 @@ class Jonathan extends React.Component {
                 <div className="dacamentor-interview">
                   <p>
                     <b>
-                      {"Let’s talk about current events to wrap it up. As you know on Sept 5th, the Trump administration decided to rescind DACA thus leaving it up to Congress to find a solution. What was your initial reaction?"}
+                      {"Let’s talk about current events to wrap it up. As you know on Sept 5th, the Trump administration decided to rescind DACA, thus, leaving it up to Congress to find a solution. What was your initial reaction?"}
                     </b>
                   </p>
                   <p>
