@@ -1,15 +1,9 @@
 import React from "react";
-import { ShareButtons, generateShareIcon } from "react-share";
 import Calendar from "react-icons/lib/fa/calendar-o";
 import Flag from "react-icons/lib/fa/flag-o";
 import ClockO from "react-icons/lib/fa/clock-o";
 import Suitcase from "react-icons/lib/fa/suitcase";
 import "../common.css";
-
-const { FacebookShareButton, TwitterShareButton } = ShareButtons;
-
-const FacebookIcon = generateShareIcon("facebook");
-const TwitterIcon = generateShareIcon("twitter");
 
 const Info = props => (
   <div className="info">
@@ -49,18 +43,6 @@ const Info = props => (
       </p>
       <p className="info-text">{props.date}</p>
     </li>
-    <div>
-      <div className="share">
-        <FacebookShareButton url={window.location.href}>
-          <FacebookIcon size={32} round />
-        </FacebookShareButton>
-      </div>
-      <div className="share">
-        <TwitterShareButton url={window.location.href}>
-          <TwitterIcon size={32} round />
-        </TwitterShareButton>
-      </div>
-    </div>
   </div>
 );
 

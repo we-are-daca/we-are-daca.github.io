@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
+import SocialMedia from "../SocialMedia";
 import Info from "../common/Info";
 import "../App.css";
 
@@ -234,6 +235,7 @@ class Luis extends React.Component {
                   <div className="dacamentor-endborder" />
                 </div>
               </div>
+              <SocialMedia />
               <div className="">
                 <div className="dacamentor-interview">
                   <p>

@@ -54,9 +54,26 @@ body {
     max-width: 600px;
 }
 
+.share-container {
+    height: 75px;
+}
+
 .share {
     display: inline-block;
-    padding-left: 15px;
+}
+
+.share-padded {
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.share-separator {
+    height: 1px;
+    background: #e67e00;
+    border-bottom: 1px solid #e67e00;
+    width: 10%;
+    margin: 0 auto;
+    margin-top: 20px;
 }
 
 .dacamentor-interview p{
