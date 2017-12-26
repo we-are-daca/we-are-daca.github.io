@@ -133,22 +133,25 @@ class Luis_2 extends React.Component {
               <div className="navigation">
                 <ul>
                   <li>
-                    <NavLink to="/" activeClassName="links">
-                      Stories
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/statistics"
-                      activeClassName="links"
-                    />Statistics
-                  </li>
-                  <li>
-                    <NavLink to="/help" activeClassName="links" />How To Help
-                  </li>
-                  <li>
-                    <NavLink to="/help" activeClassName="links" />About
-                  </li>
+                        <NavLink to="/" activeClassName="links">
+                          Stories
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/statistics" activeClassName="links">
+                          Statistics
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/how-to-help" activeClassName="links">
+                          How To Help
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/about" activeClassName="links">
+                          About
+                        </NavLink>
+                      </li>
                   <div className="social">
                     <div>
                       <div>
@@ -170,17 +173,17 @@ class Luis_2 extends React.Component {
             <div className="mobile-menu" style={this.state.menuStyle}>
               <div className="overlay-content" style={this.state.menuContent}>
                 <NavLink to="/" activeClassName="">
-                  Stories
-                </NavLink>
-                <NavLink to="/statistics" activeClassName="">
-                  Statistics
-                </NavLink>
-                <NavLink to="/help" activeClassName="">
-                  How To Help
-                </NavLink>
-                <NavLink to="/help" activeClassName="">
-                  About
-                </NavLink>
+              Stories
+            </NavLink>
+            <NavLink to="/statistics" activeClassName="">
+              Statistics
+            </NavLink>
+            <NavLink to="/how-to-help" activeClassName="">
+              How To Help
+            </NavLink>
+            <NavLink to="/about" activeClassName="">
+              About
+            </NavLink>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
@@ -202,7 +205,7 @@ class Luis_2 extends React.Component {
                           size={40}
                           onClick={this.handleMenu}
                           className="menu-icon"
-                          color={"white"}
+                          color={"black"}
                           style={{ margin: 10 }}
                         />
                       )}
