@@ -368,7 +368,7 @@ class Yareli extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Yes, one of my aunts and her family came to live here about 8 years ago. So we have them now. They’re all from my dad’s side of the family. As for my mom’s side, no one is here. It’s just us."
+                        "Yes, one of my aunts and her family came to live here about eight years ago. So we have them now. They’re all from my dad’s side of the family. As for my mom’s side, no one is here. It’s just us."
                       }
                     </span>
                   </p>
@@ -384,7 +384,7 @@ class Yareli extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "That question is really hard for me. I don’t feel American yet I don’t feel Mexican either. I feel that I’m half--split in two. I feel that I’ve been raised here."
+                        "That question is really hard for me. I don’t feel American, yet I don’t feel Mexican either. I feel that I’m half--split in two. I feel that I’ve been raised here."
                       }
                     </span>
                   </p>
@@ -413,7 +413,7 @@ class Yareli extends React.Component {
                   <p>
                     <b>
                       {
-                        "What did you feel when you found out that you couldn't get a license or work?"
+                        "How did you feel when you found out that you couldn't get a license or work?"
                       }
                     </b>
                   </p>
@@ -496,7 +496,7 @@ class Yareli extends React.Component {
                   <p>
                     <b>
                       {
-                        "You’ve gone through college and have found a place you enjoy working at. Let me get your take on current events. As you know on September 5th, the Trump administration announced the removal of DACA and punted it over to Congress to come up with a solution. When your first heard, what was your initial reaction?"
+                        "You’ve gone through college, and have found a place you enjoy working at, let me get your take on current events. As you know, on September 5th, the Trump administration announced the removal of DACA and punted it over to Congress to come up with a solution. When your first heard, what was your initial reaction?"
                       }
                     </b>
                   </p>
