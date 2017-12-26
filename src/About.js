@@ -291,7 +291,7 @@ class About extends React.Component {
                 </p>
                 <p>
                   {
-                    "Our project, Faces Of DACA, aims to show the outside world a more comprehensive picture of DACA recipients. We want to bring a bit of attention to recipients whose stories have never been heard, considered nor celebrated. The Trump administration has removed the DACA program, leaving as many as 800 thousand DACA recipients remaining hopeful of Congress delivering a solution."
+                    "Our project, Faces Of DACA, aims to show the outside world a more comprehensive picture of DACA recipients. We want to bring attention to recipients whose stories have never been heard, considered nor celebrated. The Trump administration has removed the DACA program, leaving as many as 800 thousand DACA recipients remaining hopeful of Congress delivering a solution."
                   }
                 </p>
               </div>

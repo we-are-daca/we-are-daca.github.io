@@ -420,13 +420,6 @@ class Lesly extends React.Component {
                       }
                     </span>
                   </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        " I pretty much gave up on all the other letters of acceptance I was waiting for. Even as more acceptances came, I didn’t care about them anymore--I knew what was the best option for me."
-                      }
-                    </span>
-                  </p>
                 </div>
                 <div className="dacamentor-interview">
                   <p>

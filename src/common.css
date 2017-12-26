@@ -126,6 +126,10 @@ body {
     margin-bottom: 30px;
 }
 
+.help-button-container a {
+    text-decoration: none;
+}
+
 .help-button {
     transition: background-color 0.5s ease;
     max-width: 20%;

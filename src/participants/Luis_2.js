@@ -430,7 +430,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Let’s say I can still keep my status right now, and be able to go where I want to go, I see myself doing the internships that I’m applying to right now and hopefully getting a job with a startup. My biggest goal is to make something that everyone can use--something which I helped to create. I don’t want to work for a big company like Google. They already have enough people working for them. I’m sure everyone contributes their best to the company, but I want something where I can have an impactful role and be able to say, “I helped make this product.” I don’t want to move away from here either. I know alumi from the program who have left to pursue opportunities in places like Seattle and New York, but I would like to stay local."
+                        "Let’s say I can still keep my status right now, and be able to go where I want to go, I see myself doing the internships that I’m applying to right now and hopefully getting a job with a startup. My biggest goal is to make something that everyone can use--something which I helped to create. I don’t want to work for a big company like Google. They already have enough people working for them. I’m sure everyone contributes their best to the company, but I want something where I can have an impactful role and be able to say, “I helped make this product.” I don’t want to move away from here either. I know alumni from the program who have left to pursue opportunities in places like Seattle and New York, but I would like to stay local."
                       }
                     </span>
                   </p>

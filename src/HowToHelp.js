@@ -232,9 +232,11 @@ class HowToHelp extends React.Component {
                   }
                 </p>
                 <div className="help-button-container">
+                  <a href="https://callyourrep.co" target="_blank">
                   <div className="help-button">
                     <p>{"Find Your Rep"}</p>
                   </div>
+                  </a>
                 </div>
               </div>
               <div className="about-header project">
@@ -247,9 +249,11 @@ class HowToHelp extends React.Component {
                   }
                 </p>
                 <div className="help-button-container">
+                  <a href="http://tinyurl.com/facesodaca-firesidechat-rsvp" target="_blank">
                   <div className="help-button">
                     <p>{"RSVP Now"}</p>
                   </div>
+                  </a>
                 </div>
               </div>
               <div className="about-header project">
@@ -262,9 +266,11 @@ class HowToHelp extends React.Component {
                   }
                 </p>
                 <div className="help-button-container">
+                  <a href="https://docs.google.com/document/d/1WgvT3j0ez06mNJKqSIqMMNV7zId-4xO7CKjD7H_0Ew8/edit" target="_blank">
                   <div className="help-button">
                     <p>{"Tweet"}</p>
                   </div>
+                  </a>
                 </div>
               </div>
             </div>
