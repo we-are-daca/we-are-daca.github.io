@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
+import ReactGA from "react-ga";
 import SocialMedia from "../SocialMedia";
 import Info from "../common/Info";
 import "../App.css";
@@ -19,6 +20,8 @@ import { NavLink } from "react-router-dom";
 class Luis extends React.Component {
   constructor(props) {
     super(props);
+    ReactGA.initialize('UA-111454076-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
       name: "Luis",

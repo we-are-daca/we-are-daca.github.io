@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import { Pie } from "react-chartjs-2";
+import ReactGA from "react-ga";
 import "./App.css";
 import "./statistics.css";
 
@@ -89,7 +90,8 @@ const appeal = {
 class Statistics extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
+    ReactGA.initialize('UA-111454076-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
       isMenuOpen: false,

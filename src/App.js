@@ -109,7 +109,7 @@ class App extends Component {
         },
         {
           name: "Daniel",
-          occupation: "Aspiring Software Engineer",
+          occupation: "Computer Science Major",
           timeSinceArrival: "18",
           country: "Mexico",
           image: "daniel_1_journey.jpg",

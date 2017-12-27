@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
+import ReactGA from "react-ga";
 import Info from "../common/Info";
 import "../App.css";
 
@@ -18,6 +19,8 @@ import { NavLink } from "react-router-dom";
 class Miriam extends React.Component {
   constructor(props) {
     super(props);
+    ReactGA.initialize('UA-111454076-1');
+    ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
       name: "Miriam",
@@ -121,7 +124,6 @@ class Miriam extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="participant">
         <div className="flex-container">
