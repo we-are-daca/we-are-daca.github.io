@@ -10,6 +10,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMedia from "../SocialMedia";
 import Facebook from "../img/facebook.svg";
 import Instagram from "../img/instagram.svg";
 import Twitter from "../img/twitter.svg";
@@ -239,6 +240,7 @@ class Luis_2 extends React.Component {
                   <div className="dacamentor-endborder" />
                 </div>
               </div>
+              <SocialMedia />
               <div className="">
                 <div className="dacamentor-interview">
                   <p>
@@ -251,7 +253,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "My family and I are from Oaxaca, Mexico. My dad wasn't around much--he’d come to the United States for work. He’d come for a year and then go back to Mexico--always back and forth. My mom would always tell my dad, “We all have to move to the U.S because it’s the land of opportunity. It would be better for the children, and we would have a better chance to do what we want.” My dad finally agreed, and I was 4 years old when I came over to the States. There was a woman who used her children’s passports to pass us over. I was told they dressed me with girl clothing to cross the border. My parents came through the desert, the way my dad would always come. I can’t say it was a friendly experience, especially for my mom, but we got through it. They told me the story of how my little sister cried, and how I would comfort her by saying, “Hey, it's going to be alright” with tears streaming down my own face. She’s about a year and a half younger than me."
+                        "My family and I are from Oaxaca, Mexico. My dad wasn't around much--he’d come to the United States for work. He’d come for a year and then go back to Mexico--always back and forth. My mom would always tell my dad, 'We all have to move to the U.S because it’s the land of opportunity. It would be better for the children, and we would have a better chance to do what we want.' My dad finally agreed, and I was 4 years old when I came over to the States. There was a woman who used her children’s passports to pass us over. I was told they dressed me with girl clothing to cross the border. My parents came through the desert, the way my dad would always come. I can’t say it was a friendly experience, especially for my mom, but we got through it. They told me the story of how my little sister cried, and how I would comfort her by saying, 'Hey, it's going to be alright' with tears streaming down my own face. She’s about a year and a half younger than me."
                       }
                     </span>
                   </p>
@@ -265,7 +267,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I don't really recall much of my early years, but I do remember going to preschool and hating the bus for the first time. But, on the second day, I remember saying, “Take me on the bus!” I really liked school: my teacher would call me a learning sponge because I would learn and pick up things quickly."
+                        "I don't really recall much of my early years, but I do remember going to preschool and hating the bus for the first time. But, on the second day, I remember saying, 'Take me on the bus!' I really liked school: my teacher would call me a learning sponge because I would learn and pick up things quickly."
                       }
                     </span>
                   </p>
@@ -344,7 +346,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Um, not in the sense that it was daunting on me. My parents may have talked about it, but I never really understood what it meant. It wasn't until I was in middle school that I realized it was something that was going to affect me. There was this program that people can join to get money for college but my teacher told me, “Sorry, you can't do this program.” I asked why, and I didn't get a response. It was a bad experience to find out I was different, and knowing about it didn't really hit me until I was in high school. It was during my sophomore year of high school when I realized I didn’t have access to the same opportunities such as financial aid for college. I got the idea that I couldn’t go to college after high school because I was undocumented. I was told college is really expensive, and I saw how my family wasn’t going to be able to support me. I wasn’t going to get any assistance nor any government funding. I was just going to be able to work in the fields--this was my mindset and it got to me."
+                        "Um, not in the sense that it was daunting on me. My parents may have talked about it, but I never really understood what it meant. It wasn't until I was in middle school that I realized it was something that was going to affect me. There was this program that people can join to get money for college but my teacher told me, 'Sorry, you can't do this program.' I asked why, and I didn't get a response. It was a bad experience to find out I was different, and knowing about it didn't really hit me until I was in high school. It was during my sophomore year of high school when I realized I didn’t have access to the same opportunities such as financial aid for college. I got the idea that I couldn’t go to college after high school because I was undocumented. I was told college is really expensive, and I saw how my family wasn’t going to be able to support me. I wasn’t going to get any assistance nor any government funding. I was just going to be able to work in the fields--this was my mindset and it got to me."
                       }
                     </span>
                   </p>
@@ -360,7 +362,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Like I said, my family never really had money. Growing up, I was always fascinated by technology: I was curious over something as simple as to how a fax machine works. However, my family never had the money for those things. I knew I wanted to do something with technology from a young age--I thought it was one of the most amazing things you could do. I didn’t have a computer nor a phone, but when I did, it was a cheap one--only a nine button phone. Then I just told myself, “Somehow, you're going to buy a computer,” and I did. I worked in the berry fields for an entire summer and was able to buy myself one. The following Saturday, after buying my computer, I enrolled in a JavaScript course at Hartnell College. The first day--there was nowhere to sit because of how packed it was. The following month, however, there was only four of us. I didn't understand why; I thought the subject was fascinating. I was told I could take the AP test, but I thought I wasn’t good enough at it. After the course, I knew I wanted to study computer science and it was around the time everyone was planning their next move. I started thinking about what I can do given my status, and I wondered if CSUMB would take me."
+                        "Like I said, my family never really had money. Growing up, I was always fascinated by technology: I was curious over something as simple as to how a fax machine works. However, my family never had the money for those things. I knew I wanted to do something with technology from a young age--I thought it was one of the most amazing things you could do. I didn’t have a computer nor a phone, but when I did, it was a cheap one--only a nine button phone. Then I just told myself, 'Somehow, you're going to buy a computer,' and I did. I worked in the berry fields for an entire summer and was able to buy myself one. The following Saturday, after buying my computer, I enrolled in a JavaScript course at Hartnell College. The first day--there was nowhere to sit because of how packed it was. The following month, however, there was only four of us. I didn't understand why; I thought the subject was fascinating. I was told I could take the AP test, but I thought I wasn’t good enough at it. After the course, I knew I wanted to study computer science and it was around the time everyone was planning their next move. I started thinking about what I can do given my status, and I wondered if CSUMB would take me."
                       }
                     </span>
                   </p>
@@ -421,7 +423,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "It was all over the news. I looked up a break down of qualification diagrams and I thought, “Oh wow, I can apply to this.” We found a place in Salinas where they helped me apply. They gathered everything from my first grade report card to my college documentation. I was afraid that I didn’t include enough information as well as thinking what if it was too much information I provided. I thought, “What if I get rejected? Do I get deported?” Submitting a DACA application was a lot of money as well--I remember my parents had a hard time gathering the money, all $600 of it. To them, [however], it was definitely worth it. They knew with DACA, I was going to be able to go to school, get a job and pursue the opportunities I’m interested in."
+                        "It was all over the news. I looked up a break down of qualification diagrams and I thought, 'Oh wow, I can apply to this.' We found a place in Salinas where they helped me apply. They gathered everything from my first grade report card to my college documentation. I was afraid that I didn’t include enough information as well as thinking what if it was too much information I provided. I thought, 'What if I get rejected? Do I get deported?' Submitting a DACA application was a lot of money as well--I remember my parents had a hard time gathering the money, all $600 of it. To them, [however], it was definitely worth it. They knew with DACA, I was going to be able to go to school, get a job and pursue the opportunities I’m interested in."
                       }
                     </span>
                   </p>
@@ -433,7 +435,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Let’s say I can still keep my status right now, and be able to go where I want to go, I see myself doing the internships that I’m applying to right now and hopefully getting a job with a startup. My biggest goal is to make something that everyone can use--something which I helped to create. I don’t want to work for a big company like Google. They already have enough people working for them. I’m sure everyone contributes their best to the company, but I want something where I can have an impactful role and be able to say, “I helped make this product.” I don’t want to move away from here either. I know alumni from the program who have left to pursue opportunities in places like Seattle and New York, but I would like to stay local."
+                        "Let’s say I can still keep my status right now, and be able to go where I want to go, I see myself doing the internships that I’m applying to right now and hopefully getting a job with a startup. My biggest goal is to make something that everyone can use--something which I helped to create. I don’t want to work for a big company like Google. They already have enough people working for them. I’m sure everyone contributes their best to the company, but I want something where I can have an impactful role and be able to say, 'I helped make this product.' I don’t want to move away from here either. I know alumni from the program who have left to pursue opportunities in places like Seattle and New York, but I would like to stay local."
                       }
                     </span>
                   </p>
@@ -472,7 +474,7 @@ class Luis_2 extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I didn’t see it coming. It was obvious that he was going to do something, but to say it’s completely gone...I heard rumors and thought, “Immigration has all my information and can deport me when they wanted to.” That information leads to my family, and possibly getting them in trouble. It was a scary thought. Three months before the announcement, I renewed my DACA so I have a pretty good amount of time left. My sister’s expires pretty soon and she couldn’t renew hers in time--I’m concerned for her."
+                        "I didn’t see it coming. It was obvious that he was going to do something, but to say it’s completely gone...I heard rumors and thought, 'Immigration has all my information and can deport me when they wanted to.' That information leads to my family, and possibly getting them in trouble. It was a scary thought. Three months before the announcement, I renewed my DACA so I have a pretty good amount of time left. My sister’s expires pretty soon and she couldn’t renew hers in time--I’m concerned for her."
                       }
                     </span>
                   </p>

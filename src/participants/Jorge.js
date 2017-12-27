@@ -312,7 +312,7 @@ class Jorge extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I was still a kid--11 years old. The elementary school I attended was about 95% Latinos so it wasn't hard to communicate at school or with the kids. Kids are crazy though. I remember one day in the first few weeks I asked where the restroom was and the kids pointed me towards the girls’ restroom. I walked to the restroom and saw it was for girls--I thought “Man, these fuckers.” That's when I knew I wouldn't trust them. Since that event, and until high school, I kept to myself. It's hard to trust new people and a new community. At the time of arrival, I was new to the country, and being 11 years old knowing no English--it was really tough."
+                        "I was still a kid--11 years old. The elementary school I attended was about 95% Latinos so it wasn't hard to communicate at school or with the kids. Kids are crazy though. I remember one day in the first few weeks I asked where the restroom was and the kids pointed me towards the girls’ restroom. I walked to the restroom and saw it was for girls--I thought 'Man, these fuckers.' That's when I knew I wouldn't trust them. Since that event, and until high school, I kept to myself. It's hard to trust new people and a new community. At the time of arrival, I was new to the country, and being 11 years old knowing no English--it was really tough."
                       }
                     </span>
                   </p>
@@ -328,7 +328,7 @@ class Jorge extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Yes, but I didn't know how much it would affect me until I was in my junior year in high school; that’s when students were doing worksheets on how to apply to a higher education as well as financial aid. One day, during those workshops, they told us to go to FAFSA and fill out the application. I thought “Oh man, this is free money for school, okay!”. But my counselor said “Not you Jorge, you cannot apply to FAFSA. You cannot apply.” That's when it really hit me: the consequences and the effects of being an undocumented student."
+                        "Yes, but I didn't know how much it would affect me until I was in my junior year in high school; that’s when students were doing worksheets on how to apply to a higher education as well as financial aid. One day, during those workshops, they told us to go to FAFSA and fill out the application. I thought 'Oh man, this is free money for school, okay!'. But my counselor said 'Not you Jorge, you cannot apply to FAFSA. You cannot apply.' That's when it really hit me: the consequences and the effects of being an undocumented student."
                       }
                     </span>
                   </p>
@@ -336,7 +336,7 @@ class Jorge extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          '"My coworkers always encouraged me go back to school; they would tell me, “This is hard work, you don’t want to do this for the rest of your life, do something better.”"'
+                          "\"My coworkers always encouraged me go back to school; they would tell me, 'This is hard work, you don’t want to do this for the rest of your life, do something better.'\""
                         }
                       </span>
                     </p>
@@ -349,7 +349,7 @@ class Jorge extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "At that point, I wanted to be a teacher. I wanted to teach Spanish--not necessarily the grammar but the culture. I’m Mexican and I’m very proud of being from Mexico. I wanted to teach about Mexican history back then, but the whole FAFSA issue threw my chances of higher education to the garbage--or at least that is what I thought. When I graduated from high school, I went straight to working in the fields. I worked in a local agricultural company by fixing agricultural pumps all over the Monterey County. I worked there for a couple weeks--it wasn't tough but it was physical work. My coworkers always encouraged me go back to school; they would tell me, “This is hard work, you don’t want to do this for the rest of your life, do something better.” I told my boss and his wife that I wanted to go back to school, and, from that day on, they gave me less days and less hours until I had to leave because I wasn't making enough money. After that summer job, I started working in the fields as a irrigator. I worked there for a little more than a year: July to August. During the time, I was seeking help from friends to start school at my local community college. One day, I wrote a post on Facebook and I asked for links to help me get back into school. Until one friend who saw my posts called me and said she was going to help me fill out my application--all the paperwork I needed to do."
+                        "At that point, I wanted to be a teacher. I wanted to teach Spanish--not necessarily the grammar but the culture. I’m Mexican and I’m very proud of being from Mexico. I wanted to teach about Mexican history back then, but the whole FAFSA issue threw my chances of higher education to the garbage--or at least that is what I thought. When I graduated from high school, I went straight to working in the fields. I worked in a local agricultural company by fixing agricultural pumps all over the Monterey County. I worked there for a couple weeks--it wasn't tough but it was physical work. My coworkers always encouraged me go back to school; they would tell me, 'This is hard work, you don’t want to do this for the rest of your life, do something better.' I told my boss and his wife that I wanted to go back to school, and, from that day on, they gave me less days and less hours until I had to leave because I wasn't making enough money. After that summer job, I started working in the fields as a irrigator. I worked there for a little more than a year: July to August. During the time, I was seeking help from friends to start school at my local community college. One day, I wrote a post on Facebook and I asked for links to help me get back into school. Until one friend who saw my posts called me and said she was going to help me fill out my application--all the paperwork I needed to do."
                       }
                     </span>
                   </p>

@@ -10,6 +10,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMedia from "../SocialMedia";
 import Facebook from "../img/facebook.svg";
 import Instagram from "../img/instagram.svg";
 import Twitter from "../img/twitter.svg";
@@ -237,6 +238,7 @@ class Jonathan extends React.Component {
                   <div className="dacamentor-endborder" />
                 </div>
               </div>
+              <SocialMedia />
               <div className="">
                 <div className="dacamentor-interview">
                   <p>
@@ -249,14 +251,14 @@ class Jonathan extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Oh man. Okay, I was brought over as an infant--I was two years old. Both my parents are from the same hometown: San Juan De Los Lagos, Jalisco. My dad got into some financial problems and it wasn’t safe to be there anymore. He was the first one to come to the United States--Los Angeles to be exact. At that point, my parents had only been married for one year and my mom was like, “We either gotta be together or call it off.” My dad decided to stick together, bringing my mom and myself over to Salinas, California where my dad had siblings. Like you [addressing the interviewer], we had to crash at other people’s places, couchsurfing until we got ourselves settled in. My parents tell me that the first place we lived in was some rundown apartments in a bad neighborhood in Salinas. My parents did not have the money to buy furniture or a bed. We would sleep on the carpet floor. One day, in the middle of the night, an altercation broke out and gunshots were fired. My mom immediately stood up and turned on the bedroom lights to find a bullet a few inches away from where I was laying on the floor. My parents decided to move out of those apartments and into a safer neighborhood at a higher cost."
+                        "Oh man. Okay, I was brought over as an infant--I was two years old. Both my parents are from the same hometown: San Juan De Los Lagos, Jalisco. My dad got into some financial problems and it wasn’t safe to be there anymore. He was the first one to come to the United States--Los Angeles to be exact. At that point, my parents had only been married for one year and my mom was like, 'We either gotta be together or call it off.' My dad decided to stick together, bringing my mom and myself over to Salinas, California where my dad had siblings. Like you [addressing the interviewer], we had to crash at other people’s places, couchsurfing until we got ourselves settled in. My parents tell me that the first place we lived in was some rundown apartments in a bad neighborhood in Salinas. My parents did not have the money to buy furniture or a bed. We would sleep on the carpet floor. One day, in the middle of the night, an altercation broke out and gunshots were fired. My mom immediately stood up and turned on the bedroom lights to find a bullet a few inches away from where I was laying on the floor. My parents decided to move out of those apartments and into a safer neighborhood at a higher cost."
                       }
                     </span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Eventually my father got himself a job and paid back his debt; that’s when things started to be stabilized. I always thought it was normal, but, looking back now, it definitely was a struggle. My father had his own paint shop in Mexico with his own employees. So, when he came here, he had to relearn how to paint and weld again--he even welded my own bed! I remember sleeping in my parents’ closest--in my little bed--and I thought it was the coolest thing ever. However, looking back, I now think: “Dang man, I slept in a closet as a kid. I didn’t have a proper room.”"
+                        "Eventually my father got himself a job and paid back his debt; that’s when things started to be stabilized. I always thought it was normal, but, looking back now, it definitely was a struggle. My father had his own paint shop in Mexico with his own employees. So, when he came here, he had to relearn how to paint and weld again--he even welded my own bed! I remember sleeping in my parents’ closest--in my little bed--and I thought it was the coolest thing ever. However, looking back, I now think: 'Dang man, I slept in a closet as a kid. I didn’t have a proper room.'"
                       }
                     </span>
                   </p>

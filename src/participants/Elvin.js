@@ -11,6 +11,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMedia from "../SocialMedia";
 import Facebook from "../img/facebook.svg";
 import Instagram from "../img/instagram.svg";
 import Twitter from "../img/twitter.svg";
@@ -240,6 +241,7 @@ class Elvin extends React.Component {
                   <div className="dacamentor-endborder" />
                 </div>
               </div>
+              <SocialMedia />
               <div className="">
                 <div className="dacamentor-interview">
                   <p>

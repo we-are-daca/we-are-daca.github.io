@@ -353,7 +353,9 @@ class Statistics extends React.Component {
                       "Out of the twenty-four Latino/as interviewed, we have fourteen "
                     }
                     <i>Women</i>
-                    {" using the pronouns she, her, and hers; ten Men employing the pronouns him, his, and he."}
+                    {" using the pronouns she, her, and hers; ten "}
+                    <i>Men</i>
+                    {" employing the pronouns him, his, and he."}
                   </p>
                 </div>
               </div>
@@ -364,12 +366,24 @@ class Statistics extends React.Component {
                 <div className="research-description">
                   <p>
                     {
-                      "We have ten graduates who have successfully completed a course of study or training, and have been awarded an academic degree of an Associate's of Art/Science and/or a Bachelor's of Art/Science. All ten are now working in their studied fields."
+                      "We have ten "
+                    }
+                    <i>graduates</i>
+                    {
+                      " who have successfully completed a course of study or training, and have been awarded an academic degree of an Associate's of Art/Science and/or a Bachelor's of Art/Science. All ten are now working in their studied fields."
                     }
                   </p>
                   <p>
                     {
-                      "There are twelve currently enrolled students who attend various educational institutions such as community college or a four-year university. Two participants are employed full-time, and either holds High School Diplomas or a General Equivalency Diploma."
+                      "There are twelve currently enrolled "
+                    }
+                    <i>students</i>
+                    {
+                      " who attend various educational institutions such as community college or a four-year university. Two participants are "
+                    }
+                    <i>employed full-time,</i>
+                    {
+                      " either holds High School Diplomas or a General Equivalency Diploma."
                     }
                   </p>
                 </div>
@@ -411,10 +425,26 @@ class Statistics extends React.Component {
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "Question 1 states, “On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” From here it was broken down into two parts: (1) the initial affect of a participant's response and (2) the ending affect of their response"
+                      "Question 1 states, “On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” From here it was broken down into two parts:"
                     }
                   </span>
                 </p>
+                <ol className="research-questions">
+                  <li>
+                    <p>
+                      {
+                        "Initial affect of a participant's response."
+                      }
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      {
+                        "Ending affect of their response."
+                      }
+                    </p>
+                  </li>
+                </ol>
               </div>
               <div className="research-container">
                 <div className="research-graph">
@@ -423,7 +453,15 @@ class Statistics extends React.Component {
                 <div className="research-description">
                   <p>
                     {
-                      "The initial affect focused on whether the response was positive or negative. Positive Initial Affect meaning the participant subjectively experiences positive emotions such as interest, alertness and/or optimism whereas Negative Initial Affect means the participant subjectively experienced variety of negative emotions, including anger, contempt, disgust, guilt, fear, and nervousness. "
+                      "The initial affect focused on whether the response was positive or negative. "
+                    }
+                    <i>Positive Initial Affect</i>
+                    {
+                      " meaning the participant subjectively experiences positive emotions such as interest, alertness and/or optimism whereas "
+                    }
+                    <i>Negative Initial Affect</i>
+                    {
+                      " means the participant subjectively experienced variety of negative emotions, including anger, contempt, disgust, guilt, fear, and nervousness."
                     }
                   </p>
                 </div>
@@ -435,7 +473,19 @@ class Statistics extends React.Component {
                 <div className="research-description">
                   <p>
                     {
-                      "The ending affect consisted of whether the response was either Negative with Depressive Symptoms, Negative with Affect Motivation, or Positive Expressing Perseverance. Negative Depressive Symptoms expressed individuals’ negative feelings and thoughts throughout his/her daily routines as they experience hopelessness and consistent questioning of safety and future. Negative Affected Motivation is when participants expressed behavior driven by anticipation or fear of an undesirable outcome such as Congress’s pending decision on a new immigration bill. Finally, Positive Expressed Perseverance is when participants respond by keeping resilience, faith and optimism for their futures despite the numerous obstacles against them."
+                      "The ending affect consisted of whether the response was either "
+                    }
+                    <i>Negative with Depressive Symptoms, Negative with Affect Motivation, or Positive Expressing Perseverance. Negative Depressive Symptoms </i>
+                    {
+                      "expressed individuals’ negative feelings and thoughts throughout his/her daily routines as they experience hopelessness and consistent questioning of safety and future. "
+                    }
+                    <i>Negative Affected Motivation</i>
+                    {
+                      " is when participants expressed behavior driven by anticipation or fear of an undesirable outcome such as Congress’s pending decision on a new immigration bill. Finally, "
+                    }
+                    <i>Positive Expressed Perseverance</i>
+                    {
+                      " is when participants respond by keeping resilience, faith and optimism for their futures despite the numerous obstacles against them."
                     }
                   </p>
                 </div>
@@ -471,22 +521,25 @@ class Statistics extends React.Component {
                   <ol className="research-questions">
                     <li>
                       <p>
+                        <i>Appeal to emotion</i>
                         {
-                          "Appeal to emotion is how participants’ respond with their own emotional sentiments in order to gain recognition for their cause. Thus, mentioning their family, friends, and other emotional ties relevant to their situation as well as addressing the negative consequences of an action on their life."
+                          " is how participants’ respond with their own emotional sentiments in order to gain recognition for their cause. Thus, mentioning their family, friends, and other emotional ties relevant to their situation as well as addressing the negative consequences of an action on their life."
                         }
                       </p>
                     </li>
                     <li>
                       <p>
+                        <i>Appeal to work ethic</i>
                         {
-                          "Appeal to work ethic expressed the theme of hard work, perseverance, and how the participant has contributed to society and the economy with a clean record."
+                          " expressed the theme of hard work, perseverance, and how the participant has contributed to society and the economy with a clean record."
                         }
                       </p>
                     </li>
                     <li>
                       <p>
+                        <i>Appeal to patriotism</i>
                         {
-                          "Appeal to patriotism is the expression of one’s sense of loyalty to the United States. It also illustrates the participants’ assimilation and active participation within the mainstream culture."
+                          " is the expression of one’s sense of loyalty to the United States. It also illustrates the participants’ assimilation and active participation within the mainstream culture."
                         }
                       </p>
                     </li>

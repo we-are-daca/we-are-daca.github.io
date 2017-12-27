@@ -10,6 +10,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMedia from "../SocialMedia";
 import Facebook from "../img/facebook.svg";
 import Instagram from "../img/instagram.svg";
 import Twitter from "../img/twitter.svg";
@@ -239,6 +240,7 @@ class Yareli extends React.Component {
                   <div className="dacamentor-endborder" />
                 </div>
               </div>
+              <SocialMedia />
               <div className="">
                 <div className="dacamentor-interview">
                   <p>
@@ -538,7 +540,7 @@ class Yareli extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I’m a hardworking Latina with a Software Engineering degree who only wants to give back to this amazing country. This country has given me not one, but multiple opportunities. I want to help and encourage anyone in any field, especially computer science, to make this nation represent what others outside of it believe it to still be, which is “the land of opportunity.” Don’t remove me from what I truly know as home."
+                        "I’m a hardworking Latina with a Software Engineering degree who only wants to give back to this amazing country. This country has given me not one, but multiple opportunities. I want to help and encourage anyone in any field, especially computer science, to make this nation represent what others outside of it believe it to still be, which is 'the land of opportunity.' Don’t remove me from what I truly know as home."
                       }
                     </span>
                   </p>

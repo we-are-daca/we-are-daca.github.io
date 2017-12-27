@@ -309,7 +309,7 @@ class Edgar extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I didn’t have a hard time fitting in. It was, in fact, pretty easy. I don’t recall it being super, super difficult getting along with others. The first day we showed up to elementary school, I meet up with these two dudes—this was the recess before we actually went into the classrooms—and they made us go in this line where I am standing next to these two guys. Then we began asking each other “are we all like friends now?” and it’s like, “Yeah we’re friends.” And those are the guys I hung out with all the way through elementary until the 7th grade. So, my first experience meeting other kids, I would say it never felt weird."
+                        "I didn’t have a hard time fitting in. It was, in fact, pretty easy. I don’t recall it being super, super difficult getting along with others. The first day we showed up to elementary school, I meet up with these two dudes—this was the recess before we actually went into the classrooms—and they made us go in this line where I am standing next to these two guys. Then we began asking each other 'are we all like friends now?' and it’s like, 'Yeah we’re friends.' And those are the guys I hung out with all the way through elementary until the 7th grade. So, my first experience meeting other kids, I would say it never felt weird."
                       }
                     </span>
                   </p>
