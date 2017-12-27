@@ -5,11 +5,11 @@ import { BrowserRouter } from 'react-router-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import Routing from './Routing';
-import registerServiceWorker from './registerServiceWorker';
+import { unregister } from './registerServiceWorker';
 
 ReactDOM.render(
     <BrowserRouter onUpdate={() => window.scrollTo(0, 0)}>
         <Routing />
     </BrowserRouter>, 
 document.getElementById('root'));
-registerServiceWorker();
+unregister();
