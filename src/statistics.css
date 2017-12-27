@@ -71,7 +71,7 @@
     .stats p b {
         font-size: 30px !important;
     }
-    .stats p {
+    .stats p span {
         font-size: 22px !important;
     }
 
