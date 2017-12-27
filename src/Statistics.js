@@ -17,7 +17,7 @@ import Billboard from "./img/billboard.jpg";
 import { NavLink } from "react-router-dom";
 
 const data = {
-  labels: ["Men (58.3%)", "Women (41.7%)"],
+  labels: ["Women (58.3%)", "Men (41.7%)"],
   datasets: [
     {
       data: [14, 11],
@@ -305,7 +305,7 @@ class Statistics extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                     {
-                      "We began our study in the month of October 2017, and we currently hold 24 participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
+                      "We began our study in the month of October 2017, and we currently hold twenty-four participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
                     }
                     </span>
                   </p>
@@ -326,7 +326,7 @@ class Statistics extends React.Component {
                     href="https://medium.com/@dcarrotwo/daca-stories-call-for-participants-3fd19367b2ce"
                     target="_blank"
                   >
-                    <span className="dacamentor-response">Medium.{" "}</span>
+                    <span className="dacamentor-response"><i>Medium.</i>{" "}</span>
                   </a>
                   <span className="dacamentor-response">
                   {
@@ -345,10 +345,13 @@ class Statistics extends React.Component {
                   <Pie data={data} height={225} options={{}} />
                 </div>
                 <div className="research-description">
+                  {/*Add italics*/}
                   <p>
                     {
-                      "From the 24 Latino/as interviewed we have fourteen self-identified as Woman using the pronouns She, Her, Hers and 10 self-identified as Men preferring the pronouns Him, His, and He."
+                      "Out of the twenty-four Latino/as interviewed, we have fourteen "
                     }
+                    <i>Women</i>
+                    {" using the pronouns she, her, and hers; ten Men employing the pronouns him, his, and he."}
                   </p>
                 </div>
               </div>
@@ -359,12 +362,12 @@ class Statistics extends React.Component {
                 <div className="research-description">
                   <p>
                     {
-                      "We have 10 graduates who have successfully completed a course of study or training, and have been awarded an academic degree of an Associate's of Art/Science and/or an Bachelor's of Art/Science and are now working in their studied fields."
+                      "We have ten graduates who have successfully completed a course of study or training, and have been awarded an academic degree of an Associate's of Art/Science and/or a Bachelor's of Art/Science. All ten are now working in their studied fields."
                     }
                   </p>
                   <p>
                     {
-                      "There are 12 currently enrolled students who attend various educational institutions such as community college or a 4 year university. Two participants are working and employed for wages or salary and hold High School Diplomas or a General Equivalency Diploma."
+                      "There are twelve currently enrolled students who attend various educational institutions such as community college or a four-year university. Two participants are employed full-time, and either holds High School Diplomas or a General Equivalency Diploma."
                     }
                   </p>
                 </div>
@@ -377,7 +380,7 @@ class Statistics extends React.Component {
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "To start our Research, we decided to focus on two specific interview questions."
+                      "To start our research, we decided to focus on two specific interview questions:"
                     }
                   </span>
                 </p>
@@ -385,14 +388,14 @@ class Statistics extends React.Component {
                   <li>
                     <p>
                       {
-                        "“On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” "
+                        "On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?"
                       }
                     </p>
                   </li>
                   <li>
                     <p>
                       {
-                        "“As Congress continues to work towards a solution, what would you tell them if you had the opportunity to say so?”"
+                        "As Congress continues to work towards a solution, what would you tell them if you had the opportunity to say so?"
                       }
                     </p>
                   </li>
@@ -406,7 +409,7 @@ class Statistics extends React.Component {
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "Question 1 states “On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” was broken down into two parts; (1) the initial affect of a participant's response and (2) the ending affect of their response."
+                      "Question 1 states, “On September 5th, the administration rescinded DACA and has left it to Congress to come up with a solution. When you first heard, what was your initial reaction?” From here it was broken down into two parts: (1) the initial affect of a participant's response and (2) the ending affect of their response"
                     }
                   </span>
                 </p>
@@ -418,7 +421,7 @@ class Statistics extends React.Component {
                 <div className="research-description">
                   <p>
                     {
-                      "The initial affect focused on whether the response was positive or negative. Positive meaning, the participant  subjectively experiences positive emotions such as joy, interest, alertness and/or optimism. Negative meant the participant subjectively experienced variety of negative emotions, including anger, contempt, disgust, guilt, fear, and nervousness. "
+                      "The initial affect focused on whether the response was positive or negative. Positive Initial Affect meaning the participant subjectively experiences positive emotions such as interest, alertness and/or optimism whereas Negative Initial Affect means the participant subjectively experienced variety of negative emotions, including anger, contempt, disgust, guilt, fear, and nervousness. "
                     }
                   </p>
                 </div>
@@ -430,7 +433,7 @@ class Statistics extends React.Component {
                 <div className="research-description">
                   <p>
                     {
-                      "The ending affect consisted of whether the response was Negative with Depressive Symptoms, Negative with affect Motivation or Positive expressing Perseverance. Negative Depressive Symptoms meant expressed depressive symptoms that negatively affect individuals’ feelings and thoughts throughout his/her daily routines and expressed experiencing hopelessness and consistent questioning of safety and future. Negative Affected Motivation is when a participant expressed behavior is driven  by anticipation or fear of an undesirable outcome, specifically in this case, congresses decision of the new legislation. Positive Expressed Perseverance is when participants  respond with performance and drive by reinforcing their behaviours and motives, keeping faith and optimism for their futures."
+                      "The ending affect consisted of whether the response was either Negative with Depressive Symptoms, Negative with Affect Motivation, or Positive Expressing Perseverance. Negative Depressive Symptoms expressed individuals’ negative feelings and thoughts throughout his/her daily routines as they experience hopelessness and consistent questioning of safety and future. Negative Affected Motivation is when participants expressed behavior driven by anticipation or fear of an undesirable outcome such as Congress’s pending decision on a new immigration bill. Finally, Positive Expressed Perseverance is when participants respond by keeping resilience, faith and optimism for their futures despite the numerous obstacles against them."
                     }
                   </p>
                 </div>
@@ -442,7 +445,7 @@ class Statistics extends React.Component {
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "Question 2 states “As Congress continues to work towards a solution, what would you tell them if you had the opportunity to say so?”. We decided to examine the way the participant established his/her response to this specific question; their appeal. Appeal was broken down into three common themes throughout all the interviews."
+                      "Question 2 states, “As Congress continues to work towards a solution, what would you tell them if you had the opportunity to say so?” We decided to examine the way the participant established his/her response to this specific question, also known as their Appeal. Appeal was broken down into three common themes throughout all the interviews."
                     }
                   </span>
                 </p>
@@ -467,21 +470,21 @@ class Statistics extends React.Component {
                     <li>
                       <p>
                         {
-                          "Appeal to emotion is how participants responses were their own emotion driven in order to gain recognition for their cause. Mentioning of family, friends, other emotional ties relevant to their situation. As well as, addressing the negative consequences of an action on their life"
+                          "Appeal to emotion is how participants’ respond with their own emotional sentiments in order to gain recognition for their cause. Thus, mentioning their family, friends, and other emotional ties relevant to their situation as well as addressing the negative consequences of an action on their life."
                         }
                       </p>
                     </li>
                     <li>
                       <p>
                         {
-                          "Appeal to work ethic expressed the theme of hard work, perseverance and how he/she has contributed to society, economy and clean record. "
+                          "Appeal to work ethic expressed the theme of hard work, perseverance, and how the participant has contributed to society and the economy with a clean record."
                         }
                       </p>
                     </li>
                     <li>
                       <p>
                         {
-                          "Appeal to patriotism is the expression of one’s sense of patriotism and loyalty for this country, his/her assimilation and active participation within the mainstream culture."
+                          "Appeal to patriotism is the expression of one’s sense of loyalty to the United States. It also illustrates the participants’ assimilation and active participation within the mainstream culture."
                         }
                       </p>
                     </li>
@@ -495,14 +498,14 @@ class Statistics extends React.Component {
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "Siemons, Raymond-Flesh, Auerswald, and Brindis (2016) have provided very recent and salient research findings that humanize this issue and bring awareness to the potential mental health crisis that is coming to the surface as we speak. Mental Health and well being  emerged overwhelmingly as their participants’ primary health concern. It is more than likely that the general anxiety over DACA has increased since this study was conducted especially now that it is in such a precarious state. DACA does provide many benefits for its recipients however this does not counteract the anxiety and stress felt by those who are received DACA help. (Siemons, Raymond-Flesch, Auerswald, & Brindis, 2016)."
+                      "Siemons, Raymond-Flesh, Auerswald, and Brindis (2016) have provided very recent and salient research findings that humanize this issue, bringing awareness to the potential mental health crisis that is coming to the surface as we speak. Mental health and well-being emerged overwhelmingly as the two primary health concerns of their participants. It is more than likely that the general anxiety over DACA has increased since this study was conducted, especially now that it is in such a precarious state. DACA does provide many benefits for its recipients, however, this does not counteract the anxiety and stress felt by those who received assistance from the DACA program. (Siemons, Raymond-Flesch, Auerswald, & Brindis, 2016)."
                     }
                   </span>
                 </p>
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "There are commonalities of conflicted senses of identity and consequential stress and anxiety amongst DACA recipients and this can be further illustrated through Mallet, Calvo, and Waters (2017) who delve into what it is like for Latino immigrants who are transitioning from somewhat protected status as minors into adults with far less resources accessible to them. Along with the usual perils of adulthood comes the overwhelming uncertainty for undocumented immigrants of whether they might be able to survive without access to social services, financial aid for college, lack of access to jobs that provide a living wage, adequate housing and of course the obvious and daunting fear of deportation (Mallet, Calvo & Waters 2017)."
+                      "There are commonalities of conflicted senses of identity, and consequential stress and anxiety amongst DACA recipients. This finding can be further illustrated through Mallet, Calvo, and Waters (2017), who delve into what it is like for Latino immigrants transitioning from somewhat protected status as minors to adults with far less resources accessible to them. Along with the usual perils of adulthood comes the overwhelming uncertainty for undocumented immigrants of whether they might be able to survive without access to social services, financial aid for college, lack of access to jobs that provide a living wage, adequate housing, and of course the obvious and daunting fear of deportation (Mallet, Calvo & Waters 2017)."
                     }
                   </span>
                 </p>
