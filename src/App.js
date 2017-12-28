@@ -52,12 +52,12 @@ class App extends Component {
           link: "/36432e39/luis-journey"
         },
         {
-          name: "Xochitl",
-          occupation: "Behavioral Specialist",
-          timeSinceArrival: "19",
+          name: "Yareli",
+          occupation: "Software Engineer",
+          timeSinceArrival: "18",
           country: "Mexico",
-          image: "xochitl_portrait_1.jpg",
-          link: "/5be2766a/xochitl-journey"
+          image: "yareli_journey.jpg",
+          link: "/c5b03d37/yareli-journey"
         },
         {
           name: "Jorge",
@@ -115,13 +115,13 @@ class App extends Component {
           image: "daniel_1_journey.jpg",
           link: "/a65e9bc1/daniel-journey"
         },
-        {
-          name: "Yareli",
-          occupation: "Software Engineer",
-          timeSinceArrival: "18",
+         {
+          name: "Xochitl",
+          occupation: "Behavioral Specialist",
+          timeSinceArrival: "19",
           country: "Mexico",
-          image: "yareli_journey.jpg",
-          link: "/c5b03d37/yareli-journey"
+          image: "xochitl_portrait_1.jpg",
+          link: "/5be2766a/xochitl-journey"
         },
         {
           name: "Miguel",
@@ -148,12 +148,12 @@ class App extends Component {
           link: "/4102ff4a/elvin-journey"
         },
         {
-          name: "Irais",
-          occupation: "Computer Science Major",
+          name: "Liz",
+          occupation: "Animal Science Major",
           timeSinceArrival: "15",
           country: "Mexico",
-          image: "irais_portrait.jpg",
-          link: "/7d56bb43/irais-journey"
+          image: "liz_journey.jpg",
+          link: "/d1d1f873/liz-journey"
         },
          {
           name: "Luis",
@@ -180,12 +180,12 @@ class App extends Component {
           link: "/c05de409/leo-journey"
         },
         {
-          name: "Liz",
-          occupation: "Animal Science Major",
+          name: "Irais",
+          occupation: "Computer Science Major",
           timeSinceArrival: "15",
           country: "Mexico",
-          image: "liz_journey.jpg",
-          link: "/d1d1f873/liz-journey"
+          image: "irais_portrait.jpg",
+          link: "/7d56bb43/irais-journey"
         },
         {
           name: "Octavio",
