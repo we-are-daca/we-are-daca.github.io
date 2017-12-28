@@ -276,6 +276,23 @@ class HowToHelp extends React.Component {
                   </a>
                 </div>
               </div>
+              <div className="about-header project">
+                <p>
+                  <b>{"Share Your Story"}</b>
+                </p>
+                <p>
+                  {
+                    "Are you DACA recipient? Do you have a story you would like to share with us? Register your contact information for our interviewee list. Your information will only be disclosed to our team, and it will provide you the chance to be placed on our weekly series of stories, which will be advertised on the Faces of DACA website as well as our website’s social media outlet."
+                  }
+                </p>
+                <div className="help-button-container">
+                  <a href="https://docs.google.com/forms/d/1PsWFJ-izHmkEOkPuzhvT82WnL5Ql3_vI74ppM7HwDQI" target="_blank">
+                  <div className="help-button">
+                    <p>{"Register"}</p>
+                  </div>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
         </div>
