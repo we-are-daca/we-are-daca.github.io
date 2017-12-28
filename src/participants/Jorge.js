@@ -125,7 +125,6 @@ class Jorge extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="participant">
         <div className="flex-container">

@@ -11,6 +11,7 @@ import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
 import SocialMedia from "../SocialMedia";
+import SocialMediaNav from "../SocialMediaNav";
 import Facebook from "../img/facebook.svg";
 import Instagram from "../img/instagram.svg";
 import Twitter from "../img/twitter.svg";
@@ -20,7 +21,7 @@ import { NavLink } from "react-router-dom";
 class Lesly extends React.Component {
   constructor(props) {
     super(props);
-    ReactGA.initialize('UA-111454076-1');
+    ReactGA.initialize("UA-111454076-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
@@ -125,7 +126,6 @@ class Lesly extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="participant">
         <div className="flex-container">
@@ -134,41 +134,7 @@ class Lesly extends React.Component {
               <div className="title">
                 <span>{"Faces Of Daca"}</span>
               </div>
-              <div className="navigation">
-                <ul>
-                   <li>
-                    <NavLink to="/">Stories</NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/statistics" activeClassName="links">
-                      Statistics
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/how-to-help" activeClassName="links">
-                      How To Help
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/about" activeClassName="links">
-                      About
-                    </NavLink>
-                  </li>
-                  <div className="social">
-                    <div>
-                      <div>
-                        <img id="facebook" src={Facebook} />
-                      </div>
-                      <div>
-                        <img src={Instagram} />
-                      </div>
-                      <div>
-                        <img src={Twitter} />
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </div>
+              <SocialMediaNav /> 
             </div>
           </Sticky>
           <div className="main">
@@ -186,6 +152,36 @@ class Lesly extends React.Component {
                 <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
+                <div>
+                  <a
+                    href={
+                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
+                    }
+                    target={"_blank"}
+                  >
+                    <img id="facebook" src={Facebook} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/facesofdaca/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={Instagram}
+                      href={"https://www.instagram.com/facesofdaca/"}
+                      target={"_blank"}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://twitter.com/faces_of_daca"}
+                    target={"_blank"}
+                  >
+                    <img src={Twitter} />{" "}
+                  </a>
+                </div>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
@@ -266,7 +262,7 @@ class Lesly extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"I wasn’t really aware of what was happening. We were pretty young. Nothing was really odd for us at first because our parents didn’t really tell us.\""
+                          '"I wasn’t really aware of what was happening. We were pretty young. Nothing was really odd for us at first because our parents didn’t really tell us."'
                         }
                       </span>
                     </p>
@@ -325,7 +321,11 @@ class Lesly extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Backtracking a bit, you mentioned when you first got here about feeling like you didn’t belong. Has that changed now? Would you consider yourself an American?"}</b>
+                    <b>
+                      {
+                        "Backtracking a bit, you mentioned when you first got here about feeling like you didn’t belong. Has that changed now? Would you consider yourself an American?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -337,7 +337,9 @@ class Lesly extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Have you gone back to visit Mexico since you came?"}</b>
+                    <b>
+                      {"Have you gone back to visit Mexico since you came?"}
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -350,7 +352,7 @@ class Lesly extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"When I became more proficient, feeling more comfortable with the language and the people, this place definitely felt like home. I started to get that sense of security and belonging. At some point when I was younger, it still felt very much like I wasn’t part of what America represented. I was here for half of my life and half over there, but now, I’ve been here for 15 years. It does feel like the United States is my home. I don’t remember what it’s like to not be here.\""
+                          '"When I became more proficient, feeling more comfortable with the language and the people, this place definitely felt like home. I started to get that sense of security and belonging. At some point when I was younger, it still felt very much like I wasn’t part of what America represented. I was here for half of my life and half over there, but now, I’ve been here for 15 years. It does feel like the United States is my home. I don’t remember what it’s like to not be here."'
                         }
                       </span>
                     </p>
@@ -390,7 +392,11 @@ class Lesly extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Although you’re working full time now, do you plan on pursuing a higher education later on?"}</b>
+                    <b>
+                      {
+                        "Although you’re working full time now, do you plan on pursuing a higher education later on?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -416,7 +422,11 @@ class Lesly extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"For those that don’t know about herScript, can you expand on that a bit?"}</b>
+                    <b>
+                      {
+                        "For those that don’t know about herScript, can you expand on that a bit?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -428,7 +438,11 @@ class Lesly extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Coming back full circle, do you plan on becoming a US citizen?"}</b>
+                    <b>
+                      {
+                        "Coming back full circle, do you plan on becoming a US citizen?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -473,7 +487,7 @@ class Lesly extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"As people, we are great contributors to the U.S, a place where we’ve rooted in, a place where we’ve gotten our education, and a place where we work at. I think we’re able to provide for not only the economy, but also our communities that we live in.\""
+                          '"As people, we are great contributors to the U.S, a place where we’ve rooted in, a place where we’ve gotten our education, and a place where we work at. I think we’re able to provide for not only the economy, but also our communities that we live in."'
                         }
                       </span>
                     </p>

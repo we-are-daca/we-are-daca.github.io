@@ -11,6 +11,7 @@ import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
 import SocialMedia from "../SocialMedia";
+import SocialMediaNav from "../SocialMediaNav";
 import Facebook from "../img/facebook.svg";
 import Instagram from "../img/instagram.svg";
 import Twitter from "../img/twitter.svg";
@@ -20,7 +21,7 @@ import { NavLink } from "react-router-dom";
 class Octavio extends React.Component {
   constructor(props) {
     super(props);
-    ReactGA.initialize('UA-111454076-1');
+    ReactGA.initialize("UA-111454076-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
@@ -28,7 +29,7 @@ class Octavio extends React.Component {
       occupation: "Business Owner",
       timeSinceArrival: "13",
       country: "Mexico",
-      image: 'rosie_hero_1.jpg',
+      image: "rosie_hero_1.jpg",
       interviewDate: "October 20, 2017",
       isMenuOpen: false,
       menuStyle: {
@@ -125,7 +126,6 @@ class Octavio extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="participant">
         <div className="flex-container">
@@ -134,60 +134,54 @@ class Octavio extends React.Component {
               <div className="title">
                 <span>{"Faces Of Daca"}</span>
               </div>
-              <div className="navigation">
-                <ul>
-                  <li>
-                        <NavLink to="/" activeClassName="links">
-                          Stories
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/statistics" activeClassName="links">
-                          Statistics
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/how-to-help" activeClassName="links">
-                          How To Help
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/about" activeClassName="links">
-                          About
-                        </NavLink>
-                      </li>
-                  <div className="social">
-                    <div>
-                      <div>
-                        <img id="facebook" src={Facebook} />
-                      </div>
-                      <div>
-                        <img src={Instagram} />
-                      </div>
-                      <div>
-                        <img src={Twitter} />
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </div>
+              <SocialMediaNav />
             </div>
           </Sticky>
           <div className="main">
             <div className="mobile-menu" style={this.state.menuStyle}>
               <div className="overlay-content" style={this.state.menuContent}>
                 <NavLink to="/" activeClassName="">
-              Stories
-            </NavLink>
-            <NavLink to="/statistics" activeClassName="">
-              Statistics
-            </NavLink>
-            <NavLink to="/how-to-help" activeClassName="">
-              How To Help
-            </NavLink>
-            <NavLink to="/about" activeClassName="">
-              About
-            </NavLink>
+                  Stories
+                </NavLink>
+                <NavLink to="/statistics" activeClassName="">
+                  Statistics
+                </NavLink>
+                <NavLink to="/how-to-help" activeClassName="">
+                  How To Help
+                </NavLink>
+                <NavLink to="/about" activeClassName="">
+                  About
+                </NavLink>
+                <div>
+                  <a
+                    href={
+                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
+                    }
+                    target={"_blank"}
+                  >
+                    <img id="facebook" src={Facebook} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/facesofdaca/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={Instagram}
+                      href={"https://www.instagram.com/facesofdaca/"}
+                      target={"_blank"}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://twitter.com/faces_of_daca"}
+                    target={"_blank"}
+                  >
+                    <img src={Twitter} />{" "}
+                  </a>
+                </div>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
@@ -244,11 +238,7 @@ class Octavio extends React.Component {
               <div className="">
                 <div className="dacamentor-interview">
                   <p>
-                    <b>
-                      {
-                        "Tell me about your early beginnings."
-                      }
-                    </b>
+                    <b>{"Tell me about your early beginnings."}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -275,7 +265,7 @@ class Octavio extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          "\"when I was in high school at the age of 18, I started a farm with my brother. We created a family business and we still have it. We ran the family business when we were in high school.\""
+                          '"when I was in high school at the age of 18, I started a farm with my brother. We created a family business and we still have it. We ran the family business when we were in high school."'
                         }
                       </span>
                     </p>
@@ -283,7 +273,11 @@ class Octavio extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"As you were going through your teenage years, did you know you were undocumented?"}</b>
+                    <b>
+                      {
+                        "As you were going through your teenage years, did you know you were undocumented?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -295,7 +289,11 @@ class Octavio extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"You went to Fresno, and finished your undergrad there. What did you graduate with?"}</b>
+                    <b>
+                      {
+                        "You went to Fresno, and finished your undergrad there. What did you graduate with?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -331,9 +329,7 @@ class Octavio extends React.Component {
                   </p>
                   <p>
                     <span className="dacamentor-response">
-                      {
-                        "[Deep sigh]."
-                      }
+                      {"[Deep sigh]."}
                     </span>
                   </p>
                   <p>
@@ -369,7 +365,11 @@ class Octavio extends React.Component {
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Continuing the theme about plans ahead: would want to become a U.S citizen in the future?"}</b>
+                    <b>
+                      {
+                        "Continuing the theme about plans ahead: would want to become a U.S citizen in the future?"
+                      }
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
@@ -382,7 +382,9 @@ class Octavio extends React.Component {
                 <div className="dacamentor-interview">
                   <p>
                     <b>
-                      {"Last question to wrap up. As Congress works for a long term legislation solution in the next six months, if you had the chance to tell them something, what would you tell them?"}
+                      {
+                        "Last question to wrap up. As Congress works for a long term legislation solution in the next six months, if you had the chance to tell them something, what would you tell them?"
+                      }
                     </b>
                   </p>
                   <p>

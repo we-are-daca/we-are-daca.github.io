@@ -11,6 +11,7 @@ import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
 import SocialMedia from "../SocialMedia";
+import SocialMediaNav from "../SocialMediaNav";
 import Facebook from "../img/facebook.svg";
 import Instagram from "../img/instagram.svg";
 import Twitter from "../img/twitter.svg";
@@ -125,7 +126,6 @@ class Edgar extends React.Component {
   };
 
   render() {
-    console.log(this.state);
     return (
       <div className="participant">
         <div className="flex-container">
@@ -134,43 +134,7 @@ class Edgar extends React.Component {
               <div className="title">
                 <span>{"Faces Of Daca"}</span>
               </div>
-              <div className="navigation">
-                <ul>
-                  <li>
-                    <NavLink to="/" activeClassName="links">
-                      Stories
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/statistics" activeClassName="links">
-                      Statistics
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/how-to-help" activeClassName="links">
-                      How To Help
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink to="/about" activeClassName="links">
-                      About
-                    </NavLink>
-                  </li>
-                  <div className="social">
-                    <div>
-                      <div>
-                        <img id="facebook" src={Facebook} />
-                      </div>
-                      <div>
-                        <img src={Instagram} />
-                      </div>
-                      <div>
-                        <img src={Twitter} />
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </div>
+              <SocialMediaNav />
             </div>
           </Sticky>
           <div className="main">
@@ -188,6 +152,36 @@ class Edgar extends React.Component {
                 <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
+                <div>
+                  <a
+                    href={
+                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
+                    }
+                    target={"_blank"}
+                  >
+                    <img id="facebook" src={Facebook} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/facesofdaca/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={Instagram}
+                      href={"https://www.instagram.com/facesofdaca/"}
+                      target={"_blank"}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://twitter.com/faces_of_daca"}
+                    target={"_blank"}
+                  >
+                    <img src={Twitter} />{" "}
+                  </a>
+                </div>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
