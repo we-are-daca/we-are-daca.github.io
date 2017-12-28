@@ -404,12 +404,12 @@ class About extends React.Component {
                     </div>
                     <p>
                       Mia Castillo is a Salinas, California native and a current
-                      intensive psychology major at the University of California
+                      intensive psychology major at the University of California,
                       Santa Cruz. Mia was motivated to join this project because
                       of her passion for research that sheds light on the
                       experiences of historically marginalized communities such
                       as her own. Mia sincerely hopes that this project can urge
-                      congress to not only see the importance of DACA but also
+                      Congress to not only see the importance of DACA but also
                       the great need for an empathetic immigration policy that
                       values human rights.
                     </p>
@@ -429,7 +429,7 @@ class About extends React.Component {
                       graduate from CSUMB headed to the Silicon Valley to work
                       as a software engineer. His awareness of the difficulties
                       surrounding immigration faced by his peers has driven him
-                      to join this project. He wants to see congress stand for
+                      to join this project. He wants to see Congress stand for
                       the people who sacrifice so much to give back to the
                       community.
                     </p>

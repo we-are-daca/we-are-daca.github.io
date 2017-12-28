@@ -209,7 +209,7 @@ class Daniel_1 extends React.Component {
                           size={40}
                           onClick={this.handleMenu}
                           className="menu-icon"
-                          color={"white"}
+                          color={"black"}
                           style={{ margin: 10 }}
                         />
                       )}

@@ -467,6 +467,7 @@ class Miguel extends React.Component {
                       }
                     </span>
                   </p>
+                </div>
                 <div className="dacamentor-interview">
                   <p>
                     <b>{"Let’s wrap up by moving to recent events. On Sept 5th, the Trump administration announced it’s decision to rescind DACA. What was your initial reaction?"}</b>
@@ -534,7 +535,6 @@ class Miguel extends React.Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }

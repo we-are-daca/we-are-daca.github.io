@@ -369,6 +369,7 @@ class Jorge extends React.Component {
                       }
                     </span>
                   </p>
+                </div>
                   <div className="dacamentor-interview">
                     <p>
                       <b>
@@ -498,7 +499,6 @@ class Jorge extends React.Component {
             </div>
           </div>
         </div>
-      </div>
     );
   }
 }
