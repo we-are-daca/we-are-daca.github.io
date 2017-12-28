@@ -129,11 +129,9 @@ class Luis extends React.Component {
     console.log(this.state);
     return (
       <div className="participant">
-        <Helmet
-          meta={[
-            {property: "og:image:url", content: "https://dwistynbcri9g.cloudfront.net/luis_portrait_2.jpg"}
-          ]}
-        />
+        <Helmet>
+          <meta property="og:image:url" content="https://dwistynbcri9g.cloudfront.net/luis_portrait_2.jpg" />
+        </Helmet>
         <div className="flex-container">
           <Sticky enabled={true}>
             <div className="sidenav">
