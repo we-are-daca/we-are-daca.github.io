@@ -137,22 +137,25 @@ class Daniel_1 extends React.Component {
               <div className="navigation">
                 <ul>
                   <li>
-                    <NavLink to="/" activeClassName="links">
-                      Stories
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      to="/statistics"
-                      activeClassName="links"
-                    />Statistics
-                  </li>
-                  <li>
-                    <NavLink to="/help" activeClassName="links" />How To Help
-                  </li>
-                  <li>
-                    <NavLink to="/help" activeClassName="links" />About
-                  </li>
+                        <NavLink to="/" activeClassName="links">
+                          Stories
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/statistics" activeClassName="links">
+                          Statistics
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/how-to-help" activeClassName="links">
+                          How To Help
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink to="/about" activeClassName="links">
+                          About
+                        </NavLink>
+                      </li>
                   <div className="social">
                     <div>
                       <div>
@@ -174,17 +177,17 @@ class Daniel_1 extends React.Component {
             <div className="mobile-menu" style={this.state.menuStyle}>
               <div className="overlay-content" style={this.state.menuContent}>
                 <NavLink to="/" activeClassName="">
-                  Stories
-                </NavLink>
-                <NavLink to="/statistics" activeClassName="">
-                  Statistics
-                </NavLink>
-                <NavLink to="/help" activeClassName="">
-                  How To Help
-                </NavLink>
-                <NavLink to="/help" activeClassName="">
-                  About
-                </NavLink>
+              Stories
+            </NavLink>
+            <NavLink to="/statistics" activeClassName="">
+              Statistics
+            </NavLink>
+            <NavLink to="/how-to-help" activeClassName="">
+              How To Help
+            </NavLink>
+            <NavLink to="/about" activeClassName="">
+              About
+            </NavLink>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
@@ -243,21 +246,28 @@ class Daniel_1 extends React.Component {
                   <p>
                     <b>
                       {
-                        "Your early years. Tell me about your early years and where you come from."
+                        "Why don't you tell me a little bit about your early years and where you come from?"
                       }
                     </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Okay. So I was born in Mexico City and I lived there for about 5 years. I think it was about when I was 2 or 3--I don’t remember exactly--but that’s when my dad started to come to the U.S. to work. My dad wanted my mom to spend more time with my sister so he didn’t want her to work anymore. We moved to Ayoquezco de Aldama, Oaxaca where my grandparents have a house. We lived in the little pueblo for about two years and I attended first grade and half of second grade there. Growing up there I started to notice I hardly saw my dad because he wouldn’t really come back here since it was difficult to go back and forth. I missed him a lot so I always asked my mom: “Why isn’t he with us? Why can’t we go visit him?” At that time, I didn’t really understand the concept of borders or that different countries existed; I just thought the world was one big place and we could go wherever we wanted to. My mom would just tell me my dad was very far away and I would always suggest to take a plane or a bus to go visit my dad--I was always reminding them that I wanted to see my dad."
+                        "I was brought here to the U.S. about the age of two. My parents have always emphasized education because my dad finished an electric trade program. When we came here, my dad’s brother was here already and got my father a good job up in Hollister. My mom made sure we learned English as soon as possible. She would enroll us in summer school every summer even if we didn't need it. She said we’d thank her one day, and she was right."
                       }
                     </span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I guess in the background of their minds, they started to hold the idea of having my mom, my sister and I move permanently over to the U.S and reunite the family for good. It made more sense as well since most of my mom’s family resides here--we had someplace to come. Initially, my mom didn’t want to come because of the dangers existing when trying to come to the country. After the winter vacations of 2nd grade, I got the news: we were going to see my dad and move to the U.S. I didn’t really know what it meant--all I knew was that I was going to see my dad again. It had been so long since I last saw him so I wasn’t sure if I should be excited or nervous--I didn’t know what I was going to talk to him about or do with him. Those were my younger years."
+                        "Around 2008 when they passed e-verify, it hit my dad's work and he was laid off. My dad had set aside some savings for our college, and that's what kept our family afloat. Around the same time, he had some medical issues--he discovered a lump, and after a visit to the doctor, he had it surgically removed. Everything was left on my mother to take care of my brother and I, taking us to school, feeding us, and also taking care of my father. It left her no room to really work. It was a good thing my father had our college savings to pay for the bills while he was unable to work. Unfortunately, we ran out of the money so eventually my mother had to get a job. She started to work at Little Caesars, and that's how we were able to continue to pay our rent. We lived in an apartment complex, but after awhile the area starting getting bad. Down the street, a friend’s brother was murdered. My parents tried to keep us away by enrolling us in after school programs, sports, and the YMCA. My parents tried to keep us away from gang violence as much as possible."
+                      }
+                    </span>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "The complex where we lived began to build a shed by my room, and the dust would come through the window and affect my asthma. My parents didn't complain because it was cheap rent and we couldn't really afford anything else. I ended up sleeping in the living room, which wasn't bad. I didn't mind it because unlike other families, we didn't have to live with many people. Eventually, the landlady ended up pressuring us to leave, and my mom wasn't taking it anymore so she started to seek help. There was even an article published on the Californian, the local newspaper. So, they started backing off, but they ended up giving us a notice of demolishing our apartment. At that point, we couldn't do much because legally they gave us notice. Thankfully we found a small house to rent. Since my parents knew they were going to pay a lot of rent, we decided to put it towards a good place and area. We ended up living behind Salinas High School, which was nice because we got to wake up and just walk to school. My brothers and I would play sports as well so it was just school, sports, school, sports. Every once in awhile we’d ask for a video game and my mom would buy it if we did good at school. It was a form of motivation. Instead of spending our money on drugs like most of our friends, we’d save it and buy a new video game console."
                       }
                     </span>
                   </p>
@@ -265,7 +275,7 @@ class Daniel_1 extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          '"I didn’t really know what it meant [to move to America]--all I knew was that I was going to see my dad again. It had been so long since I last saw him so I wasn’t sure if I should be excited or nervous--I didn’t know what I was going to talk to him about or do with him."'
+                          "\"We lived in an apartment complex, but after awhile the area starting getting bad. Down the street, a friend’s brother was murdered. My parents tried to keep us away by enrolling us in after school programs, sports, and the YMCA.\""
                         }
                       </span>
                     </p>
@@ -275,52 +285,59 @@ class Daniel_1 extends React.Component {
                   <p>
                     <b>
                       {
-                        "Wow. You were able to see your dad again and reunite the whole family; however, this was still a completely different place. Did you have a hard time fitting in?"
+                        "Would you say you had a hard time fitting in when you were growing up?"
                       }
                     </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "The only English that I knew was one through eight--counting the numbers. Actually, there’s a couple of things I knew about the U.S: the money was different--the coins were different and the language was different. When I was in Mexico City, my school would try to teach us English by singing songs. I could name things like pencil, pen, window, and floor. I remember on our way to the border, I was trying to remember the numbers. I was counting the numbers: “One, two, three, four…”"
+                        "I didn't really have a hard time or much issues fitting in. There was a Caucasian lady at the boys and girls club named Jordana--she was really nice and she liked to help people. There was another coordinator at the migrant program at my school that also liked to help people. My mom knew the importance of fitting in right away and she would go out of her way to make sure we socialized. I made good friends with Jordana’s son, and learned to speak English through him. I didn't understand at first, but I slowly would pick it up. The migrant lady would sometimes invite us to events so we can interact with peers and make friends. Overall, we felt included. I guess it wasn't as hard as others might have had it, and I think it was mainly because of my mom and knowing how important it was for us. My mom made sure we had a good upbringing."
                       }
                     </span>
                   </p>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"[Laughs] Pretty much trying to get ready?"}</b>
+                    <b>{"Is your brother a DACA recipient?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "[Laughs]. Yeah, exactly. I was getting myself prepared for this new world."
+                        "He has DACA. He’s now doing marine biology--he’s on a good path. He finished doing his psychology requirements, but realized that he wasn't interested in going down that path. So, he's doing marine biology instead."
                       }
                     </span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "When my grandparents came to Mexico to visit, they would leave behind change. I didn’t know what a quarter or a penny was. Before leaving Oaxaca, I took with me four pennies and I thought that was a dollar. I cleaned out a container of muecas (candy) and in there I kept everything I wanted to keep close to me: the four pennies as well a little ring one of my godmothers had given me."
+                        "For me, I got into computer science during my senior year when I was applying to schools. I got accepted in the local universities, but not into the ones I really wanted like Cal Poly or Cal Tech. I tried my hardest since freshman year, but I guess it wasn't good enough. I’m glad though because I wouldn't have had the money to pay for it all. At the schools I was accepted to I was offered some small scholarships, but overall it didn't cut it. My parents offered to pull out loans; however, I didn't want it to backfire on us in the future."
+                      }
+                    </span>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "In one of my senior classes, it was Melvin, a college advisor, who came to speak about CS-in-3, a program to complete a computer science undergrad in three years. At first, I didn’t really pay attention to the presentation since all I was thinking about was how I would be able to just pay for schooling. When he mentioned the program offered $30,000 scholarships it caught my attention. Then I continued to listen: he said to do good in math and then later I started to look into what computer science was. I really didn’t know what it was, but the salary is what caught my eye. I thought even if I didn’t like it, I can still do it for a couple of years, get money, and get my parents out of here so they could stop working. I know my mom is getting tired, and my father can't work because of his medical issues. My mom is the main one supporting us right now. I don't get money from them; I mostly support myself with the scholarship money and financial aid."
+                      }
+                    </span>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "I didn’t know know much about computer science, but you know, they gave me money. I would be out in three years, and the pay was good so why not do it? After some months in the program, I realized this is what I wanted to do. At first, I wanted to do electric engineering and follow a similar path to my dad, but then I started to code, which became something I like and wanted to do. I started to get really into it and started doing good. At first, the classes were hard at the beginning but then it began to be easy. I think it was because of all the summer school and the reading my mom would make me do. It allowed me to learn things quickly and understand the concepts easier--I didn’t struggle too much like my peers. I think the hard work early on paid off, but I still needed to study. My extra time is spent preparing for interviews, code prep, attending code meetings when I get the chance at CSUMB, and doing some side projects."
                       }
                     </span>
                   </p>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
-                    <b>{"Growing up, did your parents emphasize school?"}</b>
+                    <b>{"You graduated from high school, got accepted to CS-in-3, and got the scholarship. How are you liking it so far?"}</b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Yeah. All the time. One of the main goals for my mom and my dad was for my sister and I to go to university. Even technical school was encouraged. My parents didn’t go to college--they didn’t have the opportunity to do so where they were living. The only work around was hand labor and farm work. Both of my parents had family in Mexico City and eventually they moved over there and started to study. As they got older, they began to have the need to work and make ends meet; slowly, they stopped studying because it was difficult to work and study at the same time."
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "For the most part, growing up was straightforward. I lived close to the elementary and middle schools I attended. When I got here, I was enrolled in bilingual classes. Around the beginning of 4th grade was when I finally got my English proficiency but I still stayed in my bilingual classes. Beyond that, it was all English---different topics and subjects taught in the second language I learned."
+                        "So far I like it. It's better than I thought. At first, my mom was very skeptical--she said it was too good to be true. She wanted me to go to a better school, but I told her that I'll do my general ed and keep an eye out. If it goes bad then I’ll just transfer out. I said ‘General ed is just two years--it’ll save me some money.’ She still bugs me and keeps asking me if it's a good decision. I tell her there's some people that have finished the cohort and are making good money. She then asks if I'm doing it just for the money or if this is really what I want to do. I tell her this is what I want to do."
                       }
                     </span>
                   </p>
@@ -329,21 +346,21 @@ class Daniel_1 extends React.Component {
                   <p>
                     <b>
                       {
-                        "How was your high school experience? I ask since it’s a time when people start becoming adults; they start pondering about future options and begin to develop serious relationships with people."
+                        "We’re aware you’ve recently completed an internship with Facebook. How was that?"
                       }
                     </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "High school was okay. It wasn’t the best--I wouldn’t consider it the best years. I didn’t think of high school...I just didn’t really emphasize the social aspect of it. I knew that eventually I wouldn’t care much about high school because of the same thing my parents always told me: “The goal is college”. They really put that thought into our head when we were little. Since sixth grade, I was enrolled in AVID---it helped me dig more into college and the application process. By middle school, I already had my mind set that I was going to do to college. In high school, I knew I needed to focus on my grades and extracurriculars: Through sophomore and junior year, I enrolled myself in honors and advanced classes while playing sports after school. By the time senior year came, I felt I was in a good spot: my grades were good and I was able to show I can be successful in rigorous classes with extracurricular activities. I knew I need to apply to as many scholarships as possible since my parents couldn’t afford to pay my tuition nor my sister’s."
+                        "It was really good. I think one of the main reasons we received the opportunity was because of one of the recruiters, Natalia, formed a partnership with CSUMB, and I think having her as a reference helped our resumes get more noticed. When I got there, another intern and I were from small schools while the others were from MIT, Cal-Tech, and other big schools. I was intimidated at first, but once we started coding I noticed we got concepts quicker even when we never visited them."
                       }
                     </span>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "For the most part, growing up was straightforward. I lived close to the elementary and middle schools I attended. When I got here, I was enrolled in bilingual classes. Around the beginning of 4th grade was when I finally got my English proficiency but I still stayed in my bilingual classes. Beyond that, it was all English---different topics and subjects taught in the second language I learned."
+                        "At the beginning of the internship, you enter a boot camp to learn about different things at Facebook. Then you do Android Studio--you learn as much as you can for three weeks. After that you get partnered up with two other students and develop an app idea. For the last five weeks you built up and create the idea with the guidance of a Facebook engineer. I had an idea to create an app to recognize sign language in real time, translating them into languages, but after talking with the team I realized that with our knowledge it would have probably been not feasible in the short amount of time. We switched gears and developed something to fit our time constraint."
                       }
                     </span>
                   </p>
@@ -352,14 +369,69 @@ class Daniel_1 extends React.Component {
                   <p>
                     <b>
                       {
-                        "At that point, did you already know about your undocumented status?"
+                        'What was the app about?'
                       }
                     </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Yeah. I forgot exactly at what age I knew what it meant but it was not because of something I couldn’t do but it was because of the things going on. At that time in California you couldn’t have a driver’s license if you didn’t have a social security number. Little things like that made it noticeable that there was a difference between being undocumented and having legal status. By the time I was in middle school, I already knew of these things. Also when we started looking into financial aid--they asked for a social security number. I noticed especially in high school when students are at that age when they can start applying for driving permits or jobs during the summers. I knew I was never going to be able to get all that."
+                        "It was about increasing social engagement in youth and teens in their communities. Nowadays, we’re too lazy to search up events like protests and marches around us. With our app, you would just open it and put in a distance filter. Then, the front page would greet you with major issues where you can learn more about an issue you’re interested in. This app would inform you and let you know what kind of events are nearby."
+                      }
+                    </span>
+                  </p>
+                </div>
+                <div className="dacamentor-interview">
+                  <p>
+                    <b>{"Let's switch gears to recent events. On September 5th. the administration decided to rescind DACA and have Congress come up with a solution for us in the next six months. What was your initial reaction?"}</b>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "When I heard that I didn't panic or fear. My thing is that I shouldn’t put too much thinking into it because Congress is coming up with something. If they're not, what will they do? Send us back to our home countries? They won’t do that; it’s too many students and workers to really send back. And well, if they do send us back then I have an opportunity to do something back there. I have the knowledge and supplies like my laptop. My mom said not to worry about that, we should just focus on school and that she'll take care of it. She said she’ll pay attention and keep us informed even if she's working."
+                      }
+                    </span>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">{"Let's say nothing crazy happens, where do you see yourself in a few years?"}</span>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "I probably hope to get in a tech company in Silicon Valley such as Facebook. It's one of my main goals. I say for a good period, maybe about ten years or so; save some money and come back to Salinas, doing something like Melvin did. It show us there is a path out there for students because if it wasn't for Melvin, I wouldn't know what to do."
+                      }
+                    </span>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "Maybe starting in elementary school because that's where hopes and dreams begin to develop. Show them they're more than just farm workers. I realized that there isn't really any outside help other than the people inside the district. I'd like to come back and help this community, and show the children they can build a good future."
+                      }
+                    </span>
+                  </p>
+                </div>
+                <div className="dacamentor-interview">
+                  <p>
+                    <b>
+                      {"Is that one of the major reasons you’re doing CoderDojo?"}
+                    </b>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "Yes. I do get paid and I do need the money. It’s an opportunity to help children in underrepresented communities, so why not?  I did it for two semesters now, this will be my third this fall, and it just got better. We give them our full attention and the advisors understand the importance of these children so she pays us well."
+                      }
+                    </span>
+                  </p>
+                </div>
+                <div className="dacamentor-interview">
+                  <p>
+                    <b>{"As Congress decides to find a solution for us in the next six months, if you had a chance, what would you tell them?"}</b>
+                  </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "If you look at the students that are actually using all the benefits that are provided, they're the ones who are going to higher education to pursue something. Even the ones who do not qualify for DACA and are not using any resources, they're still contributing to the economy. It's a win-win for the U.S. If they don't pass it, they’ll probably lose us and a lot of support--things won't go well. They'll lose a lot of innovation of immigrants and that’s important for our country’s growth."
                       }
                     </span>
                   </p>
@@ -367,194 +439,7 @@ class Daniel_1 extends React.Component {
                     <p className="dacamentor-quote">
                       <span>
                         {
-                          '"At that time in California you couldn’t have a driver’s license if you didn’t have a social security number. Little things like that made it noticeable that there was a difference between being undocumented and having legal status."'
-                        }
-                      </span>
-                    </p>
-                  </blockquote>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>{"How did that make you feel?"}</b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "I felt terrible. I think that’s one of the saddest parts I think. Towards the end of high school when I was applying for high school, there was a period of time where I felt all the hard work and effort that I put throughout school was a waste. Paying for school was going to be tough. Knowing I wasn’t going to get full financial aid was going to make  that tougher. The Dream Act and AB-540 students--that wasn’t a thing at the beginning of high school. It became a dark time."
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">{"[Pauses]"}</span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "I was trying to work hard to be ready to go to college and create my college portfolio and get accepted into a school. But since I was undocumented, I wasn’t sure I was going to be able to complete my education as easily. I wasn’t thinking about giving up but I realized it was going to take more time and more effort to overcome the obstacles."
-                      }
-                    </span>
-                  </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {"What colleges did you apply to and for what major?"}
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "Since I was a freshman in high school, my dream school was UC Santa Barbara. At the time, I wanted to major in computer engineering. I didn’t know what it was yet though. I was really inspired by one of my uncles because in middle school, I got my first laptop: a computer my uncle was going to throw away. We always had problems with it and we had another uncle that liked to take computers apart to fix them--he was always helping us getting our computer back up and running. I wanted to be able to fix my own computer without having to wait or bother anyone to help me. "
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "Around that time, I got a PSP (Portable PlayStation). I would Google how to customize it and change themes. I started flashing ROMs and installing new firmware; however, I would see the lines of code coming up on the screen and I thought it was really cool. Those two things made me interested in technology and set me on the path to a technical career."
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "I started looking at other schools: UC Davis, Cal State Monterey Bay, Cal Poly San Luis, San Diego State, Willamette University, George Mason, and Santa Clara. I ended up having an issue with some of my applications: my high school counselor was helping me with my applications and some of them weren’t sent to the schools. I didn’t make the deadline for Santa Clara. "
-                      }
-                    </span>
-                  </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>{"Oh no."}</b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "My counselors scrambled to try and get the colleges to accept my overdue application. She was mostly successful--I started getting my acceptance letters. I saw the price for each semester--for each quarter--and even though the schools gave me some help, it was only going to pay for a year, maybe two. It just wasn’t something that I could pursue. At the end of my senior year, my counselor told me about CS-in-3, the computer science program at our local community college that lasted only three years. Since computer science was related to computer engineering, I became interested in applying to the program. I submitted my application close to the deadline to apply--they gave me an interview and some time later, I was notified of my acceptance to the program. The opportunity was definitely a no-brainer especially with the scholarship they granted us."
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        " I pretty much gave up on all the other letters of acceptance I was waiting for. Even as more acceptances came, I didn’t care about them anymore--I knew what was the best option for me."
-                      }
-                    </span>
-                  </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>{"How was your experience with the program?"}</b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "I think it was good. It would’ve been more difficult if it had been a regular college experience where I would’ve been alone and without friends. The hardest time I had was at the beginning. Some of the classes, I didn’t really understand and I had some trouble. Grasping some concepts took a bit of time but the thing that helped me was that a lot of my peers from the cohort would stay at the school until the security guard came and kicked us out. As things started to settle in, I was able to schedule my time more efficiently. We also always had tutors available and I didn’t hesitate to get help if I needed it. We were also able to graduate in 3 years as proposed and for the most part, I felt prepared to start applying to jobs and begin a career in our field of study."
-                      }
-                    </span>
-                  </p>
-                  <blockquote>
-                    <p className="dacamentor-quote">
-                      <span>
-                        {
-                          '"I want to get to the point where we are successful and making an impact in agriculture. I want to see the company at a point where it can give farmers and crop growers valuable data and insight rather than just being another product out there."'
-                        }
-                      </span>
-                    </p>
-                  </blockquote>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "Awesome! Now that you’ve graduated, what are you doing now?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "I’m working at a startup as a software engineer. Our company is an ag-tech focused startup: we’re one of the companies that is trying to integrate technology into agriculture through the use of IoT, the Internet of Things. I wasn’t aware of IoT until I started working there--there’s a bunch of conferences where people go and expose the solutions they’re making. "
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "Our company is focusing on sensing technology: soil, moisture and temperature sensors. We’re also starting to move into irrigation systems. Right now I’m mainly working on our databases and cloud infrastructure: from the time the date leaves our sensors out in the fields to the time the data arrives to our databases. I enjoy the work--it’s a lot of hard work but I know I wouldn’t be as happy working on something else. I definitely feel like I picked something that was going to make me happy. I hope to continue making progress and to keep growing as a professional."
-                      }
-                    </span>
-                  </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "That was sort of my next question: Assuming nothing crazy happens in the coming months, where do you see yourself in the next few years?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "My personal plan is to stay working for my current company. I want to get to the point where we are successful and making an impact in agriculture. I want to see the company at a point where it can give farmers and crop growers valuable data and insight rather than just being another product out there. Once we are at a good point and I’ve felt I’ve accomplished a good deal, I want to go back to school and get my masters. I’m just starting to develop my career and I’m still very new to all the possible graduate degrees out there for computer science. At this point, I’m still trying to figure out what interests me as a concentration."
-                      }
-                    </span>
-                  </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "We’ve heard about your story. Let’s talk about current events. On September 5th, the Trump administration decided to rescind DACA and punted it over to Congress to come up with a solution within the next 6 months. When you first heard the news, what was your initial reaction?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "Disappointment. Leading up to the announcement, things weren’t stable anymore with all the rumors going around. I was still very hopeful of things turning out in a better way. A couple of my friends sent me messages telling me about what was said in the news since most of the time I’m working--I don’t really have time to watch the news. I would always tell my friends that everything was going to be ok: “Stay positive. Things are going to work out.” "
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "I didn’t know what to do when I first heard the news. Everything that I have going on for me right now--my family--our American dream… My sister and I graduated from college and we’re both working in the industry we studied for; having everything we have now come to an end would pretty much…"
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">{"[Pauses]"}</span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "It would bring us all down. I try to keep a sense of hope--for things to turn out ok. They’re going to realize we’re not bad people. A lot of us are studying or have graduated and we’re doing good things: people have started companies, building new solutions and they’re part of big things that contribute to society and the country as a whole."
-                      }
-                    </span>
-                  </p>
-                </div>
-                <div className="dacamentor-interview">
-                  <p>
-                    <b>
-                      {
-                        "Last question: as Congress works toward a solution--if you had the chance to tell them something, what would you say?"
-                      }
-                    </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "Apart for what I feel that most of us are contributing to this country in a lot of ways, I think the main thing I would tell would be to really focus on the good that we bring to the country. For most of us, this is considered our home--since we came to the U.S., we have not returned back to where we were born. We don’t want to harm what we consider our home. We’re not bad people and we try to do as good as possible and contribute in whatever we can. As we get closer to accomplishing our dreams, we begin to contribute in other ways we weren’t able to before. All of this would not have been possible without the opportunity we’ve been granted. "
-                      }
-                    </span>
-                  </p>
-                  <blockquote>
-                    <p className="dacamentor-quote">
-                      <span>
-                        {
-                          '"For most of us, this is considered our home--since we came to the U.S., we have not returned back to where we were born. We don’t want to harm what we consider our home. We’re not bad people and we try to do as good as possible and contribute in whatever we can."'
+                          "\"If you look at the students that are actually using all the benefits that are provided, they're the ones who are going to higher education to pursue something. Even the ones who do not qualify for DACA and are not using any resources, they're still contributing to the economy.\""
                         }
                       </span>
                     </p>
