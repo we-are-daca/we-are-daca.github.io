@@ -242,6 +242,16 @@ body {
   animation-fill-mode: forwards;
 }
 
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1279px) {
+  #billboard-title > p:nth-child(2) {
+    padding-top: 30px;
+  }
+  #billboard-title > p:nth-child(3) {
+    font-size: 30px;
+    padding-top: 50px;
+  }
+}
+
 @media only screen and (min-device-width: 1920px) {
   #billboard-title > p:nth-child(2) {
     font-size: 160px;
@@ -562,8 +572,8 @@ body {
 @media (min-width: 1024px) {
   .info-container {
     padding-top: 15px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: auto !important;
+    margin-right: auto !important;
     width: 600px;
   }
 
