@@ -316,7 +316,7 @@ class About extends React.Component {
                 </p>
                 <p>
                   {
-                    "This project would not have been possible over the course of three months without our many contributors. Special thanks to Cathy Tran and Brian De Anda whose contributions helped shape what the project is today. Lastly, a big thank you to all of our participants for being so courageous in sharing their story and time with us."
+                    "This project would not have been possible over the course of three months without our many contributors. Special thanks to Cathy Tran, Brian De Anda, and Elias Ramirez whose contributions helped shape what the project is today. Lastly, a big thank you to all of our participants for being so courageous in sharing their story and time with us."
                   }
                 </p>
               </div>
