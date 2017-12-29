@@ -11,6 +11,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMediaNav from "./SocialMediaNav";
 import Facebook from "./img/facebook.svg";
 import Instagram from "./img/instagram.svg";
 import Twitter from "./img/twitter.svg";
@@ -90,7 +91,7 @@ const appeal = {
 class Statistics extends React.Component {
   constructor(props) {
     super(props);
-    ReactGA.initialize('UA-111454076-1');
+    ReactGA.initialize("UA-111454076-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
@@ -200,58 +201,54 @@ class Statistics extends React.Component {
               <div className="title">
                 <span>{"Faces Of Daca"}</span>
               </div>
-              <div className="navigation">
-                <ul>
-                  <li>
-                    <NavLink to="/">Stories</NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/statistics" activeClassName="links">
-                      Statistics
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/how-to-help" activeClassName="links">
-                      How To Help
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/about" activeClassName="links">
-                      About
-                    </NavLink>
-                  </li>
-                  <div className="social">
-                    <div>
-                      <div>
-                        <img id="facebook" src={Facebook} />
-                      </div>
-                      <div>
-                        <img src={Instagram} />
-                      </div>
-                      <div>
-                        <img src={Twitter} />
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </div>
+              <SocialMediaNav />
             </div>
           </Sticky>
           <div className="main">
             <div className="mobile-menu" style={this.state.menuStyle}>
               <div className="overlay-content" style={this.state.menuContent}>
-                <NavLink to="/" activeClassName="">
+                <NavLink exact to="/" activeClassName="">
                   Stories
                 </NavLink>
-                <NavLink to="/statistics" activeClassName="">
+                <NavLink exact to="/statistics" activeClassName="">
                   Statistics
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink exact to="/help" activeClassName="">
                   How To Help
                 </NavLink>
-                <NavLink to="/help" activeClassName="">
+                <NavLink exact to="/help" activeClassName="">
                   About
                 </NavLink>
+                <div>
+                  <a
+                    href={
+                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
+                    }
+                    target={"_blank"}
+                  >
+                    <img id="facebook" src={Facebook} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/facesofdaca/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={Instagram}
+                      href={"https://www.instagram.com/facesofdaca/"}
+                      target={"_blank"}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://twitter.com/faces_of_daca"}
+                    target={"_blank"}
+                  >
+                    <img src={Twitter} />
+                  </a>
+                </div>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
@@ -290,25 +287,25 @@ class Statistics extends React.Component {
                   </p>
                   <p>
                     <span className="dacamentor-response">
-                    {
-                      "The Trump administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation."
-                    }
+                      {
+                        "The Trump administration has left it to Congress to develop new immigration legislation that offers parallel protections to those provided under DACA. Congress has until March 5th, 2018 to pass this new legislation."
+                      }
                     </span>
                   </p>
-                  
+
                   <p>
                     <span className="dacamentor-response">
-                    {
-                      "The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population."
-                    }
+                      {
+                        "The purpose of this Empirical Research is to provide Congress qualitative data utilizing community-based participatory methods through awareness of intersectionality to articulate an understanding of these diverse experiences of DACA recipients. There is little known about this population."
+                      }
                     </span>
                   </p>
-                  
+
                   <p>
                     <span className="dacamentor-response">
-                    {
-                      "We began our study in the month of October 2017, and we currently hold twenty-four participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
-                    }
+                      {
+                        "We began our study in the month of October 2017, and we currently hold twenty-four participants. We acknowledge this is a small sample size; however, this isn't the end of our research--it’s only the beginning."
+                      }
                     </span>
                   </p>
                 </div>
@@ -319,21 +316,23 @@ class Statistics extends React.Component {
                 </p>
                 <p>
                   <span className="dacamentor-response">
-                  {
-                    "Employing structured style interviews, we interviewed a total of twenty-four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old, and were mostly recruited through social media outlets. Each interviewee was required to inform themselves about our project through our call for participants published in "
-                  }
+                    {
+                      "Employing structured style interviews, we interviewed a total of twenty-four eligible DACA Latinos/as. These interviewees are between the ages of 18-35 years old, and were mostly recruited through social media outlets. Each interviewee was required to inform themselves about our project through our call for participants published in "
+                    }
                   </span>
                   <a
                     className="external-link"
                     href="https://medium.com/@dcarrotwo/daca-stories-call-for-participants-3fd19367b2ce"
                     target="_blank"
                   >
-                    <span className="dacamentor-response"><i>Medium.</i>{" "}</span>
+                    <span className="dacamentor-response">
+                      <i>Medium.</i>{" "}
+                    </span>
                   </a>
                   <span className="dacamentor-response">
-                  {
-                    "Our call consisted of what DACA is, the state of DACA, our goal for the project, and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware, and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community."
-                  }
+                    {
+                      "Our call consisted of what DACA is, the state of DACA, our goal for the project, and the potential harms of publicly sharing their personal stories. These twenty-four participants were informed, aware, and now stand with us in hopes of sharing their stories to help Congress reach a positive solution for the greater DACA community."
+                    }
                   </span>
                 </p>
               </div>
@@ -365,18 +364,14 @@ class Statistics extends React.Component {
                 </div>
                 <div className="research-description">
                   <p>
-                    {
-                      "We have ten "
-                    }
+                    {"We have ten "}
                     <i>graduates</i>
                     {
                       " who have successfully completed a course of study or training, and have been awarded an academic degree of an Associate's of Art/Science and/or a Bachelor's of Art/Science. All ten are now working in their studied fields."
                     }
                   </p>
                   <p>
-                    {
-                      "There are twelve currently enrolled "
-                    }
+                    {"There are twelve currently enrolled "}
                     <i>students</i>
                     {
                       " who attend various educational institutions such as community college or a four-year university. Two participants are "
@@ -431,18 +426,10 @@ class Statistics extends React.Component {
                 </p>
                 <ol className="research-questions">
                   <li>
-                    <p>
-                      {
-                        "Initial affect of a participant's response."
-                      }
-                    </p>
+                    <p>{"Initial affect of a participant's response."}</p>
                   </li>
                   <li>
-                    <p>
-                      {
-                        "Ending affect of their response."
-                      }
-                    </p>
+                    <p>{"Ending affect of their response."}</p>
                   </li>
                 </ol>
               </div>
@@ -475,7 +462,11 @@ class Statistics extends React.Component {
                     {
                       "The ending affect consisted of whether the response was either "
                     }
-                    <i>Negative with Depressive Symptoms, Negative with Affect Motivation, or Positive Expressing Perseverance. Negative Depressive Symptoms </i>
+                    <i>
+                      Negative with Depressive Symptoms, Negative with Affect
+                      Motivation, or Positive Expressing Perseverance. Negative
+                      Depressive Symptoms{" "}
+                    </i>
                     {
                       "expressed individuals’ negative feelings and thoughts throughout his/her daily routines as they experience hopelessness and consistent questioning of safety and future. "
                     }

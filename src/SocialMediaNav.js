@@ -9,22 +9,22 @@ const SocialMediaNav = () => (
     <div className="navigation">
                 <ul>
                   <li>
-                        <NavLink to="/" activeClassName="links">
+                        <NavLink exact to="/" activeClassName="links">
                           Stories
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/statistics" activeClassName="links">
+                        <NavLink exact to="/statistics" activeClassName="links">
                           Statistics
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/how-to-help" activeClassName="links">
+                        <NavLink exact to="/how-to-help" activeClassName="links">
                           How To Help
                         </NavLink>
                       </li>
                       <li>
-                        <NavLink to="/about" activeClassName="links">
+                        <NavLink exact to="/about" activeClassName="links">
                           About
                         </NavLink>
                       </li>

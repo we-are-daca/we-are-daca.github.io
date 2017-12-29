@@ -12,6 +12,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMediaNav from "./SocialMediaNav";
 import Facebook from "./img/facebook.svg";
 import Instagram from "./img/instagram.svg";
 import Twitter from "./img/twitter.svg";
@@ -193,41 +194,7 @@ class About extends React.Component {
               <div className="title">
                 <span>{"Faces Of Daca"}</span>
               </div>
-              <div className="navigation">
-                <ul>
-                  <li>
-                    <NavLink to="/">Stories</NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/statistics" activeClassName="links">
-                      Statistics
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/how-to-help" activeClassName="links">
-                      How To Help
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/about" activeClassName="links">
-                      About
-                    </NavLink>
-                  </li>
-                  <div className="social">
-                    <div>
-                      <div>
-                        <img id="facebook" src={Facebook} />
-                      </div>
-                      <div>
-                        <img src={Instagram} />
-                      </div>
-                      <div>
-                        <img src={Twitter} />
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </div>
+              <SocialMediaNav />
             </div>
           </Sticky>
           <div className="main about-container">

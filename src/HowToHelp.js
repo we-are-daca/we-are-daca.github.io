@@ -12,6 +12,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMediaNav from "./SocialMediaNav";
 import Facebook from "./img/facebook.svg";
 import Instagram from "./img/instagram.svg";
 import Twitter from "./img/twitter.svg";
@@ -22,7 +23,7 @@ import Card from "./Card";
 class HowToHelp extends React.Component {
   constructor(props) {
     super(props);
-    ReactGA.initialize('UA-111454076-1');
+    ReactGA.initialize("UA-111454076-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
@@ -140,41 +141,7 @@ class HowToHelp extends React.Component {
               <div className="title">
                 <span>{"Faces Of Daca"}</span>
               </div>
-              <div className="navigation">
-                <ul>
-                  <li>
-                    <NavLink to="/">Stories</NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/statistics" activeClassName="links">
-                      Statistics
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/how-to-help" activeClassName="links">
-                      How To Help
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink exact to="/about" activeClassName="links">
-                      About
-                    </NavLink>
-                  </li>
-                  <div className="social">
-                    <div>
-                      <div>
-                        <img id="facebook" src={Facebook} />
-                      </div>
-                      <div>
-                        <img src={Instagram} />
-                      </div>
-                      <div>
-                        <img src={Twitter} />
-                      </div>
-                    </div>
-                  </div>
-                </ul>
-              </div>
+              <SocialMediaNav />
             </div>
           </Sticky>
           <div className="main about-container">
@@ -192,6 +159,36 @@ class HowToHelp extends React.Component {
                 <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
+                <div>
+                  <a
+                    href={
+                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
+                    }
+                    target={"_blank"}
+                  >
+                    <img id="facebook" src={Facebook} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/facesofdaca/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={Instagram}
+                      href={"https://www.instagram.com/facesofdaca/"}
+                      target={"_blank"}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://twitter.com/faces_of_daca"}
+                    target={"_blank"}
+                  >
+                    <img src={Twitter} />
+                  </a>
+                </div>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
@@ -236,9 +233,9 @@ class HowToHelp extends React.Component {
                 </p>
                 <div className="help-button-container">
                   <a href="https://callyourrep.co" target="_blank">
-                  <div className="help-button">
-                    <p>{"Find Your Rep"}</p>
-                  </div>
+                    <div className="help-button">
+                      <p>{"Find Your Rep"}</p>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -252,10 +249,13 @@ class HowToHelp extends React.Component {
                   }
                 </p>
                 <div className="help-button-container">
-                  <a href="http://tinyurl.com/facesodaca-firesidechat-rsvp" target="_blank">
-                  <div className="help-button">
-                    <p>{"RSVP Now"}</p>
-                  </div>
+                  <a
+                    href="http://tinyurl.com/facesodaca-firesidechat-rsvp"
+                    target="_blank"
+                  >
+                    <div className="help-button">
+                      <p>{"RSVP Now"}</p>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -269,10 +269,13 @@ class HowToHelp extends React.Component {
                   }
                 </p>
                 <div className="help-button-container">
-                  <a href="https://docs.google.com/document/d/1WgvT3j0ez06mNJKqSIqMMNV7zId-4xO7CKjD7H_0Ew8/edit" target="_blank">
-                  <div className="help-button">
-                    <p>{"Tweet"}</p>
-                  </div>
+                  <a
+                    href="https://docs.google.com/document/d/1WgvT3j0ez06mNJKqSIqMMNV7zId-4xO7CKjD7H_0Ew8/edit"
+                    target="_blank"
+                  >
+                    <div className="help-button">
+                      <p>{"Tweet"}</p>
+                    </div>
                   </a>
                 </div>
               </div>
@@ -286,10 +289,13 @@ class HowToHelp extends React.Component {
                   }
                 </p>
                 <div className="help-button-container">
-                  <a href="https://docs.google.com/forms/d/1PsWFJ-izHmkEOkPuzhvT82WnL5Ql3_vI74ppM7HwDQI" target="_blank">
-                  <div className="help-button">
-                    <p>{"Register"}</p>
-                  </div>
+                  <a
+                    href="https://docs.google.com/forms/d/1PsWFJ-izHmkEOkPuzhvT82WnL5Ql3_vI74ppM7HwDQI"
+                    target="_blank"
+                  >
+                    <div className="help-button">
+                      <p>{"Register"}</p>
+                    </div>
                   </a>
                 </div>
               </div>

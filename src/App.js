@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import ReactGA from 'react-ga';
+import ReactGA from "react-ga";
 import { Link, Element } from "react-scroll";
-import ScrollUp from 'react-scroll-up';
+import ScrollUp from "react-scroll-up";
 import ScrollLock from "react-scrolllock";
 import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
@@ -19,7 +19,7 @@ import Card from "./Card";
 class App extends Component {
   constructor() {
     super();
-    ReactGA.initialize('UA-111454076-1');
+    ReactGA.initialize("UA-111454076-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
       show: false,
@@ -116,7 +116,7 @@ class App extends Component {
           image: "daniel_1_journey.jpg",
           link: "/a65e9bc1/daniel-journey"
         },
-         {
+        {
           name: "Xochitl",
           occupation: "Behavioral Specialist",
           timeSinceArrival: "19",
@@ -156,7 +156,7 @@ class App extends Component {
           image: "liz_journey.jpg",
           link: "/d1d1f873/liz-journey"
         },
-         {
+        {
           name: "Luis",
           occupation: "Computer Science Major",
           timeSinceArrival: "13",
@@ -196,14 +196,14 @@ class App extends Component {
           image: "octavio_journey.jpg",
           link: "/0e9be67f/octavio-journey"
         },
-          {
+        {
           name: "Rosie",
           occupation: "Pest Control Advisor",
           timeSinceArrival: "26",
           country: "Mexico",
           image: "rosie_journey.jpg",
           link: "/168ed629/rosie-journey"
-        },
+        }
       ]
     };
 
@@ -298,9 +298,11 @@ class App extends Component {
             )}
           </div>
           <p>{"FACES OF DACA"}</p>
-          <p>{
-            "An ongoing storytelling series sharing the diverse experiences of DACA (Deferred Action for Childhood Arrivals) recipients in America. According to U.S. Citizenship and Immigration Services, there are currently 690,000 of 800,000 eligible undocumented immigrants who are enrolled in the DACA program, which was created five years ago. As of September 5th, 2017, the Trump administration has rescinded the program, leaving the future of these 690,000 individuals uncertain."
-            }</p>
+          <p>
+            {
+              "An ongoing storytelling series sharing the diverse experiences of DACA (Deferred Action for Childhood Arrivals) recipients in America. According to U.S. Citizenship and Immigration Services, there are currently 690,000 of 800,000 eligible undocumented immigrants who are enrolled in the DACA program, which was created five years ago. As of September 5th, 2017, the Trump administration has rescinded the program, leaving the future of these 690,000 individuals uncertain."
+            }
+          </p>
           <div className="arrow bounce">
             <Link to="stories" spy={true} smooth={true} duration={500}>
               <Arrow size={42} color={"white"} />
@@ -323,35 +325,30 @@ class App extends Component {
               About
             </NavLink>
             <div>
-                  <a
-                    href={
-                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
-                    }
-                    target={"_blank"}
-                  >
-                    <img id="facebook" src={Facebook} />
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href={"https://www.instagram.com/facesofdaca/"}
-                    target={"_blank"}
-                  >
-                    <img
-                      src={Instagram}
-                      href={"https://www.instagram.com/facesofdaca/"}
-                      target={"_blank"}
-                    />
-                  </a>
-                </div>
-                <div>
-                  <a
-                    href={"https://twitter.com/faces_of_daca"}
-                    target={"_blank"}
-                  >
-                    <img src={Twitter} />
-                  </a>
-                </div>
+              <a
+                href={"https://www.facebook.com/Faces-of-DACA-131331447563706/"}
+                target={"_blank"}
+              >
+                <img id="facebook" src={Facebook} />
+              </a>
+            </div>
+            <div>
+              <a
+                href={"https://www.instagram.com/facesofdaca/"}
+                target={"_blank"}
+              >
+                <img
+                  src={Instagram}
+                  href={"https://www.instagram.com/facesofdaca/"}
+                  target={"_blank"}
+                />
+              </a>
+            </div>
+            <div>
+              <a href={"https://twitter.com/faces_of_daca"} target={"_blank"}>
+                <img src={Twitter} />
+              </a>
+            </div>
           </div>
         </div>
         <div className="social-placeholder" />
@@ -367,8 +364,7 @@ class App extends Component {
                 </div>
               </Sticky>
               <div className="main">
-                <div className="mobile-nav">
-                </div>
+                <div className="mobile-nav" />
                 <div className="row dacas">
                   {this.state.cards.map((card, i) => (
                     <Card
