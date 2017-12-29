@@ -245,6 +245,36 @@ class About extends React.Component {
                 <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
+                <div>
+                  <a
+                    href={
+                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
+                    }
+                    target={"_blank"}
+                  >
+                    <img id="facebook" src={Facebook} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/facesofdaca/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={Instagram}
+                      href={"https://www.instagram.com/facesofdaca/"}
+                      target={"_blank"}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://twitter.com/faces_of_daca"}
+                    target={"_blank"}
+                  >
+                    <img src={Twitter} />{" "}
+                  </a>
+                </div>
               </div>
             </div>
             {this.state.isMenuOpen && <ScrollLock />}
@@ -319,7 +349,7 @@ class About extends React.Component {
                 </p>
                 <p>
                   {
-                    "This project would not have been possible over the course of the course of three months without our many contributors. Special thanks to Cathy Tran and Brian De Anda whose contributions helped us shape what the project is today. Big thank you to all our participants for being so courageous in sharing their story and time over the course of the project."
+                    "This project would not have been possible over the course of three months without our many contributors. Special thanks to Cathy Tran and Brian De Anda whose contributions helped shape what the project is today. Lastly, a big thank you to all of our participants for being so courageous in sharing their story and time with us."
                   }
                 </p>
               </div>

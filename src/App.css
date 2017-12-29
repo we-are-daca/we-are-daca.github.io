@@ -1,9 +1,4 @@
 @font-face {
-  font-family: Muli-Italic;
-  src: url("fonts/Muli-ExtraLightItalic.ttf");
-}
-
-@font-face {
   font-family: PlaylistScript;
   src: url("fonts/Playlist-Script.otf");
 }
@@ -85,7 +80,7 @@ body {
 }
 
 .billboard-container {
-  background-image: url("./img/billboard.jpg");
+  background-image: url("https://dwistynbcri9g.cloudfront.net/billboard.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -125,6 +120,10 @@ body {
   font-family: "ProximaNovaBold";
 }
 
+.social-placeholder {
+  background-image: 
+}
+
 @media (min-width: 576px) {
   .mobile-nav {
     display: none !important;
@@ -149,7 +148,7 @@ body {
 
 @media only screen and (max-device-width: 575px) {
   .billboard-container {
-    background-image: url("./img/billboard-mobile.jpg");
+    background-image: url("https://dwistynbcri9g.cloudfront.net/billboard-mobile.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -183,7 +182,7 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .billboard-container {
-    background-image: url("./img/billboard-tablet.jpg");
+    background-image: url("https://dwistynbcri9g.cloudfront.net/billboard-tablet.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -354,7 +353,7 @@ body {
   padding-left: 20px;
   text-align: left;
   text-transform: uppercase;
-  background: url("./img/facebook-lite.svg") no-repeat -9999px -9999px;
+  background: url("https://dwistynbcri9g.cloudfront.net/facebook-lite.svg") no-repeat -9999px -9999px;
 }
 
 .title > span {
@@ -363,13 +362,13 @@ body {
   font-size: 28px;
   letter-spacing: 1.8px;
   font-family: ProximaNova;
-  background: url("./img/instagram-lite.svg") no-repeat -9999px -9999px;
+  background: url("https://dwistynbcri9g.cloudfront.net/instagram-lite.svg") no-repeat -9999px -9999px;
 }
 
 .navigation > ul {
   padding-top: 28px;
   padding-left: 0px;
-  background: url("./img/twitter-lite.svg") no-repeat -9999px -9999px;
+  background: url("https://dwistynbcri9g.cloudfront.net/twitter-lite.svg") no-repeat -9999px -9999px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -431,7 +430,7 @@ body {
 }
 
 .social > div > div:first-child > a > img:hover {
-  content: url("./img/facebook-lite.svg");
+  content: url("https://dwistynbcri9g.cloudfront.net/facebook-lite.svg");
   -webkit-transition: content 1s ease-in-out;
   -moz-transition: content 1s ease-in-out;
   -o-transition: content 1s ease-in-out;
@@ -439,11 +438,11 @@ body {
 }
 
 .social > div > div:nth-child(2) > a > img:hover {
-  content: url("./img/instagram-lite.svg");
+  content: url("https://dwistynbcri9g.cloudfront.net/instagram-lite.svg");
 }
 
 .social > div > div:nth-child(3) > a > img:hover {
-  content: url("./img/twitter-lite.svg");
+  content: url("https://dwistynbcri9g.cloudfront.net/twitter-lite.svg");
 }
 
 .social > div > div > img {

@@ -7,6 +7,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import SocialMediaNav from "./SocialMediaNav";
 import Facebook from "./img/facebook.svg";
 import Instagram from "./img/instagram.svg";
 import Twitter from "./img/twitter.svg";
@@ -321,8 +322,39 @@ class App extends Component {
             <NavLink to="/about" activeClassName="">
               About
             </NavLink>
+            <div>
+                  <a
+                    href={
+                      "https://www.facebook.com/Faces-of-DACA-131331447563706/"
+                    }
+                    target={"_blank"}
+                  >
+                    <img id="facebook" src={Facebook} />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://www.instagram.com/facesofdaca/"}
+                    target={"_blank"}
+                  >
+                    <img
+                      src={Instagram}
+                      href={"https://www.instagram.com/facesofdaca/"}
+                      target={"_blank"}
+                    />
+                  </a>
+                </div>
+                <div>
+                  <a
+                    href={"https://twitter.com/faces_of_daca"}
+                    target={"_blank"}
+                  >
+                    <img src={Twitter} />
+                  </a>
+                </div>
           </div>
         </div>
+        <div className="social-placeholder" />
         <Element name="stories">
           <div className="App" style={{ overflowX: "hidden" }}>
             <div className="flex-container">
@@ -331,43 +363,7 @@ class App extends Component {
                   <div className="title">
                     <span>{"Faces Of Daca"}</span>
                   </div>
-                  <div className="navigation">
-                    <ul>
-                      <li>
-                        <NavLink to="/" activeClassName="links">
-                          Stories
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/statistics" activeClassName="links">
-                          Statistics
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/how-to-help" activeClassName="links">
-                          How To Help
-                        </NavLink>
-                      </li>
-                      <li>
-                        <NavLink to="/about" activeClassName="links">
-                          About
-                        </NavLink>
-                      </li>
-                      <div className="social">
-                        <div>
-                          <div>
-                            <img id="facebook" src={Facebook} />
-                          </div>
-                          <div>
-                            <img src={Instagram} />
-                          </div>
-                          <div>
-                            <img src={Twitter} />
-                          </div>
-                        </div>
-                      </div>
-                    </ul>
-                  </div>
+                  <SocialMediaNav />
                 </div>
               </Sticky>
               <div className="main">
