@@ -146,6 +146,16 @@ body {
   }
 }
 
+@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+  .sticky-outer-wrapper {
+    width: 22%;
+  }
+
+  .sticky-inner-wrapper {
+    width: 100%;
+  }
+}
+
 @media only screen and (max-device-width: 575px) {
   .billboard-container {
     background-image: url("https://dwistynbcri9g.cloudfront.net/billboard-mobile.jpg");
