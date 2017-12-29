@@ -459,7 +459,7 @@ class Leo extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "I recently had a conversation with my grandfather. I wanted to know the main reason why he and my grandmother immigrated to America. I asked him, 'Why?' He told me that he came to build a home. When my father and his siblings were born they lived in a house with walls that hardly covered the house. It was practically broken plywood on every corner of the walls. In order to go to school children had to have shoes. It was difficult to buy shoes for my grandfather for five children. My father came to America to build a home for me, as his father tried for him. Like my grandfather and my father, we have been through enough. Please. Just let us stay."
+                        "I recently had a conversation with my grandfather. I wanted to know the main reason why he and my grandmother immigrated to America. I asked him, 'Why?' He told me that he came to build a home. When my father and his siblings were born they lived in a house with walls that hardly covered the house. It was practically broken plywood on every corner of the walls. In order to go to school children had to have shoes. It was difficult for my grandfather to buy shoes for five children. My father came to America to build a home for me, as his father tried for him. Like my grandfather and my father, we have been through enough. Please. Just let us stay."
                       }
                     </span>
                   </p>
