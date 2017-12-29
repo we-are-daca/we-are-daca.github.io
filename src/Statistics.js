@@ -551,7 +551,7 @@ class Statistics extends React.Component {
                 <p>
                   <span className="dacamentor-response">
                     {
-                      "There are commonalities of conflicted senses of identity and consequential stress and anxiety amongst DACA recipients and this can be further illustrated through Mallet, Calvo, and Waters (2017) who delve into what it is like for Latino immigrants who are transitioning from somewhat protected status as minors into adults with far less resources accessible to them. Along with the usual perils of adulthood comes the overwhelming uncertainty for undocumented immigrants of whether they might be able to survive without access to social services, financial aid for college, lack of access to jobs that provide a living wage, adequate housing and of course the obvious and daunting fear of deportation (Mallet et al.w, 2017)."
+                      "There are commonalities of conflicted senses of identity and consequential stress and anxiety amongst DACA recipients and this can be further illustrated through Mallet, Calvo, and Waters (2017) who delve into what it is like for Latino immigrants who are transitioning from somewhat protected status as minors into adults with far less resources accessible to them. Along with the usual perils of adulthood comes the overwhelming uncertainty for undocumented immigrants of whether they might be able to survive without access to social services, financial aid for college, lack of access to jobs that provide a living wage, adequate housing and of course the obvious and daunting fear of deportation (Mallet et al., 2017)."
                     }
                   </span>
                 </p>
