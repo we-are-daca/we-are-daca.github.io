@@ -341,13 +341,6 @@ class Luis extends React.Component {
                       }
                     </span>
                   </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "For the most part, growing up was straightforward. I lived close to the elementary and middle schools I attended. When I got here, I was enrolled in bilingual classes. Around the beginning of 4th grade was when I finally got my English proficiency but I still stayed in my bilingual classes. Beyond that, it was all English---different topics and subjects taught in the second language I learned."
-                      }
-                    </span>
-                  </p>
                 </div>
                 <div className="dacamentor-interview">
                   <p>
@@ -408,13 +401,6 @@ class Luis extends React.Component {
                     <b>
                       {"What colleges did you apply to and for what major?"}
                     </b>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
-                        "Since I was a freshman in high school, my dream school was UC Santa Barbara. At the time, I wanted to major in computer engineering. I didn’t know what it was yet though. I was really inspired by one of my uncles because in middle school, I got my first laptop: a computer my uncle was going to throw away. We always had problems with it and we had another uncle that liked to take computers apart to fix them--he was always helping us getting our computer back up and running. I wanted to be able to fix my own computer without having to wait or bother anyone to help me. "
-                      }
-                    </span>
                   </p>
                   <p>
                     <span className="dacamentor-response">

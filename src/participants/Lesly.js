@@ -286,13 +286,6 @@ class Lesly extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "No, we didn’t. We hadn’t been exposed to it. And when we got here, it was definitely a big challenge for me since I didn’t really have...I just had that strong feeling of not belonging I would say. Also, I think the problem of not understanding the language, not really learning it, is due to--and this might not be true for everybody but at least for me it was--having that fear that the other children were going to laugh because I didn’t pronounce something correctly. It was definitely a challenge at first. I want to say pretty much in elementary school it was like that. I did meet some great people though. It wasn’t until middle school where I really had to start learning and speaking [the language] so at that point I decided that I was going to stop speaking Spanish to really immerse myself to really get it. It worked out well and I started becoming fluent."
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
                         "Middle school years were fine. In high school, I got really bored in basic English classes so I got my teachers to sign off for AP and Gate Honors classes. My parents really wanted us to go to college--it was one of the biggest things they encouraged us on. They wanted us to have the higher education that they couldn’t get because they didn’t get a chance to study. They had to work to support our family."
                       }
                     </span>

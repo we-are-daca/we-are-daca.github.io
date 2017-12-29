@@ -485,13 +485,6 @@ class Jonathan extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "My counselors scrambled to try and get the colleges to accept my overdue application. She was mostly successful--I started getting my acceptance letters. I saw the price for each semester--for each quarter--and even though the schools gave me some help, it was only going to pay for a year, maybe two. It just wasn’t something that I could pursue. At the end of my senior year, my counselor told me about CS-in-3, the computer science program at our local community college that lasted only three years. Since computer science was related to computer engineering, I became interested in applying to the program. I submitted my application close to the deadline to apply--they gave me an interview and some time later, I was notified of my acceptance to the program. The opportunity was definitely a no-brainer especially with the scholarship they granted us."
-                      }
-                    </span>
-                  </p>
-                  <p>
-                    <span className="dacamentor-response">
-                      {
                         "Oh yeah, Jimmy and I have definitely chatted [laughs]. I feel like my words resonate a lot with what you’ve heard already: We’re not criminals and this is our home--this is all we know. I got people calling our office all the time complaining about immigrants and asking them to get them out of here. They finally get to their issue, I help them out, and at the end they say, “Thank you so much, you’re great,” not knowing that I am an immigrant myself.  We pay our taxes and we give back to the community. DACA recipients don’t have criminal records; otherwise, we wouldn’t qualify. We are squeaky clean. We’re not looking for another DACA, we’re looking for a permanent solution."
                       }
                     </span>

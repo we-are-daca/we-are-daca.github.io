@@ -386,8 +386,12 @@ class Daniel_1 extends React.Component {
                       }
                     </span>
                   </p>
+                </div>
+                <div className="dacamentor-interview">
                   <p>
-                    <span className="dacamentor-response">{"Let's say nothing crazy happens, where do you see yourself in a few years?"}</span>
+                    <b>
+                      {"Let's say nothing crazy happens, where do you see yourself in a few years?"}
+                    </b>
                   </p>
                   <p>
                     <span className="dacamentor-response">

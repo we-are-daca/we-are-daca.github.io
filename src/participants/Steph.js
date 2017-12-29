@@ -310,6 +310,13 @@ class Estefania extends React.Component {
                       }
                     </span>
                   </p>
+                  <p>
+                    <span className="dacamentor-response">
+                      {
+                        "I continued through high school, encountering the same experience my older sister had: I realized I was unable to continue with my education when we were doing admission applications and financial aid workshops. There was this thing called the migrant program where they helped students with immigration issues or questions. It hit me that I wasn’t the same as every other student and I remember telling my mom, “If you knew this was going to happen, why did you bring me here? Why didn’t you think of these things before bringing me here? If you knew I wasn’t going to be able to see my dad nor have the same opportunities as other people--why?”"
+                      }
+                    </span>
+                  </p>
                    <p>
                     <span className="dacamentor-response">
                       {

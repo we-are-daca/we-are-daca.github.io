@@ -302,7 +302,7 @@ class Xochitl extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "Sigh. I did a little explorer club in middle school where my mom paid a non-refundable fee of $500. I ended up not being able to go on the trip that year since they chose a out of the country destination. It sucked. At the time, I assumed that since it was a school trip, I would be able to go regardless of my illegal status. When I made the realization that I would not be able to participate, I felt rejected. Eventually, the club didn’t raise sufficient funds to continue on with the trip so they took a trip to San Francisco instead. I decided not to go regardless of my availability to join. I didn’t want to be a part of a group where I had to announce to everyone of my illegal standing. I felt like an outcast."
+                        "[Sigh] I did a little explorer club in middle school where my mom paid a non-refundable fee of $500. I ended up not being able to go on the trip that year since they chose a out of the country destination. It sucked. At the time, I assumed that since it was a school trip, I would be able to go regardless of my illegal status. When I made the realization that I would not be able to participate, I felt rejected. Eventually, the club didn’t raise sufficient funds to continue on with the trip so they took a trip to San Francisco instead. I decided not to go regardless of my availability to join. I didn’t want to be a part of a group where I had to announce to everyone of my illegal standing. I felt like an outcast."
                       }
                     </span>
                   </p>
