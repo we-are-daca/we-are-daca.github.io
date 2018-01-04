@@ -345,7 +345,7 @@ class App extends Component {
               </a>
             </div>
             <div>
-              <a href={"https://twitter.com/faces_of_daca"} target={"_blank"}>
+              <a href={"https://twitter.com/facesofdaca"} target={"_blank"}>
                 <img src={Twitter} />
               </a>
             </div>

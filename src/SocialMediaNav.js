@@ -37,7 +37,7 @@ const SocialMediaNav = () => (
                         <a href={"https://www.instagram.com/facesofdaca/"} target={"_blank"}><img src={Instagram} href={"https://www.instagram.com/facesofdaca/"} target={"_blank"} /></a>
                       </div>
                       <div>
-                        <a href={"https://twitter.com/faces_of_daca"} target={"_blank"}><img src={Twitter} /> </a>
+                        <a href={"https://twitter.com/facesofdaca"} target={"_blank"}><img src={Twitter} /> </a>
                       </div>
                     </div>
                   </div>

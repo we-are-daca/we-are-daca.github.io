@@ -176,7 +176,7 @@ class Jonathan extends React.Component {
                 </div>
                 <div>
                   <a
-                    href={"https://twitter.com/faces_of_daca"}
+                    href={"https://twitter.com/facesofdaca"}
                     target={"_blank"}
                   >
                     <img src={Twitter} />{" "}
