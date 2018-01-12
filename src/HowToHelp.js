@@ -241,26 +241,6 @@ class HowToHelp extends React.Component {
               </div>
               <div className="about-header project">
                 <p>
-                  <b>{"RSVP our Event"}</b>
-                </p>
-                <p>
-                  {
-                    "On January 25, 2017, our team is hosting an event in celebration of the launch of our storytelling project. At this event, we will have panelists sharing their experiences as an extension to the interviews conducted for facesofdaca.us."
-                  }
-                </p>
-                <div className="help-button-container">
-                  <a
-                    href="http://tinyurl.com/facesodaca-firesidechat-rsvp"
-                    target="_blank"
-                  >
-                    <div className="help-button">
-                      <p>{"RSVP Now"}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="about-header project">
-                <p>
                   <b>{"Social Media Presence"}</b>
                 </p>
                 <p>
