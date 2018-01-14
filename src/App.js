@@ -70,7 +70,7 @@ class App extends Component {
         },
         {
           name: "Katherine",
-          occupation: "Socielogy Major",
+          occupation: "Sociology Major",
           timeSinceArrival: "11",
           country: "El Salvador",
           image: "katherine_portrait.jpg",
