@@ -110,6 +110,105 @@ body {
   animation: fadein 1s;
 }
 
+.weekly-container {
+  display: flex;
+}
+
+@media (max-width: 768px) {
+  .weekly-container {
+    flex-direction: column;
+  }
+}
+
+.weekly-separator {
+    height: 1px;
+    background: #e67e00;
+    border-bottom: 1px solid #e67e00;
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+.weekly-container > div {
+  flex: 1;
+  margin-bottom: 35px;
+}
+
+.weekly-description p {
+  font-size: 14px;
+  font-family: "ProximaNovaRegular";
+}
+
+.weekly-header p {
+  text-transform: uppercase;
+  font-family: "ProximaNovaBold";
+  color: #e67e00;
+  font-size: 24px;
+}
+
+.weekly-participant {
+  height: 275px;
+  max-width: 275px;
+  width: 275px;
+}
+
+@media (min-width: 1440px) {
+  .weekly-separator {
+    margin-bottom: 70px;
+  }
+
+  .weekly-container > div:first-child {
+    flex: 0.5;
+  }
+
+  .weekly-container > div:nth-child(2) {
+    flex: 0.4;
+  }
+
+  .weekly-description p {
+    font-size: 18px;
+  }
+
+  .weekly-header p {
+    font-size: 28px;
+  }
+
+  .weekly-participant {
+    height: 375px;
+    max-width: 375px;
+    width: 375px;
+  }
+}
+
+.weekly-description {
+  padding: 10px;
+}
+
+.weekly-name {
+  padding-top: 10px;
+  font-size: 18px;
+  font-family: 'ProximaNovaRegular';
+  margin-bottom: 0px;
+}
+
+.weekly-title {
+  font-size: 14px;
+  font-family: "ProximaNova";
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #727272;
+}
+
+.weekly-arrow:hover {
+  cursor: pointer;
+}
+
+.weekly-arrow {
+  max-width: 10px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
 .overlay-content a {
   padding: 8px;
   text-decoration: none;

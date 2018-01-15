@@ -6,6 +6,7 @@ import ScrollLock from "react-scrolllock";
 import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
+import MdChevronRight from "react-icons/lib/md/chevron-right";
 import Sticky from "react-stickynode";
 import SocialMediaNav from "./SocialMediaNav";
 import Facebook from "./img/facebook.svg";
@@ -365,6 +366,26 @@ class App extends Component {
               </Sticky>
               <div className="main">
                 <div className="mobile-nav" />
+                <div className="weekly-container">
+                  <div>
+                    <img className="weekly-participant" src="https://dwistynbcri9g.cloudfront.net/aylin_portrait_2.jpg" />
+                    <strong><p className="weekly-name">Aylin</p></strong>
+                    <p className="weekly-title">Kinesiology Major</p>
+                  </div>
+                  <div>
+                    <div className="weekly-header">
+                      <p>WEEKLY STORY</p>
+                    </div>
+                    <div className="weekly-description">
+                      <p>“In reality, a lot of field workers have serious physical limitations because of their job and don’t have access to help. Now at CSUMB, I’m learning a lot about the healthcare system and how some field workers who have access to therapy only receive one session per month. That little time doesn’t solve anything. It’s my motivation to go into physical therapy and make more sessions accessible to these hard workers. It’s what they deserve. I’ve personally worked picking strawberries so I know how hard it is.” 
+Aylin explains her passion for helping workers in hard labor by pursuing physical therapy at CSUMB, hoping to expand services for field workers after experiencing first-hand the difficulty of picking strawberries.</p>
+                      <div className="weekly-arrow">
+                          <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/1ede71bd/aylin-journey')}} />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="weekly-separator" />
                 <div className="row dacas">
                   {this.state.cards.map((card, i) => (
                     <Card
