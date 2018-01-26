@@ -317,7 +317,7 @@ class Liz extends React.Component {
                   <p>
                     <span className="dacamentor-response">
                       {
-                        "For a while, I had no idea what I would do with my life. I thought I wouldn’t be able to go to college. These thoughts grew on me and lead months of depression. I didn’t see a point in doing well in school. I felt like my whole life I had been putting myself under so much stress to do well in school but for what? What good would my straight A’s do if I couldn’t even apply to colleges? And then my sister told me about this new DACA program, and how I could go to college as a dreamer. I then happily applied to as many colleges as possible. These included: Fresno State, Humboldt, Cal Poly SLO, CSUMB, UCSC, UC Barbara, UC Berkeley, and UC Davis--where I’m at right now. I got accepted to every school I applied to other than Berkeley."
+                        "For a while, I had no idea what I would do with my life. I thought I wouldn’t be able to go to college. These thoughts grew on me and lead to months of depression. I didn’t see a point in doing well in school. I felt like my whole life I had been putting myself under so much stress to do well in school but for what? What good would my straight A’s do if I couldn’t even apply to colleges? And then my sister told me about this new DACA program, and how I could go to college as a dreamer. I then happily applied to as many colleges as possible. These included: Fresno State, Humboldt, Cal Poly SLO, CSUMB, UCSC, UC Barbara, UC Berkeley, and UC Davis--where I’m at right now. I got accepted to every school I applied to other than Berkeley."
                       }
                     </span>
                   </p>
