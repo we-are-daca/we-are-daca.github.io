@@ -3,6 +3,8 @@ import App from './App.js';
 import About from './About';
 import HowToHelp from './HowToHelp';
 import Statistics from './Statistics';
+import Letter from './Letter';
+import Privacy from './Privacy';
 import Aylin from './participants/Aylin';
 import Daniel from './participants/Daniel';
 import Daniel1 from './participants/Daniel_1';
@@ -35,6 +37,8 @@ const Routing = () => (
         <Route exact path="/statistics" component={Statistics} />
         <Route exact path="/how-to-help" component={HowToHelp} />
         <Route exact path='/about' component={About} />
+        <Route exact path='/letter-to-congress' component={Letter} />
+        <Route exact path='/privacy' component={Privacy} />
         <Route exact path='/1ede71bd/aylin-journey' component={Aylin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/a65e9bc1/daniel-journey' component={Daniel1} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/aa9574739f97/lesly-journey' component={Lesly} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />

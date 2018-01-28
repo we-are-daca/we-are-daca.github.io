@@ -1,0 +1,88 @@
+.letter-line-separator {
+    height: 1px;
+    background: #e67e00;
+    border-bottom: 1px solid #e67e00;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.letter-buttons-container {
+    display: flex;
+    flex: 1;
+}
+
+.letter-button-container {
+    max-width: 90%;
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.letter-button {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    transition: background-color 0.5s ease;
+    background-color: #727272;
+}
+
+.letter-inputs {
+    display: flex;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+@media only screen and (max-device-width: 920px) {
+    .letter-inputs {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-device-width: 920px) {
+    .letter-buttons-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .letter-button-container {
+        margin-bottom: 10px;
+    }
+}
+
+.signature-name {
+    margin-right: 15px;
+}
+
+.letter-button p {
+    font-family: ProximaNovaRegular;
+    color: white;
+    text-align: center !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    padding-top: 8px !important;
+    padding-bottom: 8px !important;
+    margin-bottom: 20px;
+    max-width: 100%;
+}
+
+.letter-validation-message {
+    padding-top: 10px;
+    color: #e67e00;
+    text-transform: uppercase;
+}
+
+.letter-loading {
+    display: flex;
+    padding-top: 10px;
+    padding-left: 20px;
+}
+
+@media only screen and (min-device-width: 1024px) {
+    .letter-button:hover {
+        background-color: #e67e00 !important;
+        cursor: pointer;
+    }
+}
