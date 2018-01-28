@@ -43,10 +43,12 @@ class Letter extends React.Component {
       isSendingLetter: false,
       name: "",
       email: "",
+      occupation: '',
       isNameValid: true,
       isEmailValid: true,
+      isOccupationValid: true,
       hasSigned: true,
-      hasSentLetter: localStorage.getItem("fod-hartnell-letter") || true,
+      hasSentLetter: localStorage.getItem("fod-hartnell-letter") || false,
       menuStyle: {
         height: "100%",
         left: 0,
@@ -168,6 +170,8 @@ class Letter extends React.Component {
 
   checkNameIsValid = name => name.length > 0 && name.split(" ").length > 1;
 
+  checkPositionIsValid = position => position.length > 0;
+
   checkEmailIsValid = email => {
     const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
     return re.test(String(email).toLowerCase());
@@ -191,9 +195,10 @@ class Letter extends React.Component {
           const isEmailValid = this.checkEmailIsValid(this.state.email);
           const isNameValid = this.checkNameIsValid(this.state.name);
           const isCanvasNotEmpty = !this.signaturePad.isEmpty();
+          const isOccupationValid = this.checkPositionIsValid(this.state.occupation);
           let isSendingLetter = false;
 
-          if (isEmailValid && isNameValid && isCanvasNotEmpty) {
+          if (isEmailValid && isNameValid && isCanvasNotEmpty && isOccupationValid) {
             this.handleSendLetter();
             isSendingLetter = true;
           }
@@ -201,7 +206,8 @@ class Letter extends React.Component {
             isEmailValid,
             isNameValid,
             hasSigned: isCanvasNotEmpty,
-            isSendingLetter
+            isSendingLetter,
+            isOccupationValid
           });
         }}
       >
@@ -273,6 +279,22 @@ class Letter extends React.Component {
                 })}
             />
           </MuiThemeProvider>
+          <MuiThemeProvider>
+            <TextField
+              hintText={"Title / Occupation"}
+              underlineFocusStyle={{ borderColor: orange800 }}
+              onBlur={() => {
+                const isOccupationValid = this.checkPositionIsValid(this.state.occupation);
+                this.setState({
+                  isOccupationValid,
+                });
+              }}
+              onChange={event =>
+                this.setState({
+                  occupation: event.target.value
+                })}
+            />
+          </MuiThemeProvider>
         </div>
         {!this.state.isNameValid && (
           <p className="letter-validation-message">
@@ -282,6 +304,11 @@ class Letter extends React.Component {
         {!this.state.isEmailValid && (
           <p className="letter-validation-message">
             {"Please enter a valid email."}
+          </p>
+        )}
+        {!this.state.isOccupationValid && (
+          <p className="letter-validation-message">
+            {"Please enter your title/occupation."}
           </p>
         )}
         {!this.state.hasSigned && (
