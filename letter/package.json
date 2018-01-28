@@ -1,0 +1,11 @@
+{
+  "name": "test-service",
+  "version": "1.0.0",
+  "main": "handler.js",
+  "license": "MIT",
+  "dependencies": {
+    "aws-sdk": "^2.188.0",
+    "lodash": "^4.17.4",
+    "serverless-offline": "^3.16.0"
+  }
+}
