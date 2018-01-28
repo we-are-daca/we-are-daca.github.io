@@ -7,6 +7,8 @@ bot/secrets.yml
 # dependencies
 /node_modules
 
+letter/node_modules
+
 # testing
 /coverage
 

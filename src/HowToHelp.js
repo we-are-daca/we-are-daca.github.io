@@ -182,10 +182,7 @@ class HowToHelp extends React.Component {
                   </a>
                 </div>
                 <div>
-                  <a
-                    href={"https://twitter.com/facesofdaca"}
-                    target={"_blank"}
-                  >
+                  <a href={"https://twitter.com/facesofdaca"} target={"_blank"}>
                     <img src={Twitter} />
                   </a>
                 </div>
@@ -220,6 +217,23 @@ class HowToHelp extends React.Component {
                     </div>
                   </MediaQuery>
                   <p>DREAM ACT NOW.</p>
+                </div>
+              </div>
+              <div className="about-header project">
+                <p>
+                  <b>{"RSVP Our Event"}</b>
+                </p>
+                <p>
+                  {
+                    "On February 6th, our team is hosting an event in celebration of the launch of our storytelling project. At this event, we will have panelists sharing their experiences as an extension to the interviews conducted for facesofdaca.us."
+                  }
+                </p>
+                <div className="help-button-container">
+                  <a href="http://bit.ly/dacapanel" target="_blank">
+                    <div className="help-button">
+                      <p>{"RSVP Now"}</p>
+                    </div>
+                  </a>
                 </div>
               </div>
               <div className="about-header project">
