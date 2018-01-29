@@ -28,6 +28,11 @@ const SocialMediaNav = () => (
                           About
                         </NavLink>
                       </li>
+                      <li>
+                        <NavLink exact to="/events" activeClassName="links">
+                          Events
+                        </NavLink>
+                      </li>
                   <div className="social">
                     <div>
                       <div>

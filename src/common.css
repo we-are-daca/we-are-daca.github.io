@@ -166,6 +166,16 @@ body {
     background-color: #727272;
 }
 
+.flyer {
+    max-width: 70%;
+}
+
+@media only screen and (min-device-width: 768px) {
+    .flyer {
+        max-width: 65%;
+    }
+}
+
 .help-button p {
     font-family: ProximaNovaRegular;
     color: white;

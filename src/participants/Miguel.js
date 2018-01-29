@@ -44,7 +44,7 @@ class Miguel extends React.Component {
       menuContent: {
         display: "none",
         position: "relative",
-        top: "10%" /* 25% from the top */,
+        top: "5%" /* 25% from the top */,
         width: "100%" /* 100% width */,
         textAlign: "center" /* Centered text/links */,
         marginTop:
@@ -152,6 +152,9 @@ class Miguel extends React.Component {
                 <NavLink to="/about" activeClassName="">
                   About
                 </NavLink>
+                <NavLink to="/events" activeClassName="">
+              Events
+            </NavLink>
                 <div>
                   <a
                     href={

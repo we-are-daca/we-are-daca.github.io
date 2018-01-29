@@ -38,7 +38,7 @@ class App extends Component {
       menuContent: {
         display: "none",
         position: "relative",
-        top: "10%" /* 25% from the top */,
+        top: "5%" /* 25% from the top */,
         width: "100%" /* 100% width */,
         textAlign: "center" /* Centered text/links */,
         marginTop:
@@ -229,17 +229,6 @@ class App extends Component {
     this.setState(params);
   };
 
-  determinePath() {
-    let path = "";
-    switch (window.location.pathname) {
-      case "/":
-        "Stories";
-        path = "Stories";
-        break;
-    }
-    return path;
-  }
-
   handleMenu = () => {
     this.setState({
       isMenuOpen: true,
@@ -324,6 +313,9 @@ class App extends Component {
             </NavLink>
             <NavLink to="/about" activeClassName="">
               About
+            </NavLink>
+            <NavLink to="/events" activeClassName="">
+              Events
             </NavLink>
             <div>
               <a

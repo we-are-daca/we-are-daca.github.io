@@ -1,10 +1,18 @@
 import React from "react";
+import uuid from 'uuid/v4'
+import { PulseLoader } from "react-spinners";
+import { ShareButtons, generateShareIcon } from "react-share";
+import TextField from "material-ui/TextField";
+import { orange800 } from "material-ui/styles/colors";
+import MuiThemeProvider from "material-ui/styles/MuiThemeProvider";
 import { Link } from "react-router-dom";
 import MediaQuery from "react-responsive";
 import { Pie } from "react-chartjs-2";
 import ReactGA from "react-ga";
+import SignaturePad from "signature_pad/dist/signature_pad.js";
 import "./App.css";
 import "./about.css";
+import "./letter.css";
 import "./statistics.css";
 
 import ScrollLock from "react-scrolllock";
@@ -20,14 +28,29 @@ import Billboard from "./img/billboard.jpg";
 import { NavLink } from "react-router-dom";
 import Card from "./Card";
 
-class HowToHelp extends React.Component {
+const { FacebookShareButton, TwitterShareButton } = ShareButtons;
+
+const FacebookIcon = generateShareIcon("facebook");
+const TwitterIcon = generateShareIcon("twitter");
+
+class Events extends React.Component {
   constructor(props) {
     super(props);
     ReactGA.initialize("UA-111454076-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
+      s3UploadUrl: 'https://6shpfx5ftj.execute-api.us-west-1.amazonaws.com/dev/requestUploadUrl',
       show: false,
       isMenuOpen: false,
+      isSendingLetter: false,
+      name: "",
+      email: "",
+      occupation: '',
+      isNameValid: true,
+      isEmailValid: true,
+      isOccupationValid: true,
+      hasSigned: true,
+      hasSentLetter: localStorage.getItem("fod-hartnell-letter") || false,
       menuStyle: {
         height: "100%",
         left: 0,
@@ -48,8 +71,6 @@ class HowToHelp extends React.Component {
         zIndex: 2
       },
       portraitStyle: {
-        backgroundImage:
-          "url(https://dwistynbcri9g.cloudfront.net/statistics_cover.jpg)",
         backgroundPosition: "center center",
         backgroundRepeat: "no-repeat",
         backgroundSize: "cover",
@@ -124,15 +145,32 @@ class HowToHelp extends React.Component {
     });
   };
 
+  renderLetter = () => (
+    <div>
+      <div className="about-header project">
+        <p>
+          <b>{"Discussion Panel and Release Celebration"}</b>
+        </p>
+        <p>
+          {
+            "Join us for a fireside chat/discussion panel with some of the DREAMers from Faces Of DACA. We hope to give you taste of the interviews, anecdotes, and research collected by the Faces Of DACA team over the last few months!"
+          }
+        </p>
+        <div className="help-button-container">
+                  <a href="http://bit.ly/dacapanel" target="_blank">
+                    <div className="help-button">
+                      <p>{"RSVP Now"}</p>
+                    </div>
+                  </a>
+                </div>
+        </div>
+
+        <img className="flyer" src={'https://dwistynbcri9g.cloudfront.net/FacesOfDACAFlyer.jpg'} />
+    </div>
+  );
+
+
   render() {
-    const data01 = [
-      { name: "Group A", value: 400 },
-      { name: "Group B", value: 300 },
-      { name: "Group C", value: 300 },
-      { name: "Group D", value: 200 },
-      { name: "Group E", value: 278 },
-      { name: "Group F", value: 189 }
-    ];
     return (
       <div className="participant">
         <div className="flex-container">
@@ -186,7 +224,7 @@ class HowToHelp extends React.Component {
                 </div>
                 <div>
                   <a href={"https://twitter.com/facesofdaca"} target={"_blank"}>
-                    <img src={Twitter} />
+                    <img src={Twitter} />{" "}
                   </a>
                 </div>
               </div>
@@ -219,83 +257,9 @@ class HowToHelp extends React.Component {
                       )}
                     </div>
                   </MediaQuery>
-                  <p>DREAM ACT NOW.</p>
                 </div>
               </div>
-              <div className="about-header project">
-                <p>
-                  <b>{"RSVP Our Event"}</b>
-                </p>
-                <p>
-                  {
-                    "On February 6th, our team is hosting an event in celebration of the launch of our storytelling project. At this event, we will have panelists sharing their experiences as an extension to the interviews conducted for facesofdaca.us."
-                  }
-                </p>
-                <div className="help-button-container">
-                  <a href="http://bit.ly/dacapanel" target="_blank">
-                    <div className="help-button">
-                      <p>{"RSVP Now"}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="about-header project">
-                <p>
-                  <b>{"Call Your Representative"}</b>
-                </p>
-                <p>
-                  {
-                    "Urge Congress to pass a legitimate DREAM Act today by calling your local congressman or the Speaker of the House, Paul Ryan. Find your representative and inform them that you stand with the 800,000 DREAMers, who, without a long-term legislation, are at risk of losing their livelihoods as result of deportation. "
-                  }
-                </p>
-                <div className="help-button-container">
-                  <a href="https://callyourrep.co" target="_blank">
-                    <div className="help-button">
-                      <p>{"Find Your Rep"}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="about-header project">
-                <p>
-                  <b>{"Social Media Presence"}</b>
-                </p>
-                <p>
-                  {
-                    "A call for action can be as easy as sending a 280-character tweet. Therefore, by having a social media presence you can support DACA recipients by tweeting your local congressman or supporting our website by using the hashtag, #FACESOFDACA, to spread the urgency of our goal and mission to have Congress pass a long-term immigration policy."
-                  }
-                </p>
-                <div className="help-button-container">
-                  <a
-                    href="https://docs.google.com/document/d/1WgvT3j0ez06mNJKqSIqMMNV7zId-4xO7CKjD7H_0Ew8/edit"
-                    target="_blank"
-                  >
-                    <div className="help-button">
-                      <p>{"Tweet"}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="about-header project">
-                <p>
-                  <b>{"Share Your Story"}</b>
-                </p>
-                <p>
-                  {
-                    "Are you DACA recipient? Do you have a story you would like to share with us? Register your contact information for our interviewee list. Your information will only be disclosed to our team, and it will provide you the chance to be placed on our weekly series of stories, which will be advertised on the Faces of DACA website as well as our website’s social media outlet."
-                  }
-                </p>
-                <div className="help-button-container">
-                  <a
-                    href="https://docs.google.com/forms/d/1PsWFJ-izHmkEOkPuzhvT82WnL5Ql3_vI74ppM7HwDQI"
-                    target="_blank"
-                  >
-                    <div className="help-button">
-                      <p>{"Register"}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
+               { this.renderLetter() }
             </div>
           </div>
         </div>
@@ -304,4 +268,4 @@ class HowToHelp extends React.Component {
   }
 }
 
-export default HowToHelp;
+export default Events;
