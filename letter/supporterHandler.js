@@ -26,7 +26,7 @@ module.exports.requestUploadUrl = (event, context, callback) => {
       throw new Error('Bad params');
     }
 
-    if (params.type && params.type.indexOf('jpeg') === -1) {
+    if (params.type && params.type.indexOf('png') === -1) {
       throw new Error('Bad params for picture');  
     }
   } catch (e) {

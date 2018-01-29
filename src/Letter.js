@@ -148,7 +148,10 @@ class Letter extends React.Component {
   componentDidMount = () => {
     if (!this.state.hasSentLetter) {
       this.canvas = document.querySelector("canvas");
-      this.signaturePad = new SignaturePad(this.canvas);
+      this.signaturePad = new SignaturePad(this.canvas, {
+        backgroundColor: 'rgba(255, 255, 255, 0)',
+        penColor: 'rgb(0, 0, 0)'
+      });
       var rect = this.canvas.parentNode.getBoundingClientRect();
       console.log(rect);
       this.canvas.width = rect.width;
@@ -168,29 +171,29 @@ class Letter extends React.Component {
 
   dataURItoBlob = (dataURI) => {
     // convert base64/URLEncoded data component to raw binary data held in a string
-    var byteString;
-    if (dataURI.split(',')[0].indexOf('base64') >= 0)
-        byteString = atob(dataURI.split(',')[1]);
-    else
-        byteString = unescape(dataURI.split(',')[1]);
+    var byteString = atob(dataURI.split(',')[1]);
 
     // separate out the mime component
     var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
 
-    // write the bytes of the string to a typed array
-    var ia = new Uint8Array(byteString.length);
+    // write the bytes of the string to an ArrayBuffer
+    var arrayBuffer = new ArrayBuffer(byteString.length);
+    var _ia = new Uint8Array(arrayBuffer);
     for (var i = 0; i < byteString.length; i++) {
-        ia[i] = byteString.charCodeAt(i);
+        _ia[i] = byteString.charCodeAt(i);
     }
 
-    return new Blob([ia], {type:mimeString});
+    var dataView = new DataView(arrayBuffer);
+    var blob = new Blob([dataView], { type: mimeString });
+    return blob;
 }
 
   handleSendLetter = () => {
     // localStorage.setItem('fod-hartnell-letter', 'true');
 
-    const dataUrl = this.signaturePad.toDataURL("image/jpeg");
+    const dataUrl = this.signaturePad.toDataURL();
     const blob = this.dataURItoBlob(dataUrl);
+    const id = uuid()
 
     fetch('https://6shpfx5ftj.execute-api.us-west-1.amazonaws.com/dev/requestUploadUrl', {
       method: 'POST',
@@ -198,8 +201,8 @@ class Letter extends React.Component {
         'Content-Type': 'application/json'
       },
       body: JSON.stringify({
-        name: uuid(),
-        type: '.jpeg'
+        name: id,
+        type: 'image/png'
       })
     })
     .then(function(response) {
@@ -211,9 +214,26 @@ class Letter extends React.Component {
       console.log(json);
       return fetch(json.uploadUrl, {
         method: 'PUT',
-        body: blob
+        body: blob,
+        headers: {
+          'x-amz-acl': 'public-read'
+        }
       })
-    })
+    }, (err) => console.log(err))
+    .then(() => {
+        return fetch('https://6shpfx5ftj.execute-api.us-west-1.amazonaws.com/dev/supporter', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify({
+            name: this.state.name,
+            email: this.state.email,
+            occupation: this.state.occupation,
+            image_key: id
+          })
+        })
+    }, (err) => console.log(err));
   };
 
   checkNameIsValid = name => name.length > 0 && name.split(" ").length > 1;
