@@ -20,6 +20,11 @@ service: letter-to-congress
 provider:
   name: aws
   runtime: nodejs6.10
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - "s3:*"
+        Resource: "arn:aws:s3:::facesofdaca-letter-supporters/*"
   # iamRoleStatements:
   #   - Effect: Allow
   #     Action:
@@ -64,6 +69,14 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
+  requestUploadUrl:
+    handler: supporterHandler.requestUploadUrl
+    events:
+      - http:
+          path: requestUploadUrl
+          method: post
+          cors: true
+
   verify:
     handler: handler.verify
     events:
@@ -87,6 +100,25 @@ functions:
 
 plugins:
   - serverless-offline
+
+  resources:
+  Resources:
+    UploadBucket:
+      Type: AWS::S3::Bucket
+      Properties:
+        BucketName: facesofdaca-letter-supporters
+        AccessControl: PublicRead
+        CorsConfiguration:
+          CorsRules:
+          - AllowedMethods:
+            - GET
+            - PUT
+            - POST
+            - HEAD
+            AllowedOrigins:
+            - "*"
+            AllowedHeaders:
+            - "*"
 
 # resources:
 #   Resources:
