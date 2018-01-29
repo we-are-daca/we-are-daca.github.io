@@ -27,7 +27,7 @@ module.exports.requestUploadUrl = (event, context, callback) => {
     }
 
     if (params.type && params.type.indexOf('jpeg') === -1) {
-      throw new Error('Bad params for picture');  
+      throw new Error('Bad params for picture');
     }
   } catch (e) {
     console.log(e);
@@ -56,7 +56,8 @@ module.exports.requestUploadUrl = (event, context, callback) => {
 
 module.exports.create = (event, context, callback) => {
   const response = {
-    statusCode: 200
+    statusCode: 200,
+    headers: { 'Access-Control-Allow-Origin': '*' }
   };
 
   let data;
@@ -78,7 +79,7 @@ module.exports.create = (event, context, callback) => {
       throw new Error('Bad params');
     }
   } catch(error) {
-    return callback(null, { statusCode: 401, body: JSON.stringify('Bad request') }) ;
+    return callback(null, { statusCode: 401, body: JSON.stringify('Bad request'), headers: { 'Access-Control-Allow-Origin': '*' } }) ;
   }
 
   const id = uuid();
