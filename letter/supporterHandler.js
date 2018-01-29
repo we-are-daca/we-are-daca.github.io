@@ -15,9 +15,30 @@ module.exports.create = (event, context, callback) => {
     statusCode: 200
   };
 
+  try {
+    const data = JSON.parse(event.body);
+    const hasSupporterInfo = _.has(event.body, 'name') &&
+        _.has(event.body, 'email') && _.has(event.body, 'url') && _.has(event.body, 'occupation');
+
+    if (!hasSupporterInfo) {
+      throw new Error('Bad params');
+    }
+
+    // Validate data has appropriate values (checking for non empty values for now)
+    if (!data.name || !data.email ||
+        !data.occupation || !data.url) {
+
+      throw new Error('Bad params');
+    }
+  } catch(error) {
+    return callback(null, { statusCode: 401, body: JSON.stringify('Bad request') }) ;
+  }
+
   const id = uuid();
-  const name = event.queryStringParameters.name;
-  const email = event.queryStringParameters.email;
+  const name = data.name;
+  const email = data.email;
+  const url = data.url;
+  const occupation = data.occupation;
   const timestamp = (new Date).toISOString();
 
   // Verify whether the provide email is already taken
