@@ -17,33 +17,37 @@ module.exports.requestUploadUrl = (event, context, callback) => {
     statusCode: 200
   };
 
+  let params = {}
+
   try {
-    const params = JSON.parse(event.body);
-    const hasNameAndType = _.has(event.body, 'name') && _has(event.body, 'type');
+    params = JSON.parse(event.body);
+    const hasNameAndType = _.has(params, 'name') && _.has(params, 'type');
     if (!hasNameAndType) {
       throw new Error('Bad params');
     }
 
-    if (params.body && params.body.indexOf('jpeg')) {
-      throw new Error('Bad params');
+    if (params.type && params.type.indexOf('jpeg') === -1) {
+      throw new Error('Bad params for picture');  
     }
   } catch (e) {
-    return callback(null, { statusCode: 401, body: 'Bad request' })
+    console.log(e);
+    return callback(null, { statusCode: 401, body: JSON.stringify('Bad request to request url : ' + e.message )});
   }
 
-  var s3Params = {
+  const s3Params = {
      Bucket: 'facesofdaca-letter-supporters',
      Key: params.name,
      ContentType: params.type,
-     ACL: 'public-read'
+     ACL: 'public-read',
+     Expires: 180
   };
 
-  var uploadUrl = s3.getSignedUrl('putObject', s3params);
+  var uploadUrl = s3.getSignedUrl('putObject', s3Params);
 
   callback(null, {
     statusCode: 200,
     headers:  {
-      'Access-Control-Allow-Origin': 'http://facesofdaca.us'
+      'Access-Control-Allow-Origin': '*'
     },
     body: JSON.stringify({ uploadUrl: uploadUrl })
   });

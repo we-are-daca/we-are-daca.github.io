@@ -119,20 +119,3 @@ resources:
           WriteCapacityUnits: 1
 
         TableName: ${self:custom.tableName}
-
-    UploadBucket:
-      Type: AWS::S3::Bucket
-      Properties:
-        BucketName: facesofdaca-letter-supporters
-        AccessControl: PublicRead
-        CorsConfiguration:
-          CorsRules:
-          - AllowedMethods:
-            - GET
-            - PUT
-            - POST
-            - HEAD
-            AllowedOrigins:
-            - "*"
-            AllowedHeaders:
-            - "*"

@@ -38,6 +38,7 @@ class Letter extends React.Component {
     ReactGA.initialize("UA-111454076-1");
     ReactGA.pageview(window.location.pathname + window.location.search);
     this.state = {
+      s3UploadUrl: 'https://6shpfx5ftj.execute-api.us-west-1.amazonaws.com/dev/requestUploadUrl',
       show: false,
       isMenuOpen: false,
       isSendingLetter: false,
