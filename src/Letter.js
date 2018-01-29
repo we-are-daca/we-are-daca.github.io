@@ -1,4 +1,5 @@
 import React from "react";
+import uuid from 'uuid/v4'
 import { PulseLoader } from "react-spinners";
 import { ShareButtons, generateShareIcon } from "react-share";
 import TextField from "material-ui/TextField";
@@ -165,8 +166,54 @@ class Letter extends React.Component {
     this.signaturePad.clear(); // otherwise isEmpty() might return incorrect value
   };
 
+  dataURItoBlob = (dataURI) => {
+    // convert base64/URLEncoded data component to raw binary data held in a string
+    var byteString;
+    if (dataURI.split(',')[0].indexOf('base64') >= 0)
+        byteString = atob(dataURI.split(',')[1]);
+    else
+        byteString = unescape(dataURI.split(',')[1]);
+
+    // separate out the mime component
+    var mimeString = dataURI.split(',')[0].split(':')[1].split(';')[0];
+
+    // write the bytes of the string to a typed array
+    var ia = new Uint8Array(byteString.length);
+    for (var i = 0; i < byteString.length; i++) {
+        ia[i] = byteString.charCodeAt(i);
+    }
+
+    return new Blob([ia], {type:mimeString});
+}
+
   handleSendLetter = () => {
     // localStorage.setItem('fod-hartnell-letter', 'true');
+
+    const dataUrl = this.signaturePad.toDataURL("image/jpeg");
+    const blob = this.dataURItoBlob(dataUrl);
+
+    fetch('https://6shpfx5ftj.execute-api.us-west-1.amazonaws.com/dev/requestUploadUrl', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify({
+        name: uuid(),
+        type: '.jpeg'
+      })
+    })
+    .then(function(response) {
+      return response.json()
+    }, function(err) {
+      console.log(err);
+    })
+    .then(function(json) {
+      console.log(json);
+      return fetch(json.uploadUrl, {
+        method: 'PUT',
+        body: blob
+      })
+    })
   };
 
   checkNameIsValid = name => name.length > 0 && name.split(" ").length > 1;
