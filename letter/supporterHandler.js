@@ -59,7 +59,7 @@ module.exports.create = (event, context, callback) => {
   try {
     data = JSON.parse(event.body);
     const hasSupporterInfo = _.has(data, 'name') &&
-        _.has(data, 'email') && _.has(data, 'url') && _.has(data, 'occupation');
+        _.has(data, 'email') && _.has(data, 'image_key') && _.has(data, 'occupation');
 
     if (!hasSupporterInfo) {
       throw new Error('Bad params');
@@ -70,7 +70,7 @@ module.exports.create = (event, context, callback) => {
     if (!data.name || data.name.length > 36 ||
         !data.email || !email_regex.test(data.email)  ||
         !data.occupation || data.occupation.length > 36 ||
-        !data.url || data.url.length > 100) {
+        !data.image_key || data.image_key.length > 100) {
       throw new Error('Bad params');
     }
   } catch(error) {
@@ -80,7 +80,7 @@ module.exports.create = (event, context, callback) => {
   const id = uuid();
   const name = data.name;
   const email = data.email;
-  const url = data.url;
+  const image_key = data.image_key;
   const occupation = data.occupation;
   const timestamp = (new Date).toISOString();
 
@@ -109,7 +109,7 @@ module.exports.create = (event, context, callback) => {
           'name': name,
           'email': email,
           'occupation': occupation,
-          'url': url,
+          'image_key': image_key,
           'signup_timestamp': timestamp,
           'letter_sent': false
         }
