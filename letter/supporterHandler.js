@@ -10,6 +10,46 @@ const documentClient = new AWS.DynamoDB.DocumentClient({
   'region': 'us-west-1'
 });
 
+const s3 = new AWS.S3()
+
+module.exports.requestUploadUrl = (event, context, callback) => {
+  const response = {
+    statusCode: 200
+  };
+
+  try {
+    const params = JSON.parse(event.body);
+    const hasNameAndType = _.has(event.body, 'name') && _has(event.body, 'type');
+    if (!hasNameAndType) {
+      throw new Error('Bad params');
+    }
+
+    if (params.body && params.body.indexOf('jpeg')) {
+      throw new Error('Bad params');
+    }
+  } catch (e) {
+    return callback(null, { statusCode: 401, body: 'Bad request' })
+  }
+
+  var s3Params = {
+     Bucket: 'facesofdaca-letter-supporters',
+     Key: params.name,
+     ContentType: params.type,
+     ACL: 'public-read'
+  };
+
+  var uploadUrl = s3.getSignedUrl('putObject', s3params);
+
+  callback(null, {
+    statusCode: 200,
+    headers:  {
+      'Access-Control-Allow-Origin': 'http://facesofdaca.us'
+    },
+    body: JSON.stringify({ uploadUrl: uploadUrl })
+  });
+
+}
+
 module.exports.create = (event, context, callback) => {
   const response = {
     statusCode: 200
