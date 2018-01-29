@@ -55,19 +55,22 @@ module.exports.create = (event, context, callback) => {
     statusCode: 200
   };
 
+  let data;
   try {
-    const data = JSON.parse(event.body);
-    const hasSupporterInfo = _.has(event.body, 'name') &&
-        _.has(event.body, 'email') && _.has(event.body, 'url') && _.has(event.body, 'occupation');
+    data = JSON.parse(event.body);
+    const hasSupporterInfo = _.has(data, 'name') &&
+        _.has(data, 'email') && _.has(data, 'url') && _.has(data, 'occupation');
 
     if (!hasSupporterInfo) {
       throw new Error('Bad params');
     }
 
     // Validate data has appropriate values (checking for non empty values for now)
-    if (!data.name || !data.email ||
-        !data.occupation || !data.url) {
-
+    const email_regex = /[a-z0-9!#$%&'*+\/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/
+    if (!data.name || data.name.length > 36 ||
+        !data.email || !email_regex.test(data.email)  ||
+        !data.occupation || data.occupation.length > 36 ||
+        !data.url || data.url.length > 100) {
       throw new Error('Bad params');
     }
   } catch(error) {
@@ -105,6 +108,8 @@ module.exports.create = (event, context, callback) => {
           'id': id,
           'name': name,
           'email': email,
+          'occupation': occupation,
+          'url': url,
           'signup_timestamp': timestamp,
           'letter_sent': false
         }
