@@ -29,9 +29,14 @@
 
 .letter-inputs {
     display: flex;
+    flex-wrap: wrap;
     margin-bottom: 10px;
     padding-left: 20px;
     padding-right: 20px;
+}
+
+.letter-inputs:nth-child(2) {
+    margin-right: 15px;
 }
 
 @media only screen and (max-device-width: 920px) {
@@ -52,7 +57,7 @@
     }
 }
 
-.signature-name {
+.signature-field {
     margin-right: 15px;
 }
 
