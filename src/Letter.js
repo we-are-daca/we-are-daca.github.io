@@ -20,6 +20,7 @@ import MdClose from "react-icons/lib/md/close";
 import MdMenu from "react-icons/lib/md/menu";
 import Arrow from "react-icons/lib/fa/angle-down";
 import Sticky from "react-stickynode";
+import { zipcodes } from './constants';
 import SocialMediaNav from "./SocialMediaNav";
 import Facebook from "./img/facebook.svg";
 import Instagram from "./img/instagram.svg";
@@ -46,9 +47,17 @@ class Letter extends React.Component {
       name: "",
       email: "",
       occupation: '',
+      address: '',
+      cityAndState: '',
+      zipcode: '',
+      phoneNumber: '',
       isNameValid: true,
       isEmailValid: true,
       isOccupationValid: true,
+      isAddressValid: true,
+      isCityAndStateValid: true,
+      isZipcodeValid: true,
+      isPhoneNumberValid: true,
       hasSigned: true,
       hasSentLetter: localStorage.getItem("fod-hartnell-letter") || false,
       menuStyle: {
@@ -240,6 +249,14 @@ class Letter extends React.Component {
 
   checkPositionIsValid = position => position.length > 0;
 
+  checkAddressIsValid = address => address.length > 0;
+  
+  checkCityAndStateisValid = place => place.length > 0;
+
+  checkNumberIsValid = number => /^\([0-9]{3}\)[0-9]{3}-[0-9]{4}$/.test(number);
+
+  checkZipCodeIsValid = zipcode => zipcodes.indexOf(zipcode) > -1;
+
   checkEmailIsValid = email => {
     const re = /[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?/;
     return re.test(String(email).toLowerCase());
@@ -264,7 +281,14 @@ class Letter extends React.Component {
           const isNameValid = this.checkNameIsValid(this.state.name);
           const isCanvasNotEmpty = !this.signaturePad.isEmpty();
           const isOccupationValid = this.checkPositionIsValid(this.state.occupation);
+          const isAddressValid = this.checkAddressIsValid(this.state.isAddressValid);
+          const isCityAndStateValid = this.checkCityAndStateisValid(this.state.cityAndState);
+          const isPhoneNumberValid = this.checkNumberIsValid(this.state.phoneNumber);
+          const isZipcodeValid = this.checkZipCodeIsValid(this.state.zipcode);
           let isSendingLetter = false;
+
+          console.log(isZipcodeValid);
+          console.log(zipcodes);
 
           if (isEmailValid && isNameValid && isCanvasNotEmpty && isOccupationValid) {
             this.handleSendLetter();
@@ -275,7 +299,11 @@ class Letter extends React.Component {
             isNameValid,
             hasSigned: isCanvasNotEmpty,
             isSendingLetter,
-            isOccupationValid
+            isOccupationValid,
+            isAddressValid,
+            isCityAndStateValid,
+            isPhoneNumberValid,
+            isZipcodeValid,
           });
         }}
       >
@@ -316,7 +344,7 @@ class Letter extends React.Component {
         <div className="letter-inputs">
           <MuiThemeProvider>
             <TextField
-              className="signature-name"
+              className="signature-field"
               hintText={"Full Name"}
               onBlur={() => {
                 const isNameValid = this.checkNameIsValid(this.state.name);
@@ -333,6 +361,7 @@ class Letter extends React.Component {
           </MuiThemeProvider>
           <MuiThemeProvider>
             <TextField
+              className="signature-field"
               hintText={"Email Address"}
               underlineFocusStyle={{ borderColor: orange800 }}
               onBlur={() => {
@@ -349,6 +378,7 @@ class Letter extends React.Component {
           </MuiThemeProvider>
           <MuiThemeProvider>
             <TextField
+              className="signature-field"
               hintText={"Title / Occupation"}
               underlineFocusStyle={{ borderColor: orange800 }}
               onBlur={() => {
@@ -360,6 +390,74 @@ class Letter extends React.Component {
               onChange={event =>
                 this.setState({
                   occupation: event.target.value
+                })}
+            />
+          </MuiThemeProvider>
+          <MuiThemeProvider>
+            <TextField
+              className="signature-field"
+              hintText={"Address"}
+              underlineFocusStyle={{ borderColor: orange800 }}
+              onBlur={() => {
+                const isAddressValid = this.checkAddressIsValid(this.state.address);
+                this.setState({
+                  isAddressValid,
+                });
+              }}
+              onChange={event =>
+                this.setState({
+                  address: event.target.value
+                })}
+            />
+          </MuiThemeProvider>
+          <MuiThemeProvider>
+            <TextField
+              className="signature-field"
+              hintText={"City and State"}
+              underlineFocusStyle={{ borderColor: orange800 }}
+              onBlur={() => {
+                const isCityAndStateValid = this.checkCityAndStateisValid(this.state.cityAndState);
+                this.setState({
+                  isCityAndStateValid,
+                });
+              }}
+              onChange={event =>
+                this.setState({
+                  cityAndState: event.target.value
+                })}
+            />
+          </MuiThemeProvider>
+          <MuiThemeProvider>
+            <TextField
+              className="signature-field"
+              hintText={"Zipcode"}
+              underlineFocusStyle={{ borderColor: orange800 }}
+              onBlur={() => {
+                const isZipcodeValid = this.checkZipCodeIsValid(this.state.zipcode);
+                this.setState({
+                  isZipcodeValid,
+                });
+              }}
+              onChange={event =>
+                this.setState({
+                  zipcode: event.target.value
+                })}
+            />
+          </MuiThemeProvider>
+          <MuiThemeProvider>
+            <TextField
+              className="signature-field"
+              hintText={"Phone Number"}
+              underlineFocusStyle={{ borderColor: orange800 }}
+              onBlur={() => {
+                const isPhoneNumberValid = this.checkNumberIsValid(this.state.phoneNumber);
+                this.setState({
+                  isPhoneNumberValid,
+                });
+              }}
+              onChange={event =>
+                this.setState({
+                  phoneNumber: event.target.value
                 })}
             />
           </MuiThemeProvider>
@@ -377,6 +475,26 @@ class Letter extends React.Component {
         {!this.state.isOccupationValid && (
           <p className="letter-validation-message">
             {"Please enter your title/occupation."}
+          </p>
+        )}
+        {!this.state.isAddressValid && (
+          <p className="letter-validation-message">
+            {"Please enter your address."}
+          </p>
+        )}
+        {!this.state.isCityAndStateValid && (
+          <p className="letter-validation-message">
+            {"Please enter your city and state."}
+          </p>
+        )}
+        {!this.state.isZipcodeValid && (
+          <p className="letter-validation-message">
+            {"Please enter your zipcode."}
+          </p>
+        )}
+        {!this.state.isPhoneNumberValid && (
+          <p className="letter-validation-message">
+            {"Please enter your phone number."}
           </p>
         )}
         {!this.state.hasSigned && (

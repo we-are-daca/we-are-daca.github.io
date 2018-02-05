@@ -64,7 +64,9 @@ module.exports.create = (event, context, callback) => {
   try {
     data = JSON.parse(event.body);
     const hasSupporterInfo = _.has(data, 'name') &&
-        _.has(data, 'email') && _.has(data, 'image_key') && _.has(data, 'occupation');
+        _.has(data, 'email') && _.has(data, 'image_key') && _.has(data, 'occupation')
+        && _.has(data, 'address') && _.has(data, 'cityAndState') && _.has(data, 'zipcode')
+        && _.has(data, 'phoneNumber');
 
     if (!hasSupporterInfo) {
       throw new Error('Bad params');
@@ -75,11 +77,13 @@ module.exports.create = (event, context, callback) => {
     if (!data.name || data.name.length > 36 ||
         !data.email || !email_regex.test(data.email)  ||
         !data.occupation || data.occupation.length > 36 ||
-        !data.image_key || data.image_key.length > 100) {
+        !data.image_key || data.image_key.length > 100)
+        
+        {
       throw new Error('Bad params');
     }
   } catch(error) {
-    return callback(null, { statusCode: 401, body: JSON.stringify('Bad request'), headers: { 'Access-Control-Allow-Origin': '*' } }) ;
+    return callback(null, { statusCode: 401, body: JSON.stringify('Bad request when creating supporter'), headers: { 'Access-Control-Allow-Origin': '*' } }) ;
   }
 
   const id = uuid();
@@ -87,6 +91,10 @@ module.exports.create = (event, context, callback) => {
   const email = data.email;
   const image_key = data.image_key;
   const occupation = data.occupation;
+  const address = data.address;
+  const cityAndState = data.cityAndState;
+  const zipcode = data.zipcode;
+  const phoneNumber = data.phoneNumber;
   const timestamp = (new Date).toISOString();
 
   // Verify whether the provide email is already taken
@@ -116,6 +124,10 @@ module.exports.create = (event, context, callback) => {
           'occupation': occupation,
           'image_key': image_key,
           'signup_timestamp': timestamp,
+          'address': address,
+          'cityAndState': cityAndState,
+          'zipcode': zipcode,
+          'phoneNumber': phoneNumber,
           'letter_sent': false
         }
       };
@@ -140,8 +152,8 @@ module.exports.create = (event, context, callback) => {
       });
     }
     else if (result && result.Items && result.Items.length == 1) {
-      response.statusCode = 404;
-      response.body = JSON.stringify({ 'error': 'The provided email is already taken' });
+      response.statusCode = 200;
+      response.body = JSON.stringify({ 'message': 'You have already signed our letter!' });
 
       callback(null, response);
       return;
@@ -154,6 +166,80 @@ module.exports.create = (event, context, callback) => {
       callback(null, response);
     }
   });
+}
+
+module.exports.checkSupporter = (event, context, callback) => {
+  const response = {
+    statusCode: 200
+  };
+
+  console.log('enter check supporter');
+
+  const facebook_id = event.queryStringParameters.fb_id;
+  const google_id = event.queryStringParameters.g_id;
+
+  if (!_.isString(facebook_id) && !_.isString(google_id)) {
+
+    response.statusCode = 400;
+    response.body = JSON.stringify({ 'error': 'Either the id or the email field must be provided'});
+
+    return callback(null, response);
+  }
+
+  const params = {
+    'TableName': SUPPORTERS_TABLE
+  }
+
+  if (_.isString(facebook_id)) {
+    params.FilterExpression = 'facebook_id = :facebook_id';
+    params.ExpressionAttributeValues = { ':facebook_id': facebook_id }; 
+  } else {
+    params.FilterExpression = 'google_id = :google_id';
+    params.ExpressionAttributeValues = { ':google_id': google_id };  
+  }
+
+  documentClient.scan(params, (error, result) => {
+    if (error) {
+      console.log(error);
+      response.statusCode = 400;
+      response.body = JSON.stringify({ 'error': 'Failed to retrieve the supporter' });
+
+      callback(null, response);
+      return;
+    }
+
+    if (result && result.Items && result.Items.length  === 1) {
+      console.log('here');
+      const { id, name, email } = result.Items[0];
+      response.body = JSON.stringify({
+        'id': id,
+        'name': name,
+        'email': email
+      });
+
+      callback(null, response);
+    }
+    else if (result && result.Items && result.Items.length === 0) {
+      response.statusCode = 404;
+
+      if (_.isString(facebook_id)) {
+        response.body = JSON.stringify({ 'error': 'The provided facebook id was not found' });
+      }
+      else {
+        response.body = JSON.stringify({ 'error': 'The provided google id was not found' });
+      }
+
+      callback(null, response);
+    }
+    else {
+      console.log(result);
+      response.statusCode = 500;
+      response.body = JSON.stringify({ 'error': 'There was an unexpected result'});
+
+      callback(null, response);
+    }
+  });
+  
 }
 
 module.exports.retrieve = (event, context, callback) => {

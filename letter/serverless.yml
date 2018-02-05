@@ -77,12 +77,20 @@ functions:
           method: post
           cors: true
 
+  checkSupporter:
+    handler: supporterHandler.checkSupporter
+    events:
+      - http:
+          path: checkSupporter
+          method: get
+
   verify:
     handler: handler.verify
     events:
       - http:
           path: verify
           method: get
+          cors: true
 
   createSupporter:
     handler: supporterHandler.create

@@ -45,13 +45,6 @@ class Privacy extends React.Component {
     this.state = {
       show: false,
       isMenuOpen: false,
-      isSendingLetter: false,
-      name: "",
-      email: "",
-      isNameValid: true,
-      isEmailValid: true,
-      hasSigned: true,
-      hasSentLetter: localStorage.getItem("fod-hartnell-letter"),
       menuStyle: {
         height: "100%",
         left: 0,
@@ -71,17 +64,6 @@ class Privacy extends React.Component {
           "30px" /* 30px top margin to avoid conflict with the close button on smaller screens */,
         zIndex: 2
       },
-      portraitStyle: {
-        backgroundPosition: "center center",
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-        backgroundAttachment: "none",
-        height: "450px",
-        width: "90%",
-        margin: "0 auto",
-        position: "relative",
-        filter: "brightness(40%) contrast(70%)"
-      }
     };
 
     this.mobileNavStyle = {
@@ -199,7 +181,7 @@ class Privacy extends React.Component {
         </p>
         <p>
           {
-              "We ask for your name, email and signature for our letter co-sponsored by the Hartnell Foundation to send to our representatives."
+              "We ask for your name, email, occupation, address, city, state, phone number and signature for our letter co-sponsored by the Hartnell Foundation to send to our representatives."
           }
         </p>
         <p>
