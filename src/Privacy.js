@@ -181,7 +181,7 @@ class Privacy extends React.Component {
         </p>
         <p>
           {
-              "We ask for your name, email, occupation, address, city, state, phone number and signature for our letter co-sponsored by the Hartnell Foundation to send to our representatives."
+              "We ask for your name, email, occupation, address, city, state, phone number and signature for our letter to send to our representatives."
           }
         </p>
         <p>
