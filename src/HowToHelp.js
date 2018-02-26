@@ -241,23 +241,6 @@ class HowToHelp extends React.Component {
               </div>
               <div className="about-header project">
                 <p>
-                  <b>{"Sign Our Letter to Congress"}</b>
-                </p>
-                <p>
-                  {
-                    "Join Faces Of DACA and the Salinas Valley Community in signing this letter for our representatives in Congress!"
-                  }
-                </p>
-                <div className="help-button-container">
-                  <a href="https://letter.facesofdaca.us" target="_blank">
-                    <div className="help-button">
-                      <p>{"Sign Now"}</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div className="about-header project">
-                <p>
                   <b>{"Call Your Representative"}</b>
                 </p>
                 <p>
