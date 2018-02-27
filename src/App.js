@@ -376,7 +376,7 @@ class App extends Component {
                       <p>WEEKLY STORY</p>
                     </div>
                     <div className="weekly-description">
-                      <p>“As I was growing up, I quickly became aware that with hard work and discipline I was capable of good grades in my classes. I realized in high school my love for science and problem solving and I became interested in the healthcare field and began pursuing a career in the medical field, specifically a doctor.” 
+                      <p>“As I was growing up, I quickly became aware that with hard work and discipline I was capable of good grades in my classes. I realized in high school my love for science and problem solving--I became interested in the healthcare field and began pursuing a career in the medical field in hopes of becoming a doctor.” 
 Nayeli recalls her penchant for discipline, and how it helped her build resilience to continue pursuing her goals in medicine despite having non-existent opportunities to pursue med school due to her DACA status in the state of Oklahoma.</p>
                       <div className="weekly-arrow">
                           <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/a5d23119/nayeli-journey')}} />
