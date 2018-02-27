@@ -47,6 +47,13 @@ class App extends Component {
       },
       cards: [
         {
+          name: 'Aylin',
+          occupation: 'Kinesiology Major',
+          country: 'Mexico',
+          image: 'aylin_portrait_2.jpg',
+          link: '/1ede71bd/aylin-journey'
+        },
+        {
           name: "Luis",
           occupation: "Software Engineer",
           country: "Mexico",
@@ -360,19 +367,19 @@ class App extends Component {
                 <div className="mobile-nav" />
                 <div className="weekly-container">
                   <div>
-                    <img className="weekly-participant" src="https://dwistynbcri9g.cloudfront.net/aylin_portrait_2.jpg" />
-                    <strong><p className="weekly-name">Aylin</p></strong>
-                    <p className="weekly-title">Kinesiology Major</p>
+                    <img className="weekly-participant" src="https://dwistynbcri9g.cloudfront.net/nayeli.jpg" />
+                    <strong><p className="weekly-name">Nayeli</p></strong>
+                    <p className="weekly-title">Lab Technician</p>
                   </div>
                   <div>
                     <div className="weekly-header">
                       <p>WEEKLY STORY</p>
                     </div>
                     <div className="weekly-description">
-                      <p>“In reality, a lot of field workers have serious physical limitations because of their job and don’t have access to help. Now at CSUMB, I’m learning a lot about the healthcare system and how some field workers who have access to therapy only receive one session per month. That little time doesn’t solve anything. It’s my motivation to go into physical therapy and make more sessions accessible to these hard workers. It’s what they deserve. I’ve personally worked picking strawberries so I know how hard it is.” 
-Aylin explains her passion for helping workers in hard labor by pursuing physical therapy at CSUMB, hoping to expand services for field workers after experiencing first-hand the difficulty of picking strawberries.</p>
+                      <p>“As I was growing up, I quickly became aware that with hard work and discipline I was capable of good grades in my classes. I realized in high school my love for science and problem solving and I became interested in the healthcare field and began pursuing a career in the medical field, specifically a doctor.” 
+Nayeli recalls her penchant for discipline, and how it helped her build resilience to continue pursuing her goals in medicine despite having non-existent opportunities to pursue med school due to her DACA status in the state of Oklahoma.</p>
                       <div className="weekly-arrow">
-                          <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/1ede71bd/aylin-journey')}} />
+                          <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/a5d23119/nayeli-journey')}} />
                       </div>
                     </div>
                   </div>

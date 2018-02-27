@@ -23,6 +23,7 @@ import Luis from './participants/Luis'
 import Luis_2 from './participants/Luis_2';
 import Octavio from './participants/Octavio';
 import Miguel from './participants/Miguel';
+import Nayeli from './participants/Nayeli';
 import Rosie from './participants/Rosie';
 import Sandra from './participants/Sandra';
 import Steph from './participants/Steph';
@@ -39,8 +40,8 @@ const Routing = () => (
         <Route exact path="/how-to-help" component={HowToHelp} />
         <Route exact path='/about' component={About} />
         <Route exact path='/events' component={Events} />
-        {/*<Route exact path='/letter-to-congress' component={Letter} />*/}
         <Route exact path='/privacy' component={Privacy} />
+        <Route exact path='/a5d23119/nayeli-journey' component={Nayeli} onEnter={() => setTimeout(function () { window.scrollTo(0,0);}, 100)} />
         <Route exact path='/1ede71bd/aylin-journey' component={Aylin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/a65e9bc1/daniel-journey' component={Daniel1} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/aa9574739f97/lesly-journey' component={Lesly} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />

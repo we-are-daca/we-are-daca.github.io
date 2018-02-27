@@ -18,7 +18,7 @@ import Twitter from "../img/twitter.svg";
 import Billboard from "../img/billboard.jpg";
 import { NavLink } from "react-router-dom";
 
-class Edgar extends React.Component {
+class Aylin extends React.Component {
   constructor(props) {
     super(props);
     ReactGA.initialize('UA-111454076-1');
@@ -442,4 +442,4 @@ class Edgar extends React.Component {
   }
 }
 
-export default Edgar;
+export default Aylin;
