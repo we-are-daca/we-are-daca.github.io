@@ -352,7 +352,7 @@ class Nayeli extends React.Component {
                    <p>
                     <span className="dacamentor-response">
                       {
-                          "The other doctor I spoke to from OSU—I actually spoke to her a week ago—and she told me it’s mostly politics since a lot of people don’t necessarily care for what type of work permit you have. It’s all about people not wanting to change their ways and not enough people to advocate—there’s people here who advocate for immigrant rights but only healthcare, there’s not much of that here. There isn’t much advocating happening for undocumented students or students with DACA. While I know few of my own colleagues and friends with DACA, I don’t know anyone in Oklahoma with is in a similar situation as myself."
+                          "The other doctor I spoke to from OSU—I actually spoke to her a week ago—and she told me it’s mostly politics since a lot of people don’t necessarily care for what type of work permit you have. It’s all about people not wanting to change their ways and not enough people to advocate—there’s people here who advocate for immigrant rights but only for healthcare. There isn’t much advocating happening for undocumented students or students with DACA. While I know a few of my own colleagues and friends with DACA, I don’t know anyone in Oklahoma who is in a similar situation as myself."
                       }
                     </span>
                   </p>
