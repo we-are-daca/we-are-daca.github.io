@@ -367,19 +367,19 @@ class App extends Component {
                 <div className="mobile-nav" />
                 <div className="weekly-container">
                   <div>
-                    <img className="weekly-participant" src="https://dwistynbcri9g.cloudfront.net/nayeli.jpg" />
-                    <strong><p className="weekly-name">Nayeli</p></strong>
-                    <p className="weekly-title">Lab Technician</p>
+                    <img className="weekly-participant" src="https://dwistynbcri9g.cloudfront.net/yazmin_hero_1.jpg" />
+                    <strong><p className="weekly-name">Yazmin</p></strong>
+                    <p className="weekly-title">English Major</p>
                   </div>
                   <div>
                     <div className="weekly-header">
                       <p>WEEKLY STORY</p>
                     </div>
                     <div className="weekly-description">
-                      <p>“As I was growing up, I quickly became aware that with hard work and discipline I was capable of good grades in my classes. I realized in high school my love for science and problem solving--I became interested in the healthcare field and began pursuing a career in the medical field in hopes of becoming a doctor.” 
-Nayeli recalls her penchant for discipline, and how it helped her build resilience to continue pursuing her goals in medicine despite having non-existent opportunities to pursue med school due to her DACA status in the state of Oklahoma.</p>
+                      <p>“Our family was doing well until the recession hit, and at that point, we couldn’t afford our apartment anymore.  We decided to have a yard sale even when it was forbidden at the apartment complex, and sold absolutely everything--even our utensils. We only kept our sheets and a few pairs of clothes. We had nothing in our cupboard--not even rice or beans.” 
+Yazmin shares her family's experience through the recession as well as how similar experiences shaped her to be "a strong woman, a strong worker, and a strong human being who can look at any obstacle and surpass it"</p>
                       <div className="weekly-arrow">
-                          <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/a5d23119/nayeli-journey')}} />
+                          <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/b9961768/yazmin-journey')}} />
                       </div>
                     </div>
                   </div>
