@@ -377,7 +377,7 @@ class App extends Component {
                     </div>
                     <div className="weekly-description">
                       <p>“Our family was doing well until the recession hit, and at that point, we couldn’t afford our apartment anymore.  We decided to have a yard sale even when it was forbidden at the apartment complex, and sold absolutely everything--even our utensils. We only kept our sheets and a few pairs of clothes. We had nothing in our cupboard--not even rice or beans.” 
-Yazmin shares her family's experience through the recession as well as how similar experiences shaped her to be "a strong woman, a strong worker, and a strong human being who can look at any obstacle and surpass it"</p>
+Yazmin shares her family's experience through the recession as well as how similar experiences shaped her to be "a strong woman, a strong worker, and a strong human being who can look at any obstacle and surpass it."</p>
                       <div className="weekly-arrow">
                           <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/b9961768/yazmin-journey')}} />
                       </div>
