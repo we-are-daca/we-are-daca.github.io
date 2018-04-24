@@ -367,19 +367,20 @@ class App extends Component {
                 <div className="mobile-nav" />
                 <div className="weekly-container">
                   <div>
-                    <img className="weekly-participant" src="https://dwistynbcri9g.cloudfront.net/yazmin_hero_1.jpg" />
-                    <strong><p className="weekly-name">Yazmin</p></strong>
-                    <p className="weekly-title">English Major</p>
+                    <img className="weekly-participant" src="https://dwistynbcri9g.cloudfront.net/fernando.jpg" />
+                    <strong><p className="weekly-name">Fernando</p></strong>
+                    <p className="weekly-title">Student, Caregiver, Pizza Maker</p>
                   </div>
                   <div>
                     <div className="weekly-header">
                       <p>WEEKLY STORY</p>
                     </div>
                     <div className="weekly-description">
-                      <p>“Our family was doing well until the recession hit, and at that point, we couldn’t afford our apartment anymore.  We decided to have a yard sale even when it was forbidden at the apartment complex, and sold absolutely everything--even our utensils. We only kept our sheets and a few pairs of clothes. We had nothing in our cupboard--not even rice or beans.” 
-Yazmin shares her family's experience through the recession as well as how similar experiences shaped her to be "a strong woman, a strong worker, and a strong human being who can look at any obstacle and surpass it."</p>
+                      <p>“I want to continue studying and working hard--it’s one of the biggest things ingrained in me as I was growing up. One of my dreams is to eventually open up a business and provide jobs--even if it’s just an internship for a college student. Some of my family members have had businesses before and I have seen how they have been able to work and provide for themselves. I find that really awesome."
+                        Fernando shares with us his aspirations to be a business owner one day, and how one single complication led to his status as an undocumented American.
+                      </p>
                       <div className="weekly-arrow">
-                          <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/b9961768/yazmin-journey')}} />
+                          <MdChevronRight size={38} color={'#e67e00'} onClick={() => {this.props.history.push('/3cd336d4/fernando-journey')}} />
                       </div>
                     </div>
                   </div>

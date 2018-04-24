@@ -9,6 +9,7 @@ import Privacy from './Privacy';
 import Aylin from './participants/Aylin';
 import Daniel from './participants/Daniel';
 import Daniel1 from './participants/Daniel_1';
+import Fernando from './participants/Fernando';
 import Edgar from './participants/Edgar';
 import Elvin from './participants/Elvin';
 import Irais from './participants/Irais';
@@ -43,6 +44,7 @@ const Routing = () => (
         <Route exact path='/privacy' component={Privacy} />
         <Route exact path='/a5d23119/nayeli-journey' component={Nayeli} onEnter={() => setTimeout(function () { window.scrollTo(0,0);}, 100)} />
         <Route exact path='/1ede71bd/aylin-journey' component={Aylin} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
+        <Route exact path='/3cd336d4/fernando-journey' component={Fernando} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/a65e9bc1/daniel-journey' component={Daniel1} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/aa9574739f97/lesly-journey' component={Lesly} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
         <Route exact path='/36432e39/luis-journey' component={Luis} onEnter={() => setTimeout(function () { window.scrollTo(0, 0);}, 100)} />
